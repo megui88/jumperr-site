@@ -10,17 +10,22 @@
                     </div>
                 </div>
             </div>
+            <img class="img-1" src="/images/iconos/circulo.svg" alt="elemento jumperr">
+            <img class="img-2" src="/images/iconos/signodemas.svg" alt="elemento jumperr">
+            <img class="img-3" src="/images/iconos/circulo.svg" alt="elemento jumperr">
+            <img class="img-4" src="/images/iconos/signodemas.svg" alt="elemento jumperr">
         </header>
     </div>
 </template>
 <style scoped>
 header{
+    position: relative;
+    overflow: hidden;
     width: 100%;
     min-height: 100vh;
     background-image: url('/images/home/imagenes/jumperr-header-home.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
     background-position: center;
     display: flex;
     align-items: center;
@@ -38,6 +43,73 @@ h1{
 @media (min-width: 992px) {
     h1{
         font-size: 3.8rem;
+    }
+}
+
+
+.img-1{
+    position: absolute;
+    bottom: 60px;
+    left: -15px;
+    display: inline-block;
+    width: 52;
+    height: 52px;
+    animation: rotarRight 5s linear infinite;
+}
+.img-2{
+    position: absolute;
+    bottom: 120px;
+    left: 22px;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    animation: pulso 1s linear infinite;
+}
+.img-3{
+    position: absolute;
+    bottom: 30px;
+    right: -21px;
+    display: inline-block;
+    width: 82;
+    height: 82px;
+    animation: rotarRight 5s linear infinite;
+}
+.img-4{
+    position: absolute;
+    top: 140px;
+    right: 34px;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    animation: pulso 1s linear infinite;
+}
+@keyframes rotarRight {
+    0%{
+        transform: rotate(0deg);
+        opacity: 1;
+    }
+    50%{
+        opacity: .5;
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(360deg);
+        opacity: 1;
+
+    }
+}
+@keyframes pulso {
+    0%{
+        transform: scale(1,1);
+    }
+    35%{
+        transform: scale(1.1,1.1);
+    }
+    75%{
+        transform: scale(1.2,1.2);
+    }
+    100%{
+        transform: scale(1,1);
     }
 }
 </style>

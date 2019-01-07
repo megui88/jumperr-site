@@ -65,7 +65,6 @@ export default {
     clip-path: polygon(0 12%, 100% 0, 100% 100%, 0% 100%);
     padding: 140px 0px 60px;
     position: relative;
-    z-index: -1;
 }
 h4 {
     font-size: 1.6rem;

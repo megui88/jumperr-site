@@ -1,5 +1,5 @@
 <template>
-<div>
+<div id="section_footer">
 
     <footer class="d-flex align-items-end">
 
@@ -57,6 +57,10 @@
 </div>
 </template>
 <style scoped>
+#section_footer{
+    position: relative;
+    z-index: 1;
+}
 footer{
     position: relative;
     background-image: url('/images/home/imagenes/footerr_tapaprincipal.svg');

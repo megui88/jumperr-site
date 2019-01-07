@@ -16,12 +16,37 @@
                 </div>
             </div>
         </article>
+        <img class="img-1 d-none d-lg-block" src="/images/iconos/nube.svg" alt="elemento jumperr">
     </div>
 </template>
 
 
 <style scoped>
-img{
+#section_bio{
+    position: relative;
+}
+.img-1{
+    position: absolute;
+    top: -60px;
+    right: 140px;
+    width: 160px;
+    animation: float 10s linear infinite;
+}
+@keyframes float {
+	0% {
+        transform: translate(-40px, 40px);
+	}
+	50% {
+		transform: translate(40px, 0px);
+	}
+	100% {
+		transform: translate(-300px, 0px);
+	}
+}
+
+
+
+.img-position img{
     width: 96%;
     height: auto;
 }
@@ -61,6 +86,16 @@ p{
 }
 /* end */
 @media (min-width: 992px) {
+    .fondo{
+        background-color: #f8f8f8;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: auto;
+        height: 700px;
+        min-height: 700px;
+    }
     img{
         width: 688px;
     }

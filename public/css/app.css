@@ -1,5 +1,9 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,500,700);@charset "UTF-8";
 
+#app {
+  overflow: hidden;
+}
+
 /*!
  * Bootstrap v4.2.1 (https://getbootstrap.com/)
  * Copyright 2011-2018 The Bootstrap Authors

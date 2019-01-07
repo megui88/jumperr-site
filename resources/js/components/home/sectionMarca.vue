@@ -36,16 +36,71 @@ img.phone1 {
     position: absolute;
     top: -315px;
     left: 100px;
+    animation: slicedown 15s infinite;
+}
+@keyframes slicedown {
+  0% {
+    top: -115px;
+    left: 100px;
+  }
+  50% {
+    top: -315px;
+    left: 100px;
+  }
+  80% {
+    top: -315px;
+    left: 100px;
+  }
+  100% {
+    top: -115px;
+    left: 100px;
+  }
 }
 img.phone2 {
     position: absolute;
     top: 30px;
     left: -20px;
+    animation: sliceleft 15s infinite;
 }
+@keyframes sliceleft {
+  0% {
+    top: 30px;
+    left: -600px;
+  }
+  50% {
+    top: 30px;
+    left: -20px;
+  }
+  80% {
+    top: 30px;
+    left: -20px;
+  }
+  100% {
+    top: 30px;
+    left: -600px;
+  }
+}
+/* Standard syntax */
 img.phone3 {
     position: absolute;
     top: 40%;
     right: 60px;
+    animation: floatfade 5s infinite;
+}
+/* Standard syntax */
+@keyframes floatfade {
+  0% {
+    top: 40%;
+    right: 60px;
+  }
+  50% {
+    top: 35%;
+    right: 50px;
+  }
+  100% {
+    top: 40%;
+    right: 60px;
+  }
 }
 .fondo{
     background-color: #f8f8f8;
@@ -84,16 +139,69 @@ p{
         position: absolute;
         top: -178px;
         left: 80px;
+        animation: slicedown 15s infinite;
+    }
+    @keyframes slicedown {
+        0% {
+            top: -50px;
+            left: 80px;
+        }
+        50% {
+            top: -178px;
+            left: 80px;
+        }
+        80% {
+            top: -178px;
+            left: 80px;
+        }
+        100% {
+            top: -50px;
+            left: 80px;
+        }
     }
     img.phone2 {
         position: absolute;
         top: 30px;
         left: -10px;
+        animation: sliceleft 15s infinite;
+    }
+    @keyframes sliceleft {
+        0% {
+            top: 30px;
+            left: -300px;
+        }
+        50% {
+            top: 30px;
+            left: 5px;
+        }
+        80% {
+            top: 30px;
+            left: 5px;
+        }
+        100% {
+            top: 30px;
+            left: -300px;
+        }
     }
     img.phone3 {
         position: absolute;
         top: 130px;
         right: 30px;
+        animation: floatfade 5s infinite;
+    }
+    @keyframes floatfade {
+        0% {
+            top: 100px;
+            right: 40px;
+        }
+        50% {
+            top: 130px;
+            right: 30px;
+        }
+        100% {
+            top: 100px;
+            right: 40px;
+        }
     }
     h3{
         font-size: 1.8rem;

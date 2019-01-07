@@ -1,5 +1,5 @@
 <template>
-    <div id="section_blog" class="my-5">
+    <div id="section_blogs" class="">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-md-10 mx-auto">
@@ -43,6 +43,8 @@
             </div>
         </div>
 
+        <img class="img-1" src="/images/iconos/circulogrueso.svg" alt="elemento jumperr">
+        <img class="img-2" src="/images/iconos/signodemas.svg" alt="elemento jumperr">
     </div>
 </template>
 
@@ -112,10 +114,40 @@ export default {
 }
 </script>
 <style scoped>
+.img-1{
+    position: absolute;
+    top: -50px;
+    right: -30px;
+    display: inline-block;
+    width: 120px;
+    height: 120px;
+    animation: float 5s linear infinite;
+}
+.img-2{
+    position: absolute;
+    top: 50px;
+    left: 30px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    animation: float 1s linear infinite;
+}
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
     .title-blog{
         color: #1f1f1f;
     }
     #section_blogs{
+        position: relative;
         background-color: #fff;
         padding-top: 2rem;
         padding-bottom: 4rem;
