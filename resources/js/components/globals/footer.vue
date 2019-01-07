@@ -5,12 +5,12 @@
 
         <div class="container">
             <div class="row">
-                <div class="col-12 col-md-3">
+                <div class="col-12 col-md-3 d-flex align-items-center text-center">
                     <a href="#">
                         <img src="/images/logo/logojumperrwhite.svg" alt="" width="200px">
                     </a>
                 </div>
-                <div class="col-12 col-md-5 enlaces ml-auto">
+                <div class="col-12 col-md-4 enlaces mx-auto">
                     <a href="#">La Compañia</a>
                     <a href="#">Especialidades</a>
                     <a href="#">Agencias</a>
@@ -20,7 +20,7 @@
                     <a href="#">Diseño Gráfico</a>
                     <a href="#">Desarrollo Web y App</a>
                 </div>
-                <div class="col-12 col-md-3">
+                <div class="col-12 col-md-3 d-flex align-items-center">
                     <a href="#" target="_blank" rel="noopener noreferrer">
                         <img class="d-inline-block mx-2" width="36px" src="/images/iconos/001-facebook.svg" alt="Facebook">
                     </a>
@@ -41,12 +41,12 @@
     <div class="power-by-jumperr d-flex align-items-end pb-3">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-md-6 text-center text-md-left d-flex align-items-center">
+                <div class="col-12 col-md-6 text-center text-md-left">
                     <a href="#" target="_blank" rel="noopener noreferrer">
                         © Jumperr Digital Company
                     </a>
                 </div>
-                <div class="col-12 col-md-6 text-center text-md-right d-flex align-items-center">
+                <div class="col-12 col-md-6 text-center text-md-right">
                     <a href="#" target="_blank" rel="noopener noreferrer">
                         Politica de privacidad | Terminos y condiciones
                     </a>
@@ -62,12 +62,13 @@ footer{
     background-image: url('/images/home/imagenes/footerr_tapaprincipal.svg');
     background-size: 100%;
     background-position: left top;
-    background-repeat: repeat-y;
+    background-repeat: no-repeat;
     height: 300px;
     width: 100%;
 }
 footer:before{
     content: '';
+    background-color: #fff;
     background-image: url('/images/home/imagenes/footerr_ultimatapa.svg');
     background-size: 100%;
     background-position: right top;

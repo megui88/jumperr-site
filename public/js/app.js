@@ -6687,7 +6687,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\nfooter[data-v-5f3ce165]{\n    position: relative;\n    background-image: url('/images/home/imagenes/footerr_tapaprincipal.svg');\n    background-size: 100%;\n    background-position: left top;\n    background-repeat: repeat-y;\n    height: 300px;\n    width: 100%;\n}\nfooter[data-v-5f3ce165]:before{\n    content: '';\n    background-image: url('/images/home/imagenes/footerr_ultimatapa.svg');\n    background-size: 100%;\n    background-position: right top;\n    background-repeat: repeat-x;\n    width: 100%;\n    height: 200px;\n    position: absolute;\n    top: -20px;\n    left: 0;\n    z-index: -1;\n}\n/* footer:after{\n    content: ' ';\n    background-image: url('/images/home/imagenes/footerr_1.svg');\n    background-size: contain;\n    background-position: center;\n    background-repeat: repeat-x;\n    width: 100%;\n    height: 640px;\n    position: absolute;\n    bottom: 0px;\n    left: 0;\n    z-index: 1;\n} */\na[data-v-5f3ce165], a[data-v-5f3ce165]:hover, a[data-v-5f3ce165]:link, a[data-v-5f3ce165]:focus{\n    color: #fff;\n    text-decoration: none;\n}\n.enlaces[data-v-5f3ce165]{\n    display: flex;\n    flex-wrap: wrap;\n}\n.enlaces a[data-v-5f3ce165]{\n    display: inline-block;\n    width: 50%;\n    font-weight: 500;\n    line-height: 2.5;\n}\n.power-by-jumperr[data-v-5f3ce165]{\n    width: 100%;\n    background-color: #F96332;\n    background-image: url('/images/home/imagenes/footerr_1.svg');\n    background-size: 100%;\n    background-position: center;\n    background-repeat: no-repeat;\n    min-height: 100px;\n}\n.power-by-jumperr a[data-v-5f3ce165]{\n    font-weight: 700;\n}\n", ""]);
+exports.push([module.i, "\nfooter[data-v-5f3ce165]{\n    position: relative;\n    background-image: url('/images/home/imagenes/footerr_tapaprincipal.svg');\n    background-size: 100%;\n    background-position: left top;\n    background-repeat: no-repeat;\n    height: 300px;\n    width: 100%;\n}\nfooter[data-v-5f3ce165]:before{\n    content: '';\n    background-color: #fff;\n    background-image: url('/images/home/imagenes/footerr_ultimatapa.svg');\n    background-size: 100%;\n    background-position: right top;\n    background-repeat: repeat-x;\n    width: 100%;\n    height: 200px;\n    position: absolute;\n    top: -20px;\n    left: 0;\n    z-index: -1;\n}\n.power-by-jumperr[data-v-5f3ce165]{\n    width: 100%;\n    background-color: #F96332;\n    background-image: url('/images/home/imagenes/footerr_1.svg');\n    background-size: 100%;\n    background-position: bottom center;\n    background-repeat: no-repeat;\n    min-height: 126px;\n}\n.power-by-jumperr a[data-v-5f3ce165]{\n    font-weight: 700;\n}\na[data-v-5f3ce165], a[data-v-5f3ce165]:hover, a[data-v-5f3ce165]:link, a[data-v-5f3ce165]:focus{\n    color: #fff;\n    text-decoration: none;\n}\n.enlaces[data-v-5f3ce165]{\n    display: flex;\n    flex-wrap: wrap;\n}\n.enlaces a[data-v-5f3ce165]{\n    display: inline-block;\n    width: 50%;\n    font-weight: 500;\n    line-height: 2.5;\n}\n\n\n", ""]);
 
 // exports
 
@@ -6839,7 +6839,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\n#section_contacto[data-v-4120bbef]{\n    -webkit-clip-path: polygon(0 12%, 100% 0, 100% 100%, 0% 100%);\n    clip-path: polygon(0 12%, 100% 0, 100% 100%, 0% 100%);\n    padding: 140px 0px 60px;\n}\nh4[data-v-4120bbef] {\n    font-size: 1.6rem;\n    line-height: 1.4;\n    font-weight: 300;\n}\n.form-group[data-v-4120bbef]{\n    position: relative;\n}\n.form-control[data-v-4120bbef] {\n    display: block;\n    width: 100%;\n    height: calc(2.35rem + 2px);\n    padding: 0rem 0rem;\n    font-size: 1rem;\n    font-weight: 400;\n    line-height: 1.6;\n    color: #495057;\n    background-color: transparent;\n    background-clip: padding-box;\n    border: 0px solid #ced4da;\n    border-bottom: 1px solid #ced4da;\n    border-radius: 0rem;\n    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;\n}\n.form-control[data-v-4120bbef]:focus {\n    color: #495057;\n    background-color: transparent;\n    border-color: #f26336;\n    outline: 0;\n    box-shadow: 0 0 0 0rem transparent;\n}\nlabel[data-v-4120bbef] {\n    display: inline-block;\n    margin-bottom: 0rem;\n    top: 0;\n    left: 0;\n}\n", ""]);
+exports.push([module.i, "\n#section_contacto[data-v-4120bbef]{\n    -webkit-clip-path: polygon(0 12%, 100% 0, 100% 100%, 0% 100%);\n    clip-path: polygon(0 12%, 100% 0, 100% 100%, 0% 100%);\n    padding: 140px 0px 60px;\n    position: relative;\n    z-index: -1;\n}\nh4[data-v-4120bbef] {\n    font-size: 1.6rem;\n    line-height: 1.4;\n    font-weight: 300;\n}\n.form-group[data-v-4120bbef]{\n    position: relative;\n}\n.form-control[data-v-4120bbef] {\n    display: block;\n    width: 100%;\n    height: calc(2.35rem + 2px);\n    padding: 0rem 0rem;\n    font-size: 1rem;\n    font-weight: 400;\n    line-height: 1.6;\n    color: #495057;\n    background-color: transparent;\n    background-clip: padding-box;\n    border: 0px solid #ced4da;\n    border-bottom: 1px solid #ced4da;\n    border-radius: 0rem;\n    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;\n}\n.form-control[data-v-4120bbef]:focus {\n    color: #495057;\n    background-color: transparent;\n    border-color: #f26336;\n    outline: 0;\n    box-shadow: 0 0 0 0rem transparent;\n}\nlabel[data-v-4120bbef] {\n    display: inline-block;\n    margin-bottom: 0rem;\n    top: 0;\n    left: 0;\n}\n", ""]);
 
 // exports
 
@@ -47356,19 +47356,26 @@ var staticRenderFns = [
       _c("footer", { staticClass: "d-flex align-items-end" }, [
         _c("div", { staticClass: "container" }, [
           _c("div", { staticClass: "row" }, [
-            _c("div", { staticClass: "col-12 col-md-3" }, [
-              _c("a", { attrs: { href: "#" } }, [
-                _c("img", {
-                  attrs: {
-                    src: "/images/logo/logojumperrwhite.svg",
-                    alt: "",
-                    width: "200px"
-                  }
-                })
-              ])
-            ]),
+            _c(
+              "div",
+              {
+                staticClass:
+                  "col-12 col-md-3 d-flex align-items-center text-center"
+              },
+              [
+                _c("a", { attrs: { href: "#" } }, [
+                  _c("img", {
+                    attrs: {
+                      src: "/images/logo/logojumperrwhite.svg",
+                      alt: "",
+                      width: "200px"
+                    }
+                  })
+                ])
+              ]
+            ),
             _vm._v(" "),
-            _c("div", { staticClass: "col-12 col-md-5 enlaces ml-auto" }, [
+            _c("div", { staticClass: "col-12 col-md-4 enlaces mx-auto" }, [
               _c("a", { attrs: { href: "#" } }, [_vm._v("La Compañia")]),
               _vm._v(" "),
               _c("a", { attrs: { href: "#" } }, [_vm._v("Especialidades")]),
@@ -47388,91 +47395,95 @@ var staticRenderFns = [
               ])
             ]),
             _vm._v(" "),
-            _c("div", { staticClass: "col-12 col-md-3" }, [
-              _c(
-                "a",
-                {
-                  attrs: {
-                    href: "#",
-                    target: "_blank",
-                    rel: "noopener noreferrer"
-                  }
-                },
-                [
-                  _c("img", {
-                    staticClass: "d-inline-block mx-2",
+            _c(
+              "div",
+              { staticClass: "col-12 col-md-3 d-flex align-items-center" },
+              [
+                _c(
+                  "a",
+                  {
                     attrs: {
-                      width: "36px",
-                      src: "/images/iconos/001-facebook.svg",
-                      alt: "Facebook"
+                      href: "#",
+                      target: "_blank",
+                      rel: "noopener noreferrer"
                     }
-                  })
-                ]
-              ),
-              _vm._v(" "),
-              _c(
-                "a",
-                {
-                  attrs: {
-                    href: "#",
-                    target: "_blank",
-                    rel: "noopener noreferrer"
-                  }
-                },
-                [
-                  _c("img", {
-                    staticClass: "d-inline-block mx-2",
+                  },
+                  [
+                    _c("img", {
+                      staticClass: "d-inline-block mx-2",
+                      attrs: {
+                        width: "36px",
+                        src: "/images/iconos/001-facebook.svg",
+                        alt: "Facebook"
+                      }
+                    })
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "a",
+                  {
                     attrs: {
-                      width: "36px",
-                      src: "/images/iconos/002-instagram.svg",
-                      alt: "Instagram"
+                      href: "#",
+                      target: "_blank",
+                      rel: "noopener noreferrer"
                     }
-                  })
-                ]
-              ),
-              _vm._v(" "),
-              _c(
-                "a",
-                {
-                  attrs: {
-                    href: "#",
-                    target: "_blank",
-                    rel: "noopener noreferrer"
-                  }
-                },
-                [
-                  _c("img", {
-                    staticClass: "d-inline-block mx-2",
+                  },
+                  [
+                    _c("img", {
+                      staticClass: "d-inline-block mx-2",
+                      attrs: {
+                        width: "36px",
+                        src: "/images/iconos/002-instagram.svg",
+                        alt: "Instagram"
+                      }
+                    })
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "a",
+                  {
                     attrs: {
-                      width: "36px",
-                      src: "/images/iconos/003-linkedin.svg",
-                      alt: "Linkedin"
+                      href: "#",
+                      target: "_blank",
+                      rel: "noopener noreferrer"
                     }
-                  })
-                ]
-              ),
-              _vm._v(" "),
-              _c(
-                "a",
-                {
-                  attrs: {
-                    href: "#",
-                    target: "_blank",
-                    rel: "noopener noreferrer"
-                  }
-                },
-                [
-                  _c("img", {
-                    staticClass: "d-inline-block mx-2",
+                  },
+                  [
+                    _c("img", {
+                      staticClass: "d-inline-block mx-2",
+                      attrs: {
+                        width: "36px",
+                        src: "/images/iconos/003-linkedin.svg",
+                        alt: "Linkedin"
+                      }
+                    })
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "a",
+                  {
                     attrs: {
-                      width: "36px",
-                      src: "/images/iconos/004-youtube.svg",
-                      alt: "Youtube"
+                      href: "#",
+                      target: "_blank",
+                      rel: "noopener noreferrer"
                     }
-                  })
-                ]
-              )
-            ])
+                  },
+                  [
+                    _c("img", {
+                      staticClass: "d-inline-block mx-2",
+                      attrs: {
+                        width: "36px",
+                        src: "/images/iconos/004-youtube.svg",
+                        alt: "Youtube"
+                      }
+                    })
+                  ]
+                )
+              ]
+            )
           ])
         ])
       ]),
@@ -47865,17 +47876,7 @@ var render = function() {
       _vm._v(" "),
       _c("section_carreras"),
       _vm._v(" "),
-      _c("section_contacto"),
-      _vm._v(" "),
-      _c("br"),
-      _vm._v(" "),
-      _c("br"),
-      _vm._v(" "),
-      _c("br"),
-      _vm._v(" "),
-      _c("br"),
-      _vm._v(" "),
-      _c("br")
+      _c("section_contacto")
     ],
     1
   )
