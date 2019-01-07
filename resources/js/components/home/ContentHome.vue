@@ -1,0 +1,13 @@
+<template>
+    <div>
+        <section_header></section_header>
+        <section_services></section_services>
+        <section_bio></section_bio>
+        <section_marca></section_marca>
+        <section_youtube></section_youtube>
+        <section_portafolio></section_portafolio>
+        <section_blog></section_blog>
+        <section_carreras></section_carreras>
+        <section_contacto></section_contacto>
+    </div>
+</template>

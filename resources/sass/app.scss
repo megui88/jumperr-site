@@ -1,0 +1,66 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,500,700');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+h1,h2,h3,h4,h5,h6{
+    color: #1f1f1f;
+}
+h4,h5,h6,p{
+    color: #4b4b4b;
+}
+h1{
+    font-size: 3.8rem;
+    font-weight: 500;
+}
+h2{
+    font-size: 3rem;
+    font-weight: 500;
+}
+h3{
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+h4{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+h5{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+h6{
+    font-size: 1.1rem;
+}
+
+#section_services .swiper-pagination-bullet {
+    width: 11px !important;
+    height: 11px !important;
+    display: inline-block;
+    border-radius: 100%;
+    background: #000;
+    opacity: 0.2;
+}
+#section_services .swiper-pagination-bullet-active {
+    opacity: 1;
+    background: #f26336;
+}
+
+/*Sobre escribir boton de bootstrap*/
+.btn {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    font-weight: 700;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: 0.365rem 1.8rem;
+    font-size: .9rem;
+    line-height: 1.6;
+    border-radius: 1.25rem;
+    align-self: center;
+}
