@@ -40,6 +40,15 @@ import clock from '../components/home/clock/clock.vue';
 import sectionClock from '../components/home/sectionClock.vue';
 import sectionContacto from '../components/home/sectionContacto.vue';
 
+// import componentes empresa
+import ContentEmpresa from '../components/empresa/ContentEmpresa.vue';
+import sectionAboutEmpresa from '../components/empresa/sectionAboutEmpresa.vue';
+import sectionDondeEstamosEmpresa from '../components/empresa/sectionDondeEstamosEmpresa.vue';
+import sectionElegirnosEmpresa from '../components/empresa/sectionElegirnosEmpresa.vue';
+import sectionHeaderEmpresa from '../components/empresa/sectionHeaderEmpresa.vue';
+import sectionMisionEmpresa from '../components/empresa/sectionMisionEmpresa.vue';
+import sectionTeamEmpresa from '../components/empresa/sectionTeamEmpresa.vue';
+import sectionVisionEmpresa from '../components/empresa/sectionVisionEmpresa.vue';
 
 /*
 * Components globas
@@ -65,6 +74,15 @@ Vue.component('clock', clock);
 Vue.component('section_clock', sectionClock);
 Vue.component('section_contacto', sectionContacto);
 
+//Components Empresa | compañia
+Vue.component('ContentEmpresa', ContentEmpresa);
+Vue.component('section_about_empresa', sectionAboutEmpresa);
+Vue.component('section_donde_estamos_empresa', sectionDondeEstamosEmpresa);
+Vue.component('section_elegirnos_empresa', sectionElegirnosEmpresa);
+Vue.component('section_header_empresa', sectionHeaderEmpresa);
+Vue.component('section_mision_empresa', sectionMisionEmpresa);
+Vue.component('section_team_empresa', sectionTeamEmpresa);
+Vue.component('section_vision_empresa', sectionVisionEmpresa);
 
 // Routes
 let router = new Router({
@@ -74,6 +92,11 @@ let router = new Router({
             path: '/',
             name: 'ContentHome',
             component: ContentHome
+        },
+        {
+            path: '/la-compagnia',
+            name: 'ContentEmpresa',
+            component: ContentEmpresa
         },
 
     ],
