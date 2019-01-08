@@ -63,7 +63,7 @@ h1{
     display: inline-block;
     width: 18px;
     height: 18px;
-    animation: pulso 1s linear infinite;
+    animation: rotarRight 1s linear infinite;
 }
 .img-3{
     position: absolute;
@@ -81,35 +81,17 @@ h1{
     display: inline-block;
     width: 18px;
     height: 18px;
-    animation: pulso 1s linear infinite;
+    animation: rotarRight 1s linear infinite;
 }
 @keyframes rotarRight {
-    0%{
-        transform: rotate(0deg);
-        opacity: 1;
-    }
-    50%{
-        opacity: .5;
-        transform: rotate(180deg);
-    }
-    100%{
-        transform: rotate(360deg);
-        opacity: 1;
-
-    }
-}
-@keyframes pulso {
-    0%{
-        transform: scale(1,1);
-    }
-    35%{
-        transform: scale(1.1,1.1);
-    }
-    75%{
-        transform: scale(1.2,1.2);
-    }
-    100%{
-        transform: scale(1,1);
-    }
+    0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
 }
 </style>

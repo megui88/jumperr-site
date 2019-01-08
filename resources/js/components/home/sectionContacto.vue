@@ -36,6 +36,9 @@
                 </div>
             </div>
         </div>
+        <img class="img-1 d-none d-lg-inline-block" src="/images/iconos/circulogrueso.svg" alt="elemento jumperr">
+        <img class="img-2 d-none d-lg-inline-block" src="/images/iconos/circulogrueso.svg" alt="elemento jumperr">
+        <img class="img-3 d-none d-lg-inline-block" src="/images/iconos/signodemas.svg" alt="elemento jumperr">
     </section>
 </template>
 <script>
@@ -60,6 +63,47 @@ export default {
 </script>
 
 <style scoped>
+.img-1{
+    position: absolute;
+    top: 150px;
+    left: -30px;
+    display: inline-block;
+    width: 120px;
+    height: 120px;
+    animation: float 8s linear infinite;
+}
+.img-2{
+    position: absolute;
+    bottom: 180px;
+    right: -30px;
+    display: inline-block;
+    width: 120px;
+    height: 120px;
+    animation: float 5s linear infinite;
+}
+.img-3{
+    position: absolute;
+    bottom: 350px;
+    right: 80px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    animation: float 2s linear infinite;
+}
+
+
+@keyframes float {
+	0% {
+        transform: translatey(0px) rotate(0deg);
+	}
+	50% {
+        transform: translatey(-20px) rotate(180deg);
+	}
+	100% {
+        transform: translatey(0px) rotate(360deg);
+	}
+}
+
 #section_contacto{
     -webkit-clip-path: polygon(0 12%, 100% 0, 100% 100%, 0% 100%);
     clip-path: polygon(0 12%, 100% 0, 100% 100%, 0% 100%);

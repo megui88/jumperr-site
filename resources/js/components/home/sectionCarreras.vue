@@ -1,5 +1,5 @@
 <template>
-    <div id="section_bio">
+    <div id="section_carreras">
         <article class="fondo position-relative">
             <div class="container h-100">
                 <div class="row h-100">
@@ -22,29 +22,31 @@
 
 
 <style scoped>
-#section_bio{
+#section_carreras{
     position: relative;
 }
 .img-1{
     position: absolute;
     top: -60px;
-    right: 140px;
+    left: -180px;
     width: 160px;
     animation: float 10s linear infinite;
 }
 @keyframes float {
 	0% {
-        transform: translate(-40px, 40px);
+        transform: translateX(-180px);
 	}
 	50% {
-		transform: translate(40px, 0px);
+        transform: translateX(1100px);
+	}
+    95% {
+        transform: translateX(1100px);
 	}
 	100% {
-		transform: translate(-300px, 0px);
+        /* transform: translateX(140px, -60px); */
+        transform: translateX(1800px);
 	}
 }
-
-
 
 .img-position img{
     width: 96%;
@@ -93,15 +95,15 @@ p{
         background-size: cover;
         background-position: center;
         width: auto;
-        height: 700px;
-        min-height: 700px;
+        height: 600px;
+        min-height: 600px;
     }
     img{
         width: 688px;
     }
     .img-position{
         position: absolute;
-        top: -65px;
+        top: -50px;
         left: 0;
     }
 }
