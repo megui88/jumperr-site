@@ -5,8 +5,6 @@
  * building robust, powerful web applications using Vue and Laravel.
  */
 
-import 'swiper/dist/css/swiper.css';
-
 require('./bootstrap');
 
 window.Vue = require('vue');

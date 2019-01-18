@@ -109,6 +109,12 @@ export default {
     clip-path: polygon(0 12%, 100% 0, 100% 100%, 0% 100%);
     padding: 140px 0px 60px;
     position: relative;
+    background-image: url('/images/home/imagenes/fondo-contacto.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: -100px;
+    padding-bottom: 100px;
 }
 h4 {
     font-size: 1.6rem;

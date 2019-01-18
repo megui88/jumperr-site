@@ -50,6 +50,27 @@ import sectionMisionEmpresa from '../components/empresa/sectionMisionEmpresa.vue
 import sectionTeamEmpresa from '../components/empresa/sectionTeamEmpresa.vue';
 import sectionVisionEmpresa from '../components/empresa/sectionVisionEmpresa.vue';
 
+// import componentes especialidadse
+import ContentEspecialidades from '../components/especialidades/ContentEspecialidades.vue';
+import sectionCmsEspecialidades from '../components/especialidades/sectionCmsEspecialidades.vue';
+import sectionDesarrolloEspecialidades from '../components/especialidades/sectionDesarrolloEspecialidades.vue';
+import sectionDesignEspecialidades from '../components/especialidades/sectionDesignEspecialidades.vue';
+import sectionHeaderEspecialidades from '../components/especialidades/sectionHeaderEspecialidades.vue';
+import sectionProcesoEspecialidades from '../components/especialidades/sectionProcesoEspecialidades.vue';
+import sectionRedesEspecialidades from '../components/especialidades/sectionRedesEspecialidades.vue';
+import sectionStartEspecialidades from '../components/especialidades/sectionStartEspecialidades.vue';
+import sectionStudioEspecialidades from '../components/especialidades/sectionStudioEspecialidades.vue';
+import sectionNewsletterEspecialidades from '../components/especialidades/sectionNewsletterEspecialidades';
+
+// import compoentes blog
+import blog from '../components/blog/blog.vue';
+import post from '../components/blog/post.vue';
+import comentariosPost from '../components/blog/partials/comentarios.vue';
+import headerPost from '../components/blog/partials/header.vue';
+import postRelacionadosPost from '../components/blog/partials/postRelacionados.vue';
+import sharedPost from '../components/blog/partials/shared.vue';
+
+
 /*
 * Components globas
 */
@@ -60,7 +81,7 @@ Vue.component('info_header', infoHeader);
 Vue.component('section_footer', sectionFooter);
 
 /*
-* Components Home
+* Components page Home
 */
 Vue.component('section_header', sectionHeader);
 Vue.component('section_services', sectionServices);
@@ -74,7 +95,7 @@ Vue.component('clock', clock);
 Vue.component('section_clock', sectionClock);
 Vue.component('section_contacto', sectionContacto);
 
-//Components Empresa | compañia
+//Components page Empresa | compañia
 Vue.component('ContentEmpresa', ContentEmpresa);
 Vue.component('section_about_empresa', sectionAboutEmpresa);
 Vue.component('section_donde_estamos_empresa', sectionDondeEstamosEmpresa);
@@ -83,6 +104,27 @@ Vue.component('section_header_empresa', sectionHeaderEmpresa);
 Vue.component('section_mision_empresa', sectionMisionEmpresa);
 Vue.component('section_team_empresa', sectionTeamEmpresa);
 Vue.component('section_vision_empresa', sectionVisionEmpresa);
+
+//Components page Especialidades
+Vue.component('ContentEmpresa', ContentEspecialidades);
+Vue.component('section_cms_especialidades', sectionCmsEspecialidades);
+Vue.component('section_desarrollo_especialidades', sectionDesarrolloEspecialidades);
+Vue.component('section_design_especialidades', sectionDesignEspecialidades);
+Vue.component('section_header_especialidades', sectionHeaderEspecialidades);
+Vue.component('section_proceso_especialidades', sectionProcesoEspecialidades);
+Vue.component('section_redes_especialidades', sectionRedesEspecialidades);
+Vue.component('section_start_especialidades', sectionStartEspecialidades);
+Vue.component('section_studio_especialidades', sectionStudioEspecialidades);
+Vue.component('section_newsletter_especialidades', sectionNewsletterEspecialidades);
+
+// Blog
+Vue.component('blog', blog);
+Vue.component('post', post);
+Vue.component('comentarios_post', comentariosPost);
+Vue.component('header_blog', headerPost);
+Vue.component('post_relacionados_post', postRelacionadosPost);
+Vue.component('shared_post', sharedPost);
+
 
 // Routes
 let router = new Router({
@@ -97,6 +139,16 @@ let router = new Router({
             path: '/la-compagnia',
             name: 'ContentEmpresa',
             component: ContentEmpresa
+        },
+        {
+            path: '/specialita',
+            name: 'ContentEspecialidades',
+            component: ContentEspecialidades
+        },
+        {
+            path: '/blog',
+            name: 'blog',
+            component: blog
         },
 
     ],

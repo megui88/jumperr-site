@@ -10,6 +10,9 @@
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
 
+@import 'swiper';
+
+
 h1,h2,h3,h4,h5,h6{
     color: #1f1f1f;
 }
@@ -66,4 +69,29 @@ h6{
     line-height: 1.6;
     border-radius: 1.25rem;
     align-self: center;
+}
+
+// paginacion slider de header especialidades
+span.swiper-pagination-bullet-x {
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    border-radius: 100%;
+    background: #b3b3b3;
+    opacity: 0.7;
+}
+.swiper-pagination-x span.swiper-pagination-bullet-active {
+    opacity: 1;
+    background: #f26336;
+}
+.swiper-pagination-x.swiper-pagination-custom, .swiper-container-horizontal > .swiper-pagination-bullets{
+    position: relative !important;
+    bottom: 0 !important;
+}
+//
+.swiper-pagination-progressbar .swiper-pagination-progressbar-fill{
+    background-color: #f26336;
+}
+.swiper-pagination-progressbar {
+    background: rgba(255, 255, 255, 0.8);
 }

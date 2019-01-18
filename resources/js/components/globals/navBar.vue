@@ -4,13 +4,13 @@
             <info_header class="d-none d-lg-block" v-if="sticky"></info_header>
 
             <!-- menu navbar -->
-            <div id="navbar"                                        :class="sticky ? '' : 'bg-white'">
+            <div id="navbar"                                        :class="[sticky ? '' : 'bg-white', fondoNav ? 'bg-white' : '' ]">
                 <nav class="navbar navbar-expand-lg"                :class="sticky ? 'navbar-dark' : 'navbar-light'">
                     <div class="container">
                         <router-link class="navbar-brand" to="/">
                             <img src="images/logo/logojumperr.svg" alt="Jumperr" class="logo">
                         </router-link>
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                        <button class="navbar-toggler" v-on:click="fondoNav=!fondoNav" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                             <i class="fas fa-bars"></i>
                         </button>
 
@@ -46,7 +46,8 @@
 export default {
     data(){
         return {
-            sticky: true
+            sticky: true,
+            fondoNav: false,
         }
     },
     mounted(){
@@ -59,6 +60,15 @@ export default {
                 that.sticky = true;
             }
         };
+    },
+    methods: {
+        cambiarFondoNav(){
+            if ($this.fondoNav === true) {
+                $this.fondoNav = false;
+            }else{
+                $this.fondoNav = true;
+            }
+        }
     }
 }
 </script>
@@ -133,6 +143,22 @@ export default {
     .navbar-light .navbar-toggler {
         color: rgba(0, 0, 0, 0.5);
         border-color: rgba(0, 0, 0, 0.1);
+    }
+}
+@media (max-width: 991.98px){
+    .navbar[data-v-61279d3a] {
+        background-color: #fff0;
+    }
+    button.navbar-toggler{
+        color: #fff;
+    }
+    @media (max-width: 991.98px)
+    {
+
+    }
+    .navbar-dark .navbar-toggler {
+        color: rgb(242, 105, 55);
+        border-color: rgb(242, 105, 55);
     }
 }
 </style>

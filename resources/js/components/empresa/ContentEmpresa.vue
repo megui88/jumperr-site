@@ -2,10 +2,10 @@
     <div>
         <section_header_empresa></section_header_empresa>
         <section_about_empresa></section_about_empresa>
-        <section_donde_estamos_empresa></section_donde_estamos_empresa>
-        <section_elegirnos_empresa></section_elegirnos_empresa>
         <section_mision_empresa></section_mision_empresa>
-        <section_team_empresa></section_team_empresa>
         <section_vision_empresa></section_vision_empresa>
+        <section_elegirnos_empresa></section_elegirnos_empresa>
+        <section_donde_estamos_empresa></section_donde_estamos_empresa>
+        <section_team_empresa></section_team_empresa>
     </div>
 </template>

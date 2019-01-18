@@ -1,16 +1,16 @@
 <template>
 <div id="section_footer">
 
-    <footer class="d-flex align-items-end">
+    <footer class="">
 
         <div class="container">
-            <div class="row">
-                <div class="col-12 col-md-3 d-flex align-items-center text-center">
+            <div class="row align-items-center">
+                <div class="col-12 col-md-3 text-center">
                     <a href="#">
                         <img src="/images/logo/logojumperrwhite.svg" alt="" width="200px">
                     </a>
                 </div>
-                <div class="col-12 col-md-4 enlaces mx-auto">
+                <div class="col-12 col-md-5 col-lg-4 d-none d-md-flex enlaces mx-auto">
                     <a href="#">La Compañia</a>
                     <a href="#">Especialidades</a>
                     <a href="#">Agencias</a>
@@ -20,7 +20,7 @@
                     <a href="#">Diseño Gráfico</a>
                     <a href="#">Desarrollo Web y App</a>
                 </div>
-                <div class="col-12 col-md-3 d-flex align-items-center">
+                <div class="col-12 col-md-3 text-center mt-4 mt-md-0">
                     <a href="#" target="_blank" rel="noopener noreferrer">
                         <img class="d-inline-block mx-2" width="36px" src="/images/iconos/001-facebook.svg" alt="Facebook">
                     </a>
@@ -62,6 +62,116 @@
     z-index: 1;
 }
 footer{
+        position: relative;
+        background-image: url('/images/home/imagenes/footerr_tapaprincipal.svg');
+        background-size: cover;
+        background-position: center top;
+        background-repeat: no-repeat;
+        height: 480px;
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        padding-top: 126px;
+    }
+    footer:before{
+        content: ' ';
+        background-color: transparent;
+        background-image: url('/images/home/imagenes/footerr_ultimatapa.svg');
+        background-size: cover;
+        background-position: center top;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        z-index: -1;
+    }
+    .power-by-jumperr{
+        background-image: url('/images/home/imagenes/footerr_1.svg');
+        background-size: cover;
+        background-position: center top;
+        background-repeat: no-repeat;
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        width: 100%;
+        height: 200px;
+    }
+@media (max-width: 768px) {
+    footer{
+        position: relative;
+        background-image: url('/images/home/imagenes/2_movil.svg');
+        background-size: cover;
+        background-position: center top;
+        background-repeat: no-repeat;
+        height: 480px;
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        padding-top: 100px;
+    }
+    footer:before{
+        content: ' ';
+        background-color: transparent;
+        background-image: url('/images/home/imagenes/3_movil.svg');
+        background-size: cover;
+        background-position: center top;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        z-index: -1;
+    }
+    .power-by-jumperr{
+        background-image: url('/images/home/imagenes/1_movil.svg');
+        background-size: cover;
+        background-position: center top;
+        background-repeat: no-repeat;
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        width: 100%;
+        height: 200px;
+    }
+}
+
+@media (max-width: 400px) {
+    footer{
+        position: relative;
+        background-image: url('/images/home/imagenes/2_movil.svg');
+        background-size: cover;
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        height: 450px;
+        width: 100%;
+    }
+    footer:before{
+        content: ' ';
+        background-color: transparent;
+        background-image: url('/images/home/imagenes/3_movil.svg');
+        background-size: cover;
+        background-position: center bottom;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        z-index: -1;
+    }
+    .power-by-jumperr{
+        background-image: url('/images/home/imagenes/1_movil.svg');
+        background-size: cover;
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        width: 100%;
+        height: 180px;
+    }
+}
+/* footer{
     position: relative;
     background-image: url('/images/home/imagenes/footerr_tapaprincipal.svg');
     background-size: 100%;
@@ -72,7 +182,7 @@ footer{
 }
 footer:before{
     content: '';
-    background-color: #fff;
+    background-color: transparent;
     background-image: url('/images/home/imagenes/footerr_ultimatapa.svg');
     background-size: 100%;
     background-position: right top;
@@ -92,7 +202,7 @@ footer:before{
     background-position: bottom center;
     background-repeat: no-repeat;
     min-height: 126px;
-}
+} */
 .power-by-jumperr a{
     font-weight: 700;
 }
