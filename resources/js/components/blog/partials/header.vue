@@ -1,10 +1,21 @@
 <template>
     <div id="header-blog">
         <header>
-            <h1 class="text-white text-center mt-4">Blog</h1>
+            <h2 class="text-white text-center mt-4">{{ title }}</h2>
         </header>
     </div>
 </template>
+<script>
+export default {
+    props: ['title'],
+    data(){
+        return {
+
+        }
+    }
+}
+</script>
+
 <style scoped>
 header{
     display: grid;

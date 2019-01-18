@@ -118,8 +118,6 @@ Vue.component('section_studio_especialidades', sectionStudioEspecialidades);
 Vue.component('section_newsletter_especialidades', sectionNewsletterEspecialidades);
 
 // Blog
-Vue.component('blog', blog);
-Vue.component('post', post);
 Vue.component('comentarios_post', comentariosPost);
 Vue.component('header_blog', headerPost);
 Vue.component('post_relacionados_post', postRelacionadosPost);
@@ -149,6 +147,11 @@ let router = new Router({
             path: '/blog',
             name: 'blog',
             component: blog
+        },
+        {
+            path: '/post',
+            name: 'post',
+            component: post
         },
 
     ],

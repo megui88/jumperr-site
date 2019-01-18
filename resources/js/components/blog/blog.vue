@@ -1,9 +1,9 @@
 <template>
     <div id="blog-posts">
         
-        <header_blog/>
+        <header_blog title="Blog"/>
 
-        <section class="wrapper">
+        <section class="wrapper py-5">
             <article v-for="(post, id) in posts" :key="id">
                 <figure>
                     <img :src="post.image" :alt="post.title">
@@ -23,7 +23,7 @@
                     {{ post.description }}
                 </div>
                 <div class="read-more">
-                    <router-link :to="post.url">VER MÁS</router-link>
+                    <router-link to="post">VER MÁS</router-link>
                 </div>
             </article>
         </section>
@@ -62,7 +62,7 @@ export default {
                     published_at: '08/16/2018',
                     category: 'Categoria',
                     owner_user: 'Jumperr',
-                    image: '/images/blog/jumperr-blog1-home.jpg'
+                    image: '/images/blog/jumperr_fotooriginal_blog-min.jpg'
                 },
                 {
                     id: 4,
@@ -121,6 +121,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
+    
     .wrapper{
         max-width: 1140px;
         height: auto;
@@ -128,34 +129,103 @@ export default {
         padding-right: 15px;
         padding-left: 15px;
         display: grid;
-        grid-template-columns: 250px 250px 250px 250px;
+        grid-template-columns: 100%;
         grid-gap: 20px;
     }
     article figure img{
-        width: 100%;
-        max-width: 250px; 
-        height: 250px;
+        width: 100%; 
+        height: auto;
         display: grid;
         object-fit: cover;
     }
-    article:nth-child(1){
-        grid-column: span 2;
+    article .description, article .date-breadcrumbs,{
+        display: none;
     }
-    article:nth-child(1) figure img{
-        width: 100%;
-        max-width: 520px; 
-        height: 520px;
-        display: grid;
-        object-fit: cover;
+    article:nth-child(1) .description, 
+    article:nth-child(2) .description, 
+    article:nth-child(1) .date-breadcrumbs,
+    article:nth-child(2) .date-breadcrumbs{
+        display: block;
     }
-    article:nth-child(2){
-        grid-column: span 2;
+    article:nth-child(1) .category, 
+    article:nth-child(2) .category{
+        display: none;
     }
-    article:nth-child(2) figure img{
-        width: 100%;
-        max-width: 520px; 
-        height: 520px;
-        display: grid;
-        object-fit: cover;
+    article:nth-child(1) .title-border-botton:after,
+    article:nth-child(2) .title-border-botton:after{
+        content: ' ';
+        border-bottom: 1px solid #f26336;
+        display: block;
+        width: 160px;
+        margin: 1rem 0 1.1rem;
+    }
+    .category{
+        color: #f26336;
+    }
+    
+    @media (min-width: 576px) {  }
+
+    // Medium devices (tablets, 768px and up)
+    @media (min-width: 768px) {
+    }
+
+    // Large devices (desktops, 992px and up)
+    @media (min-width: 992px) {
+        .wrapper{
+            grid-template-columns: 220px 220px 220px 220px;
+            grid-gap: 20px;
+            justify-content: center;
+        }
+        article figure img{
+            width: 100%;
+            max-width: 200px; 
+            height: 200px;
+            display: grid;
+            object-fit: cover;
+        }
+        article:nth-child(1){
+            grid-column: span 2;
+        }
+        article:nth-child(1) figure img, article:nth-child(2) figure img{
+            width: 100%;
+            max-width: 480px; 
+            height: 480px;
+            display: grid;
+            object-fit: cover;
+        }
+        article:nth-child(2){
+            grid-column: span 2;
+        }
+        article h3{
+            font-size: 1.4rem;
+        }
+    }
+
+    // Extra large devices (large desktops, 1200px and up)
+    @media (min-width: 1200px) {
+        .wrapper{
+            grid-template-columns: 264px 264px 264px 264px;
+            grid-gap: 25px 15px;
+        }
+        article figure img{
+            width: 100%;
+            max-width: 264px; 
+            height: 264px;
+            display: grid;
+            object-fit: cover;
+        }
+        article:nth-child(1){
+            grid-column: span 2;
+        }
+        article:nth-child(1) figure img, article:nth-child(2) figure img{
+            width: 100%;
+            max-width: 542px; 
+            height: 542px;
+            display: grid;
+            object-fit: cover;
+        }
+        article:nth-child(2){
+            grid-column: span 2;
+        }
     }
 </style>
