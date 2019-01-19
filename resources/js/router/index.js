@@ -70,6 +70,18 @@ import headerPost from '../components/blog/partials/header.vue';
 import postRelacionadosPost from '../components/blog/partials/postRelacionados.vue';
 import sharedPost from '../components/blog/partials/shared.vue';
 
+// import componentes partners
+import ContentPartners from '../components/partners/ContentPartners.vue';
+import sectionPartnersHeader from '../components/partners/sectionPartnersHeader.vue';
+import sectionPartnersPresentation from '../components/partners/sectionPartnersPresentation.vue';
+import sectionPartnersSevicePresentation from '../components/partners/sectionPartnersSevicePresentation.vue';
+import sectionPartnersSevices from '../components/partners/sectionPartnersSevices.vue';
+
+/* Components partners */
+Vue.component('section_partners_header', sectionPartnersHeader);
+Vue.component('section_partners_presentation', sectionPartnersPresentation);
+Vue.component('section_partners_service_presentation', sectionPartnersSevicePresentation);
+Vue.component('section_partners_services', sectionPartnersSevices);
 
 /*
 * Components globas
@@ -124,6 +136,8 @@ Vue.component('post_relacionados_post', postRelacionadosPost);
 Vue.component('shared_post', sharedPost);
 
 
+
+
 // Routes
 let router = new Router({
     mode:'history',
@@ -153,6 +167,11 @@ let router = new Router({
             name: 'post',
             component: post
         },
+        {
+            path: '/partners',
+            name: 'ContentPartners',
+            component: ContentPartners
+        }
 
     ],
     scrollBehavior (to, from, savedPosition) {
