@@ -60,7 +60,7 @@
     @media (min-width: 992px) {
         .wrapper{
             width: 100%;
-            min-height: 600px;
+            min-height: 700px;
             position: relative;
             z-index: -1;
             background-color: #fff;
@@ -80,8 +80,8 @@
             bottom: 5%;
         }
         .img-central{
-            width: 560px;
-            height: 400px;
+            width: 600px;
+            height: 420px;
             object-fit: cover;
         }
     }
