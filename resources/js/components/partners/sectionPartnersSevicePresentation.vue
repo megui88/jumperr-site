@@ -1,16 +1,21 @@
 <template>
     <div id="servicePresentation">
-        <div class="container">
+        <div class="container pt-5">
             <div class="row">
                 <div class="col-12">
-                    <h3 class="text-center title-border-bottom">Proveemos servicios digitales  de calidad</h3>
+                    <h3 class="text-center title-border-bottom">{{$store.getters.getTags({tag:'partners_text2'})}}</h3>
                 </div>
                 <div class="col-12">
-                    <swiper :options="swiperOption" class="p-4">
+                    <swiper :options="swiperOption" class="p-md-4">
                         <swiper-slide v-for="(service, index) in services" :key="index">
                             <div class="cart">
                                 <div class="cart-header">
-
+                                    <div class="image">
+                                        <img :src="service.icono" :alt="service.title">
+                                    </div>
+                                    <div class="title">
+                                        <h3 class="text-white">{{service.title}}</h3>
+                                    </div>
                                 </div>
                                 <div class="cart-body">
                                     <p>{{ service.description }}</p>
@@ -22,6 +27,8 @@
                 </div>
             </div>
         </div>
+        <img class="img-float-1 d-none d-md-inline-block" src="/images/iconos/nube.svg" alt="elemento jumperr">
+        <img class="img-float-2 d-none d-md-inline-block" src="/images/iconos/nube.svg" alt="elemento jumperr">
     </div>
 </template>
 <script>
@@ -30,26 +37,25 @@ export default {
         return {
             services: [
                 {
-                    icono:  '/images/partners/iconi_2.svg',
-                    title: 'Proveemos servicios digitales de calidad',  
-                    description: 'Através de nuestra red de técnicos y colaboradores podemos apoyar a nuestros clientes en el posicionamiento estratégico online de tu marca.'
+                    icono:  '/images/partners/laptop_serviciosdigitales.png',
+                    title:  $store.getters.getTags({tag:'partners_text2'}),
+                    description: $store.getters.getTags({tag:'partners_text3'})
                 },
                 {
                     icono:  '/images/partners/iconi_2.svg',
-                    title: 'Innovación de proceso',  
-                    description: 'Nuestros socios y clientes siempre pueden contar con nuestros consejos y asesoramientos garantizados por décadas de experiencia y  concentimiento.'
+                    title: $store.getters.getTags({tag:'partners_title2'}),
+                    description: $store.getters.getTags({tag:'partners_text4'})
                 },
                 {
-                    icono:  '/images/partners/iconi_2.svg',
-                    title: 'Diseño y Desarrollo',  
-                    description: 'Todos nuestros proyectos se llevan a cabo con la concepción de una relación que perdura en el tiempo, para mejorar y refinar cada proceso.'
+                    icono:  '/images/partners/icono3_serviciosdigitales.png',
+                    title: $store.getters.getTags({tag:'partners_title3'}),
+                    description: $store.getters.getTags({tag:'partners_text5'})
                 },
                 {
-                    icono:  '/images/partners/iconi_2.svg',
-                    title: 'Estrategias de campañas de marketing',  
-                    description: 'Prestando especial atención al mundo de las redes sociales y los motores de busquedas, apoyamos a nuestros clientes en todas las fases de lanzamiento y crecimiento.'
+                    icono:  '/images/partners/icono4_serviciosdigitales.svg',
+                    title: $store.getters.getTags({tag:'partners_title4'}),
+                    description: $store.getters.getTags({tag:'partners_text6'})
                 },
-                
             ],
             swiperOption: {
             slidesPerView: 2,
@@ -72,13 +78,13 @@ export default {
                 slidesPerColumn: 1,
 
                 },
-                560: {
+                768: {
                 slidesPerView: 1,
                 spaceBetween: 30,
                 slidesPerColumn: 1,
 
                 },
-                768: {
+                992: {
                 slidesPerView: 2,
                 spaceBetween: 30,
                 slidesPerColumn: 2,
@@ -91,6 +97,10 @@ export default {
 </script>
 
 <style scoped>
+    #servicePresentation{
+        position: relative;
+        background-color: #fff;
+    }
     .title-border-bottom:after {
         content: ' ';
         border-bottom: 1px solid #f26336;
@@ -110,12 +120,176 @@ export default {
     .cart-header{
         width: inherit;
         height: 50%;
-        background-color:red;
+        background-color: #f26336;
+        text-align: center;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 50% 50%;
+    }
+    .swiper-slide:first-child .cart-header{
+        background-color: #333;
+    }
+    .swiper-slide:last-child .cart-header{
+        background-color: #333;
+    }
+    .cart-header .image{
+        display: flex;
+        align-items: flex-end;
+    }
+    .cart-header .image img{
+        height: 80px;
+        margin: 0 auto;
+    }
+    .cart-header .title {
+
+    }
+    .cart-header h3{
+        font-size: 1.6rem;
+        margin-top: 1rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
     .cart-body{
         width: inherit;
         height: 50%;
         background-color: white;
+        padding: 1.8rem 2.4rem;
+        font-size: 1.1rem;
+        text-align: center;
     }
+    @media (min-width: 768px) {
+        .cart-header h3{
+            font-size: 2rem;
+        }
+        .cart-body{
+            font-size: 1.3rem;
+        }
+    }
+
+    /* animaciones */
+    .img-float-1{
+        position: absolute;
+        top: -50px;
+        left: -45px;
+        display: inline-block;
+        width: 160px;
+        animation: float 20s linear infinite;
+    }
+    .img-float-2{
+        position: absolute;
+        bottom: 45%;
+        left: -45px;
+        display: inline-block;
+        width: 160px;
+        animation: float 30s linear infinite;
+    }
+@keyframes float {
+	0% {
+        left: -5%;
+        transform: translateY(-10px);
+        opacity: 1;
+	}
+    5% {
+        left: 5%;
+        transform: translateY(10px);
+        opacity: 1;
+	}
+    10% {
+        left: 10%;
+        transform: translateY(-10px);
+        opacity: 1;
+	}
+    15% {
+        left: 15%;
+        transform: translateY(10px);
+        opacity: 1;
+	}
+
+    20% {
+        left: 20%;
+        transform: translateY(-10px);
+        opacity: 1;
+	}
+    25% {
+        left: 25%;
+        transform: translateY(10px);
+        opacity: 1;
+	}
+    30% {
+        left: 30%;
+        transform: translateY(-10px);
+        opacity: 1;
+	}
+    35% {
+        left: 35%;
+        transform: translateY(10px);
+        opacity: 1;
+	}
+    40% {
+        left: 40%;
+        transform: translateY(-10px);
+        opacity: 1;
+	}
+    45% {
+        left: 45%;
+        transform: translateY(10px);
+        opacity: 1;
+	}
+	50% {
+        left: 50%;
+        transform: translateY(-10px);
+        opacity: 1;
+	}
+    55% {
+        left: 55%;
+        transform: translateY(10px);
+        opacity: 1;
+	}
+    60% {
+        left: 60%;
+        transform: translateY(-10px);
+        opacity: 1;
+	}
+    65% {
+        left: 65%;
+        transform: translateY(10px);
+        opacity: 1;
+	}
+    70% {
+        left: 70%;
+        transform: translateY(-10px);
+        opacity: 1;
+	}
+    75% {
+        left: 75%;
+        transform: translateY(10px);
+        opacity: 1;
+	}
+    80% {
+        left: 80%;
+        transform: translateY(-10px);
+        opacity: 1;
+    }
+    85% {
+        left: 85%;
+        transform: translateY(10px);
+        opacity: 1;
+    }
+    90% {
+        left: 90%;
+        transform: translateY(-10px);
+        opacity: 1;
+	}
+    95% {
+        left: 100%;
+        transform: translateY(10px);
+        opacity: 1;
+	}
+	100% {
+        left: 150%;
+        transform: translateY(-10px);
+        opacity: 0;
+	}
+}
 </style>
 
