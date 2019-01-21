@@ -8731,7 +8731,7 @@ function load() {
 
   // If debug isn't set in LS, and we're in Electron, try to load $DEBUG
   if (!r && typeof process !== 'undefined' && 'env' in process) {
-    r = Object({"MIX_PUSHER_APP_KEY":"","MIX_PUSHER_APP_CLUSTER":"mt1","NODE_ENV":"development"}).DEBUG;
+    r = Object({"NODE_ENV":"development"}).DEBUG;
   }
 
   return r;
@@ -72249,8 +72249,8 @@ var router = new vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]({
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /home/usuario/lampstack-7.2.9-0/apache2/htdocs/jumperr/resources/js/app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! /home/usuario/lampstack-7.2.9-0/apache2/htdocs/jumperr/resources/sass/app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! /home/usuario/lampstack-7.2.8-0/apache2/htdocs/jumperr/resources/js/app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! /home/usuario/lampstack-7.2.8-0/apache2/htdocs/jumperr/resources/sass/app.scss */"./resources/sass/app.scss");
 
 
 /***/ })
