@@ -3,7 +3,7 @@
         <div class="container pt-5">
             <div class="row">
                 <div class="col-12">
-                    <h3 class="text-center title-border-bottom">Proveemos servicios digitales  de calidad</h3>
+                    <h3 class="text-center title-border-bottom">{{$store.getters.getTags({tag:'partners_text2'})}}</h3>
                 </div>
                 <div class="col-12">
                     <swiper :options="swiperOption" class="p-md-4">
@@ -38,24 +38,24 @@ export default {
             services: [
                 {
                     icono:  '/images/partners/laptop_serviciosdigitales.png',
-                    title: 'Proveemos servicios digitales de calidad',  
-                    description: 'Através de nuestra red de técnicos y colaboradores podemos apoyar a nuestros clientes en el posicionamiento estratégico online de tu marca.'
+                    title:  $store.getters.getTags({tag:'partners_text2'}),
+                    description: $store.getters.getTags({tag:'partners_text3'})
                 },
                 {
                     icono:  '/images/partners/iconi_2.svg',
-                    title: 'Innovación de proceso',  
-                    description: 'Nuestros socios y clientes siempre pueden contar con nuestros consejos y asesoramientos garantizados por décadas de experiencia y  concentimiento.'
+                    title: $store.getters.getTags({tag:'partners_title2'}),
+                    description: $store.getters.getTags({tag:'partners_text4'})
                 },
                 {
                     icono:  '/images/partners/icono3_serviciosdigitales.png',
-                    title: 'Diseño y Desarrollo',  
-                    description: 'Todos nuestros proyectos se llevan a cabo con la concepción de una relación que perdura en el tiempo, para mejorar y refinar cada proceso.'
+                    title: $store.getters.getTags({tag:'partners_title3'}),
+                    description: $store.getters.getTags({tag:'partners_text5'})
                 },
                 {
                     icono:  '/images/partners/icono4_serviciosdigitales.svg',
-                    title: 'Estrategias de campañas de marketing',  
-                    description: 'Prestando especial atención al mundo de las redes sociales y los motores de busquedas, apoyamos a nuestros clientes en todas las fases de lanzamiento y crecimiento.'
-                },           
+                    title: $store.getters.getTags({tag:'partners_title4'}),
+                    description: $store.getters.getTags({tag:'partners_text6'})
+                },
             ],
             swiperOption: {
             slidesPerView: 2,
@@ -141,7 +141,7 @@ export default {
         margin: 0 auto;
     }
     .cart-header .title {
-        
+
     }
     .cart-header h3{
         font-size: 1.6rem;

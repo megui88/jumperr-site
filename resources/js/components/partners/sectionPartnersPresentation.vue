@@ -8,12 +8,12 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-md-8 mx-auto">
-                        <h4 class="text-center title-border-bottom">Potenciamos tus ideas, <strong>aumentamos tu exito</strong>.</h4>
+                        {{$store.getters.getTags({tag:'partners_text22'})}}
                         <div class="text-center">
                             <img class="img-fluid img-central" src="/images/partners/imagen2.jpg" alt="Jumperr partners">
                         </div>
                         <h3 class="text-white text-center mt-3">
-                            Qué ofrecemos para hacer la cartera de clientes a nuestros socios?
+                            {{$store.getters.getTags({tag:'partners_text23'})}}
                         </h3>
                     </div>
                 </div>

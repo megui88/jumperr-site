@@ -4,7 +4,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12">
-                        <h3 class="text-center title-border-bottom">Proveemos servicios digitales  de calidad</h3>
+                        <h3 class="text-center title-border-bottom">{{$store.getters.getTags({tag:'partners_text2'})}}</h3>
                     </div>
                     <div class="col-12">
                         <swiper :options="swiperOption" class="p-md-4">
@@ -29,10 +29,10 @@
                 </div>
             </div>
         </div>
-            <img class="img-float-1  d-none d-md-inline-block" src="/images/iconos/circulogrueso.svg" alt="elemento jumperr">            
+            <img class="img-float-1  d-none d-md-inline-block" src="/images/iconos/circulogrueso.svg" alt="elemento jumperr">
             <img class="img-float-2  d-none d-md-inline-block" src="/images/iconos/nube_2.svg" alt="elemento jumperr">
             <img class="img-float-3 " src="/images/iconos/circulo.svg" alt="elemento jumperr">
-            <img class="img-float-4" src="/images/partners/imagencircular.png" alt="elemento jumperr">            
+            <img class="img-float-4" src="/images/partners/imagencircular.png" alt="elemento jumperr">
 
     </div>
 </template>
@@ -43,90 +43,74 @@ export default {
             services: [
                 {
                     icono:  '/images/partners/001-sitemap.svg',
-                    title: 'DOMINIO & HOSTING',  
-                    description: `Identificación del dominio de un nuevo registro o transferencia del dominio existente, con su correspondiente web mail. El servicio de alojamiento se proporcionará a través de nuestros servidores.`
+                    title: $store.getters.getTags({tag:'partners_title5'}),
+                    description: $store.getters.getTags({tag:'partners_text9'})
                 },
                 {
                     icono:  '/images/partners/002-paper.svg',
-                    title: 'BOLETÍN',  
-                    description: `Gestión de una lista de contactos personales con la posibilidad de enviar correo electrónico y boletines personalizados con software profesional.`
+                    title: $store.getters.getTags({tag:'partners_title6'}),
+                    description: $store.getters.getTags({tag:'partners_text10'})
                 },
                 {
                     icono:  '/images/partners/009-web-site.svg',
-                    title: 'ENTREVISTA',  
-                    description: `Realización de una entrevista telefónica para recopilar información específica sobre tu empresa`
-                },  
+                    title: $store.getters.getTags({tag:'partners_title7'}),
+                    description: $store.getters.getTags({tag:'partners_text11'})}}
+                },
                 {
                     icono:  '/images/partners/003-picture.svg',
-                    title: 'BANNERS E IMÁGENES',  
-                    description: `Creación y publicación de banners e imágenes (usando fotos del cliente o categoría de los archivos fotográficos) cargadas por el equipo editorial.`
-                },  
+                    title: $store.getters.getTags({tag:'partners_title8'}),
+                    description: $store.getters.getTags({tag:'partners_text12'})
+                },
                 {
                     icono:  '/images/partners/004-global.svg',
-                    title: 'RESPONSIVE',  
-                    description: `Optimización de sitios web para computadoras, teléfonos inteligentes y tablets.`
+                    title: $store.getters.getTags({tag:'partners_title9'}),
+                    description: $store.getters.getTags({tag:'partners_text13'})
                 },
                 {
                     icono:  '/images/partners/005-close-envelope.svg',
-                    title: 'NEWSLETTER',  
+                    title: 'NEWSLETTER',
                     description: `Gestion de una lista de contactos personales con la posibilidad de enviar correo electronico y newsletters personalizados por medio de un software profesional.`
-                },  
+                },
                 {
                     icono:  '/images/partners/006-graph.svg',
-                    title: 'PANEL DE CONTROL',  
-                    description: `Acceso a un panel de control para la gestión autónoma de sus textos, imágenes, videos y ofertas.`
-                },  
+                    title: $store.getters.getTags({tag:'partners_title10'}),
+                    description: $store.getters.getTags({tag:'partners_text14'})
+                },
                 {
                     icono:  '/images/partners/007-pencil-edit-button.svg',
-                    title: 'REDACCIÓN DE CONTENIDO',  
-                    description: `Creación e inserción de contenido textual en una perspectiva SEO para una correcta optimización de su sitio web.`
-                },           
+                    title: $store.getters.getTags({tag:'partners_title11'}),
+                    description: $store.getters.getTags({tag:'partners_text15'})
+                },
                 {
                     icono:  '/images/partners/008-content.svg',
-                    title: 'BLOG',  
-                    description: `Apertura y configuración, primer post de bienvenida, guía y manual de usuario.`
-                },  
+                    title: $store.getters.getTags({tag:'partners_title12'}),
+                    description: $store.getters.getTags({tag:'partners_text16'})
+                },
                 {
                     icono:  '/images/partners/009-web-site.svg',
-                    title: 'ASISTENCIA WEB',  
-                    description: `Soporte y asistencia de un equipo web profesional, hasta que su sitio esté en línea y se vcumplan 7 tickets de asistencia post-publicación.`
+                    title: $store.getters.getTags({tag:'partners_title12'}),
+                    description: $store.getters.getTags({tag:'partners_text17'})
                 },
                 {
                     icono:  '/images/partners/010-trello-website-logo.svg',
-                    title: 'SECCIONES DEL SITIO',  
-                    description: `
-                    <ol>
-                        <li>Página de inicio</li>
-                        <li>Nosotros</li>
-                        <li>Galería y Banners</li>
-                        <li>Ofertas</li>
-                        <li>Blog</li>
-                        <li>Contactos</li>
-                        <li>Comercio Electrónico / Reserva, etc</li>
-                    </ol>
-                    `
-                },  
+                    title: $store.getters.getTags({tag:'partners_title13'}),
+                    description: $store.getters.getTags({tag:'partners_text18'})
+                },
                 {
                     icono:  '/images/partners/011-label.svg',
-                    title: 'TAG',  
-                    description: `
-                    Sistema de asignación de etiquetas TAG:<br>
-                    Palabra clave + Municipio<br>
-                    Palabra clave + Provincia<br>
-                    Palabra clave + Pipo<br>
-                    Palabra clave + Social Ash #<br>
-                    `
-                },  
+                    title: $store.getters.getTags({tag:'partners_title14'}),
+                    description: $store.getters.getTags({tag:'partners_text19'})
+                },
                 {
                     icono:  '/images/partners/012-cart.svg',
-                    title: 'E-COMMERCE',  
-                    description: `Acceso al panel para la publicación y venta de productos o servicios.`
+                    title: $store.getters.getTags({tag:'partners_title15'}),
+                    description: $store.getters.getTags({tag:'partners_text20'})
                 },
                 {
                     icono:  '/images/partners/013-smartphone.svg',
-                    title: 'SOCIAL MEDIA',  
-                    description: `Apertura de la FanPage de Facebook, Google+, Google MyBussiness e Instagram Plug-in automático para compartir sus noticias / promo de su sitio web.`
-                },  
+                    title: $store.getters.getTags({tag:'partners_title16'}),
+                    description: $store.getters.getTags({tag:'partners_text21'})
+                },
 
 
             ],
@@ -251,7 +235,7 @@ export default {
             width: 36%;
             z-index: 1000;
         }
-    }    
+    }
     @media (min-width: 992px) {
         #servicesPartners{
             min-height: auto;
