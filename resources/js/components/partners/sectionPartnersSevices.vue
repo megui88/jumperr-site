@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-white">
+    <div class="bg-white position-relative">
         <div id="servicesPartners">
             <div class="container">
                 <div class="row">
@@ -28,8 +28,12 @@
                     </div>
                 </div>
             </div>
-            <img class="img-float-1 d-none d-md-inline-block" src="/images/iconos/nube_2.svg" alt="elemento jumperr">
         </div>
+            <img class="img-float-1  d-none d-md-inline-block" src="/images/iconos/circulogrueso.svg" alt="elemento jumperr">            
+            <img class="img-float-2  d-none d-md-inline-block" src="/images/iconos/nube_2.svg" alt="elemento jumperr">
+            <img class="img-float-3 " src="/images/iconos/circulo.svg" alt="elemento jumperr">
+            <img class="img-float-4" src="/images/partners/imagencircular.png" alt="elemento jumperr">            
+
     </div>
 </template>
 <script>
@@ -173,6 +177,7 @@ export default {
         position: relative;
         background-color: #f8f8f8;
         padding-top: 80px;
+        min-height: 900px;
     }
     .title-border-bottom:after {
         content: ' ';
@@ -191,8 +196,187 @@ export default {
     .cart-body p{
         font-size: 1.1rem;
     }
+    /*  */
+    /*      animaciones */
+    /*  */
+    .img-float-1{
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        transform: translate(50%, -50%);
+        display: inline-block;
+        width: 140px;
+        animation: opacidad 20s linear infinite;
+    }
+    .img-float-2{
+        position: absolute;
+        top: 480px;
+        bottom: auto;
+        left: 0px;
+        display: inline-block;
+        width: 180px;
+        animation: float 15s linear infinite;
+    }
+    .img-float-3{
+        position: absolute;
+        bottom: 160px;
+        left: -40px;
+        display: inline-block;
+        width: 100px;
+        animation: opacidad 20s linear infinite;
+    }
+    .img-float-4{
+        position: absolute;
+        bottom: -80px;
+        right: 0px;
+        display: inline-block;
+        width: 60%;
+        z-index: 1000;
+    }
+    @media (min-width: 768px) and (max-width: 991.98px) {
+        .img-float-2{
+            position: absolute;
+            top: auto;
+            bottom: 40px;
+            left: 0px;
+            display: inline-block;
+            width: 140px;
+            animation: float 15s linear infinite;
+        }
+        .img-float-4{
+            position: absolute;
+            bottom: -80px;
+            right: 0px;
+            display: inline-block;
+            width: 36%;
+            z-index: 1000;
+        }
+    }    
+    @media (min-width: 992px) {
+        #servicesPartners{
+            min-height: auto;
+        }
+        .img-float-3{
+            position: absolute;
+            bottom: 380px;
+            left: -40px;
+            display: inline-block;
+            width: 100px;
+            animation: opacidad 20s linear infinite;
+        }
+        .img-float-4{
+            position: absolute;
+            bottom: 0px;
+            right: 0px;
+            transform: translateY(40%);
+            display: inline-block;
+            z-index: 1000;
+            width: 30%;
+        }
+    }
 
-    /* animaciones */
-    
+@keyframes opacidad {
+    0%{
+        transform: rotate(0deg);
+        opacity: 1;
+    }
+    50%{
+        opacity: .5;
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(360deg);
+        opacity: 1;
+
+    }
+}
+
+@keyframes float {
+	0% {
+        left: -5%;
+        opacity: 1;
+	}
+    5% {
+        left: 5%;
+        opacity: 1;
+	}
+    10% {
+        left: 10%;
+        opacity: 1;
+	}
+    15% {
+        left: 15%;
+        opacity: 1;
+	}
+
+    20% {
+        left: 20%;
+        opacity: 1;
+	}
+    25% {
+        left: 25%;
+        opacity: 1;
+	}
+    30% {
+        left: 30%;
+        opacity: 1;
+	}
+    35% {
+        left: 35%;
+        opacity: 1;
+	}
+    40% {
+        left: 40%;
+        opacity: 1;
+	}
+    45% {
+        left: 45%;
+        opacity: 1;
+	}
+	50% {
+        left: 50%;
+        opacity: 1;
+	}
+    55% {
+        left: 55%;
+        opacity: 1;
+	}
+    60% {
+        left: 60%;
+        opacity: 1;
+	}
+    65% {
+        left: 65%;
+        opacity: 1;
+	}
+    70% {
+        left: 70%;
+        opacity: 1;
+	}
+    75% {
+        left: 75%;
+        opacity: 1;
+	}
+    80% {
+        left: 80%;
+        opacity: 1;
+    }
+    85% {
+        left: 85%;
+        opacity: 1;
+    }
+    90% {
+        left: 90%;
+        opacity: 1;
+	}
+    95% {
+        left: 100%;
+        opacity: 1;
+	}
+	100% {
+        left: 150%;
+        opacity: 0;
+	}
+}
 </style>
 

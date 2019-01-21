@@ -3530,6 +3530,10 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -8641,7 +8645,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\n#servicesPartners[data-v-099d2d45]{\n    -webkit-clip-path: polygon(0 4%, 100% 0, 100% 100%, 0% 100%);\n    clip-path: polygon(0 4%, 100% 0, 100% 100%, 0% 100%);\n    position: relative;\n    background-color: #f8f8f8;\n    padding-top: 80px;\n}\n.title-border-bottom[data-v-099d2d45]:after {\n    content: ' ';\n    border-bottom: 1px solid #f26336;\n    display: block;\n    width: 160px;\n    margin: 1.3rem auto 1.1rem;\n}\n.cart-header .image img[data-v-099d2d45]{\n    width: 46px;\n}\n.title h3[data-v-099d2d45]{\n    font-size: 1.4rem;\n    margin-top: 1rem;\n}\n.cart-body p[data-v-099d2d45]{\n    font-size: 1.1rem;\n}\n\n/* animaciones */\n\n", ""]);
+exports.push([module.i, "\n#servicesPartners[data-v-099d2d45]{\n        -webkit-clip-path: polygon(0 4%, 100% 0, 100% 100%, 0% 100%);\n        clip-path: polygon(0 4%, 100% 0, 100% 100%, 0% 100%);\n        position: relative;\n        background-color: #f8f8f8;\n        padding-top: 80px;\n        min-height: 900px;\n}\n.title-border-bottom[data-v-099d2d45]:after {\n        content: ' ';\n        border-bottom: 1px solid #f26336;\n        display: block;\n        width: 160px;\n        margin: 1.3rem auto 1.1rem;\n}\n.cart-header .image img[data-v-099d2d45]{\n        width: 46px;\n}\n.title h3[data-v-099d2d45]{\n        font-size: 1.4rem;\n        margin-top: 1rem;\n}\n.cart-body p[data-v-099d2d45]{\n        font-size: 1.1rem;\n}\n    /*  */\n    /*      animaciones */\n    /*  */\n.img-float-1[data-v-099d2d45]{\n        position: absolute;\n        top: 0px;\n        right: 0px;\n        -webkit-transform: translate(50%, -50%);\n                transform: translate(50%, -50%);\n        display: inline-block;\n        width: 140px;\n        -webkit-animation: opacidad-data-v-099d2d45 20s linear infinite;\n                animation: opacidad-data-v-099d2d45 20s linear infinite;\n}\n.img-float-2[data-v-099d2d45]{\n        position: absolute;\n        top: 480px;\n        bottom: auto;\n        left: 0px;\n        display: inline-block;\n        width: 180px;\n        -webkit-animation: float-data-v-099d2d45 15s linear infinite;\n                animation: float-data-v-099d2d45 15s linear infinite;\n}\n.img-float-3[data-v-099d2d45]{\n        position: absolute;\n        bottom: 160px;\n        left: -40px;\n        display: inline-block;\n        width: 100px;\n        -webkit-animation: opacidad-data-v-099d2d45 20s linear infinite;\n                animation: opacidad-data-v-099d2d45 20s linear infinite;\n}\n.img-float-4[data-v-099d2d45]{\n        position: absolute;\n        bottom: -80px;\n        right: 0px;\n        display: inline-block;\n        width: 60%;\n        z-index: 1000;\n}\n@media (min-width: 768px) and (max-width: 991.98px) {\n.img-float-2[data-v-099d2d45]{\n            position: absolute;\n            top: auto;\n            bottom: 40px;\n            left: 0px;\n            display: inline-block;\n            width: 140px;\n            -webkit-animation: float-data-v-099d2d45 15s linear infinite;\n                    animation: float-data-v-099d2d45 15s linear infinite;\n}\n.img-float-4[data-v-099d2d45]{\n            position: absolute;\n            bottom: -80px;\n            right: 0px;\n            display: inline-block;\n            width: 36%;\n            z-index: 1000;\n}\n}\n@media (min-width: 992px) {\n#servicesPartners[data-v-099d2d45]{\n            min-height: auto;\n}\n.img-float-3[data-v-099d2d45]{\n            position: absolute;\n            bottom: 380px;\n            left: -40px;\n            display: inline-block;\n            width: 100px;\n            -webkit-animation: opacidad-data-v-099d2d45 20s linear infinite;\n                    animation: opacidad-data-v-099d2d45 20s linear infinite;\n}\n.img-float-4[data-v-099d2d45]{\n            position: absolute;\n            bottom: 0px;\n            right: 0px;\n            -webkit-transform: translateY(40%);\n                    transform: translateY(40%);\n            display: inline-block;\n            z-index: 1000;\n            width: 30%;\n}\n}\n@-webkit-keyframes opacidad-data-v-099d2d45 {\n0%{\n        -webkit-transform: rotate(0deg);\n                transform: rotate(0deg);\n        opacity: 1;\n}\n50%{\n        opacity: .5;\n        -webkit-transform: rotate(180deg);\n                transform: rotate(180deg);\n}\n100%{\n        -webkit-transform: rotate(360deg);\n                transform: rotate(360deg);\n        opacity: 1;\n}\n}\n@keyframes opacidad-data-v-099d2d45 {\n0%{\n        -webkit-transform: rotate(0deg);\n                transform: rotate(0deg);\n        opacity: 1;\n}\n50%{\n        opacity: .5;\n        -webkit-transform: rotate(180deg);\n                transform: rotate(180deg);\n}\n100%{\n        -webkit-transform: rotate(360deg);\n                transform: rotate(360deg);\n        opacity: 1;\n}\n}\n@-webkit-keyframes float-data-v-099d2d45 {\n0% {\n        left: -5%;\n        opacity: 1;\n}\n5% {\n        left: 5%;\n        opacity: 1;\n}\n10% {\n        left: 10%;\n        opacity: 1;\n}\n15% {\n        left: 15%;\n        opacity: 1;\n}\n20% {\n        left: 20%;\n        opacity: 1;\n}\n25% {\n        left: 25%;\n        opacity: 1;\n}\n30% {\n        left: 30%;\n        opacity: 1;\n}\n35% {\n        left: 35%;\n        opacity: 1;\n}\n40% {\n        left: 40%;\n        opacity: 1;\n}\n45% {\n        left: 45%;\n        opacity: 1;\n}\n50% {\n        left: 50%;\n        opacity: 1;\n}\n55% {\n        left: 55%;\n        opacity: 1;\n}\n60% {\n        left: 60%;\n        opacity: 1;\n}\n65% {\n        left: 65%;\n        opacity: 1;\n}\n70% {\n        left: 70%;\n        opacity: 1;\n}\n75% {\n        left: 75%;\n        opacity: 1;\n}\n80% {\n        left: 80%;\n        opacity: 1;\n}\n85% {\n        left: 85%;\n        opacity: 1;\n}\n90% {\n        left: 90%;\n        opacity: 1;\n}\n95% {\n        left: 100%;\n        opacity: 1;\n}\n100% {\n        left: 150%;\n        opacity: 0;\n}\n}\n@keyframes float-data-v-099d2d45 {\n0% {\n        left: -5%;\n        opacity: 1;\n}\n5% {\n        left: 5%;\n        opacity: 1;\n}\n10% {\n        left: 10%;\n        opacity: 1;\n}\n15% {\n        left: 15%;\n        opacity: 1;\n}\n20% {\n        left: 20%;\n        opacity: 1;\n}\n25% {\n        left: 25%;\n        opacity: 1;\n}\n30% {\n        left: 30%;\n        opacity: 1;\n}\n35% {\n        left: 35%;\n        opacity: 1;\n}\n40% {\n        left: 40%;\n        opacity: 1;\n}\n45% {\n        left: 45%;\n        opacity: 1;\n}\n50% {\n        left: 50%;\n        opacity: 1;\n}\n55% {\n        left: 55%;\n        opacity: 1;\n}\n60% {\n        left: 60%;\n        opacity: 1;\n}\n65% {\n        left: 65%;\n        opacity: 1;\n}\n70% {\n        left: 70%;\n        opacity: 1;\n}\n75% {\n        left: 75%;\n        opacity: 1;\n}\n80% {\n        left: 80%;\n        opacity: 1;\n}\n85% {\n        left: 85%;\n        opacity: 1;\n}\n90% {\n        left: 90%;\n        opacity: 1;\n}\n95% {\n        left: 100%;\n        opacity: 1;\n}\n100% {\n        left: 150%;\n        opacity: 0;\n}\n}\n", ""]);
 
 // exports
 
@@ -54218,7 +54222,7 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "bg-white" }, [
+  return _c("div", { staticClass: "bg-white position-relative" }, [
     _c("div", { attrs: { id: "servicesPartners" } }, [
       _c("div", { staticClass: "container" }, [
         _c("div", { staticClass: "row" }, [
@@ -54268,13 +54272,34 @@ var render = function() {
             1
           )
         ])
-      ]),
-      _vm._v(" "),
-      _c("img", {
-        staticClass: "img-float-1 d-none d-md-inline-block",
-        attrs: { src: "/images/iconos/nube_2.svg", alt: "elemento jumperr" }
-      })
-    ])
+      ])
+    ]),
+    _vm._v(" "),
+    _c("img", {
+      staticClass: "img-float-1  d-none d-md-inline-block",
+      attrs: {
+        src: "/images/iconos/circulogrueso.svg",
+        alt: "elemento jumperr"
+      }
+    }),
+    _vm._v(" "),
+    _c("img", {
+      staticClass: "img-float-2  d-none d-md-inline-block",
+      attrs: { src: "/images/iconos/nube_2.svg", alt: "elemento jumperr" }
+    }),
+    _vm._v(" "),
+    _c("img", {
+      staticClass: "img-float-3 ",
+      attrs: { src: "/images/iconos/circulo.svg", alt: "elemento jumperr" }
+    }),
+    _vm._v(" "),
+    _c("img", {
+      staticClass: "img-float-4",
+      attrs: {
+        src: "/images/partners/imagencircular.png",
+        alt: "elemento jumperr"
+      }
+    })
   ])
 }
 var staticRenderFns = [
