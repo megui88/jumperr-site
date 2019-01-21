@@ -11,14 +11,14 @@
                     </a>
                 </div>
                 <div class="col-12 col-md-5 col-lg-4 d-none d-md-flex enlaces mx-auto">
-                    <a href="#">La Compañia</a>
-                    <a href="#">Especialidades</a>
-                    <a href="#">Agencias</a>
-                    <a href="#">Contactos</a>
+                    <a href="#">{{$store.getters.getTags({tag:'general_btn_company'})}}</a>
+                    <a href="#">{{$store.getters.getTags({tag:'general_btn_especialities'})}}</a>
+                    <a href="#">{{$store.getters.getTags({tag:'general_btn_agencies'})}}</a>
+                    <a href="#">{{$store.getters.getTags({tag:'general_btn_contact'})}}</a>
                     <a href="#">Jumperr Start</a>
-                    <a href="#">Redes Sociales</a>
-                    <a href="#">Diseño Gráfico</a>
-                    <a href="#">Desarrollo Web y App</a>
+                    <a href="#">{{$store.getters.getTags({tag:'home_title5'})}}</a>
+                    <a href="#">{{$store.getters.getTags({tag:'home_title7'})}}</a>
+                    <a href="#">{{$store.getters.getTags({tag:'home_title3'})}}</a>
                 </div>
                 <div class="col-12 col-md-3 text-center mt-4 mt-md-0">
                     <a href="#" target="_blank" rel="noopener noreferrer">

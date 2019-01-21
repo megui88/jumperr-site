@@ -4,9 +4,9 @@
             <div class="row">
                 <div class="col-12 col-md-10 mx-auto">
                     <article class="text-center">
-                        <h3 class="title-border-bottom">Blog</h3>
+                        <h3 class="title-border-bottom">{{$store.getters.getTags({tag:'partners_title12'})}}</h3>
                         <h4 class="mb-md-5">
-                            Nuestras últimas noticias de logros y actualidades.
+                            {{$store.getters.getTags({tag:home_text10})}}
                         </h4>
                     </article>
                 </div>
@@ -29,7 +29,7 @@
                                     <small>{{ blog.categoria }}</small>
                                 </router-link>
                                 <h6 class="title-blog">{{ blog.titulo }}</h6>
-                                <router-link :to="blog.enlace" class="">Ver más</router-link>
+                                <router-link :to="blog.enlace" class="">{{$store.getters.getTags({tag:'general_vermas'})}}</router-link>
                             </div>
                         </swiper-slide>
                         <!-- <div class="swiper-pagination" slot="pagination"></div> -->
@@ -38,7 +38,7 @@
                 </div>
                 
                 <div class="col-12 text-center">
-                        <router-link to="#" class="btn btn-primary mt-5 text-uppercase">Visitar Blog</router-link>
+                        <router-link to="#" class="btn btn-primary mt-5 text-uppercase">{{$store.getters.getTags({tag:home_text11})}}</router-link>
                 </div>
             </div>
         </div>

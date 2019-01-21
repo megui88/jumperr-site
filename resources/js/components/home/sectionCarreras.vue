@@ -7,11 +7,11 @@
                         <img src="/images/home/imagenes/jumperr_carrera_home-min.png" alt="">
                     </div>
                     <div class="col-12 col-lg-5 align-self-center ml-auto mt-3 mt-lg-0">
-                        <h3 class="title-border-bottom">Carreras profesionales</h3>
+                        <h3 class="title-border-bottom">{{$store.getters.getTags({tag:'home_title1'})}}</h3>
                         <p>
-                            Colaboramos con diseñadores, desarrolladores y estrategas talentosos para crear un trabajo increíble. Buscamos personas creativas, comprometidas, con pasión dispuestas a romper y expandir límites. 
+                            {{$store.getters.getTags({tag:'home_text18'})}} 
                         </p>
-                        <router-link to="#" class="btn btn-primary text-uppercase mt-4">Ver Perfiles</router-link>
+                        <router-link to="#" class="btn btn-primary text-uppercase mt-4">{{$store.getters.getTags({tag:'home_text19'})}}</router-link>
                     </div>
                 </div>
             </div>

@@ -5,7 +5,7 @@
                 <div class="row">
                     <div class="col-12 col-md-8 col-lg-6">
                         <h1>
-                            Líderes <br>en la construcción<br> de negocios<br> y Éxitos Digitales.
+                            {{$store.getters.getTags({tag:'general_header'})}}
                         </h1>
                     </div>
                 </div>

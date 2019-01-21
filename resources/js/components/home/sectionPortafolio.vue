@@ -4,7 +4,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12">
-                        <h3 class="title-border-bottom text-center">Portafolio</h3>
+                        <h3 class="title-border-bottom text-center">{{$store.getters.getTags({tag:'home_text14'})}}</h3>
                     </div>
                 </div>
             </div>
@@ -108,7 +108,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12 text-center">
-                            <router-link to="#" class="btn btn-primary text-uppercase mt-5">Ver más</router-link>
+                            <router-link to="#" class="btn btn-primary text-uppercase mt-5">{{$store.getters.getTags({tag:'general_vermas'})}}</router-link>
                     </div>
                 </div>
             </div>

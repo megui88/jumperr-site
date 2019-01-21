@@ -4,8 +4,8 @@
             <div class="row">
                 <div class="col-12 col-md-8 mx-auto mb-4">
                     <article class="text-center">
-                        <h3 class="title-border-bottom">¿Como te podemos ayudar?</h3>
-                        <h4>Queremos conocer qué necesidades tienes para asesorarte de manera integral en la proyección de tu marca</h4>
+                        <h3 class="title-border-bottom">{{$store.getters.getTags({tag:'conctac_title1'})}}</h3>
+                        <h4>{{$store.getters.getTags({tag:'conctac_text1'})}}</h4>
                     </article>
                 </div>
             </div>
@@ -15,23 +15,23 @@
             <div class="row">
                 <div class="col-12 col-md-6 m-auto">
                     <div class="form-group">
-                        <label for="">Nombre*</label>
+                        <label for="">{{$store.getters.getTags({tag:'conctac_text5'})}}*</label>
                         <input class="form-control" type="text" v-model="name">
                     </div>
                     <div class="form-group">
-                        <label for="">Email*</label>
+                        <label for="">{{$store.getters.getTags({tag:'conctac_text6'})}}*</label>
                         <input class="form-control" type="text" v-model="email">
                     </div>
                     <div class="form-group">
-                        <label for="">Telefono*</label>
+                        <label for="">{{$store.getters.getTags({tag:'conctac_text7'})}}*</label>
                         <input class="form-control" type="text" v-model="telefono">
                     </div>
                     <div class="form-group">
-                        <label for="">Comentario*</label>
+                        <label for="">{{$store.getters.getTags({tag:'conctac_text8'})}}*</label>
                         <input class="form-control" type="text" v-model="comentario">
                     </div>
                     <div class="form-group text-center">
-                        <button class="btn btn-primary text-uppercase">Enviar</button>
+                        <button class="btn btn-primary text-uppercase">{{$store.getters.getTags({tag:'general_btn_send'})}}</button>
                     </div>
                 </div>
             </div>
