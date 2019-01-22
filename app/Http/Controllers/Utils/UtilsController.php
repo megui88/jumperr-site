@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Utils;
 use App\Http\Controllers\Controller;
 use App\Models\Admin\TagTranslation;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Session;
 
 class UtilsController extends Controller
 {
@@ -51,7 +52,7 @@ class UtilsController extends Controller
 		            $importData = array();
 		            $i = 0;
 
-		            while (($filedata = fgetcsv($file, 1000, ";")) !== FALSE) {
+		            while (($filedata = fgetcsv($file, 1000, ",")) !== FALSE) {
 			            $num = count($filedata );
 
 			            for ( $c=0; $c < $num; $c++ ) {
@@ -63,48 +64,22 @@ class UtilsController extends Controller
 
 		            fclose( $file );
 
+		            $languages = array( 
+		            				'Italiano'  => 1, 
+		            				'Ingles'    => 2,
+		            				'Español'   => 3,
+		            				'Portugues' => 4,
+		            				'Frances'   => 5
+		            			);
+
 		            // Insert to database
 		            foreach( $importData as $data ) {
-		            	// Español
-		            	$tag = new TagTranslation([
-					        'tag'		  => $data[0],
-					        'value' 	  => $data[1],
-					        'language_id' => 3
-		            	]);
-		            	dd( $tag );
-		            	$tag->save();
 
-		           //  	// Ingles
-		           //  	$tag = new TagTranslation([
-					        // 'tag' 		  => $data[0],
-					        // 'value' 	  => $data[2],
-					        // 'language_id' => 2
-		           //  	]);
-		           //  	$tag->save();
-
-		           //  	// Italiano
-		           //  	$tag = new TagTranslation([
-					        // 'tag' 		  => $data[0],
-					        // 'value' 	  => $data[3],
-					        // 'language_id' => 1
-		           //  	]);
-		           //  	$tag->save();
-
-		           //  	// Portugues
-		           //  	$tag = new TagTranslation([
-					        // 'tag' 		  => $data[0],
-					        // 'value' 	  => $data[4],
-					        // 'language_id' => 4
-		           //  	]);
-		           //  	$tag->save();
-
-		           //  	// Frances
-		           //  	$tag = new TagTranslation([
-					        // 'tag' 		  => $data[0],
-					        // 'value' 	  => $data[5],
-					        // 'language_id' => 5
-		           //  	]);
-		           //  	$tag->save();
+						$this->saveTag( $data[3], $data[5], $languages['Español'] );
+						$this->saveTag( $data[3], $data[6], $languages['Italiano'] );
+						$this->saveTag( $data[3], $data[7], $languages['Ingles'] );
+						$this->saveTag( $data[3], $data[8], $languages['Portugues'] );
+						$this->saveTag( $data[3], $data[9], $languages['Frances'] );
 		            }
 
 		            Session::flash('message','Import Successful.');
@@ -118,6 +93,17 @@ class UtilsController extends Controller
         }
 
         // Redirect to index
-        return redirect()->action('PagesController@index');
+        return response()->json('Successful');
     }
+
+    public function saveTag( $tag, $value, $language ) {
+    	if ( TagTranslation::where( 'tag', $tag )->where( 'language_id', $language )->count() == 0 ) {
+	    	$tag = new TagTranslation([
+					'tag' 		  => $tag,
+					'value' 	  => $value,
+					'language_id' => $language
+				]);
+			return $tag->save();
+    	}
+    }    
 }
