@@ -1,16 +1,20 @@
 <template>
     <div>
-        <navbar></navbar>
-        <router-view></router-view>
-        <section_footer/>
+        <nav-bar />
+        <router-view />
+        <footer />
     </div>
 </template>
 <script>
+    import NavBar from './globals/NavBar';
+    import Footer from './globals/Footer';
+
     export default {
+        components: { Footer, NavBar },
         data() {
             return {
 
             }
-        },
+        }
     }
 </script>
