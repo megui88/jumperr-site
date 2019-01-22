@@ -8,7 +8,7 @@
                 <nav class="navbar navbar-expand-lg"                :class="sticky ? 'navbar-dark' : 'navbar-light'">
                     <div class="container">
                         <router-link class="navbar-brand" to="/">
-                            <img src="images/logo/logojumperr.svg" alt="Jumperr" class="logo">
+                            <img src="/images/logo/logojumperr.svg" alt="Jumperr" class="logo">
                         </router-link>
                         <button class="navbar-toggler" v-on:click="fondoNav=!fondoNav" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                             <i class="fas fa-bars"></i>
@@ -20,19 +20,19 @@
                                     <router-link class="nav-link" to="/">Inicio</router-link>
                                 </li>
                                 <li class="nav-item">
-                                    <router-link class="nav-link" to="/#lacompañia">La Compañia</router-link>
+                                    <router-link class="nav-link" to="/la-compagnia">La Compañia</router-link>
                                 </li>
                                 <li class="nav-item">
-                                    <router-link class="nav-link" to="/#especialidades" >Especialidades</router-link>
+                                    <router-link class="nav-link" to="/specialita" >Especialidades</router-link>
                                 </li>
                                 <li class="nav-item">
-                                    <router-link class="nav-link" to="/#blog" >Blog</router-link>
+                                    <router-link class="nav-link" to="/blog" >Blog</router-link>
                                 </li>
                                 <li class="nav-item">
                                     <router-link class="nav-link" to="/partners" >Partners</router-link>
                                 </li>
                                 <li class="nav-item">
-                                    <router-link class="nav-link" to="/#carreras" >Carreras</router-link>
+                                    <router-link class="nav-link" to="/labori" >Carreras</router-link>
                                 </li>
                             </ul>
                             <a href="/#contacto" class="btn btn-primary ml-lg-3 d-none d-lg-block">Contactanos</a>

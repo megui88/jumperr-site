@@ -45,49 +45,49 @@ export default {
                     title: 'Diseñador Gráfico',  
                     time: 'Tiempo Completo',
                     modality: 'Presencial',
-                    url: '/#'
+                    url: '/labori/1'
                 },
                 {
                     location: 'Olbia, Italia',
                     title: 'Desarrollador Frontend',  
                     time: 'Tiempo Completo',
                     modality: 'Presencial',
-                    url: '/#'
+                    url: '/labori/1'
                 },
                 {
                     location: 'Buenos Aires, Argentina',
                     title: 'Diseño y Desarrollo',  
                     time: 'Tiempo Completo',
                     modality: 'Remoto',
-                    url: '/#'
+                    url: '/labori/1'
                 },
                 {
                     location: 'Buenos Aires, Argentina',
                     title: 'Desarrollador Backend',  
                     time: 'Tiempo Completo',
                     modality: 'Presencial',
-                    url: '/#'
+                    url: '/labori/1'
                 },
                 {
                     location: 'Sao Paulo, Brasil',
                     title: 'Social Media Manager',  
                     time: 'Tiempo Completo',
                     modality: 'Presencial',
-                    url: '/#'
+                    url: '/labori/1'
                 },
                 {
                     location: 'Caracas, Venezuela',
                     title: 'Community Manager',  
                     time: 'Tiempo Completo',
                     modality: 'Remoto',
-                    url: '/#'
+                    url: '/labori/1'
                 },  
                 {
                     location: 'Miami, EEUU  ',
                     title: 'Diseñador Gráfico',  
                     time: 'Tiempo Completo',
                     modality: 'Presencial',
-                    url: '/#'
+                    url: '/labori/1'
                 },         
             ],
             swiperOption: {
