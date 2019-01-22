@@ -5,6 +5,17 @@ namespace App\Models\Admin;
 use Eloquent as Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
+
+/**
+ * Class TagTranslation
+ * @package App\Models\Admin
+ * @version August 1, 2018, 6:10 pm UTC
+ *
+ * @property \App\Models\Admin\Language language
+ * @property string tag
+ * @property string value
+ * @property integer language_id
+ */
 class TagTranslation extends Model
 {
     use SoftDeletes;
@@ -21,8 +32,6 @@ class TagTranslation extends Model
     public $fillable = [
         'tag',
         'value',
-        'screen',
-        'section',
         'language_id'
     ];
 
@@ -35,8 +44,6 @@ class TagTranslation extends Model
         'id' => 'integer',
         'tag' => 'string',
         'value' => 'string',
-        'screen' => 'integer',
-        'section' => 'integer',
         'language_id' => 'integer'
     ];
 
@@ -49,4 +56,11 @@ class TagTranslation extends Model
 
     ];
 
+    /**
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
+     **/
+    public function language()
+    {
+        return $this->belongsTo(\App\Models\Admin\Language::class);
+    }
 }
