@@ -15,10 +15,7 @@
                     </div>
                     <div class="portafolio-caption">
                         <router-link to="#" class="p-3">
-                            <img src="/images/home/iconos/loupe.svg" alt="view">
-                        </router-link>
-                        <router-link to="#" class="p-3">
-                            <img src="/images/home/iconos/loupe.svg" alt="view">
+                            <img src="/images/iconos/link-symbol.svg" alt="view">
                         </router-link>
                     </div>
                 </div>
@@ -31,10 +28,7 @@
                     </div>
                     <div class="portafolio-caption">
                         <router-link to="#" class="p-3">
-                            <img src="/images/home/iconos/loupe.svg" alt="view">
-                        </router-link>
-                        <router-link to="#" class="p-3">
-                            <img src="/images/home/iconos/loupe.svg" alt="view">
+                            <img src="/images/iconos/link-symbol.svg" alt="view">
                         </router-link>
                     </div>
                 </div>
@@ -47,10 +41,7 @@
                     </div>
                     <div class="portafolio-caption">
                         <router-link to="#" class="p-3">
-                            <img src="/images/home/iconos/loupe.svg" alt="view">
-                        </router-link>
-                        <router-link to="#" class="p-3">
-                            <img src="/images/home/iconos/loupe.svg" alt="view">
+                            <img src="/images/iconos/link-symbol.svg" alt="view">
                         </router-link>
                     </div>
                 </div>
@@ -63,10 +54,7 @@
                     </div>
                     <div class="portafolio-caption">
                         <router-link to="#" class="p-3">
-                            <img src="/images/home/iconos/loupe.svg" alt="view">
-                        </router-link>
-                        <router-link to="#" class="p-3">
-                            <img src="/images/home/iconos/loupe.svg" alt="view">
+                            <img src="/images/iconos/link-symbol.svg" alt="view">
                         </router-link>
                     </div>
                 </div>
@@ -79,10 +67,7 @@
                     </div>
                     <div class="portafolio-caption">
                         <router-link to="#" class="p-3">
-                            <img src="/images/home/iconos/loupe.svg" alt="view">
-                        </router-link>
-                        <router-link to="#" class="p-3">
-                            <img src="/images/home/iconos/loupe.svg" alt="view">
+                            <img src="/images/iconos/link-symbol.svg" alt="view">
                         </router-link>
                     </div>
                 </div>
@@ -95,10 +80,7 @@
                     </div>
                     <div class="portafolio-caption">
                         <router-link to="#" class="p-3">
-                            <img src="/images/home/iconos/loupe.svg" alt="view">
-                        </router-link>
-                        <router-link to="#" class="p-3">
-                            <img src="/images/home/iconos/loupe.svg" alt="view">
+                            <img src="/images/iconos/link-symbol.svg" alt="view">
                         </router-link>
                     </div>
                 </div>

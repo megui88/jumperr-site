@@ -83,9 +83,16 @@ export default {
 }
 @media (min-width: 992px){
 .navbar-expand-lg .navbar-nav .nav-link {
-    padding-right: 1.1rem;
-    padding-left: 1.1rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    font-size: .8rem;
 }
+}
+@media (min-width: 1200px){
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: 1.1rem;
+        padding-left: 1.1rem;
+    }
 }
 .btn {
     padding: 0.375rem 1.1rem;

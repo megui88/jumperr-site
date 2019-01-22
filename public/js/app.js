@@ -8727,7 +8727,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\n.logo[data-v-61279d3a]{\n    width: 160px;\n    height: auto;\n}\n#container-nav[data-v-61279d3a]{\n}\n@media (min-width: 992px){\n.navbar-expand-lg .navbar-nav .nav-link[data-v-61279d3a] {\n    padding-right: 1.1rem;\n    padding-left: 1.1rem;\n}\n}\n.btn[data-v-61279d3a] {\n    padding: 0.375rem 1.1rem;\n    font-size: 0.9rem;\n    line-height: 1.6;\n    border-radius: 1.25rem;\n    font-weight: bold;\n}\n\n/*link menu color blanco*/\n.navbar-dark .navbar-nav .nav-link[data-v-61279d3a] {\n    color: rgba(255, 255, 255, 1);\n}\n.navbar-dark .navbar-nav .show > .nav-link[data-v-61279d3a], .navbar-dark .navbar-nav .active > .nav-link[data-v-61279d3a], .navbar-dark .navbar-nav .nav-link.show[data-v-61279d3a], .navbar-dark .navbar-nav .nav-link.active[data-v-61279d3a] {\n    color: rgb(206, 206, 206);\n}\n/*link menu color negro*/\n.navbar-light .navbar-nav .nav-link[data-v-61279d3a] {\n    color: rgba(0, 0, 0, 0.5);\n}\n.navbar-light .navbar-nav .show > .nav-link[data-v-61279d3a], .navbar-light .navbar-nav .active > .nav-link[data-v-61279d3a], .navbar-light .navbar-nav .nav-link.show[data-v-61279d3a], .navbar-light .navbar-nav .nav-link.active[data-v-61279d3a] {\n    color: rgba(0, 0, 0, 1);\n}\n.navbar-dark .nav-link.router-link-exact-active.router-link-active[data-v-61279d3a]{ color: #ffffffed;\n}\n.navbar-light .nav-link.router-link-exact-active.router-link-active[data-v-61279d3a]{ color: #f26336;\n}\n@media (max-width: 991.98px) {\n.navbar[data-v-61279d3a]{\n        background-color: #fff;\n}\n.navbar-dark .navbar-nav .nav-link[data-v-61279d3a] {\n        color: rgba(0, 0, 0, 0.5);\n}\n.navbar-dark .navbar-nav .show > .nav-link[data-v-61279d3a], .navbar-dark .navbar-nav .active > .nav-link[data-v-61279d3a], .navbar-dark .navbar-nav .nav-link.show[data-v-61279d3a], .navbar-dark .navbar-nav .nav-link.active[data-v-61279d3a] {\n        color: rgba(0, 0, 0, 0.5);\n}\n    /*link menu color negro*/\n.navbar-light .navbar-nav .nav-link[data-v-61279d3a] {\n        color: rgba(0, 0, 0, 0.5);\n}\n.navbar-light .navbar-nav .show > .nav-link[data-v-61279d3a], .navbar-light .navbar-nav .active > .nav-link[data-v-61279d3a], .navbar-light .navbar-nav .nav-link.show[data-v-61279d3a], .navbar-light .navbar-nav .nav-link.active[data-v-61279d3a] {\n        color: rgba(0, 0, 0, 1);\n}\n.navbar-dark .nav-link.router-link-exact-active.router-link-active[data-v-61279d3a]{ color: #f26336;\n}\n.navbar-light .nav-link.router-link-exact-active.router-link-active[data-v-61279d3a]{ color: #f26336;\n}\n.navbar-dark .navbar-toggler[data-v-61279d3a] {\n        color: rgba(0, 0, 0, 0.5);\n        border-color: rgba(0, 0, 0, 0.1);\n}\n.navbar-light .navbar-toggler[data-v-61279d3a] {\n        color: rgba(0, 0, 0, 0.5);\n        border-color: rgba(0, 0, 0, 0.1);\n}\n}\n@media (max-width: 991.98px){\n.navbar[data-v-61279d3a][data-v-61279d3a] {\n        background-color: #fff0;\n}\nbutton.navbar-toggler[data-v-61279d3a]{\n        color: #fff;\n}\n@media (max-width: 991.98px)\n    {\n}\n.navbar-dark .navbar-toggler[data-v-61279d3a] {\n        color: rgb(242, 105, 55);\n        border-color: rgb(242, 105, 55);\n}\n}\n", ""]);
+exports.push([module.i, "\n.logo[data-v-61279d3a]{\n    width: 160px;\n    height: auto;\n}\n#container-nav[data-v-61279d3a]{\n}\n@media (min-width: 992px){\n.navbar-expand-lg .navbar-nav .nav-link[data-v-61279d3a] {\n    padding-right: 1rem;\n    padding-left: 1rem;\n    font-size: .8rem;\n}\n}\n@media (min-width: 1200px){\n.navbar-expand-lg .navbar-nav .nav-link[data-v-61279d3a] {\n        padding-right: 1.1rem;\n        padding-left: 1.1rem;\n}\n}\n.btn[data-v-61279d3a] {\n    padding: 0.375rem 1.1rem;\n    font-size: 0.9rem;\n    line-height: 1.6;\n    border-radius: 1.25rem;\n    font-weight: bold;\n}\n\n/*link menu color blanco*/\n.navbar-dark .navbar-nav .nav-link[data-v-61279d3a] {\n    color: rgba(255, 255, 255, 1);\n}\n.navbar-dark .navbar-nav .show > .nav-link[data-v-61279d3a], .navbar-dark .navbar-nav .active > .nav-link[data-v-61279d3a], .navbar-dark .navbar-nav .nav-link.show[data-v-61279d3a], .navbar-dark .navbar-nav .nav-link.active[data-v-61279d3a] {\n    color: rgb(206, 206, 206);\n}\n/*link menu color negro*/\n.navbar-light .navbar-nav .nav-link[data-v-61279d3a] {\n    color: rgba(0, 0, 0, 0.5);\n}\n.navbar-light .navbar-nav .show > .nav-link[data-v-61279d3a], .navbar-light .navbar-nav .active > .nav-link[data-v-61279d3a], .navbar-light .navbar-nav .nav-link.show[data-v-61279d3a], .navbar-light .navbar-nav .nav-link.active[data-v-61279d3a] {\n    color: rgba(0, 0, 0, 1);\n}\n.navbar-dark .nav-link.router-link-exact-active.router-link-active[data-v-61279d3a]{ color: #ffffffed;\n}\n.navbar-light .nav-link.router-link-exact-active.router-link-active[data-v-61279d3a]{ color: #f26336;\n}\n@media (max-width: 991.98px) {\n.navbar[data-v-61279d3a]{\n        background-color: #fff;\n}\n.navbar-dark .navbar-nav .nav-link[data-v-61279d3a] {\n        color: rgba(0, 0, 0, 0.5);\n}\n.navbar-dark .navbar-nav .show > .nav-link[data-v-61279d3a], .navbar-dark .navbar-nav .active > .nav-link[data-v-61279d3a], .navbar-dark .navbar-nav .nav-link.show[data-v-61279d3a], .navbar-dark .navbar-nav .nav-link.active[data-v-61279d3a] {\n        color: rgba(0, 0, 0, 0.5);\n}\n    /*link menu color negro*/\n.navbar-light .navbar-nav .nav-link[data-v-61279d3a] {\n        color: rgba(0, 0, 0, 0.5);\n}\n.navbar-light .navbar-nav .show > .nav-link[data-v-61279d3a], .navbar-light .navbar-nav .active > .nav-link[data-v-61279d3a], .navbar-light .navbar-nav .nav-link.show[data-v-61279d3a], .navbar-light .navbar-nav .nav-link.active[data-v-61279d3a] {\n        color: rgba(0, 0, 0, 1);\n}\n.navbar-dark .nav-link.router-link-exact-active.router-link-active[data-v-61279d3a]{ color: #f26336;\n}\n.navbar-light .nav-link.router-link-exact-active.router-link-active[data-v-61279d3a]{ color: #f26336;\n}\n.navbar-dark .navbar-toggler[data-v-61279d3a] {\n        color: rgba(0, 0, 0, 0.5);\n        border-color: rgba(0, 0, 0, 0.1);\n}\n.navbar-light .navbar-toggler[data-v-61279d3a] {\n        color: rgba(0, 0, 0, 0.5);\n        border-color: rgba(0, 0, 0, 0.1);\n}\n}\n@media (max-width: 991.98px){\n.navbar[data-v-61279d3a][data-v-61279d3a] {\n        background-color: #fff0;\n}\nbutton.navbar-toggler[data-v-61279d3a]{\n        color: #fff;\n}\n@media (max-width: 991.98px)\n    {\n}\n.navbar-dark .navbar-toggler[data-v-61279d3a] {\n        color: rgb(242, 105, 55);\n        border-color: rgb(242, 105, 55);\n}\n}\n", ""]);
 
 // exports
 
@@ -54612,13 +54612,7 @@ var render = function() {
             [
               _c("router-link", { staticClass: "p-3", attrs: { to: "#" } }, [
                 _c("img", {
-                  attrs: { src: "/images/home/iconos/loupe.svg", alt: "view" }
-                })
-              ]),
-              _vm._v(" "),
-              _c("router-link", { staticClass: "p-3", attrs: { to: "#" } }, [
-                _c("img", {
-                  attrs: { src: "/images/home/iconos/loupe.svg", alt: "view" }
+                  attrs: { src: "/images/iconos/link-symbol.svg", alt: "view" }
                 })
               ])
             ],
@@ -54635,13 +54629,7 @@ var render = function() {
             [
               _c("router-link", { staticClass: "p-3", attrs: { to: "#" } }, [
                 _c("img", {
-                  attrs: { src: "/images/home/iconos/loupe.svg", alt: "view" }
-                })
-              ]),
-              _vm._v(" "),
-              _c("router-link", { staticClass: "p-3", attrs: { to: "#" } }, [
-                _c("img", {
-                  attrs: { src: "/images/home/iconos/loupe.svg", alt: "view" }
+                  attrs: { src: "/images/iconos/link-symbol.svg", alt: "view" }
                 })
               ])
             ],
@@ -54658,13 +54646,7 @@ var render = function() {
             [
               _c("router-link", { staticClass: "p-3", attrs: { to: "#" } }, [
                 _c("img", {
-                  attrs: { src: "/images/home/iconos/loupe.svg", alt: "view" }
-                })
-              ]),
-              _vm._v(" "),
-              _c("router-link", { staticClass: "p-3", attrs: { to: "#" } }, [
-                _c("img", {
-                  attrs: { src: "/images/home/iconos/loupe.svg", alt: "view" }
+                  attrs: { src: "/images/iconos/link-symbol.svg", alt: "view" }
                 })
               ])
             ],
@@ -54681,13 +54663,7 @@ var render = function() {
             [
               _c("router-link", { staticClass: "p-3", attrs: { to: "#" } }, [
                 _c("img", {
-                  attrs: { src: "/images/home/iconos/loupe.svg", alt: "view" }
-                })
-              ]),
-              _vm._v(" "),
-              _c("router-link", { staticClass: "p-3", attrs: { to: "#" } }, [
-                _c("img", {
-                  attrs: { src: "/images/home/iconos/loupe.svg", alt: "view" }
+                  attrs: { src: "/images/iconos/link-symbol.svg", alt: "view" }
                 })
               ])
             ],
@@ -54704,13 +54680,7 @@ var render = function() {
             [
               _c("router-link", { staticClass: "p-3", attrs: { to: "#" } }, [
                 _c("img", {
-                  attrs: { src: "/images/home/iconos/loupe.svg", alt: "view" }
-                })
-              ]),
-              _vm._v(" "),
-              _c("router-link", { staticClass: "p-3", attrs: { to: "#" } }, [
-                _c("img", {
-                  attrs: { src: "/images/home/iconos/loupe.svg", alt: "view" }
+                  attrs: { src: "/images/iconos/link-symbol.svg", alt: "view" }
                 })
               ])
             ],
@@ -54727,13 +54697,7 @@ var render = function() {
             [
               _c("router-link", { staticClass: "p-3", attrs: { to: "#" } }, [
                 _c("img", {
-                  attrs: { src: "/images/home/iconos/loupe.svg", alt: "view" }
-                })
-              ]),
-              _vm._v(" "),
-              _c("router-link", { staticClass: "p-3", attrs: { to: "#" } }, [
-                _c("img", {
-                  attrs: { src: "/images/home/iconos/loupe.svg", alt: "view" }
+                  attrs: { src: "/images/iconos/link-symbol.svg", alt: "view" }
                 })
               ])
             ],
