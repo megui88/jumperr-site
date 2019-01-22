@@ -5,12 +5,12 @@
                 <swiper :options="swiperOption">
                     <swiper-slide>
                         <h2 class="text-white text-center mb-0">
-                            Especialistas en el área digital
+                            {{$store.getters.getTags({tag:'specialties_text1'})}}
                         </h2>
                     </swiper-slide>
                     <swiper-slide>
                         <h2 class="text-white text-left text-md-center mb-0">
-                            Generamos Inteligencia Digital y la distribuimos a todos los miembros de nuestra comunidad a través del procesamiento de Big Data.
+                            {{$store.getters.getTags({tag:'specialties_text2'})}}
                         </h2>
                     </swiper-slide>
                     <div class="swiper-pagination swiper-pagination-x" slot="pagination"></div>

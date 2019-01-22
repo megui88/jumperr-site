@@ -5,22 +5,22 @@
                 <div class="row">
                     <div class="col-12 col-lg-9 mx-auto">
                         <h3 class="text-white text-center">
-                            Estamos desarrollando una nueva versión
+                            {{$store.getters.getTags({tag:'specialties_text63'})}}
                         </h3>
                         <p class="text-white text-center">
-                            Suscríbete y te enviaremos una notificación para que seas uno de los primeros en probar Jumperr Start
+                            {{$store.getters.getTags({tag:'specialties_text12'})}}
                         </p>
                     </div>
                     <div class="col-12 col-lg-5 mx-auto">
                         <div class="input-group mb-3">
                             <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2">
                             <div class="input-group-append">
-                                <button class="btn btn-primary" type="button" id="button-addon2">Enviar</button>
+                                <button class="btn btn-primary" type="button" id="button-addon2">{{$store.getters.getTags({tag:'general_btn_send'})}}</button>
                             </div>
                         </div>
                         <label for="term" class="d-block text-center text-white mb-0">
                             <input type="checkbox" name="term" id="">
-                                Sí, acepto los terminos y condiciones
+                                {{$store.getters.getTags({tag:'specialties_text15'})}}
                         </label>
                     </div>
                 </div>
@@ -37,7 +37,7 @@
     background-position: 103% center, -3% center;
     background-repeat: no-repeat, no-repeat;
     background-size: 180px, 180px;
-    
+
     -webkit-clip-path:  polygon(0 0, 100% 0, 100% 90%, 0% 100%);
     clip-path:          polygon(0 0, 100% 0, 100% 90%, 0% 100%);
 

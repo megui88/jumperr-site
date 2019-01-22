@@ -10,34 +10,14 @@
                     <div class="row">
                         <div class="col-12 col-lg-11 ml-lg-auto">
                             <h3 class="title-border-bottom">
-                                Jumperr Studio
+                                {{$store.getters.getTags({tag:'specialties_title1'})}}
                             </h3>
-                            <p class="mb-4">
-                                Podrás acceder a estudios sectoriales, modelos 
-                                de negocio y análisis de tus competidores, evaluando 
-                                las oportunidades de crecimiento del mercado al que 
-                                aspiras, impulsando tu negocio con nuestro apoyo. 
-                            </p>
-                            <p class="mb-4">
-                                Te ofrecemos la creación de un sitio web totalmente nuevo 
-                                o una revisión del actual, mejorando su contenido para 
-                                permitir un mejor posicionamiento en los motores de búsqueda.
-                            </p>
-
-                            <ul>
-                                <li>Consejos de los mejores profesionales de <strong>Jumperr.</strong></li>
-                                <li>Estudios sectoriales.</li>
-                                <li>Revenue model.</li>
-                                <li>Análisis de presencia en <strong>redes sociales.</strong></li>
-                                <li>Análisis de motores de búsqueda.</li>
-                                <li>Nueva <strong>página web</strong> u optimización de la actual.</li>
-                                <li>Draft Proposal con la propuesta de negocio.</li>
-                            </ul>
+                                {{$store.getters.getTags({tag:'specialties_text3'})}}
                         </div>
                     </div>
                 </div>
             </div>
-            
+
         </div>
     </div>
 </template>

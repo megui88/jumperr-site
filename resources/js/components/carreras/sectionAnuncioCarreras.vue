@@ -8,7 +8,7 @@
                 <img class="chica-jumperr" src="/images/carreras/chica-tablet-jumperr.png" alt="Jumperr anuncio">
             </aside>
             <article>
-                <h2>¡Tu <span>futuro</span> está aquí!</h2>
+                {{$store.getters.getTags({tag:'careers_text2'})}}
             </article>
         </section>
     </div>

@@ -8,11 +8,10 @@
                 <div class="col-12">
                     <article class="py-4">
                         <h3 class="title-border-bottom text-center">
-                            Jumperr Start
+                            {{$store.getters.getTags({tag:'specialties_title3'})}}
                         </h3>
                         <p class="mb-4 text-center">
-                            La herramienta que te permitirá hacer tu página
-                            web de manera más rápida y fácil con plantillas
+                            {{$store.getters.getTags({tag:'specialties_text5'})}}
                         </p>
                     </article>
                 </div>
@@ -23,26 +22,26 @@
                                     <figure class="bg-oscuro">
                                     <img src="/images/especialidades/Jumperr_creatusitioweb_especialidades.svg" alt="jumperr start">
                                 </figure>
-                                <p class="text-center mt-3"><strong>Crea tu sitio web</strong></p>
+                                <p class="text-center mt-3"><strong>{{$store.getters.getTags({tag:'specialties_text6'})}}</strong></p>
                             </div>
                             </swiper-slide>
-                            
+
                             <swiper-slide>
                                 <div>
                                     <figure class="bg-naranja">
                                     <img src="/images/especialidades/jumperr_creartublog_especialidades.svg" alt="jumperr start">
                                 </figure>
-                                <p class="text-center mt-3"><strong>Crea tu blog</strong></p>
+                                <p class="text-center mt-3"><strong>{{$store.getters.getTags({tag:'specialties_tex9'})}}</strong></p>
                                 </div>
                             </swiper-slide>
 
-                            
+
                             <swiper-slide>
                                 <div>
                                     <figure class="bg-naranja">
                                     <img src="/images/especialidades/Jumperr_subetusproductos_especialidades.svg" alt="jumperr start">
                                 </figure>
-                                <p class="text-center mt-3"><strong>Sube tus productos</strong></p>
+                                <p class="text-center mt-3"><strong>{{$store.getters.getTags({tag:'specialties_text7'})}}</strong></p>
                                 </div>
                             </swiper-slide>
                             <swiper-slide>
@@ -50,7 +49,7 @@
                                     <figure class="bg-oscuro">
                                         <img src="/images/especialidades/jumperr_estadisticas_especialidades.svg" alt="jumperr start">
                                     </figure>
-                                    <p class="text-center mt-3"><strong>Revisa tus estadisticas</strong></p>
+                                    <p class="text-center mt-3"><strong>{{$store.getters.getTags({tag:'specialties_text10'})}}</strong></p>
                                 </div>
                             </swiper-slide>
                             <swiper-slide>
@@ -58,7 +57,7 @@
                                     <figure class="bg-oscuro">
                                     <img src="/images/especialidades/Jumperr_calendario_especialidades.svg" alt="jumperr start">
                                 </figure>
-                                <p class="text-center mt-3"><strong>Sube tu calendario</strong></p>
+                                <p class="text-center mt-3"><strong>{{$store.getters.getTags({tag:'specialties_text8'})}}</strong></p>
                             </div>
                             </swiper-slide>
                             <swiper-slide>
@@ -66,7 +65,7 @@
                                     <figure class="bg-naranja">
                                     <img src="/images/especialidades/jumperr_eligetudominio_especialidades.svg" alt="jumperr start">
                                 </figure>
-                                <p class="text-center mt-3"><strong>Elige tu dominio</strong></p>
+                                <p class="text-center mt-3"><strong>{{$store.getters.getTags({tag:'specialties_text11'})}}</strong></p>
                                 </div>
                             </swiper-slide>
                              <div class="swiper-pagination swiper-pagination-x" slot="pagination"></div>

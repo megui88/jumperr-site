@@ -5,7 +5,7 @@
                 <div class="row">
                     <div class="col-12 col-md-10 col-lg-7">
                         <h2 class="text-white">
-                            Queremos vivir contigo la experiencia de <strong>crecer profesionalmente</strong>
+                            {{$store.getters.getTags({tag:'careers_text1'})}}
                         </h2>
                     </div>
                 </div>

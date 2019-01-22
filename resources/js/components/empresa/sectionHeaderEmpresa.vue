@@ -4,8 +4,7 @@
             <div class="grid-container">
                 <div class="grid-row">
                     <h2 class="text-white">
-                        <strong>Con pasión y entrega</strong> logramos nuestros objectivos de innovar y ayudar a nuestros clientes,
-                        al ofrecer <strong>Cultura e Inteligencia Digital.</strong>
+                        {{$store.getters.getTags({tag:'company_text1'})}}
                     </h2>
                 </div>
             </div>
@@ -50,6 +49,6 @@ header{
     h2{
         line-height: 1.5;
         font-size: 1.88rem;
-    }  
+    }
 }
 </style>

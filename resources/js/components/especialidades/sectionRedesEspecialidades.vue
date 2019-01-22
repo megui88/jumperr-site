@@ -6,26 +6,9 @@
                     <div class="col-12 col-md-6 ml-auto">
                         <article class="">
                             <h3 class="title-border-bottom text-white">
-                                REDES SOCIALES
+                                {{$store.getters.getTags({tag:'specialties_title4'})}}
                             </h3>
-                            <p class="text-white">   
-                                Conecta, interactúa y ten éxito junto con tus clientes.
-                            </p>
-                            <p class="text-white">   
-                                Ten la posibilidad de administrar tus redes sociales 
-                                para potenciar y garantizar la presencia en la web y llegar a millones de usuarios.
-                            </p>
-                            <p class="text-white">   
-                                Conectate con tu audiencia y ten presencia con tu marca
-                                a través de estrategias de marketing digital, 
-                                desde content marketing, mailing, SEO, automatización 
-                                y comercio electrónico, 
-                                que permitirán la promoción de productos y 
-                                servicios en las diferentes plataformas online.
-                            </p>
-                            <p class="text-white">   
-                                <strong>¡Haz crecer tu negocio con nosotros!</strong>
-                            </p>
+                                {{$store.getters.getTags({tag:'specialties_text16'})}}
                         </article>
                     </div>
                 </div>
@@ -44,7 +27,7 @@
     background-size: cover;
     background-position: top left;
     margin-top: -45px;
-    display: grid;  
+    display: grid;
     align-items: center;
     position: relative;
     z-index: -1;

@@ -4,12 +4,12 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-md-8 mx-auto">
-                        <h3 class="text-center text-white">¿Listo para trabajar con nosotros?</h3>
+                        <h3 class="text-center text-white">{{$store.getters.getTags({tag:'careers_text20'})}}</h3>
                         <p class="lead text-center text-white">
-                            Impúlsate con Jumperr
+                            {{$store.getters.getTags({tag:'careers_text6'})}}
                         </p>
                         <div class="text-center">
-                            <a href="#" class="btn btn-primary text-uppercase">Contáctanos</a>
+                            <a href="#" class="btn btn-primary text-uppercase">{{$store.getters.getTags({tag:'careers_text4'})}}</a>
                         </div>
                     </div>
                 </div>

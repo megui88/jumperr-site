@@ -2,28 +2,28 @@
     <div id="section_proceso_carreras">
         <section class="wrapper">
             <article class="mb-4">
-                <h3 class="title-border-bottom text-center text-white">Proceso de reclutamiento y selección</h3>
+                <h3 class="title-border-bottom text-center text-white">{{$store.getters.getTags({tag:'careers_text3'})}}</h3>
             </article>
             <aside>
                 <div class="item">
                     <img src="/images/carreras/telefono-min.png" alt="Jumperr proceso de carreras">
-                    <strong class="d-block">1. Entrevista por teléfono</strong>
+                    <strong class="d-block">1. {{$store.getters.getTags({tag:'careers_text4'})}}</strong>
                 </div>
                 <div class="item">
                     <img src="/images/carreras/user-min.png" alt="Jumperr proceso de carreras">
-                    <strong class="d-block">2. Primera Entrevista</strong>
+                    <strong class="d-block">2. {{$store.getters.getTags({tag:'careers_text7'})}}</strong>
                 </div>
                 <div class="item">
                     <img src="/images/carreras/tuerca-min.png" alt="Jumperr proceso de carreras">
-                    <strong class="d-block">3. Prueba Técnica</strong>
+                    <strong class="d-block">3. {{$store.getters.getTags({tag:'careers_text8'})}}</strong>
                 </div>
                 <div class="item">
                     <img src="/images/carreras/moneda-min.png" alt="Jumperr proceso de carreras">
-                    <strong class="d-block">4. Oferta Salarial</strong>
+                    <strong class="d-block">4. {{$store.getters.getTags({tag:'careers_text9'})}}</strong>
                 </div>
                 <div class="item">
                     <img src="/images/carreras/logocircular copy.svg" alt="Jumperr proceso de carreras">
-                    <strong class="d-block">5. Bienvenido al Team Jumperr</strong>
+                    <strong class="d-block">5. {{$store.getters.getTags({tag:'careers_text27'})}}</strong>
                 </div>
             </aside>
         </section>

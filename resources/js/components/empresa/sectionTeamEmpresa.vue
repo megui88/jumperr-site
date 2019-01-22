@@ -4,11 +4,11 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-md-10 m-auto">
-                        <h3 class="title-border-bottom text-white">Team Jumperr</h3>
+                        <h3 class="title-border-bottom text-white">{{$store.getters.getTags({tag:'text5'})}}</h3>
                         <swiper :options="swiperOption">
                             <swiper-slide>
                                 <p class="text-white text-center">
-                                    Un equipo ágil, dinámico y altamente capacitado te brinda soluciones acordes a tus ideas o negocio.
+                                    {{$store.getters.getTags({tag:'company_text7'})}}
                                 </p>
                             </swiper-slide>
                             <!-- <div class="swiper-button-prev" slot="button-prev"></div>

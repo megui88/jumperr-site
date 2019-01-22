@@ -4,14 +4,14 @@
             <div class="container position-relative">
                 <div class="row">
                     <div class="col-12">
-                        <h3 class="title-border-bottom text-center text-white">Nuestro proceso</h3>
+                        <h3 class="title-border-bottom text-center text-white">{{$store.getters.getTags({tag:'specialties_title7'})}}</h3>
                     </div>
                     <div class="col-12">
                         <div class="d-flex justify-content-between text-white text-center">
-                            <span :class="menuSlide == 0 ? 'active-slide' : ''">Diseño Gráfico</span>
-                            <span :class="menuSlide == 1 ? 'active-slide' : ''">Diseño Web</span>
-                            <span :class="menuSlide == 2 ? 'active-slide' : ''">Desarrollo Web</span>
-                            <span :class="menuSlide == 3 ? 'active-slide' : ''">Redes Sociales</span>
+                            <span :class="menuSlide == 0 ? 'active-slide' : ''">{{$store.getters.getTags({tag:'specialties_title8'})}}</span>
+                            <span :class="menuSlide == 1 ? 'active-slide' : ''">{{$store.getters.getTags({tag:'specialties_title9'})}}</span>
+                            <span :class="menuSlide == 2 ? 'active-slide' : ''">{{$store.getters.getTags({tag:'specialties_title10'})}}</span>
+                            <span :class="menuSlide == 3 ? 'active-slide' : ''">{{$store.getters.getTags({tag:'specialties_title11'})}}</span>
                         </div>
                         <div class="mt-3">
                             <div class="circulos-procesos mt-4">
@@ -31,7 +31,7 @@
                             </swiper>
                         </div>
                     </div>
-                    
+
                 </div>
             </div>
         </section>
@@ -58,20 +58,20 @@
         },
         pasos: [
             {
-                step: 'Paso 1',
-                text: 'Reunion con el cliente'
+                step: $store.getters.getTags({tag:'specialties_step1'}),
+                text: $store.getters.getTags({tag:'specialties_text19'})
             },
             {
-                step: 'Paso 2',
-                text: 'Reunion con el cliente'
+                step: $store.getters.getTags({tag:'specialties_step1'}),
+                text: $store.getters.getTags({tag:'specialties_text20'})
             },
             {
-                step: 'Paso 3',
-                text: 'Reunion con el cliente'
+                step: $store.getters.getTags({tag:'specialties_step1'}),
+                text: $store.getters.getTags({tag:'specialties_text21'})
             },
             {
-                step: 'Paso 4',
-                text: 'Reunion con el cliente'
+                step: $store.getters.getTags({tag:'specialties_step1'}),
+                text: $store.getters.getTags({tag:'specialties_text22'})
             },
         ],
         menuSlide: 0,

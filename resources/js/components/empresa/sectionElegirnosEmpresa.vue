@@ -8,11 +8,9 @@
                 <article class="">
                     <div class="w-100">
                         <h3 class="title-border-bottom text-white">
-                            ¿Por qué elegirnos?
+                            {{$store.getters.getTags({tag:'text4'})}}
                         </h3>
-                        <p class="text-white text-center">
-                            Hoy en día hay muchas casas de software que ofrecen servicios y productos digitales; sin embargo, ¡pocas empresas trabajan en <strong>sinergia con sus socios comerciales</strong> para crecer juntos!    
-                        </p>
+                        {{$store.getters.getTags({tag:'company_text5'})}}
                     </div>
                     <div class="w-100 mt-3">
                         <div class="wrapper-motivos">
@@ -20,31 +18,31 @@
                                 <swiper-slide>
                                     <div class="item mt-2 text-center">
                                         <img src="/images/la-empresa/5.svg" alt="Jumperr">
-                                        <h6 class="text-center text-white text-uppercase mt-2">Confiabilidad</h6>
+                                        <h6 class="text-center text-white text-uppercase mt-2">{{$store.getters.getTags({tag:'company_text8'})}}</h6>
                                     </div>
                                 </swiper-slide>
                                 <swiper-slide>
                                     <div class="item mt-2 text-center">
                                         <img src="/images/la-empresa/2.svg" alt="Jumperr">
-                                        <h6 class="text-center text-white text-uppercase mt-2">Velocidad</h6>
+                                        <h6 class="text-center text-white text-uppercase mt-2">{{$store.getters.getTags({tag:'company_text9'})}}</h6>
                                     </div>
                                 </swiper-slide>
                                 <swiper-slide>
                                     <div class="item mt-2 text-center">
                                         <img src="/images/la-empresa/4.svg" alt="Jumperr">
-                                        <h6 class="text-center text-white text-uppercase mt-2">Calidad</h6>
+                                        <h6 class="text-center text-white text-uppercase mt-2">{{$store.getters.getTags({tag:'company_text10'})}}</h6>
                                     </div>
                                 </swiper-slide>
                                 <swiper-slide>
                                     <div class="item mt-2 text-center">
                                         <img src="/images/la-empresa/1.svg" alt="Jumperr">
-                                        <h6 class="text-center text-white text-uppercase mt-2">Transparencia</h6>
+                                        <h6 class="text-center text-white text-uppercase mt-2">{{$store.getters.getTags({tag:'company_text11'})}}</h6>
                                     </div>
                                 </swiper-slide>
                                 <swiper-slide>
                                     <div class="item mt-2 text-center">
                                         <img src="/images/la-empresa/3.svg" alt="Jumperr">
-                                        <h6 class="text-center text-white text-uppercase mt-2">Profesionalidad</h6>
+                                        <h6 class="text-center text-white text-uppercase mt-2">{{$store.getters.getTags({tag:'company_text12'})}}</h6>
                                     </div>
                                 </swiper-slide>
                                 <!-- <div class="swiper-pagination" slot="pagination"></div> -->

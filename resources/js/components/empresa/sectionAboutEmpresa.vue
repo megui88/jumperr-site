@@ -4,16 +4,12 @@
             <div class="d-flex align-items-lg-center">
                 <article >
                     <h6 class="text-uppsercase text-theme">
-                        Quiénes Somos
+                        {{$store.getters.getTags({tag:'text1'})}}
                     </h6>
                     <h3 class="title-border-bottom">
-                        ¡Transformamos tus ideas en Oportunidades Digitales!
+                        {{$store.getters.getTags({tag:'company_title1'})}}
                     </h3>
-                    <p>
-                        Somos una <strong>Digital Company</strong> nacida de la pasión por el mundo digital, 
-                        formada por un grupo de <strong>expertos en el desarrollo de tecnología</strong>, 
-                        procesamiento de datos y marketing.
-                    </p>
+                    {{$store.getters.getTags({tag:'company_text2'})}}
                 </article>
             </div>
             <aside class="">
@@ -27,7 +23,7 @@
                             <swiper-slide>
                                 <img class="img-fluid" src="/images/la-empresa/jumperr_slider2_compañia-min.jpg" alt="compañia">
                             </swiper-slide>
-                            
+
                             <!-- <div class="swiper-pagination" slot="pagination"></div> -->
                             <div class="navegacion">
                                 <div class="swiper-button-next"></div>
@@ -217,7 +213,7 @@ p{
         margin-left: 70px;
         margin-top: 40px;
     }
-    
+
     aside > div{
         margin-left: 50px;
     }
@@ -246,6 +242,6 @@ p{
         width: 80px;
         height: 60px;
     }
-    
+
 }
 </style>

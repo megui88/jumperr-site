@@ -4,10 +4,10 @@
             <article class="">
                 <div class="mb-5">
                     <h3 class="title-border-bottom">
-                        ¿Dónde estamos?
+                        {{$store.getters.getTags({tag:'company_text6'})}}
                     </h3>
                     <p class="text-center mb-0 text-theme">
-                        Conquistando el mundo digital
+                        {{$store.getters.getTags({tag:'company_text13'})}}
                     </p>
                 </div>
             </article>
@@ -26,7 +26,7 @@
                                         <div class="circle-slider">
                                         </div>
                                         <p class="text-center mb-0">2015</p>
-                                    </swiper-slide>      
+                                    </swiper-slide>
                                     <swiper-slide>
                                         <div class="circle-slider">
                                         </div>
@@ -53,7 +53,7 @@
                         </div>
                     </div>
                     <div id="scrolling" class="zonas">
-                        
+
                         <img class="nube-1" src="/images/iconos/nube.svg" alt="">
                         <img class="nube-2" src="/images/iconos/nube.svg" alt="">
                         <swiper :options="swiperOptionTop" class="gallery-top" ref="swiperTop">
@@ -70,7 +70,7 @@
                                     <img class="item-1" src="/images/la-empresa/vectores/3_ciudad.svg" alt="">
                                     <img class="item-2" src="/images/la-empresa/vectores/5_personas.svg" alt="">
                                 </div>
-                            </swiper-slide>      
+                            </swiper-slide>
                             <swiper-slide>
                                 <div id="zona3" class="zona zona-3">
                                     <img class="item-1" src="/images/la-empresa/vectores/2_ciudad.svg" alt="">
@@ -96,7 +96,7 @@
                                 </div>
                             </swiper-slide>
                         </swiper>
-                        
+
                 </div>
             </aside>
         </section>
@@ -139,7 +139,7 @@
         swiperThumbs.controller.control = swiperTop
       })
     }
-    
+
   }
 </script>
 <style scoped>

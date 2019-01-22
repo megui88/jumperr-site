@@ -10,21 +10,9 @@
                     <div class="row">
                         <div class="col-12 col-lg-11 ml-lg-auto">
                             <h3 class="title-border-bottom text-white">
-                                DESARROLLO WEB y APPS
+                                {{$store.getters.getTags({tag:'specialties_title2'})}}
                             </h3>
-                            <p class="mb-4 text-white">
-                                Somos la solución digital para el desarrollo de tu proyecto web
-                            </p>
-                            <p class="mb-4 text-white">
-                                Con técnicas de codificación y configuración precisa que incluyen aplicaciones para móviles, 
-                                lleva tu sitio web a nuevos niveles de éxito y aumenta el potencial de tu negocio al máximo, 
-                                para permitir a tus usuarios acceder a los servicios de una manera más directa y personal.
-                            </p>
-                            <ul class="text-white">
-                                <li>Experiencia de Usuario</li>
-                                <li>Diseño de Interface</li>
-                                <li>Web Responsivo</li>
-                            </ul>
+                            {{$store.getters.getTags({tag:'specialties_text4'})}}
                         </div>
                     </div>
                 </div>

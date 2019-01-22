@@ -3,9 +3,9 @@
         <div class="container pt-5">
             <div class="row">
                 <div class="col-12 col-md-8 mx-auto">
-                    <h3 class="text-center title-border-bottom">Ofertas de empleo</h3>
+                    <h3 class="text-center title-border-bottom">{{$store.getters.getTags({tag:'careers_text5'})}}</h3>
                     <p class="lead text-center">
-                        Encuentra tu perfil, envia tu curriculum y portafolio para formar parte del equipo Jumperr Digital Company
+                        {{$store.getters.getTags({tag:'careers_text19'})}}
                     </p>
                 </div>
                 <div class="col-12">
@@ -22,7 +22,7 @@
                                         <br>
                                         <small> {{ service.modality }} </small>
                                     </p>
-                                    <a :href="service.url" class="btn btn-primary align-self-end">Más Información</a>
+                                    <a :href="service.url" class="btn btn-primary align-self-end">{{$store.getters.getTags({tag:'careers_text18'})}}</a>
                                 </div>
                             </div>
                         </swiper-slide>
@@ -41,54 +41,54 @@ export default {
         return {
             services: [
                 {
-                    location: 'Caracas, Venezuela',
-                    title: 'Diseñador Gráfico',  
-                    time: 'Tiempo Completo',
-                    modality: 'Presencial',
+                    location: $store.getters.getTags({tag:'careers_text21'}),
+                    title: $store.getters.getTags({tag:'careers_text11'}),
+                    time: $store.getters.getTags({tag:'careers_text16'}),
+                    modality: $store.getters.getTags({tag:'careers_text26'}),
                     url: '/#'
                 },
                 {
-                    location: 'Olbia, Italia',
-                    title: 'Desarrollador Frontend',  
-                    time: 'Tiempo Completo',
-                    modality: 'Presencial',
+                    location: $store.getters.getTags({tag:'careers_text22'}),
+                    title: $store.getters.getTags({tag:'careers_text12'}),
+                    time: $store.getters.getTags({tag:'careers_text16'}),
+                    modality: $store.getters.getTags({tag:'careers_text26'}),
                     url: '/#'
                 },
                 {
-                    location: 'Buenos Aires, Argentina',
-                    title: 'Diseño y Desarrollo',  
-                    time: 'Tiempo Completo',
-                    modality: 'Remoto',
+                    location: $store.getters.getTags({tag:'careers_text23'}),
+                    title: $store.getters.getTags({tag:'careers_text11'}),
+                    time: $store.getters.getTags({tag:'careers_text16'}),
+                    modality: $store.getters.getTags({tag:'careers_text17'}),
                     url: '/#'
                 },
                 {
-                    location: 'Buenos Aires, Argentina',
-                    title: 'Desarrollador Backend',  
-                    time: 'Tiempo Completo',
-                    modality: 'Presencial',
+                    location: $store.getters.getTags({tag:'careers_text23'}),
+                    title: $store.getters.getTags({tag:'careers_text13'}),
+                    time: $store.getters.getTags({tag:'careers_text16'}),
+                    modality: $store.getters.getTags({tag:'careers_text26'}),
                     url: '/#'
                 },
                 {
-                    location: 'Sao Paulo, Brasil',
-                    title: 'Social Media Manager',  
-                    time: 'Tiempo Completo',
-                    modality: 'Presencial',
+                    location: $store.getters.getTags({tag:'careers_text24'}),
+                    title: $store.getters.getTags({tag:'careers_text15'}),
+                    time: $store.getters.getTags({tag:'careers_text16'}),
+                    modality: $store.getters.getTags({tag:'careers_text26'}),
                     url: '/#'
                 },
                 {
-                    location: 'Caracas, Venezuela',
-                    title: 'Community Manager',  
-                    time: 'Tiempo Completo',
-                    modality: 'Remoto',
+                    location: $store.getters.getTags({tag:'careers_text21'}),
+                    title: $store.getters.getTags({tag:'careers_text14'}),
+                    time: $store.getters.getTags({tag:'careers_text16'}),
+                    modality: $store.getters.getTags({tag:'careers_text17'}),
                     url: '/#'
-                },  
+                },
                 {
-                    location: 'Miami, EEUU  ',
-                    title: 'Diseñador Gráfico',  
-                    time: 'Tiempo Completo',
-                    modality: 'Presencial',
+                    location: $store.getters.getTags({tag:'careers_text25'}),
+                    title: $store.getters.getTags({tag:'careers_text11'}),
+                    time: $store.getters.getTags({tag:'careers_text16'}),
+                    modality: $store.getters.getTags({tag:'careers_text26'}),
                     url: '/#'
-                },         
+                },
             ],
             swiperOption: {
             slidesPerView: 3,

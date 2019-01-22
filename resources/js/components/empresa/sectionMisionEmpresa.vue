@@ -7,19 +7,12 @@
             <article>
                 <div class="mb-0 mb-md-5">
                     <h6 class="text-uppsercase text-theme">
-                        NUESTRA MISIÓN
+                        {{$store.getters.getTags({tag:'text2'})}}
                     </h6>
                     <h3 class="title-border-bottom">
-                        Jumperr eres tú, haciendo lo que siempre quisiste hacer.
+                        {{$store.getters.getTags({tag:'company_text3'})}}
                     </h3>
-                    <p>
-                        Simplificamos la vida de nuestros clientes 
-                        con la creación de activos digitales como: 
-                        <strong>sitios web, tiendas online y campañas publicitarias</strong> 
-                        que generen valor e impacto en los negocios locales, con 
-                        herramientas que los introduzcan de forma eficiente en el 
-                        <strong>mercado de comercio electrónico</strong> y del <strong>marketing digital</strong>.
-                    </p>
+                    {{$store.getters.getTags({tag:'company_text14'})}}
                 </div>
             </article>
         </section>

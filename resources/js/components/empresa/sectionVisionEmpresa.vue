@@ -5,14 +5,12 @@
                 <article class="col-12 col-md-6 d-flex">
                     <div class="align-self-center">
                         <h6 class="text-uppsercase text-theme">
-                            VISIÓN
+                            {{$store.getters.getTags({tag:'text3'})}}
                         </h6>
                         <h3 class="title-border-bottom">
-                            Jumperr eres tú, haciendo lo que siempre quisiste hacer.
+                            {{$store.getters.getTags({tag:'company_text3'})}}
                         </h3>
-                        <p>
-                            Queremos <strong>emocratizar el acceso al comercio electrónico</strong> y al <strong>mercado digital</strong> gracias a nuestros productos automatizados, la inteligencia digital aplicada y el trabajo constante en nombre de nuestros clientes y aliados.
-                        </p>
+                        {{$store.getters.getTags({tag:'company_text4'})}}
                     </div>
                 </article>
                 <aside class="col-12 col-md-6 text-center text-md-left">
@@ -63,7 +61,7 @@ p{
 aside{
     min-height: 440px;
 }
-/* 
+/*
 article{
     display: flex;
     justify-content: center;
