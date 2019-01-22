@@ -8,11 +8,12 @@
                     </div>
                     <div class="d-flex flex-column justify-content-center">
                         <div>
-                            <h3 class="title-border-bottom">Creamos la identidad corporativa de tu marca</h3>
+                            <h3 class="title-border-bottom">{{$store.getters.getTags({tag:'home_text11'})}}
+                            </h3>
                             <p>
-                                Fortalece la imagen de tu marca, con la planificación de estrategias en marketing digital ajustada a tus necesidades.
+                                {{$store.getters.getTags({tag:'home_text12'})}}
                             </p>
-                            <router-link to="#" class="btn btn-primary text-uppercase mt-4">Ver más</router-link>
+                            <router-link to="#" class="btn btn-primary text-uppercase mt-4">{{$store.getters.getTags({tag:'general_vermas'})}}</router-link>
                         </div>
                     </div>
         </article>

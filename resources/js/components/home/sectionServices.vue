@@ -4,10 +4,9 @@
             <div class="row">
                 <div class="col-12 col-md-10 mx-auto">
                     <article class="text-center">
-                        <h3 class="title-border-bottom">Nuestras Especialidades</h3>
+                        <h3 class="title-border-bottom">{{$store.getters.getTags({tag:'home_text1'})}}</h3>
                         <h4 class="mb-md-5">
-                            Convertimos en soluciones digitales tus ideas y proyectos,
-                            impulsando tu modelo de negocio con estrategias para el mundo online.
+                            {{$store.getters.getTags({tag:'home_text2'})}}
                         </h4>
                     </article>
                 </div>
@@ -25,7 +24,7 @@
                             <p class="card-text">
                                 {{ service.descripcion }}
                             </p>
-                            <router-link :to="service.enlace" class="btn btn-primary text-uppercase">Ver más</router-link>
+                            <router-link :to="service.enlace" class="btn btn-primary text-uppercase">{{$store.getters.getTags({tag:'general_vermas'})}}</router-link>
                         </div>
                     </div>
                 </swiper-slide>

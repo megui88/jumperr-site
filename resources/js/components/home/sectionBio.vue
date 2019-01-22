@@ -4,9 +4,9 @@
             <div class="container h-100">
                 <div class="row h-100">
                     <div class="col-12 col-md-6 col-lg-4 align-self-center">
-                        <h3 class="title-border-bottom">Te ofrecemos Soluciones Digitales</h3>
+                        <h3 class="title-border-bottom">{{$store.getters.getTags({tag:home_text8'})}}</h3>
                         <p>
-                            Combinamos <strong>estrategia</strong>, UX / UI, diseño web, <strong>tecnología</strong> y <strong>creatividad</strong> para ayudar a las empresas a <strong>crecer</strong> a su máximo potencial y <strong>alcanzar</strong> rápidamente nuevos niveles de éxito.
+                            {{$store.getters.getTags({tag:'home_text10'})}}
                         </p>
                     </div>
                 </div>
