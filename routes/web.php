@@ -16,11 +16,9 @@ Route::get('/', function(){
     return view('index');
 })->name('home');
 
-<<<<<<< HEAD
+Route::get('/file', 'Utils\UtilsController@csvIndex');
+Route::post('/uploadFile', 'Utils\UtilsController@uploadFile');
+
 Route::get('{any}',function(){
     return view('index');
 })->where('any','.*');
-=======
-Route::get('/file', 'Utils\UtilsController@csvIndex');
-Route::post('/uploadFile', 'Utils\UtilsController@uploadFile');
->>>>>>> master

@@ -71,6 +71,7 @@ class UtilsController extends Controller
 					        'value' 	  => $data[1],
 					        'language_id' => 3
 		            	]);
+		            	dd( $tag );
 		            	$tag->save();
 
 		           //  	// Ingles
