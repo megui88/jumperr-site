@@ -77,11 +77,15 @@ import sectionPartnersPresentation from '../components/partners/sectionPartnersP
 import sectionPartnersSevicePresentation from '../components/partners/sectionPartnersSevicePresentation.vue';
 import sectionPartnersSevices from '../components/partners/sectionPartnersSevices.vue';
 
-/* Components partners */
-Vue.component('section_partners_header', sectionPartnersHeader);
-Vue.component('section_partners_presentation', sectionPartnersPresentation);
-Vue.component('section_partners_service_presentation', sectionPartnersSevicePresentation);
-Vue.component('section_partners_services', sectionPartnersSevices);
+// Import componentes carreras
+import ContentCarreras from '../components/carreras/ContentCarreras.vue';
+import sectionAnuncioCarreras from '../components/carreras/sectionAnuncioCarreras.vue';
+import sectionContactoCarreras from '../components/carreras/sectionContactoCarreras.vue';
+import sectionEmpleosCarreras from '../components/carreras/sectionEmpleosCarreras.vue';
+import sectionHeaderCarreras from '../components/carreras/sectionHeaderCarreras.vue';
+import sectionProcesoCarreras from '../components/carreras/sectionProcesoCarreras.vue';
+import showCarreras from '../components/carreras/show/showCarreras.vue';
+
 
 /*
 * Components globas
@@ -135,7 +139,18 @@ Vue.component('header_blog', headerPost);
 Vue.component('post_relacionados_post', postRelacionadosPost);
 Vue.component('shared_post', sharedPost);
 
+/* Components partners */
+Vue.component('section_partners_header', sectionPartnersHeader);
+Vue.component('section_partners_presentation', sectionPartnersPresentation);
+Vue.component('section_partners_service_presentation', sectionPartnersSevicePresentation);
+Vue.component('section_partners_services', sectionPartnersSevices);
 
+//Carreras
+Vue.component('section_anuncio_carreras', sectionAnuncioCarreras);
+Vue.component('section_contacto_carreras', sectionContactoCarreras);
+Vue.component('section_empleos_carreras', sectionEmpleosCarreras);
+Vue.component('section_header_carreras', sectionHeaderCarreras);
+Vue.component('section_proceso_carreras', sectionProcesoCarreras);
 
 
 // Routes
@@ -171,6 +186,16 @@ let router = new Router({
             path: '/partners',
             name: 'ContentPartners',
             component: ContentPartners
+        },
+        {
+            path: '/labori',
+            name: 'ContentCarreras',
+            component: ContentCarreras,
+        },
+        {
+            path: '/labori/1',
+            name: 'showCarreras',
+            component: showCarreras,
         }
 
     ],

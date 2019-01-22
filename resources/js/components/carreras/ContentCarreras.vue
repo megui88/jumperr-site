@@ -1,0 +1,9 @@
+<template>
+    <div>
+        <section_header_carreras/>
+        <section_anuncio_carreras/>
+        <section_proceso_carreras/>
+        <section_empleos_carreras/>
+        <section_contacto_carreras/>
+    </div>
+</template>
