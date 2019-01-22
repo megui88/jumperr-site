@@ -88,7 +88,7 @@ export default {
                 },
                 {
                     icono:  '/images/partners/009-web-site.svg',
-                    title: $store.getters.getTags({tag:'partners_title12'}),
+                    title: $store.getters.getTags({tag:'partners_title17'}),
                     description: $store.getters.getTags({tag:'partners_text17'})
                 },
                 {
