@@ -105,5 +105,9 @@ class UtilsController extends Controller
 				]);
 			return $tag->save();
     	}
-    }    
+    }   
+
+    public function getAllTags() {
+    	return TagTranslation::all();
+    }   
 }
