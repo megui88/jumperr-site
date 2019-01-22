@@ -105,5 +105,23 @@ class UtilsController extends Controller
 				]);
 			return $tag->save();
     	}
-    }    
+    }   
+
+    public function getAllTags() {
+    	$languages = array( 1 => 'it', 2 => 'en', 3 => 'es', 4 => 'pt', 5 => 'fr' );
+    	$data = array();
+
+    	foreach ($languages as $key => $language) {
+    		$data[$language] = $this->tagAccordingToLanguage( $key );
+    	}
+
+    	return response()->json( $data );
+	}
+
+	/**
+	 * select tag according to language
+	 */
+	public function tagAccordingToLanguage( $language_id ) {
+		return TagTranslation::where( 'language_id', $language_id )->get();
+	}
 }
