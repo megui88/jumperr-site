@@ -3424,11 +3424,16 @@ __webpack_require__.r(__webpack_exports__);
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {
-    Footer: _globals_Footer__WEBPACK_IMPORTED_MODULE_1__["default"],
-    NavBar: _globals_NavBar__WEBPACK_IMPORTED_MODULE_0__["default"]
+    NavBar: _globals_NavBar__WEBPACK_IMPORTED_MODULE_0__["default"],
+    Footer: _globals_Footer__WEBPACK_IMPORTED_MODULE_1__["default"]
   },
-  data: function data() {
-    return {};
+  created: function created() {
+    this.$store.dispatch('APIGetAllLanguagesTags');
+  },
+  computed: {
+    /* isLoading() {
+         return (this.$store.getters.getLanguagesTagActive.length === 0)
+     }*/
   }
 });
 
@@ -54556,7 +54561,7 @@ var staticRenderFns = [
         staticClass: "img-fluid",
         attrs: {
           src: "/images/especialidades/jumperr_cmsycrm_especialidades.png",
-          alt: "Jumperr cms"
+          alt: "Jumperr-cms"
         }
       })
     ])
@@ -76225,7 +76230,7 @@ var store = new vuex__WEBPACK_IMPORTED_MODULE_1__["default"].Store({
     Language: _modules_Language__WEBPACK_IMPORTED_MODULE_2__["default"]
   },
   plugins: [Object(vuex_persistedstate__WEBPACK_IMPORTED_MODULE_3__["default"])({
-    paths: ['Language.flag', 'Language.flags', 'Language.languages'],
+    paths: ['Language.active', 'Language.flags', 'Language.languages'],
     getItem: function getItem(key) {
       return Cookies.get(key);
     },
@@ -76255,14 +76260,22 @@ var store = new vuex__WEBPACK_IMPORTED_MODULE_1__["default"].Store({
 __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ({
   state: {
-    flag: 'it',
+    active: {
+      flag: 'es',
+      language: []
+    },
     flags: [],
-    languages: []
+    languages: null
   },
   actions: {
     APIGetAllLanguagesTags: function APIGetAllLanguagesTags(_ref) {
       var commit = _ref.commit;
-      axios.get('/api/tag_translations').then(function (res) {// commit('setLanguagesTags', { list: res.data.data })
+      axios.get('/api/getAllTags').then(function (res) {
+        if (res.status === 200) {
+          commit('setLanguagesTags', {
+            list: res.data
+          });
+        }
       }).catch(function (error) {
         return console.log(error);
       });
@@ -76277,10 +76290,21 @@ __webpack_require__.r(__webpack_exports__);
     },
     getTags: function getTags(state) {
       return function (item) {
-        // let data = state.languages.find(lang => lang.code === state.flag);
-        // let tag = data.find(key => key.tag === item.tag).value;
-        // if (!tag)
-        return 'no tiene tag';
+        var tag = null,
+            tags = state.active.language;
+        tag = tags.find(function (index) {
+          return index.tag === item.tag;
+        }).value;
+
+        if (!tag) {
+          var it = state.language['it'].find(function (index) {
+            return index.tag === item.tag;
+          }).value;
+          if (!it) return it.value = 'No Tiene Tag';
+          return it;
+        }
+
+        return tag;
       };
     }
   },
@@ -76288,18 +76312,19 @@ __webpack_require__.r(__webpack_exports__);
     setLanguagesTags: function setLanguagesTags(state, _ref2) {
       var list = _ref2.list;
       var flags = [];
-      list.forEach(function (index) {
+
+      for (var key in list) {
         flags.push({
-          code: index.lang
+          code: key
         });
-      });
-      Vue.set(state.languages, 'flags', flags);
-      Vue.set(state.languages, 'languagesTags', list);
-      var lang = state.languageActive.flag;
-      var RESPONSE = list.find(function (key) {
-        return key.lang === lang;
-      });
-      Vue.set(state.languageActive, 'languageTagsActive', RESPONSE.screens);
+
+        if (state.active.flag === key) {
+          Vue.set(state.active, 'language', list[key]);
+        }
+      }
+
+      Vue.set(state, 'flags', flags);
+      Vue.set(state, 'languages', list);
     },
     changeLanguageByFlagActive: function changeLanguageByFlagActive(state, _ref3) {
       var list = _ref3.list;

@@ -8,7 +8,7 @@
                     </div>
                     <div class="col-12 col-md-6">{{ $store.getters.getTags({ tag: 'specialties_text17' }) }}</div>
                     <div class="col-12 col-md-6">
-                        <img class="img-fluid" src="/images/especialidades/jumperr_cmsycrm_especialidades.png" alt="Jumperr cms">
+                        <img class="img-fluid" src="/images/especialidades/jumperr_cmsycrm_especialidades.png" alt="Jumperr-cms">
                     </div>
                 </div>
             </div>

@@ -8,13 +8,15 @@
 <script>
     import NavBar from './globals/NavBar';
     import Footer from './globals/Footer';
-
     export default {
-        components: { Footer, NavBar },
-        data() {
-            return {
-
-            }
+        components: { NavBar, Footer },
+        created() {
+            this.$store.dispatch('APIGetAllLanguagesTags');
+        },
+        computed: {
+           /* isLoading() {
+                return (this.$store.getters.getLanguagesTagActive.length === 0)
+            }*/
         }
     }
 </script>

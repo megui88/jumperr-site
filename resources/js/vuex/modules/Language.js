@@ -1,14 +1,18 @@
 export default {
     state: {
-        flag: 'it',
+        active: {
+            flag: 'es',
+            language: []
+        },
         flags: [],
-        languages: []
+        languages: null
     },
     actions: {
-        APIGetAllLanguagesTags({commit}) {
-            axios.get('/api/tag_translations').then((res) => {
-                // commit('setLanguagesTags', { list: res.data.data })
-
+        APIGetAllLanguagesTags({ commit }) {
+            axios.get('/api/getAllTags').then(res => {
+                if (res.status === 200) {
+                    commit('setLanguagesTags', { list: res.data })
+                }
             }).catch((error) => console.log(error))
         }
     },
@@ -19,32 +23,35 @@ export default {
         getLanguagesFlags: state => {
             return state.flags;
         },
-        getTags: state => (item) => {
-            // let data = state.languages.find(lang => lang.code === state.flag);
+        getTags: state => item => {
+            let tag = null, tags = state.active.language;
 
-            // let tag = data.find(key => key.tag === item.tag).value;
+            tag = tags.find(index => index.tag === item.tag).value;
 
-            // if (!tag)
+            if (!tag) {
+                let it = state.language['it'].find(index => index.tag === item.tag).value;
 
-            return 'no tiene tag'
+                if (!it) return it.value = 'No Tiene Tag';
+
+                return it;
+            }
+
+            return tag;
         }
     },
     mutations: {
         setLanguagesTags(state, {list}) {
             let flags = [];
+            for (let key in list) {
+                flags.push({ code: key });
 
-            list.forEach(index => {
-                flags.push({ code: index.lang });
-            });
+                if (state.active.flag === key) {
+                   Vue.set(state.active, 'language', list[key]);
+                }
+            }
 
-            Vue.set(state.languages, 'flags', flags);
-            Vue.set(state.languages, 'languagesTags', list);
-
-            let lang = state.languageActive.flag;
-
-            const RESPONSE = list.find(key => key.lang === lang);
-
-            Vue.set(state.languageActive, 'languageTagsActive', RESPONSE.screens)
+            Vue.set(state, 'flags', flags);
+            Vue.set(state, 'languages', list);
         },
         changeLanguageByFlagActive(state, {list}) {
             let data = state.languages.languagesTags;
