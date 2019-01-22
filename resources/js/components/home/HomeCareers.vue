@@ -4,14 +4,14 @@
             <div class="container h-100">
                 <div class="row h-100">
                     <div class="img-position">
-                        <img src="/images/home/imagenes/jumperr_carrera_home-min.png" alt="">
+                        <img src="/images/home/imagenes/jumperr_carrera_home-min.png" alt="img-home">
                     </div>
                     <div class="col-12 col-lg-5 align-self-center ml-auto mt-3 mt-lg-0">
-                        <h3 class="title-border-bottom">{$store.getters.getTags({tag:'home_title1'})}}</h3>
-                        <p>
-                            {$store.getters.getTags({tag:'home_text18'})}}
-                        </p>
-                        <router-link to="#" class="btn btn-primary text-uppercase mt-4">{$store.getters.getTags({tag:'home_text19'})}}</router-link>
+                        <h3 class="title-border-bottom">{{ $store.getters.getTags({ tag: 'home_title1' }) }}</h3>
+                        <p>{{ $store.getters.getTags({ tag: 'home_text18' }) }}</p>
+                        <router-link to="#" class="btn btn-primary text-uppercase mt-4">
+                            <a>{{ $store.getters.getTags({ tag: 'home_text19' }) }}</a>
+                        </router-link>
                     </div>
                 </div>
             </div>

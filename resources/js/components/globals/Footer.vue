@@ -10,14 +10,14 @@
                     </a>
                 </div>
                 <div class="col-12 col-md-5 col-lg-4 d-none d-md-flex enlaces mx-auto">
-                    <a href="#">{$store.getters.getTags({tag:'general_btn_company'})}}</a>
-                    <a href="#">{$store.getters.getTags({tag:'general_btn_especialities'})}}</a>
-                    <a href="#">{$store.getters.getTags({tag:'general_btn_agencies'})}}</a>
-                    <a href="#">{$store.getters.getTags({tag:'general_btn_contact'})}}</a>
+                    <a href="#">{{ $store.getters.getTags({ tag: 'general_btn_company' }) }}</a>
+                    <a href="#">{{ $store.getters.getTags({ tag: 'general_btn_especialities' }) }}</a>
+                    <a href="#">{{ $store.getters.getTags({ tag: 'general_btn_agencies' }) }}</a>
+                    <a href="#">{{ $store.getters.getTags({ tag: 'general_btn_contact' }) }}</a>
                     <a href="#">Jumperr Start</a>
-                    <a href="#">{$store.getters.getTags({tag:'home_title5'})}}</a>
-                    <a href="#">{$store.getters.getTags({tag:'home_title7'})}}</a>
-                    <a href="#">{$store.getters.getTags({tag:'home_title3'})}}</a>
+                    <a href="#">{{ $store.getters.getTags({ tag: 'home_title5' }) }}</a>
+                    <a href="#">{{ $store.getters.getTags({ tag: 'home_title7' }) }}</a>
+                    <a href="#">{{ $store.getters.getTags({ tag: 'home_title3' }) }}</a>
                 </div>
                 <div class="col-12 col-md-3 text-center mt-4 mt-md-0">
                     <a href="#" target="_blank" rel="noopener noreferrer">
@@ -184,38 +184,6 @@
         }
     }
 
-    /* footer{
-        position: relative;
-        background-image: url('/images/home/imagenes/footerr_tapaprincipal.svg');
-        background-size: 100%;
-        background-position: left top;
-        background-repeat: no-repeat;
-        height: 300px;
-        width: 100%;
-    }
-    footer:before{
-        content: '';
-        background-color: transparent;
-        background-image: url('/images/home/imagenes/footerr_ultimatapa.svg');
-        background-size: 100%;
-        background-position: right top;
-        background-repeat: repeat-x;
-        width: 100%;
-        height: 200px;
-        position: absolute;
-        top: -20px;
-        left: 0;
-        z-index: -1;
-    }
-    .power-by-jumperr{
-        width: 100%;
-        background-color: #F96332;
-        background-image: url('/images/home/imagenes/footerr_1.svg');
-        background-size: 100%;
-        background-position: bottom center;
-        background-repeat: no-repeat;
-        min-height: 126px;
-    } */
     .power-by-jumperr a {
         font-weight: 700;
     }
@@ -236,6 +204,4 @@
         font-weight: 500;
         line-height: 2.5;
     }
-
-
 </style>

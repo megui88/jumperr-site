@@ -1,13 +1,11 @@
 <template>
-    <div id="section_blogs" class="">
+    <div id="section_blogs">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-md-10 mx-auto">
                     <article class="text-center">
-                        <h3 class="title-border-bottom">{$store.getters.getTags({tag:'partners_title12'})}}</h3>
-                        <h4 class="mb-md-5">
-                            {$store.getters.getTags({tag:home_text10})}}
-                        </h4>
+                        <h3 class="title-border-bottom">{{ $store.getters.getTags({ tag: 'partners_title12' }) }}</h3>
+                        <h4 class="mb-md-5">{{ $store.getters.getTags({ tag: 'home_text10' }) }}</h4>
                     </article>
                 </div>
             </div>
@@ -16,11 +14,6 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <!--#
-                        #
-                        #    Blog Swiper Slider
-                        #
-                        #-->
                     <swiper :options="swiperOption">
                         <swiper-slide v-for="(blog, id) in blogs" :key="id">
                             <div>
@@ -29,16 +22,15 @@
                                     <small>{{ blog.categoria }}</small>
                                 </router-link>
                                 <h6 class="title-blog">{{ blog.titulo }}</h6>
-                                <router-link :to="blog.enlace" class="">{$store.getters.getTags({tag:'general_vermas'})}}</router-link>
+                                <router-link :to="blog.enlace">{{ $store.getters.getTags({ tag: 'general_vermas' }) }}</router-link>
                             </div>
                         </swiper-slide>
-                        <!-- <div class="swiper-pagination" slot="pagination"></div> -->
                     </swiper>
 
                 </div>
                 
                 <div class="col-12 text-center">
-                        <router-link to="#" class="btn btn-primary mt-5 text-uppercase">{$store.getters.getTags({tag:home_text11})}}</router-link>
+                        <router-link to="#" class="btn btn-primary mt-5 text-uppercase">{{ $store.getters.getTags({ tag: 'home_text11' }) }}</router-link>
                 </div>
             </div>
         </div>
@@ -114,44 +106,49 @@
     }
 </script>
 <style scoped>
-.img-1{
-    position: absolute;
-    top: -50px;
-    right: -30px;
-    display: inline-block;
-    width: 120px;
-    height: 120px;
-    animation: float 5s linear infinite;
-}
-.img-2{
-    position: absolute;
-    top: 50px;
-    left: 30px;
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    animation: float 1s linear infinite;
-}
-@keyframes float {
-	0% {
-		transform: translatey(0px);
-	}
-	50% {
-		transform: translatey(-20px);
-	}
-	100% {
-		transform: translatey(0px);
-	}
-}
-    .title-blog{
+    .img-1 {
+        position: absolute;
+        top: -50px;
+        right: -30px;
+        display: inline-block;
+        width: 120px;
+        height: 120px;
+        animation: float 5s linear infinite;
+    }
+
+    .img-2 {
+        position: absolute;
+        top: 50px;
+        left: 30px;
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        animation: float 1s linear infinite;
+    }
+
+    @keyframes float {
+        0% {
+            transform: translatey(0px);
+        }
+        50% {
+            transform: translatey(-20px);
+        }
+        100% {
+            transform: translatey(0px);
+        }
+    }
+
+    .title-blog {
         color: #1f1f1f;
     }
-    #section_blogs{
+
+    #section_blogs {
         position: relative;
         background-color: #fff;
         padding-top: 2rem;
         padding-bottom: 4rem;
     }
+
     .title-border-bottom:after {
         content: ' ';
         border-bottom: 1px solid #f26336;
@@ -165,26 +162,29 @@
         padding-top: 50px;
         padding-bottom: 50px;
     }
+
     .swiper-slide {
-    background-position: center;
-    background-size: cover;
-    max-width: 100%;
+        background-position: center;
+        background-size: cover;
+        max-width: 100%;
     }
+
     @media (min-width: 992px) {
-        .swiper-slide{
+        .swiper-slide {
             max-width: 320px;
         }
     }
-    
-    .swiper-pagination-fraction, 
-    .swiper-pagination-custom, 
-    .swiper-container-horizontal > .swiper-pagination-bullets{
+
+    .swiper-pagination-fraction,
+    .swiper-pagination-custom,
+    .swiper-container-horizontal > .swiper-pagination-bullets {
         margin-top: 1rem;
         bottom: 0px;
         left: 0;
         width: 100%;
     }
-    .swiper-pagination{
+
+    .swiper-pagination {
         position: relative;
         text-align: center;
         -webkit-transition: 300ms opacity;
@@ -194,7 +194,7 @@
         transform: translate3d(0, 0, 0);
         z-index: 10;
     }
-    
+
 
     /*Card bootstrap*/
     .card {
@@ -208,11 +208,13 @@
         border: 1px solid rgba(0, 0, 0, 0.125);
         border-radius: 0.25rem;
     }
+
     .card-img-top {
         width: 100%;
         border-top-left-radius: calc(0.25rem - 1px);
         border-top-right-radius: calc(0.25rem - 1px);
     }
+
     .card-body {
         flex: 1 1 auto;
         padding: 1.3rem;
@@ -222,10 +224,12 @@
         flex-direction: column;
         justify-content: space-between;
     }
-    p{
+
+    p {
         font-size: 1rem;
         line-height: 1.6rem;
     }
+
     .btn {
         -webkit-user-select: none;
         -moz-user-select: none;

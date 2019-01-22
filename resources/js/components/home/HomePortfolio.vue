@@ -4,7 +4,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12">
-                        <h3 class="title-border-bottom text-center">{$store.getters.getTags({tag:'home_text14'})}}</h3>
+                        <h3 class="title-border-bottom text-center">{{ $store.getters.getTags({ tag: 'home_text14' }) }}</h3>
                     </div>
                 </div>
             </div>
@@ -23,8 +23,6 @@
                     </div>
                 </div>
 
-                <!--  -->
-
                 <div class="portafolio-item">
                     <div class="portafolio-image">
                         <img class="" src="images/home/imagenes/portafolio/thumbnail/jumperr_geco_dekstop.jpg" alt="FDGRAFIK">
@@ -39,11 +37,9 @@
                     </div>
                 </div>
 
-                <!--  -->
-
                 <div class="portafolio-item">
                     <div class="portafolio-image">
-                        <img class="" src="images/home/imagenes/portafolio/thumbnail/jumperr_gmk_desktop.jpg" alt="FDGRAFIK">
+                        <img src="images/home/imagenes/portafolio/thumbnail/jumperr_gmk_desktop.jpg" alt="FDGRAFIK">
                     </div>
                     <div class="portafolio-caption">
                         <router-link to="#" class="p-3">
@@ -55,11 +51,9 @@
                     </div>
                 </div>
 
-                <!--  -->
-
                 <div class="portafolio-item">
                     <div class="portafolio-image">
-                        <img class="" src="images/home/imagenes/portafolio/thumbnail/jumperr_porto_desktop.jpg" alt="FDGRAFIK">
+                        <img src="images/home/imagenes/portafolio/thumbnail/jumperr_porto_desktop.jpg" alt="FDGRAFIK">
                     </div>
                     <div class="portafolio-caption">
                         <router-link to="#" class="p-3">
@@ -70,8 +64,6 @@
                         </router-link>
                     </div>
                 </div>
-
-                <!--  -->
 
                 <div class="portafolio-item">
                     <div class="portafolio-image">
@@ -86,8 +78,6 @@
                         </router-link>
                     </div>
                 </div>
-
-                <!--  -->
 
                 <div class="portafolio-item">
                     <div class="portafolio-image">
@@ -108,7 +98,9 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12 text-center">
-                            <router-link to="#" class="btn btn-primary text-uppercase mt-5">{$store.getters.getTags({tag:'general_vermas'})}}</router-link>
+                        <router-link to="#" class="btn btn-primary text-uppercase mt-5">
+                            <a>{{ $store.getters.getTags({ tag: 'general_vermas' }) }}</a>
+                        </router-link>
                     </div>
                 </div>
             </div>

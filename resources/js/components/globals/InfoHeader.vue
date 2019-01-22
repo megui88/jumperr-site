@@ -3,14 +3,13 @@
         <div class="container">
             <div class="row">
                 <div class="col-6">
-                    <a href="mailto:info@jumperr.com">Email: info@jumperr.com</a>
+                    <a :href="'mailto:' + email ">Email: {{ email }}</a>
                 </div>
                 <div class="col-6">
                     <nav class="redes_sociales text-right">
-                        <a class="pl-2" href="http://" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                        <a class="pl-2" href="http://" target="_blank"><i class="fab fa-instagram"></i></a>
-                        <a class="pl-2" href="http://" target="_blank"><i class="fab fa-youtube"></i></a>
-                        <a class="pl-2" href="http://" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <template v-for="item in socialMedia">
+                            <a :href="item.link" target="_blank" class="pl-2"><i :class="item.icon"></i></a>
+                        </template>
                     </nav>
                 </div>
             </div>
@@ -19,7 +18,18 @@
 </template>
 <script>
     export default {
-        name: 'info-header'
+        name: 'info-header',
+        data() {
+            return {
+                email: 'info@jumperr.com',
+                socialMedia: [
+                    { link: 'http://', icon: 'fab fa-facebook-f'},
+                    { link: 'http://', icon: 'fab fa-instagram'},
+                    { link: 'http://', icon: 'fab fa-youtube'},
+                    { link: 'http://', icon: 'fab fa-linkedin-in'}
+                ]
+            }
+        }
     }
 </script>
 <style scoped>

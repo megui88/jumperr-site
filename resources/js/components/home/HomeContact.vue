@@ -4,8 +4,8 @@
             <div class="row">
                 <div class="col-12 col-md-8 mx-auto mb-4">
                     <article class="text-center">
-                        <h3 class="title-border-bottom">{$store.getters.getTags({tag:'conctac_title1'})}}</h3>
-                        <h4>{$store.getters.getTags({tag:'conctac_text1'})}}</h4>
+                        <h3 class="title-border-bottom">{{ $store.getters.getTags({ tag: 'conctac_title1' }) }}</h3>
+                        <h4>{{ $store.getters.getTags({ tag: 'conctac_text1' }) }}</h4>
                     </article>
                 </div>
             </div>
@@ -15,23 +15,23 @@
             <div class="row">
                 <div class="col-12 col-md-6 m-auto">
                     <div class="form-group">
-                        <label for="">{$store.getters.getTags({tag:'conctac_text5'})}}*</label>
+                        <label for="">{{ $store.getters.getTags({ tag: 'conctac_text5' }) }}*</label>
                         <input class="form-control" type="text" v-model="form.fullname">
                     </div>
                     <div class="form-group">
-                        <label for="">{$store.getters.getTags({tag:'conctac_text6'})}}*</label>
+                        <label for="">{{ $store.getters.getTags({ tag: 'conctac_text6' }) }}*</label>
                         <input class="form-control" type="text" v-model="form.email">
                     </div>
                     <div class="form-group">
-                        <label for="">{$store.getters.getTags({tag:'conctac_text7'})}}*</label>
+                        <label for="">{{ $store.getters.getTags({ tag: 'conctac_text7' })  }}*</label>
                         <input class="form-control" type="text" v-model="form.phone">
                     </div>
                     <div class="form-group">
-                        <label for="">{$store.getters.getTags({tag:'conctac_text8'})}}*</label>
+                        <label for="">{{ $store.getters.getTags({ tag: 'conctac_text8' }) }}*</label>
                         <input class="form-control" type="text" v-model="form.comment">
                     </div>
                     <div class="form-group text-center">
-                        <button class="btn btn-primary text-uppercase">{$store.getters.getTags({tag:'general_btn_send'})}}</button>
+                        <button class="btn btn-primary text-uppercase">{{ $store.getters.getTags({ tag: 'general_btn_send' }) }}</button>
                     </div>
                 </div>
             </div>

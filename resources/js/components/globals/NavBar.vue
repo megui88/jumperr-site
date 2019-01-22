@@ -17,25 +17,25 @@
                         <div class="collapse navbar-collapse text-uppercase font-weight-bold" id="navbarTogglerDemo02">
                             <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
                                 <li class="nav-item">
-                                    <router-link class="nav-link" to="/">{$store.getters.getTags({tag:'general_btn_home'})}}</router-link>
+                                    <router-link class="nav-link" to="/">{{ $store.getters.getTags({ tag: 'general_btn_home' }) }}</router-link>
                                 </li>
                                 <li class="nav-item">
-                                    <router-link class="nav-link" to="/#lacompañia">{$store.getters.getTags({tag:'general_btn_company'})}}</router-link>
+                                    <router-link class="nav-link" to="/#lacompañia">{{ $store.getters.getTags({ tag: 'general_btn_company' }) }}</router-link>
                                 </li>
                                 <li class="nav-item">
-                                    <router-link class="nav-link" to="/#especialidades" >{$store.getters.getTags({tag:'general_btn_especialities'})}}</router-link>
+                                    <router-link class="nav-link" to="/#especialidades" >{{ $store.getters.getTags({ tag: 'general_btn_especialities' }) }}</router-link>
                                 </li>
                                 <li class="nav-item">
-                                    <router-link class="nav-link" to="/#blog" >{$store.getters.getTags({tag:'partners_title12'})}}</router-link>
+                                    <router-link class="nav-link" to="/#blog" >{{ $store.getters.getTags({ tag: 'partners_title12' }) }}</router-link>
                                 </li>
                                 <li class="nav-item">
-                                    <router-link class="nav-link" to="/partners" >{$store.getters.getTags({tag:'partners_titulo'})}}</router-link>
+                                    <router-link class="nav-link" to="/partners" >{{ $store.getters.getTags({ tag: 'partners_titulo' }) }}</router-link>
                                 </li>
                                 <li class="nav-item">
-                                    <router-link class="nav-link" to="/#carreras" >{$store.getters.getTags({tag:'careers_titulo'})}}</router-link>
+                                    <router-link class="nav-link" to="/#carreras" >{{ $store.getters.getTags({ tag: 'careers_titulo' }) }}</router-link>
                                 </li>
                             </ul>
-                            <a href="/#contacto" class="btn btn-primary ml-lg-3 d-none d-lg-block">{$store.getters.getTags({tag:'general_btn_contact'})}}</a>
+                            <a href="/#contacto" class="btn btn-primary ml-lg-3 d-none d-lg-block">{{ $store.getters.getTags({ tag: 'general_btn_contact'}) }}</a>
                         </div>
                     </div>
                 </nav>
@@ -58,11 +58,7 @@
             //detectamos el evento scroll
             var that = this;
             window.onscroll = function () {
-                if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
-                    that.sticky = false;
-                } else {
-                    that.sticky = true;
-                }
+                that.sticky = !(document.body.scrollTop > 10 || document.documentElement.scrollTop > 10);
             };
         },
         methods: {

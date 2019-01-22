@@ -2,19 +2,17 @@
     <div id="section_bio">
         <article class="container fondo pb-4 pb-md-0">
             <div class="phones">
-                <img class="phone1" src="/images/home/imagenes/jumperr_telefono_3.png" alt="">
-                <img class="phone2" src="/images/home/imagenes/jumperr_telefono_2.png" alt="">
-                <img class="phone3" src="/images/home/imagenes/jumperr_telefono_1.png" alt="">
+                <img class="phone1" src="/images/home/imagenes/jumperr_telefono_3.png" alt="img-3">
+                <img class="phone2" src="/images/home/imagenes/jumperr_telefono_2.png" alt="img-2">
+                <img class="phone3" src="/images/home/imagenes/jumperr_telefono_1.png" alt="img-1">
             </div>
             <div class="d-flex flex-column justify-content-center">
                 <div>
-                    <h3 class="title-border-bottom">{$store.getters.getTags({tag:'home_text11'})}}
-                    </h3>
-                    <p>
-                        {$store.getters.getTags({tag:'home_text12'})}}
-                    </p>
+                    <h3 class="title-border-bottom">{{ $store.getters.getTags({ tag: 'home_text11' }) }}</h3>
+                    img-1<p>{{ $store.getters.getTags({ tag: 'home_text12' }) }}</p>
+
                     <router-link to="#" class="btn btn-primary text-uppercase mt-4">
-                        {$store.getters.getTags({tag:'general_vermas'})}}
+                        <a>{{ $store.getters.getTags({ tag: 'general_vermas' }) }}</a>
                     </router-link>
                 </div>
             </div>
