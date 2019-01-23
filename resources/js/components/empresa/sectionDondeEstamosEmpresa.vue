@@ -63,36 +63,96 @@
                                     <img class="item-1" src="/images/la-empresa/vectores/1_ciudad.svg" alt="">
                                     <img class="item-2" src="/images/la-empresa/vectores/1_personas.svg" alt="">
                                     <img class="item-3" src="/images/la-empresa/vectores/2_personas.svg" alt="">
+                                    <div class="dropdown">
+                                        <div class="circle-pulse" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></div>
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                            <p class="dropdown-item-text">
+                                                <strong>Nuestro Inicio</strong>
+                                                <br>
+                                                Hoy en día hay muchas casas de software que ofrecen servicios y productos digitales; sin embargo, pocas empresas trabajan en sinergia con sus socios comerciales para crecer juntos. 
+                                            </p>
+                                        </div>
+                                    </div>
                                 </div>
                             </swiper-slide>
                             <swiper-slide>
                                 <div class="zona zona-2">
                                     <img class="item-1" src="/images/la-empresa/vectores/3_ciudad.svg" alt="">
                                     <img class="item-2" src="/images/la-empresa/vectores/5_personas.svg" alt="">
+                                    <div class="dropdown">
+                                        <div class="circle-pulse" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></div>
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                            <p class="dropdown-item-text">
+                                                <strong>Nuestro Inicio</strong>
+                                                <br>
+                                                Hoy en día hay muchas casas de software que ofrecen servicios y productos digitales; sin embargo, pocas empresas trabajan en sinergia con sus socios comerciales para crecer juntos. 
+                                            </p>
+                                        </div>
+                                    </div>
                                 </div>
                             </swiper-slide>      
                             <swiper-slide>
                                 <div id="zona3" class="zona zona-3">
                                     <img class="item-1" src="/images/la-empresa/vectores/2_ciudad.svg" alt="">
                                     <img class="item-2" src="/images/la-empresa/vectores/3_personas.svg" alt="">
+                                    <div class="dropdown">
+                                        <div class="circle-pulse" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></div>
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                            <p class="dropdown-item-text">
+                                                <strong>Nuestro Inicio</strong>
+                                                <br>
+                                                Hoy en día hay muchas casas de software que ofrecen servicios y productos digitales; sin embargo, pocas empresas trabajan en sinergia con sus socios comerciales para crecer juntos. 
+                                            </p>
+                                        </div>
+                                    </div>
                                 </div>
                             </swiper-slide>
                             <swiper-slide>
                                 <div id="zona4" class="zona zona-4">
                                     <img class="item-1" src="/images/la-empresa/vectores/4_ciudad.svg" alt="">
                                     <img class="item-2" src="/images/la-empresa/vectores/8_personas.svg" alt="">
+                                    <div class="dropdown">
+                                        <div class="circle-pulse" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></div>
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                            <p class="dropdown-item-text">
+                                                <strong>Nuestro Inicio</strong>
+                                                <br>
+                                                Hoy en día hay muchas casas de software que ofrecen servicios y productos digitales; sin embargo, pocas empresas trabajan en sinergia con sus socios comerciales para crecer juntos. 
+                                            </p>
+                                        </div>
+                                    </div>
                                 </div>
                             </swiper-slide>
                             <swiper-slide>
                                 <div id="zona5" class="zona zona-5">
                                     <img class="item-1" src="/images/la-empresa/vectores/5_ciudad.svg" alt="">
                                     <img class="item-2" src="/images/la-empresa/vectores/7_personas.svg" alt="">
+                                    <div class="dropdown">
+                                        <div class="circle-pulse" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></div>
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                            <p class="dropdown-item-text">
+                                                <strong>Nuestro Inicio</strong>
+                                                <br>
+                                                Hoy en día hay muchas casas de software que ofrecen servicios y productos digitales; sin embargo, pocas empresas trabajan en sinergia con sus socios comerciales para crecer juntos. 
+                                            </p>
+                                        </div>
+                                    </div>
                                 </div>
                             </swiper-slide>
                             <swiper-slide>
                                 <div id="zona6" class="zona zona-6">
                                     <img class="item-1" src="/images/la-empresa/vectores/6_ciudad.svg" alt="">
                                     <img class="item-2" src="/images/la-empresa/vectores/4_personas.svg" alt="">
+                                    <div class="dropdown">
+                                        <div class="circle-pulse" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></div>
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                            <p class="dropdown-item-text">
+                                                <strong>Nuestro Inicio</strong>
+                                                <br>
+                                                Hoy en día hay muchas casas de software que ofrecen servicios y productos digitales; sin embargo, pocas empresas trabajan en sinergia con sus socios comerciales para crecer juntos. 
+                                            </p>
+                                        </div>
+                                    </div>
                                 </div>
                             </swiper-slide>
                         </swiper>
@@ -387,5 +447,43 @@ p{
 	100% {
 		transform: translatey(0px);
 	}
+}
+
+/* Botones pulse */
+.circle-pulse {
+    position: absolute;
+    top: 80px;
+    right: 50%;
+    transform: translateX(-50%);
+    display: block;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: #f26336;
+    cursor: pointer;
+    box-shadow: 0 0 0 #f2623641;
+    animation: pulse 2s infinite;
+    z-index: 1030;
+}
+@keyframes pulse {
+  0% {
+    -moz-box-shadow: 0 0 0 0 #f2623677;
+    box-shadow: 0 0 0 0 #f2623677;
+  }
+  70% {
+      -moz-box-shadow: 0 0 0 10px #f2623600;
+      box-shadow: 0 0 0 10px #f2623600;
+  }
+  100% {
+      -moz-box-shadow: 0 0 0 0 #f2623600;
+      box-shadow: 0 0 0 0 #f2623600;
+  }
+}
+.dropdown-menu{
+    max-width: 300px;
+}
+.dropdown-item-text{
+    font-size: 1rem;
+    line-height: 1.2;
 }
 </style>
