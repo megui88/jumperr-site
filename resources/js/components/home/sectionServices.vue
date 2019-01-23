@@ -5,7 +5,7 @@
                 <div class="col-12 col-md-10 mx-auto">
                     <article class="text-center">
                         <h3 class="title-border-bottom">Nuestras Especialidades</h3>
-                        <h4 class="mb-md-5">
+                        <h4 class="mb-3 mb-md-5">
                             Convertimos en soluciones digitales tus ideas y proyectos,
                             impulsando tu modelo de negocio con estrategias para el mundo online.
                         </h4>

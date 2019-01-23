@@ -29,7 +29,7 @@
     display: inline-block;
     width: 120px;
     height: 120px;
-    animation: rotarRight 5s linear infinite;
+    animation: rotarRight 3s linear infinite;
 }
 .img-2{
     position: absolute;
@@ -47,7 +47,7 @@
     display: inline-block;
     width: 120px;
     height: 120px;
-    animation: rotarRight 5s linear infinite;
+    animation: rotarRight 3s linear infinite;
 }
 .img-4{
     position: absolute;
@@ -149,7 +149,7 @@ p{
     .img-1{
         position: absolute;
         top: 50px;
-        left: -40px;
+        left: -50px;
         display: inline-block;
         width: 120px;
         height: 120px;
