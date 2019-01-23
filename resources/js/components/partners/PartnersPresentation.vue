@@ -8,7 +8,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-md-8 mx-auto">
-                        {{ $store.getters.getTags({ tag: 'partners_text22' }) }}
+                        <span v-html="$store.getters.getTags({ tag: 'partners_text22' })"></span>
                         <div class="text-center">
                             <img class="img-fluid img-central" src="/images/partners/imagen2.jpg" alt="Jumperr partners">
                         </div>
@@ -21,11 +21,9 @@
             <!-- izquierda -->
             <img class="img-float-1 d-none d-md-inline-block" src="/images/iconos/nube_2.svg" alt="elemento jumperr">
             <img class="img-float-2" src="/images/iconos/signodemas.svg" alt="elemento jumperr">
-            <img class="img-float-3  d-none d-md-inline-block" src="/images/iconos/circulowhite.svg"
-                 alt="elemento jumperr">
+            <img class="img-float-3  d-none d-md-inline-block" src="/images/iconos/circulowhite.svg" alt="elemento jumperr">
             <!-- derecha -->
-            <img class="img-float-4  d-none d-md-inline-block" src="/images/iconos/circulogrueso.svg"
-                 alt="elemento jumperr">
+            <img class="img-float-4  d-none d-md-inline-block" src="/images/iconos/circulogrueso.svg" alt="elemento jumperr">
             <img class="img-float-5" src="/images/iconos/signodemas.svg" alt="elemento jumperr">
             <div class="circle-pulse"></div>
             <img class="img-float-6" src="/images/iconos/circulo-white.svg" alt="elemento jumperr">

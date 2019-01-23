@@ -5,33 +5,30 @@
                 <h3 class="title-border-bottom text-center text-white">{{ $store.getters.getTags({ tag: 'careers_text3' }) }}</h3>
             </article>
             <aside>
-                <div class="item">
-                    <img src="/images/carreras/telefono-min.png" alt="Jumperr proceso de carreras">
-                    <strong class="d-block">1. {{ $store.getters.getTags({ tag: 'careers_text4' }) }}</strong>
-                </div>
-                <div class="item">
-                    <img src="/images/carreras/user-min.png" alt="Jumperr proceso de carreras">
-                    <strong class="d-block">2. {{ $store.getters.getTags({ tag: 'careers_text7' }) }}</strong>
-                </div>
-                <div class="item">
-                    <img src="/images/carreras/tuerca-min.png" alt="Jumperr proceso de carreras">
-                    <strong class="d-block">3. {{ $store.getters.getTags({ tag: 'careers_text8' }) }}</strong>
-                </div>
-                <div class="item">
-                    <img src="/images/carreras/moneda-min.png" alt="Jumperr proceso de carreras">
-                    <strong class="d-block">4. {{ $store.getters.getTags({ tag:'careers_text9' }) }}</strong>
-                </div>
-                <div class="item">
-                    <img src="/images/carreras/logocircular copy.svg" alt="Jumperr proceso de carreras">
-                    <strong class="d-block">5. {{ $store.getters.getTags({ tag:'careers_text27' }) }}</strong>
-                </div>
+                <template v-for="career in careers">
+                    <div class="item">
+                        <img :src="career.img" :alt="'img-' + career.id">
+                        <strong class="d-block">{{ career.id + '. ' + career.title }}</strong>
+                    </div>
+                </template>
             </aside>
         </section>
     </div>
 </template>
 <script>
     export default {
-        name: 'careers-process'
+        name: 'careers-process',
+        computed: {
+            careers() {
+                return [
+                    { id: 1, img: '/images/carreras/telefono-min.png', title: this.$store.getters.getTags({ tag: 'careers_text4' }) },
+                    { id: 2, img: '/images/carreras/user-min.png', title: this.$store.getters.getTags({ tag: 'careers_text7' }) },
+                    { id: 3, img: '/images/carreras/tuerca-min.png', title: this.$store.getters.getTags({ tag: 'careers_text8' }) },
+                    { id: 4, img: '/images/carreras/moneda-min.png', title: this.$store.getters.getTags({ tag: 'careers_text9' }) },
+                    { id: 5, img: '/images/carreras/logocircular copy.svg', title: this.$store.getters.getTags({ tag: 'careers_text27' }) },
+                ];
+            }
+        }
     }
 </script>
 <style scoped>

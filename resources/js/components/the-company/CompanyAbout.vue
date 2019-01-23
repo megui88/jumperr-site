@@ -3,16 +3,13 @@
         <section class="grid-container">
             <div class="d-flex align-items-md-center">
                 <article >
-                    <h6 class="text-uppsercase text-theme">
-                        {$store.getters.getTags({tag:'text1'})}}
-                    </h6>
-                    <h3 class="title-border-bottom">
-                        {$store.getters.getTags({tag:'company_title1'})}}
-                    </h3>
-                    {$store.getters.getTags({tag:'company_text2'})}}
+                    <h6 class="text-uppsercase text-theme">{{ $store.getters.getTags({ tag: 'text1' }) }}</h6>
+                    <h3 class="title-border-bottom">{{ $store.getters.getTags({ tag: 'company_title1' }) }}</h3>
+                    <span v-html="$store.getters.getTags({ tag: 'company_text2' })"></span>
                 </article>
             </div>
-            <aside class="">
+
+            <aside>
                 <div class="position-relative d-inline-block">
                     <div class="fondo-slider"></div>
                         <div class="contenedor-slider"> <!--Elemento fondo raya-->
@@ -24,7 +21,6 @@
                                 <img class="img-fluid" src="/images/la-empresa/jumperr_slider2_compañia-min.jpg" alt="compañia">
                             </swiper-slide>
 
-                            <!-- <div class="swiper-pagination" slot="pagination"></div> -->
                             <div class="navegacion">
                                 <div class="swiper-button-next"></div>
                                 <div class="swiper-button-prev"></div>

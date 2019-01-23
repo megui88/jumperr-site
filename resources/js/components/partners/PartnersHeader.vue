@@ -9,15 +9,24 @@
                 </div>
             </div>
 
-            <img class="img-float-1" src="/images/iconos/circulo.svg" alt="elemento jumperr">
-            <img class="img-float-2" src="/images/iconos/signodemas.svg" alt="elemento jumperr">
-            <img class="img-float-3" src="/images/iconos/signodemas.svg" alt="elemento jumperr">
+            <template v-for="image in images">
+                <img :class="'img-float-' + image.id" :src="image.img" :alt="'img-partner-' + image.id">
+            </template>
         </header>
     </div>
 </template>
 <script>
     export default {
-        name: 'partners-header'
+        name: 'partners-header',
+        data() {
+            return {
+                images: [
+                    { id: 1, img: '/images/iconos/circulo.svg' },
+                    { id: 2, img: '/images/iconos/signodemas.svg' },
+                    { id: 3, img: '/images/iconos/signodemas.svg' },
+                ],
+            }
+        }
     }
 </script>
 <style scoped>

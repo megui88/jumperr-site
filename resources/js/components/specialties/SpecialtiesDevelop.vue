@@ -2,17 +2,15 @@
     <div>
         <section class="wrapper">
             <div class="column-row">
-                <img class="img-fluid mano" src="/images/especialidades/jumperr_telefono_especialidades-min.png" alt="">
+                <img class="img-fluid mano" src="/images/especialidades/jumperr_telefono_especialidades-min.png" alt="img-newsletter">
             </div>
 
             <div class="columna-row ml-auto">
                 <div class="container">
                     <div class="row">
                         <div class="col-12 col-lg-11 ml-lg-auto">
-                            <h3 class="title-border-bottom text-white">
-                                {$store.getters.getTags({tag:'specialties_title2'})}}
-                            </h3>
-                            {$store.getters.getTags({tag:'specialties_text4'})}}
+                            <h3 class="title-border-bottom text-white">{{ $store.getters.getTags({ tag: 'specialties_title2' }) }}</h3>
+                            <p v-html="$store.getters.getTags({ tag: 'specialties_text4' })"></p>
                         </div>
                     </div>
                 </div>

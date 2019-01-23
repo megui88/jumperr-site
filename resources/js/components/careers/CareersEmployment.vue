@@ -13,16 +13,15 @@
                             <div class="cart">
                                 <div class="cart-body">
                                     <div class="title">
-                                        <h3 class="mb-0">{{service.title}}</h3>
+                                        <h3 class="mb-0">{{ service.title }}</h3>
                                         <span class="d-block mb-3">{{ service.location }}</span>
                                     </div>
                                     <p>
                                         <strong>{{ service.time }}</strong>
                                         <br>
-                                        <small> {{ service.modality }}</small>
+                                        <small> {{ service.modality }} </small>
                                     </p>
-                                    <a :href="service.url" class="btn btn-primary align-self-end">
-                                        {{ $store.getters.getTags({ tag: 'careers_text18' }) }}</a>
+                                    <a :href="service.url" class="btn btn-primary align-self-end">{{ $store.getters.getTags({ tag: 'careers_text18' }) }}</a>
                                 </div>
                             </div>
                         </swiper-slide>
@@ -40,57 +39,6 @@
         name: 'careers-employment',
         data() {
             return {
-                services: [
-                    {
-                        location: this.$store.getters.getTags({tag: 'careers_text21'}),
-                        title:this.$store.getters.getTags({tag: 'careers_text11'}),
-                        time:this.$store.getters.getTags({tag: 'careers_text16'}),
-                        modality:this.$store.getters.getTags({tag: 'careers_text26'}),
-                        url: '/#'
-                    },
-                    {
-                        location:this.$store.getters.getTags({tag: 'careers_text22'}),
-                        title:this.$store.getters.getTags({tag: 'careers_text12'}),
-                        time:this.$store.getters.getTags({tag: 'careers_text16'}),
-                        modality:this.$store.getters.getTags({tag: 'careers_text26'}),
-                        url: '/#'
-                    },
-                    {
-                        location:this.$store.getters.getTags({tag: 'careers_text23'}),
-                        title:this.$store.getters.getTags({tag: 'careers_text11'}),
-                        time:this.$store.getters.getTags({tag: 'careers_text16'}),
-                        modality:this.$store.getters.getTags({tag: 'careers_text17'}),
-                        url: '/#'
-                    },
-                    {
-                        location:this.$store.getters.getTags({tag: 'careers_text23'}),
-                        title:this.$store.getters.getTags({tag: 'careers_text13'}),
-                        time:this.$store.getters.getTags({tag: 'careers_text16'}),
-                        modality:this.$store.getters.getTags({tag: 'careers_text26'}),
-                        url: '/#'
-                    },
-                    {
-                        location:this.$store.getters.getTags({tag: 'careers_text24'}),
-                        title:this.$store.getters.getTags({tag: 'careers_text15'}),
-                        time:this.$store.getters.getTags({tag: 'careers_text16'}),
-                        modality:this.$store.getters.getTags({tag: 'careers_text26'}),
-                        url: '/#'
-                    },
-                    {
-                        location:this.$store.getters.getTags({tag: 'careers_text21'}),
-                        title:this.$store.getters.getTags({tag: 'careers_text14'}),
-                        time:this.$store.getters.getTags({tag: 'careers_text16'}),
-                        modality:this.$store.getters.getTags({tag: 'careers_text17'}),
-                        url: '/#'
-                    },
-                    {
-                        location:this.$store.getters.getTags({tag: 'careers_text25'}),
-                        title:this.$store.getters.getTags({tag: 'careers_text11'}),
-                        time:this.$store.getters.getTags({tag: 'careers_text16'}),
-                        modality:this.$store.getters.getTags({tag: 'careers_text26'}),
-                        url: '/#'
-                    },
-                ],
                 swiperOption: {
                     slidesPerView: 3,
                     slidesPerColumn: 2,
@@ -126,6 +74,61 @@
                         }
                     }
                 }
+            }
+        },
+        computed: {
+            services() {
+                return [
+                    {
+                        location: this.$store.getters.getTags({tag: 'careers_text21'}),
+                        title:this.$store.getters.getTags({tag: 'careers_text11'}),
+                        time:this.$store.getters.getTags({tag: 'careers_text16'}),
+                        modality:this.$store.getters.getTags({tag: 'careers_text26'}),
+                        url: '/labori/1'
+                    },
+                    {
+                        location:this.$store.getters.getTags({tag: 'careers_text22'}),
+                        title:this.$store.getters.getTags({tag: 'careers_text12'}),
+                        time:this.$store.getters.getTags({tag: 'careers_text16'}),
+                        modality:this.$store.getters.getTags({tag: 'careers_text26'}),
+                        url: '/labori/1'
+                    },
+                    {
+                        location:this.$store.getters.getTags({tag: 'careers_text23'}),
+                        title:this.$store.getters.getTags({tag: 'careers_text11'}),
+                        time:this.$store.getters.getTags({tag: 'careers_text16'}),
+                        modality:this.$store.getters.getTags({tag: 'careers_text17'}),
+                        url: '/labori/1'
+                    },
+                    {
+                        location:this.$store.getters.getTags({tag: 'careers_text23'}),
+                        title:this.$store.getters.getTags({tag: 'careers_text13'}),
+                        time:this.$store.getters.getTags({tag: 'careers_text16'}),
+                        modality:this.$store.getters.getTags({tag: 'careers_text26'}),
+                        url: '/labori/1'
+                    },
+                    {
+                        location:this.$store.getters.getTags({tag: 'careers_text24'}),
+                        title:this.$store.getters.getTags({tag: 'careers_text15'}),
+                        time:this.$store.getters.getTags({tag: 'careers_text16'}),
+                        modality:this.$store.getters.getTags({tag: 'careers_text26'}),
+                        url: '/labori/1'
+                    },
+                    {
+                        location:this.$store.getters.getTags({tag: 'careers_text21'}),
+                        title:this.$store.getters.getTags({tag: 'careers_text14'}),
+                        time:this.$store.getters.getTags({tag: 'careers_text16'}),
+                        modality:this.$store.getters.getTags({tag: 'careers_text17'}),
+                        url: '/labori/1'
+                    },
+                    {
+                        location:this.$store.getters.getTags({tag: 'careers_text25'}),
+                        title:this.$store.getters.getTags({tag: 'careers_text11'}),
+                        time:this.$store.getters.getTags({tag: 'careers_text16'}),
+                        modality:this.$store.getters.getTags({tag: 'careers_text26'}),
+                        url: '/labori/1'
+                    },
+                ];
             }
         }
     }

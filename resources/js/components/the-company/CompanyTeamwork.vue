@@ -4,16 +4,9 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-md-10 m-auto">
-                        <h3 class="title-border-bottom text-white">{$store.getters.getTags({tag:'text5'})}}</h3>
-                        <swiper :options="swiperOption">
-                            <swiper-slide>
-                                <p class="text-white text-center">
-                                    {$store.getters.getTags({tag:'company_text7'})}}
-                                </p>
-                            </swiper-slide>
-                            <!-- <div class="swiper-button-prev" slot="button-prev"></div>
-                            <div class="swiper-button-next" slot="button-next"></div> -->
-                        </swiper>
+                        <h3 class="title-border-bottom text-white">{{ $store.getters.getTags({ tag: 'text5' }) }}</h3>
+
+                        <p class="text-white text-center">{{ $store.getters.getTags({ tag: 'company_text7' }) }}</p>
                     </div>
                 </div>
             </div>

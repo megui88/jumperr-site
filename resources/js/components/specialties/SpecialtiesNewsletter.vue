@@ -4,26 +4,19 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-lg-9 mx-auto">
-                        <h3 class="text-white text-center">
-                            {$store.getters.getTags({tag:'specialties_text63'})}}
-                        </h3>
-                        <p class="text-white text-center">
-                            {$store.getters.getTags({tag:'specialties_text12'})}}
-                        </p>
+                        <h3 class="text-white text-center">{{ $store.getters.getTags({ tag: 'specialties_text63' }) }}</h3>
+                        <p class="text-white text-center">{{ $store.getters.getTags({ tag: 'specialties_text12' }) }}</p>
                     </div>
                     <div class="col-12 col-lg-5 mx-auto">
                         <div class="input-group mb-3">
-                            <input type="text" class="form-control" placeholder="Recipient's username"
-                                   aria-label="Recipient's username" aria-describedby="button-addon2">
+                            <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2">
                             <div class="input-group-append">
-                                <button class="btn btn-primary" type="button" id="button-addon2">
-                                    {$store.getters.getTags({tag:'general_btn_send'})}}
-                                </button>
+                                <button class="btn btn-primary" type="button" id="button-addon2">{{ $store.getters.getTags({ tag: 'general_btn_send' }) }}</button>
                             </div>
                         </div>
-                        <label for="term" class="d-block text-center text-white mb-0">
-                            <input type="checkbox" name="term" id="">
-                            {$store.getters.getTags({tag:'specialties_text15'})}}
+                        <label for="terms" class="d-block text-center text-white mb-0">
+                            <input type="checkbox" name="term" id="terms">
+                            {{ $store.getters.getTags({ tag: 'specialties_text15' }) }}
                         </label>
                     </div>
                 </div>

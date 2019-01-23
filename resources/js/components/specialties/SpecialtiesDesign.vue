@@ -8,8 +8,8 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-12 col-md-10 col-lg-9">
-                            <h3 class="title-border-bottom">{$store.getters.getTags({tag:'specialties_title6'})}}</h3>
-                            {$store.getters.getTags({tag:'specialties_text18'})}}
+                            <h3 class="title-border-bottom">{{ $store.getters.getTags({tag: 'specialties_title6'}) }}</h3>
+                            {{ $store.getters.getTags({tag:'specialties_text18'}) }}
                         </div>
                     </div>
                 </div>

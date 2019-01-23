@@ -14,7 +14,7 @@
                                         <img :src="service.icono" :alt="service.title">
                                     </div>
                                     <div class="title">
-                                        <h3 class="text-white">{{service.title}}</h3>
+                                        <h3 class="text-white">{{ service.title }}</h3>
                                     </div>
                                 </div>
                                 <div class="cart-body">
@@ -36,28 +36,6 @@
         name: 'partners-service-presentation',
         data() {
             return {
-                services: [
-                    {
-                        icono: '/images/partners/laptop_serviciosdigitales.png',
-                        title:this.$store.getters.getTags({ tag: 'partners_text2' }),
-                        description:this.$store.getters.getTags({ tag: 'partners_text3' })
-                    },
-                    {
-                        icono: '/images/partners/iconi_2.svg',
-                        title:this.$store.getters.getTags({ tag: 'partners_title2' }),
-                        description:this.$store.getters.getTags({ tag: 'partners_text4' })
-                    },
-                    {
-                        icono: '/images/partners/icono3_serviciosdigitales.png',
-                        title:this.$store.getters.getTags({ tag: 'partners_title3' }),
-                        description:this.$store.getters.getTags({ tag: 'partners_text5' })
-                    },
-                    {
-                        icono: '/images/partners/icono4_serviciosdigitales.svg',
-                        title:this.$store.getters.getTags({ tag: 'partners_title4' }),
-                        description:this.$store.getters.getTags({ tag: 'partners_text6' })
-                    },
-                ],
                 swiperOption: {
                     slidesPerView: 2,
                     slidesPerColumn: 2,
@@ -92,6 +70,32 @@
                         }
                     }
                 }
+            }
+        },
+        computed: {
+            services() {
+               return [
+                    {
+                        icono: '/images/partners/laptop_serviciosdigitales.png',
+                        title:this.$store.getters.getTags({ tag: 'partners_text2' }),
+                        description:this.$store.getters.getTags({ tag: 'partners_text3' })
+                    },
+                    {
+                        icono: '/images/partners/iconi_2.svg',
+                        title:this.$store.getters.getTags({ tag: 'partners_title2' }),
+                        description:this.$store.getters.getTags({ tag: 'partners_text4' })
+                    },
+                    {
+                        icono: '/images/partners/icono3_serviciosdigitales.png',
+                        title:this.$store.getters.getTags({ tag: 'partners_title3' }),
+                        description:this.$store.getters.getTags({ tag: 'partners_text5' })
+                    },
+                    {
+                        icono: '/images/partners/icono4_serviciosdigitales.svg',
+                        title:this.$store.getters.getTags({ tag: 'partners_title4' }),
+                        description:this.$store.getters.getTags({ tag: 'partners_text6' })
+                    },
+                ];
             }
         }
     }
