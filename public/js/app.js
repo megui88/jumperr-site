@@ -51584,7 +51584,7 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c("div", { attrs: { id: "quienes_somos" } }, [
     _c("section", { staticClass: "grid-container" }, [
-      _c("div", { staticClass: "d-flex align-items-lg-center" }, [
+      _c("div", { staticClass: "d-flex align-items-md-center" }, [
         _c("article", [
           _c("h6", { staticClass: "text-uppsercase text-theme" }, [
             _vm._v(
@@ -51667,42 +51667,7 @@ var render = function() {
     ])
   ])
 }
-<<<<<<< HEAD
 var staticRenderFns = []
-=======
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "d-flex align-items-md-center" }, [
-      _c("article", [
-        _c("h6", { staticClass: "text-uppsercase text-theme" }, [
-          _vm._v("\n                    Quiénes Somos\n                ")
-        ]),
-        _vm._v(" "),
-        _c("h3", { staticClass: "title-border-bottom" }, [
-          _vm._v(
-            "\n                    ¡Transformamos tus ideas en Oportunidades Digitales!\n                "
-          )
-        ]),
-        _vm._v(" "),
-        _c("p", [
-          _vm._v("\n                    Somos una "),
-          _c("strong", [_vm._v("Digital Company")]),
-          _vm._v(
-            " nacida de la pasión por el mundo digital, \n                    formada por un grupo de "
-          ),
-          _c("strong", [_vm._v("expertos en el desarrollo de tecnología")]),
-          _vm._v(
-            ", \n                    procesamiento de datos y marketing.\n                "
-          )
-        ])
-      ])
-    ])
-  }
-]
->>>>>>> 34c9ea757ebef358c7bf80d57145a0cc8270c48d
 render._withStripped = true
 
 
@@ -52700,70 +52665,49 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c("div", [
+    _c("section", { staticClass: "cms bg-white" }, [
+      _c("div", { staticClass: "container" }, [
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col-12" }, [
+            _c("h3", { staticClass: "title-border-bottom" }, [
+              _vm._v(
+                _vm._s(
+                  _vm.$store.getters.getTags({ tag: "specialties_title5" })
+                )
+              )
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-12 col-md-6" }, [
+            _vm._v(
+              "\n                    " +
+                _vm._s(
+                  _vm.$store.getters.getTags({ tag: "specialties_text17" })
+                ) +
+                "\n                "
+            )
+          ]),
+          _vm._v(" "),
+          _vm._m(0)
+        ])
+      ])
+    ])
+  ])
 }
 var staticRenderFns = [
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", [
-      _c("section", { staticClass: "cms bg-white" }, [
-        _c("div", { staticClass: "container" }, [
-          _c("div", { staticClass: "row" }, [
-            _c("div", { staticClass: "col-12" }, [
-              _c("h3", { staticClass: "title-border-bottom" }, [
-                _vm._v("CMS y CRM")
-              ])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "col-12 col-md-6" }, [
-              _c("p", [
-                _vm._v(
-                  "\n                        Manejar de manera independiente el contenido y \n                        el diseño de tu sitio web es posible si cuentas con \n                        una interfaz que controla una o varias bases de datos \n                        donde se aloja el contenido, \n                        solo contando con un sistema \n                        que te permite gestionarlo.  \n                    "
-                )
-              ]),
-              _vm._v(" "),
-              _c("p", [
-                _vm._v(
-                  "\n                        Un gestor de contenidos único y eficiente.\n                    "
-                )
-              ]),
-              _vm._v(" "),
-              _c("p", [
-                _vm._v(
-                  "\n                        Venden más, ten gestores más productivos y \n                        mejora notablemente la comunicación interna y \n                        externa, con una atención 100% personalizada y \n                        rápida a tus clientes, de forma fácil y útil.\n                    "
-                )
-              ]),
-              _vm._v(" "),
-              _c("p", [
-                _c("strong", [
-                  _vm._v(
-                    "\n                            ¡Imagina tener la información de tus cliente condensada en un solo lugar! \n                        "
-                  )
-                ])
-              ]),
-              _vm._v(" "),
-              _c("p", [
-                _vm._v(
-                  "\n                        Contando con un CMS y un CRM, podrás optimizar \n                        el control de las operaciones con sistemas que \n                        permiten la gestión de contenidos, así como la \n                        relación y administración de tus clientes eficientemente.\n                    "
-                )
-              ])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "col-12 col-md-6" }, [
-              _c("img", {
-                staticClass: "img-fluid",
-                attrs: {
-                  src:
-                    "/images/especialidades/jumperr_cmsycrm_especialidades.png",
-                  alt: "Jumperr cms"
-                }
-              })
-            ])
-          ])
-        ])
-      ])
+    return _c("div", { staticClass: "col-12 col-md-6" }, [
+      _c("img", {
+        staticClass: "img-fluid",
+        attrs: {
+          src: "/images/especialidades/jumperr_cmsycrm_especialidades.png",
+          alt: "Jumperr cms"
+        }
+      })
     ])
   }
 ]
@@ -55408,7 +55352,7 @@ var render = function() {
                 )
               ]),
               _vm._v(" "),
-              _c("h4", { staticClass: "mb-md-5" }, [
+              _c("h4", { staticClass: "mb-3 mb-md-5" }, [
                 _vm._v(
                   "\n                        " +
                     _vm._s(_vm.$store.getters.getTags({ tag: "home_text2" })) +
@@ -55486,34 +55430,7 @@ var render = function() {
     1
   )
 }
-<<<<<<< HEAD
 var staticRenderFns = []
-=======
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "container" }, [
-      _c("div", { staticClass: "row" }, [
-        _c("div", { staticClass: "col-12 col-md-10 mx-auto" }, [
-          _c("article", { staticClass: "text-center" }, [
-            _c("h3", { staticClass: "title-border-bottom" }, [
-              _vm._v("Nuestras Especialidades")
-            ]),
-            _vm._v(" "),
-            _c("h4", { staticClass: "mb-3 mb-md-5" }, [
-              _vm._v(
-                "\n                        Convertimos en soluciones digitales tus ideas y proyectos,\n                        impulsando tu modelo de negocio con estrategias para el mundo online.\n                    "
-              )
-            ])
-          ])
-        ])
-      ])
-    ])
-  }
-]
->>>>>>> 34c9ea757ebef358c7bf80d57145a0cc8270c48d
 render._withStripped = true
 
 
