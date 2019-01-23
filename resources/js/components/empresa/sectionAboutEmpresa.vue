@@ -1,7 +1,7 @@
 <template>
     <div id="quienes_somos">
         <section class="grid-container">
-            <div class="d-flex align-items-lg-center">
+            <div class="d-flex align-items-md-center">
                 <article >
                     <h6 class="text-uppsercase text-theme">
                         {{$store.getters.getTags({tag:'text1'})}}

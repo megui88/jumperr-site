@@ -58,7 +58,7 @@ h1{
 }
 .img-2{
     position: absolute;
-    bottom: 120px;
+    bottom: 140px;
     left: 22px;
     display: inline-block;
     width: 18px;

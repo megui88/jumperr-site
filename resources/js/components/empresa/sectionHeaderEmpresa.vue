@@ -44,6 +44,15 @@ header{
     }
 @media (min-width: 768px) {
     .grid-container{
+        grid-template-columns: 75%;
+    }
+    h2{
+        line-height: 1.5;
+        font-size: 2.4rem;
+    }  
+}
+@media (min-width: 992px) {
+    .grid-container{
         grid-template-columns: 50%;
     }
     h2{
