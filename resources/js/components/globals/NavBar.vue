@@ -22,7 +22,7 @@
                                  </li>
                              </template>
                                 <li class="nav-item">
-                                    <select name="lang" @change="changeLanguage" v-model="lang">
+                                    <select name="lang" @change="changeLanguage" v-model="lang" class="text-uppercase">
                                         <template v-for="flag in getFlags">
                                             <option :value="flag.code">{{ flag.code }}</option>
                                         </template>

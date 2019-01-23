@@ -53265,6 +53265,7 @@ var render = function() {
                                     expression: "lang"
                                   }
                                 ],
+                                staticClass: "text-uppercase",
                                 attrs: { name: "lang" },
                                 on: {
                                   change: [
