@@ -3459,7 +3459,7 @@ __webpack_require__.r(__webpack_exports__);
   },
   computed: {
     isLoading: function isLoading() {
-      return this.$store.getters.getLanguages !== null;
+      return this.$store.getters.getLanguages === null;
     }
   }
 });
@@ -4648,6 +4648,66 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -9987,7 +10047,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\n.text-theme[data-v-1a37296e] {\n    color: #f26336;\n}\nh3[data-v-1a37296e] {\n    font-size: 1.6rem;\n    text-align: center;\n}\np[data-v-1a37296e] {\n    font-size: 1.2rem;\n}\n.title-border-bottom[data-v-1a37296e]:after {\n    content: ' ';\n    border-bottom: 1px solid #f26336;\n    display: block;\n    width: 160px;\n    margin: 1rem auto 1.1rem;\n}\n\n/*  DESDE AQUI COMIENZA EL SLIDER  */\n.wrapper-scrolling[data-v-1a37296e] {\n    min-width: 100%;\n}\n#scrolling[data-v-1a37296e] {\n    position: relative;\n}\n\n/* Div de imagen de fondo. montañas parallax */\n.parallax-bg[data-v-1a37296e] {\n    position: absolute;\n    left: 0;\n    top: 0;\n    width: 1000%;\n    height: 100%;\n    background-size: auto 280px;\n    background-repeat: repeat-x;\n    background-position: center;\n    background-image: url('/images/la-empresa/jumperr-fondo.svg');\n}\n\n/* botones de navegaciones de años 2014 2015 2016 2017 2018 2019 */\n.swiper-slide-active .circle-slider[data-v-1a37296e] {\n    width: 24px;\n    height: 24px;\n    border: 3px solid #f26937;\n    border-radius: 50%;\n    background-color: #fff;\n}\n.circle-slider[data-v-1a37296e] {\n    width: 18px;\n    height: 18px;\n    border: 3px solid #ababab;\n    border-radius: 50%;\n    background-color: #fff;\n}\n.gallery-thumbs .swiper-slide[data-v-1a37296e] {\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n}\n.swiper-slide[data-v-1a37296e] {\n    width: auto;\n}\n\n/* Zonas o items del slider con cada imagen */\n.zonas[data-v-1a37296e] {\n    width: 100%;\n    /* padding-right: 15px;\n    padding-left: 15px; */\n    padding-top: 15px;\n    padding-bottom: 15px;\n    margin-right: auto;\n    margin-left: auto;\n    margin-bottom: 50px;\n}\n\n/* _______________________ */\n.zona-1[data-v-1a37296e] {\n    position: relative;\n    width: 40%;\n    min-width: 460px;\n    height: 600px;\n}\n.zona-1 .item-1[data-v-1a37296e] {\n    width: 90%;\n    height: auto;\n    position: absolute;\n    bottom: 50%;\n    left: 50%;\n    -webkit-transform: translateX(-50%);\n            transform: translateX(-50%);\n}\n.zona-1 .item-2[data-v-1a37296e] {\n    width: 36%;\n    position: absolute;\n    bottom: 4%;\n    left: 50%;\n    -webkit-transform: translateX(-70%);\n            transform: translateX(-70%);\n}\n.zona-1 .item-3[data-v-1a37296e] {\n    width: 18%;\n    position: absolute;\n    bottom: 4%;\n    right: -5%;\n}\n\n/* _______________________ */\n.zona-2[data-v-1a37296e] {\n    position: relative;\n    width: 36%;\n    height: 600px;\n    min-width: 460px;\n}\n.zona-2 .item-1[data-v-1a37296e] {\n    width: 110%;\n    height: auto;\n    position: absolute;\n    bottom: 40%;\n    right: -12%;\n}\n.zona-2 .item-2[data-v-1a37296e] {\n    width: 34%;\n    position: absolute;\n    bottom: 4%;\n    right: 0%;\n}\n\n/* _______________________ */\n.zona-3[data-v-1a37296e] {\n    position: relative;\n    width: 36%;\n    height: 600px;\n    min-width: 460px;\n}\n.zona-3 .item-1[data-v-1a37296e] {\n    width: 20%;\n    height: auto;\n    position: absolute;\n    top: 12%;\n    left: 15%;\n}\n.zona-3 .item-2[data-v-1a37296e] {\n    width: 60%;\n    position: absolute;\n    bottom: 0%;\n    left: 20%;\n}\n\n/*________________________*/\n.zona-4[data-v-1a37296e] {\n    position: relative;\n    width: 36%;\n    height: 600px;\n    min-width: 460px;\n}\n.zona-4 .item-1[data-v-1a37296e] {\n    width: 60%;\n    height: auto;\n    position: absolute;\n    top: 0%;\n    right: 0%;\n}\n.zona-4 .item-2[data-v-1a37296e] {\n    width: 40%;\n    position: absolute;\n    bottom: 0%;\n    left: 0%;\n}\n\n/*_____________________*/\n.zona-5[data-v-1a37296e] {\n    position: relative;\n    width: 36%;\n    height: 600px;\n    min-width: 460px;\n}\n.zona-5 .item-1[data-v-1a37296e] {\n    width: 56%;\n    height: auto;\n    position: absolute;\n    top: 10%;\n    right: 0%;\n}\n.zona-5 .item-2[data-v-1a37296e] {\n    width: 31%;\n    position: absolute;\n    top: 20%;\n    left: 0%;\n}\n\n/*_______________________________*/\n.zona-6[data-v-1a37296e] {\n    position: relative;\n    width: 100%;\n    height: 600px;\n    min-width: 860px;\n}\n.zona-6 .item-1[data-v-1a37296e] {\n    width: 80%;\n    height: auto;\n    position: absolute;\n    bottom: 10%;\n    right: 0%;\n}\n.zona-6 .item-2[data-v-1a37296e] {\n    width: 15%;\n    position: absolute;\n    bottom: 0%;\n    left: 0%;\n}\n\n/* Animacion y nube */\n.nube-1[data-v-1a37296e] {\n    position: absolute;\n    top: 30px;\n    left: 50px;\n    width: 100px;\n    -webkit-animation: float-data-v-1a37296e 2s infinite;\n            animation: float-data-v-1a37296e 2s infinite;\n}\n.nube-2[data-v-1a37296e] {\n    position: absolute;\n    top: 80px;\n    right: 300px;\n    width: 100px;\n    -webkit-animation: float-data-v-1a37296e 2s infinite;\n            animation: float-data-v-1a37296e 2s infinite;\n}\n@media (max-width: 460px) {\n.nube-1[data-v-1a37296e] {\n        position: absolute;\n        top: 30px;\n        left: 50px;\n        width: 100px;\n        -webkit-animation: float-data-v-1a37296e 2s infinite;\n                animation: float-data-v-1a37296e 2s infinite;\n}\n.nube-2[data-v-1a37296e] {\n        position: absolute;\n        top: 100px;\n        right: 10px;\n        width: 100px;\n        -webkit-animation: float-data-v-1a37296e 2s infinite;\n                animation: float-data-v-1a37296e 2s infinite;\n}\n}\n@-webkit-keyframes float-data-v-1a37296e {\n0% {\n        -webkit-transform: translatey(0px);\n                transform: translatey(0px);\n}\n50% {\n        -webkit-transform: translatey(-10px);\n                transform: translatey(-10px);\n}\n100% {\n        -webkit-transform: translatey(0px);\n                transform: translatey(0px);\n}\n}\n@keyframes float-data-v-1a37296e {\n0% {\n        -webkit-transform: translatey(0px);\n                transform: translatey(0px);\n}\n50% {\n        -webkit-transform: translatey(-10px);\n                transform: translatey(-10px);\n}\n100% {\n        -webkit-transform: translatey(0px);\n                transform: translatey(0px);\n}\n}\n", ""]);
+exports.push([module.i, "\n.text-theme[data-v-1a37296e] {\n    color: #f26336;\n}\nh3[data-v-1a37296e] {\n    font-size: 1.6rem;\n    text-align: center;\n}\np[data-v-1a37296e] {\n    font-size: 1.2rem;\n}\n.title-border-bottom[data-v-1a37296e]:after {\n    content: ' ';\n    border-bottom: 1px solid #f26336;\n    display: block;\n    width: 160px;\n    margin: 1rem auto 1.1rem;\n}\n\n/*  DESDE AQUI COMIENZA EL SLIDER  */\n.wrapper-scrolling[data-v-1a37296e] {\n    min-width: 100%;\n}\n#scrolling[data-v-1a37296e] {\n    position: relative;\n}\n\n/* Div de imagen de fondo. montañas parallax */\n.parallax-bg[data-v-1a37296e] {\n    position: absolute;\n    left: 0;\n    top: 0;\n    width: 1000%;\n    height: 100%;\n    background-size: auto 280px;\n    background-repeat: repeat-x;\n    background-position: center;\n    background-image: url('/images/la-empresa/jumperr-fondo.svg');\n}\n\n/* botones de navegaciones de años 2014 2015 2016 2017 2018 2019 */\n.swiper-slide-active .circle-slider[data-v-1a37296e] {\n    width: 24px;\n    height: 24px;\n    border: 3px solid #f26937;\n    border-radius: 50%;\n    background-color: #fff;\n}\n.circle-slider[data-v-1a37296e] {\n    width: 18px;\n    height: 18px;\n    border: 3px solid #ababab;\n    border-radius: 50%;\n    background-color: #fff;\n}\n.gallery-thumbs .swiper-slide[data-v-1a37296e] {\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n}\n.swiper-slide[data-v-1a37296e] {\n    width: auto;\n}\n\n/* Zonas o items del slider con cada imagen */\n.zonas[data-v-1a37296e] {\n    width: 100%;\n    /* padding-right: 15px;\n    padding-left: 15px; */\n    padding-top: 15px;\n    padding-bottom: 15px;\n    margin-right: auto;\n    margin-left: auto;\n    margin-bottom: 50px;\n}\n\n/* _______________________ */\n.zona-1[data-v-1a37296e] {\n    position: relative;\n    width: 40%;\n    min-width: 460px;\n    height: 600px;\n}\n.zona-1 .item-1[data-v-1a37296e] {\n    width: 90%;\n    height: auto;\n    position: absolute;\n    bottom: 50%;\n    left: 50%;\n    -webkit-transform: translateX(-50%);\n            transform: translateX(-50%);\n}\n.zona-1 .item-2[data-v-1a37296e] {\n    width: 36%;\n    position: absolute;\n    bottom: 4%;\n    left: 50%;\n    -webkit-transform: translateX(-70%);\n            transform: translateX(-70%);\n}\n.zona-1 .item-3[data-v-1a37296e] {\n    width: 18%;\n    position: absolute;\n    bottom: 4%;\n    right: -5%;\n}\n\n/* _______________________ */\n.zona-2[data-v-1a37296e] {\n    position: relative;\n    width: 36%;\n    height: 600px;\n    min-width: 460px;\n}\n.zona-2 .item-1[data-v-1a37296e] {\n    width: 110%;\n    height: auto;\n    position: absolute;\n    bottom: 40%;\n    right: -12%;\n}\n.zona-2 .item-2[data-v-1a37296e] {\n    width: 34%;\n    position: absolute;\n    bottom: 4%;\n    right: 0%;\n}\n\n/* _______________________ */\n.zona-3[data-v-1a37296e] {\n    position: relative;\n    width: 36%;\n    height: 600px;\n    min-width: 460px;\n}\n.zona-3 .item-1[data-v-1a37296e] {\n    width: 20%;\n    height: auto;\n    position: absolute;\n    top: 12%;\n    left: 15%;\n}\n.zona-3 .item-2[data-v-1a37296e] {\n    width: 60%;\n    position: absolute;\n    bottom: 0%;\n    left: 20%;\n}\n\n/*________________________*/\n.zona-4[data-v-1a37296e] {\n    position: relative;\n    width: 36%;\n    height: 600px;\n    min-width: 460px;\n}\n.zona-4 .item-1[data-v-1a37296e] {\n    width: 60%;\n    height: auto;\n    position: absolute;\n    top: 0%;\n    right: 0%;\n}\n.zona-4 .item-2[data-v-1a37296e] {\n    width: 40%;\n    position: absolute;\n    bottom: 0%;\n    left: 0%;\n}\n\n/*_____________________*/\n.zona-5[data-v-1a37296e] {\n    position: relative;\n    width: 36%;\n    height: 600px;\n    min-width: 460px;\n}\n.zona-5 .item-1[data-v-1a37296e] {\n    width: 56%;\n    height: auto;\n    position: absolute;\n    top: 10%;\n    right: 0%;\n}\n.zona-5 .item-2[data-v-1a37296e] {\n    width: 31%;\n    position: absolute;\n    top: 20%;\n    left: 0%;\n}\n\n/*_______________________________*/\n.zona-6[data-v-1a37296e] {\n    position: relative;\n    width: 100%;\n    height: 600px;\n    min-width: 860px;\n}\n.zona-6 .item-1[data-v-1a37296e] {\n    width: 80%;\n    height: auto;\n    position: absolute;\n    bottom: 10%;\n    right: 0%;\n}\n.zona-6 .item-2[data-v-1a37296e] {\n    width: 15%;\n    position: absolute;\n    bottom: 0%;\n    left: 0%;\n}\n\n/* Animacion y nube */\n.nube-1[data-v-1a37296e] {\n    position: absolute;\n    top: 30px;\n    left: 50px;\n    width: 100px;\n    -webkit-animation: float-data-v-1a37296e 2s infinite;\n            animation: float-data-v-1a37296e 2s infinite;\n}\n.nube-2[data-v-1a37296e] {\n    position: absolute;\n    top: 80px;\n    right: 300px;\n    width: 100px;\n    -webkit-animation: float-data-v-1a37296e 2s infinite;\n            animation: float-data-v-1a37296e 2s infinite;\n}\n@media (max-width: 460px) {\n.nube-1[data-v-1a37296e] {\n        position: absolute;\n        top: 30px;\n        left: 50px;\n        width: 100px;\n        -webkit-animation: float-data-v-1a37296e 2s infinite;\n                animation: float-data-v-1a37296e 2s infinite;\n}\n.nube-2[data-v-1a37296e] {\n        position: absolute;\n        top: 100px;\n        right: 10px;\n        width: 100px;\n        -webkit-animation: float-data-v-1a37296e 2s infinite;\n                animation: float-data-v-1a37296e 2s infinite;\n}\n}\n@-webkit-keyframes float-data-v-1a37296e {\n0% {\n        -webkit-transform: translatey(0px);\n                transform: translatey(0px);\n}\n50% {\n        -webkit-transform: translatey(-10px);\n                transform: translatey(-10px);\n}\n100% {\n        -webkit-transform: translatey(0px);\n                transform: translatey(0px);\n}\n}\n@keyframes float-data-v-1a37296e {\n0% {\n        -webkit-transform: translatey(0px);\n                transform: translatey(0px);\n}\n50% {\n        -webkit-transform: translatey(-10px);\n                transform: translatey(-10px);\n}\n100% {\n        -webkit-transform: translatey(0px);\n                transform: translatey(0px);\n}\n}\n\n/* Botones pulse */\n.circle-pulse[data-v-1a37296e] {\n    position: absolute;\n    top: 80px;\n    right: 50%;\n    -webkit-transform: translateX(-50%);\n            transform: translateX(-50%);\n    display: block;\n    width: 22px;\n    height: 22px;\n    border-radius: 50%;\n    background: #f26336;\n    cursor: pointer;\n    box-shadow: 0 0 0 #f2623641;\n    -webkit-animation: pulse-data-v-1a37296e 2s infinite;\n            animation: pulse-data-v-1a37296e 2s infinite;\n    z-index: 1030;\n}\n@-webkit-keyframes pulse-data-v-1a37296e {\n0% {\n    box-shadow: 0 0 0 0 #f2623677;\n}\n70% {\n    box-shadow: 0 0 0 10px #f2623600;\n}\n100% {\n    box-shadow: 0 0 0 0 #f2623600;\n}\n}\n@keyframes pulse-data-v-1a37296e {\n0% {\n    box-shadow: 0 0 0 0 #f2623677;\n}\n70% {\n    box-shadow: 0 0 0 10px #f2623600;\n}\n100% {\n    box-shadow: 0 0 0 0 #f2623600;\n}\n}\n.dropdown-menu[data-v-1a37296e]{\n    max-width: 300px;\n}\n.dropdown-item-text[data-v-1a37296e]{\n    font-size: 1rem;\n    line-height: 1.2;\n}\n", ""]);
 
 // exports
 
@@ -55574,7 +55634,7 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "d-flex align-items-lg-center" }, [
+    return _c("div", { staticClass: "d-flex align-items-md-center" }, [
       _c("article", [
         _c("h6", { staticClass: "text-uppsercase text-theme" }, [
           _vm._v(
@@ -55984,7 +56044,36 @@ var render = function() {
                         src: "/images/la-empresa/vectores/2_personas.svg",
                         alt: ""
                       }
-                    })
+                    }),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "dropdown" }, [
+                      _c("div", {
+                        staticClass: "circle-pulse",
+                        attrs: {
+                          "data-toggle": "dropdown",
+                          "aria-haspopup": "true",
+                          "aria-expanded": "false"
+                        }
+                      }),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        {
+                          staticClass: "dropdown-menu",
+                          attrs: { "aria-labelledby": "dropdownMenuButton" }
+                        },
+                        [
+                          _c("p", { staticClass: "dropdown-item-text" }, [
+                            _c("strong", [_vm._v("Nuestro Inicio")]),
+                            _vm._v(" "),
+                            _c("br"),
+                            _vm._v(
+                              "\n                                        Hoy en día hay muchas casas de software que ofrecen servicios y productos digitales; sin embargo, pocas empresas trabajan en sinergia con sus socios comerciales para crecer juntos. \n                                    "
+                            )
+                          ])
+                        ]
+                      )
+                    ])
                   ])
                 ]),
                 _vm._v(" "),
@@ -56004,7 +56093,36 @@ var render = function() {
                         src: "/images/la-empresa/vectores/5_personas.svg",
                         alt: ""
                       }
-                    })
+                    }),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "dropdown" }, [
+                      _c("div", {
+                        staticClass: "circle-pulse",
+                        attrs: {
+                          "data-toggle": "dropdown",
+                          "aria-haspopup": "true",
+                          "aria-expanded": "false"
+                        }
+                      }),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        {
+                          staticClass: "dropdown-menu",
+                          attrs: { "aria-labelledby": "dropdownMenuButton" }
+                        },
+                        [
+                          _c("p", { staticClass: "dropdown-item-text" }, [
+                            _c("strong", [_vm._v("Nuestro Inicio")]),
+                            _vm._v(" "),
+                            _c("br"),
+                            _vm._v(
+                              "\n                                        Hoy en día hay muchas casas de software que ofrecen servicios y productos digitales; sin embargo, pocas empresas trabajan en sinergia con sus socios comerciales para crecer juntos. \n                                    "
+                            )
+                          ])
+                        ]
+                      )
+                    ])
                   ])
                 ]),
                 _vm._v(" "),
@@ -56027,7 +56145,36 @@ var render = function() {
                           src: "/images/la-empresa/vectores/3_personas.svg",
                           alt: ""
                         }
-                      })
+                      }),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "dropdown" }, [
+                        _c("div", {
+                          staticClass: "circle-pulse",
+                          attrs: {
+                            "data-toggle": "dropdown",
+                            "aria-haspopup": "true",
+                            "aria-expanded": "false"
+                          }
+                        }),
+                        _vm._v(" "),
+                        _c(
+                          "div",
+                          {
+                            staticClass: "dropdown-menu",
+                            attrs: { "aria-labelledby": "dropdownMenuButton" }
+                          },
+                          [
+                            _c("p", { staticClass: "dropdown-item-text" }, [
+                              _c("strong", [_vm._v("Nuestro Inicio")]),
+                              _vm._v(" "),
+                              _c("br"),
+                              _vm._v(
+                                "\n                                        Hoy en día hay muchas casas de software que ofrecen servicios y productos digitales; sin embargo, pocas empresas trabajan en sinergia con sus socios comerciales para crecer juntos. \n                                    "
+                              )
+                            ])
+                          ]
+                        )
+                      ])
                     ]
                   )
                 ]),
@@ -56051,7 +56198,36 @@ var render = function() {
                           src: "/images/la-empresa/vectores/8_personas.svg",
                           alt: ""
                         }
-                      })
+                      }),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "dropdown" }, [
+                        _c("div", {
+                          staticClass: "circle-pulse",
+                          attrs: {
+                            "data-toggle": "dropdown",
+                            "aria-haspopup": "true",
+                            "aria-expanded": "false"
+                          }
+                        }),
+                        _vm._v(" "),
+                        _c(
+                          "div",
+                          {
+                            staticClass: "dropdown-menu",
+                            attrs: { "aria-labelledby": "dropdownMenuButton" }
+                          },
+                          [
+                            _c("p", { staticClass: "dropdown-item-text" }, [
+                              _c("strong", [_vm._v("Nuestro Inicio")]),
+                              _vm._v(" "),
+                              _c("br"),
+                              _vm._v(
+                                "\n                                        Hoy en día hay muchas casas de software que ofrecen servicios y productos digitales; sin embargo, pocas empresas trabajan en sinergia con sus socios comerciales para crecer juntos. \n                                    "
+                              )
+                            ])
+                          ]
+                        )
+                      ])
                     ]
                   )
                 ]),
@@ -56075,7 +56251,36 @@ var render = function() {
                           src: "/images/la-empresa/vectores/7_personas.svg",
                           alt: ""
                         }
-                      })
+                      }),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "dropdown" }, [
+                        _c("div", {
+                          staticClass: "circle-pulse",
+                          attrs: {
+                            "data-toggle": "dropdown",
+                            "aria-haspopup": "true",
+                            "aria-expanded": "false"
+                          }
+                        }),
+                        _vm._v(" "),
+                        _c(
+                          "div",
+                          {
+                            staticClass: "dropdown-menu",
+                            attrs: { "aria-labelledby": "dropdownMenuButton" }
+                          },
+                          [
+                            _c("p", { staticClass: "dropdown-item-text" }, [
+                              _c("strong", [_vm._v("Nuestro Inicio")]),
+                              _vm._v(" "),
+                              _c("br"),
+                              _vm._v(
+                                "\n                                        Hoy en día hay muchas casas de software que ofrecen servicios y productos digitales; sin embargo, pocas empresas trabajan en sinergia con sus socios comerciales para crecer juntos. \n                                    "
+                              )
+                            ])
+                          ]
+                        )
+                      ])
                     ]
                   )
                 ]),
@@ -56099,7 +56304,36 @@ var render = function() {
                           src: "/images/la-empresa/vectores/4_personas.svg",
                           alt: ""
                         }
-                      })
+                      }),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "dropdown" }, [
+                        _c("div", {
+                          staticClass: "circle-pulse",
+                          attrs: {
+                            "data-toggle": "dropdown",
+                            "aria-haspopup": "true",
+                            "aria-expanded": "false"
+                          }
+                        }),
+                        _vm._v(" "),
+                        _c(
+                          "div",
+                          {
+                            staticClass: "dropdown-menu",
+                            attrs: { "aria-labelledby": "dropdownMenuButton" }
+                          },
+                          [
+                            _c("p", { staticClass: "dropdown-item-text" }, [
+                              _c("strong", [_vm._v("Nuestro Inicio")]),
+                              _vm._v(" "),
+                              _c("br"),
+                              _vm._v(
+                                "\n                                        Hoy en día hay muchas casas de software que ofrecen servicios y productos digitales; sin embargo, pocas empresas trabajan en sinergia con sus socios comerciales para crecer juntos. \n                                    "
+                              )
+                            ])
+                          ]
+                        )
+                      ])
                     ]
                   )
                 ])
