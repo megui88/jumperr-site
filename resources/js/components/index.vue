@@ -22,8 +22,8 @@
         components: { ClipLoader, NavBar, Footer },
         data() {
             return {
-                color: '#e33d2f',
-                size: '40px'
+                color: '#f26336',
+                size: '50px'
             }
         },
         created() {
@@ -31,7 +31,7 @@
         },
         computed: {
             isLoading() {
-                return (this.$store.getters.getLanguages === null)
+                return (this.$store.getters.getLanguages !== null)
             }
         }
     }

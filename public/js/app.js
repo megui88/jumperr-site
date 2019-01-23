@@ -3467,8 +3467,8 @@ __webpack_require__.r(__webpack_exports__);
   },
   data: function data() {
     return {
-      color: '#e33d2f',
-      size: '40px'
+      color: '#f26336',
+      size: '50px'
     };
   },
   created: function created() {
@@ -3476,7 +3476,7 @@ __webpack_require__.r(__webpack_exports__);
   },
   computed: {
     isLoading: function isLoading() {
-      return this.$store.getters.getLanguages === null;
+      return this.$store.getters.getLanguages !== null;
     }
   }
 });
