@@ -31,7 +31,7 @@
         },
         computed: {
             isLoading() {
-                return (this.$store.getters.getLanguages !== null)
+                return (this.$store.getters.getLanguages === null)
             }
         }
     }
