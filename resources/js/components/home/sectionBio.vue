@@ -4,7 +4,7 @@
             <div class="container h-100">
                 <div class="row h-100">
                     <div class="col-12 col-md-6 col-lg-4 align-self-center">
-                        <h3 class="title-border-bottom">{{$store.getters.getTags({tag:home_text8'})}}</h3>
+                        <h3 class="title-border-bottom">{{$store.getters.getTags({tag:'home_text8'})}}</h3>
                         <p>
                             {{$store.getters.getTags({tag:'home_text10'})}}
                         </p>

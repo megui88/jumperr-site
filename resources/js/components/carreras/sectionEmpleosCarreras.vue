@@ -45,49 +45,49 @@ export default {
                     title: $store.getters.getTags({tag:'careers_text11'}),
                     time: $store.getters.getTags({tag:'careers_text16'}),
                     modality: $store.getters.getTags({tag:'careers_text26'}),
-                    url: '/#'
+                    url: '/labori/1'
                 },
                 {
                     location: $store.getters.getTags({tag:'careers_text22'}),
                     title: $store.getters.getTags({tag:'careers_text12'}),
                     time: $store.getters.getTags({tag:'careers_text16'}),
                     modality: $store.getters.getTags({tag:'careers_text26'}),
-                    url: '/#'
+                    url: '/labori/1'
                 },
                 {
                     location: $store.getters.getTags({tag:'careers_text23'}),
                     title: $store.getters.getTags({tag:'careers_text11'}),
                     time: $store.getters.getTags({tag:'careers_text16'}),
                     modality: $store.getters.getTags({tag:'careers_text17'}),
-                    url: '/#'
+                    url: '/labori/1'
                 },
                 {
                     location: $store.getters.getTags({tag:'careers_text23'}),
                     title: $store.getters.getTags({tag:'careers_text13'}),
                     time: $store.getters.getTags({tag:'careers_text16'}),
                     modality: $store.getters.getTags({tag:'careers_text26'}),
-                    url: '/#'
+                    url: '/labori/1'
                 },
                 {
                     location: $store.getters.getTags({tag:'careers_text24'}),
                     title: $store.getters.getTags({tag:'careers_text15'}),
                     time: $store.getters.getTags({tag:'careers_text16'}),
                     modality: $store.getters.getTags({tag:'careers_text26'}),
-                    url: '/#'
+                    url: '/labori/1'
                 },
                 {
                     location: $store.getters.getTags({tag:'careers_text21'}),
                     title: $store.getters.getTags({tag:'careers_text14'}),
                     time: $store.getters.getTags({tag:'careers_text16'}),
                     modality: $store.getters.getTags({tag:'careers_text17'}),
-                    url: '/#'
+                    url: '/labori/1'
                 },
                 {
                     location: $store.getters.getTags({tag:'careers_text25'}),
                     title: $store.getters.getTags({tag:'careers_text11'}),
                     time: $store.getters.getTags({tag:'careers_text16'}),
                     modality: $store.getters.getTags({tag:'careers_text26'}),
-                    url: '/#'
+                    url: '/labori/1'
                 },
             ],
             swiperOption: {
