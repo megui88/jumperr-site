@@ -3459,7 +3459,7 @@ __webpack_require__.r(__webpack_exports__);
   },
   computed: {
     isLoading: function isLoading() {
-      return this.$store.getters.getLanguages !== null;
+      return this.$store.getters.getLanguages === null;
     }
   }
 });
