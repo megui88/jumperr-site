@@ -34,6 +34,13 @@
                                 <li class="nav-item">
                                     <router-link class="nav-link" to="/#carreras" >{{ $store.getters.getTags({ tag: 'careers_titulo' }) }}</router-link>
                                 </li>
+                                <li class="nav-item">
+                                    <select name="lang" @change="changeLanguage" v-model="lang">
+                                        <template v-for="flag in getFlags">
+                                            <option :value="flag.code">{{ flag.code }}</option>
+                                        </template>
+                                    </select>
+                                </li>
                             </ul>
                             <a href="/#contacto" class="btn btn-primary ml-lg-3 d-none d-lg-block">{{ $store.getters.getTags({ tag: 'general_btn_contact'}) }}</a>
                         </div>
@@ -52,7 +59,13 @@
             return {
                 sticky: true,
                 fondoNav: false,
+                lang: 'es'
             }
+        },
+        created() {
+            this.lang = this.$store.getters.getFlagActive;
+
+            this.$store.dispatch('APIGetAllLanguagesTags');
         },
         mounted() {
             //detectamos el evento scroll
@@ -61,7 +74,20 @@
                 that.sticky = !(document.body.scrollTop > 10 || document.documentElement.scrollTop > 10);
             };
         },
+        computed: {
+            /* isLoading() {
+                 return (this.$store.getters.getLanguagesTagActive.length === 0)
+             }*/
+            getFlags() {
+                return this.$store.getters.getFlags;
+            }
+        },
         methods: {
+            changeLanguage() {
+                // this.$validator.localize(this.lang); // change language for vee-validate
+
+                this.$store.commit('changeLanguage', { list: this.lang });
+            },
             cambiarFondoNav() {
                 if ($this.fondoNav === true) {
                     $this.fondoNav = false;

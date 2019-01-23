@@ -8,14 +8,11 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-md-8 mx-auto">
-                        {{$store.getters.getTags({tag:'partners_text22'})}}
+                        {{ $store.getters.getTags({ tag: 'partners_text22' }) }}
                         <div class="text-center">
-                            <img class="img-fluid img-central" src="/images/partners/imagen2.jpg"
-                                 alt="Jumperr partners">
+                            <img class="img-fluid img-central" src="/images/partners/imagen2.jpg" alt="Jumperr partners">
                         </div>
-                        <h3 class="text-white text-center mt-3">
-                            {{$store.getters.getTags({tag:'partners_text23'})}}
-                        </h3>
+                        <h3 class="text-white text-center mt-3">{{ $store.getters.getTags({ tag: 'partners_text23' }) }}</h3>
                     </div>
                 </div>
             </div>

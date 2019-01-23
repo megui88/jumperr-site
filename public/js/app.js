@@ -2722,6 +2722,13 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'nav-bar',
@@ -2731,8 +2738,13 @@ __webpack_require__.r(__webpack_exports__);
   data: function data() {
     return {
       sticky: true,
-      fondoNav: false
+      fondoNav: false,
+      lang: 'es'
     };
+  },
+  created: function created() {
+    this.lang = this.$store.getters.getFlagActive;
+    this.$store.dispatch('APIGetAllLanguagesTags');
   },
   mounted: function mounted() {
     //detectamos el evento scroll
@@ -2742,7 +2754,21 @@ __webpack_require__.r(__webpack_exports__);
       that.sticky = !(document.body.scrollTop > 10 || document.documentElement.scrollTop > 10);
     };
   },
+  computed: {
+    /* isLoading() {
+         return (this.$store.getters.getLanguagesTagActive.length === 0)
+     }*/
+    getFlags: function getFlags() {
+      return this.$store.getters.getFlags;
+    }
+  },
   methods: {
+    changeLanguage: function changeLanguage() {
+      // this.$validator.localize(this.lang); // change language for vee-validate
+      this.$store.commit('changeLanguage', {
+        list: this.lang
+      });
+    },
     cambiarFondoNav: function cambiarFondoNav() {
       if ($this.fondoNav === true) {
         $this.fondoNav = false;
@@ -3420,6 +3446,12 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -3431,10 +3463,11 @@ __webpack_require__.r(__webpack_exports__);
     this.$store.dispatch('APIGetAllLanguagesTags');
   },
   computed: {
-    /* isLoading() {
-         return (this.$store.getters.getLanguagesTagActive.length === 0)
-     }*/
-  }
+    isLoading: function isLoading() {
+      return this.$store.getters.getLanguages === null;
+    }
+  },
+  methods: {}
 });
 
 /***/ }),
@@ -3448,8 +3481,6 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-//
-//
 //
 //
 //
@@ -3482,9 +3513,6 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-//
-//
-//
 //
 //
 //
@@ -3573,34 +3601,34 @@ __webpack_require__.r(__webpack_exports__);
     return {
       services: [{
         icono: '/images/partners/laptop_serviciosdigitales.png',
-        title: $store.getters.getTags({
+        title: this.$store.getters.getTags({
           tag: 'partners_text2'
         }),
-        description: $store.getters.getTags({
+        description: this.$store.getters.getTags({
           tag: 'partners_text3'
         })
       }, {
         icono: '/images/partners/iconi_2.svg',
-        title: $store.getters.getTags({
+        title: this.$store.getters.getTags({
           tag: 'partners_title2'
         }),
-        description: $store.getters.getTags({
+        description: this.$store.getters.getTags({
           tag: 'partners_text4'
         })
       }, {
         icono: '/images/partners/icono3_serviciosdigitales.png',
-        title: $store.getters.getTags({
+        title: this.$store.getters.getTags({
           tag: 'partners_title3'
         }),
-        description: $store.getters.getTags({
+        description: this.$store.getters.getTags({
           tag: 'partners_text5'
         })
       }, {
         icono: '/images/partners/icono4_serviciosdigitales.svg',
-        title: $store.getters.getTags({
+        title: this.$store.getters.getTags({
           tag: 'partners_title4'
         }),
-        description: $store.getters.getTags({
+        description: this.$store.getters.getTags({
           tag: 'partners_text6'
         })
       }],
@@ -52891,7 +52919,57 @@ var render = function() {
                               )
                             ],
                             1
-                          )
+                          ),
+                          _vm._v(" "),
+                          _c("li", { staticClass: "nav-item" }, [
+                            _c(
+                              "select",
+                              {
+                                directives: [
+                                  {
+                                    name: "model",
+                                    rawName: "v-model",
+                                    value: _vm.lang,
+                                    expression: "lang"
+                                  }
+                                ],
+                                attrs: { name: "lang" },
+                                on: {
+                                  change: [
+                                    function($event) {
+                                      var $$selectedVal = Array.prototype.filter
+                                        .call($event.target.options, function(
+                                          o
+                                        ) {
+                                          return o.selected
+                                        })
+                                        .map(function(o) {
+                                          var val =
+                                            "_value" in o ? o._value : o.value
+                                          return val
+                                        })
+                                      _vm.lang = $event.target.multiple
+                                        ? $$selectedVal
+                                        : $$selectedVal[0]
+                                    },
+                                    _vm.changeLanguage
+                                  ]
+                                }
+                              },
+                              [
+                                _vm._l(_vm.getFlags, function(flag) {
+                                  return [
+                                    _c(
+                                      "option",
+                                      { domProps: { value: flag.code } },
+                                      [_vm._v(_vm._s(flag.code))]
+                                    )
+                                  ]
+                                })
+                              ],
+                              2
+                            )
+                          ])
                         ]
                       ),
                       _vm._v(" "),
@@ -54087,8 +54165,18 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "div",
-    [_c("nav-bar"), _vm._v(" "), _c("router-view"), _vm._v(" "), _c("footer")],
-    1
+    [
+      _vm.isLoading
+        ? [_vm._v("\n        cargando...\n    ")]
+        : [
+            _c("nav-bar"),
+            _vm._v(" "),
+            _c("router-view"),
+            _vm._v(" "),
+            _c("footer")
+          ]
+    ],
+    2
   )
 }
 var staticRenderFns = []
@@ -54120,11 +54208,7 @@ var render = function() {
           _c("div", { staticClass: "col-12 col-lg-7" }, [
             _c("h2", { staticClass: "text-white" }, [
               _vm._v(
-                "\n                        " +
-                  _vm._s(
-                    _vm.$store.getters.getTags({ tag: "partners_text1" })
-                  ) +
-                  "\n                    "
+                _vm._s(_vm.$store.getters.getTags({ tag: "partners_text1" }))
               )
             ])
           ])
@@ -54200,11 +54284,7 @@ var render = function() {
             _vm._v(" "),
             _c("h3", { staticClass: "text-white text-center mt-3" }, [
               _vm._v(
-                "\n                        " +
-                  _vm._s(
-                    _vm.$store.getters.getTags({ tag: "partners_text23" })
-                  ) +
-                  "\n                    "
+                _vm._s(_vm.$store.getters.getTags({ tag: "partners_text23" }))
               )
             ])
           ])
@@ -76261,7 +76341,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ({
   state: {
     active: {
-      flag: 'es',
+      flag: 'it',
       language: []
     },
     flags: [],
@@ -76282,29 +76362,36 @@ __webpack_require__.r(__webpack_exports__);
     }
   },
   getters: {
-    getLanguageActive: function getLanguageActive(state) {
-      return state.flag;
+    getFlagActive: function getFlagActive(state) {
+      return state.active.flag;
     },
-    getLanguagesFlags: function getLanguagesFlags(state) {
+    getLanguages: function getLanguages(state) {
+      return state.languages;
+    },
+    getFlags: function getFlags(state) {
       return state.flags;
     },
     getTags: function getTags(state) {
       return function (item) {
-        var tag = null,
-            tags = state.active.language;
-        tag = tags.find(function (index) {
+        var tags = state.active.language;
+        var tag = tags.find(function (index) {
           return index.tag === item.tag;
-        }).value;
+        });
+        var error = {};
 
         if (!tag) {
-          var it = state.language['it'].find(function (index) {
-            return index.tag === item.tag;
-          }).value;
-          if (!it) return it.value = 'No Tiene Tag';
-          return it;
+          if (state.languages !== null) {
+            var it = state.languages['it'].find(function (index) {
+              return index.tag === item.tag;
+            });
+            if (!it) return error.value = 'error no tags by default in tag: ' + item.tag;
+            return it.value;
+          }
+
+          return error.vale = 'error loading the languages';
         }
 
-        return tag;
+        return tag.value;
       };
     }
   },
@@ -76326,14 +76413,15 @@ __webpack_require__.r(__webpack_exports__);
       Vue.set(state, 'flags', flags);
       Vue.set(state, 'languages', list);
     },
-    changeLanguageByFlagActive: function changeLanguageByFlagActive(state, _ref3) {
+    changeLanguage: function changeLanguage(state, _ref3) {
       var list = _ref3.list;
-      var data = state.languages.languagesTags;
-      var RESPONSE = data.find(function (key) {
-        return key.lang === list;
-      });
-      Vue.set(state.languageActive, 'flag', list);
-      Vue.set(state.languageActive, 'languageTagsActive', RESPONSE.screens);
+
+      for (var key in state.languages) {
+        if (list === key) {
+          Vue.set(state.active, 'flag', list);
+          Vue.set(state.active, 'language', state.languages[key]);
+        }
+      }
     }
   }
 });

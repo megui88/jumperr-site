@@ -39,23 +39,23 @@
                 services: [
                     {
                         icono: '/images/partners/laptop_serviciosdigitales.png',
-                        title: $store.getters.getTags({tag: 'partners_text2'}),
-                        description: $store.getters.getTags({tag: 'partners_text3'})
+                        title:this.$store.getters.getTags({tag: 'partners_text2'}),
+                        description:this.$store.getters.getTags({tag: 'partners_text3'})
                     },
                     {
                         icono: '/images/partners/iconi_2.svg',
-                        title: $store.getters.getTags({tag: 'partners_title2'}),
-                        description: $store.getters.getTags({tag: 'partners_text4'})
+                        title:this.$store.getters.getTags({tag: 'partners_title2'}),
+                        description:this.$store.getters.getTags({tag: 'partners_text4'})
                     },
                     {
                         icono: '/images/partners/icono3_serviciosdigitales.png',
-                        title: $store.getters.getTags({tag: 'partners_title3'}),
-                        description: $store.getters.getTags({tag: 'partners_text5'})
+                        title:this.$store.getters.getTags({tag: 'partners_title3'}),
+                        description:this.$store.getters.getTags({tag: 'partners_text5'})
                     },
                     {
                         icono: '/images/partners/icono4_serviciosdigitales.svg',
-                        title: $store.getters.getTags({tag: 'partners_title4'}),
-                        description: $store.getters.getTags({tag: 'partners_text6'})
+                        title:this.$store.getters.getTags({tag: 'partners_title4'}),
+                        description:this.$store.getters.getTags({tag: 'partners_text6'})
                     },
                 ],
                 swiperOption: {

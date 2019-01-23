@@ -4,9 +4,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-lg-7">
-                        <h2 class="text-white">
-                            {{$store.getters.getTags({tag:'partners_text1'})}}
-                        </h2>
+                        <h2 class="text-white">{{ $store.getters.getTags({tag:'partners_text1'}) }}</h2>
                     </div>
                 </div>
             </div>
