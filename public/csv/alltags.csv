@@ -1,0 +1,748 @@
+PANTALLA,SECCIÓN,ID,tags,values html,Texto Español,Texto Italiano,Texto Inglés,Texto Portugués,Texto Francés
+null,Botonera,{{$store.getters.getTags({tag:'general_btn_home'})}},general_btn_home,,inicio,Inizio,start,começar,début
+,Botonera,{{$store.getters.getTags({tag:'general_btn_company'})}},general_btn_company,,la compañia,La compagnia,our company,nossa empresa,notre compagnie
+,Botonera,{{$store.getters.getTags({tag:'general_btn_agencies'})}},general_btn_agencies,,agencias,Agenzie,agencies,agências,agences
+,Botonera,{{$store.getters.getTags({tag:'general_btn_send'})}},general_btn_send,,Enviar,Inviare,Submit,Enviar,Envoyer
+,Botonera,{{$store.getters.getTags({tag:'general_btn_careers'})}},general_btn_careers,,carreras,Lavora con noi,careers,carreiras,carrières
+,Botonera,{{$store.getters.getTags({tag:'general_btn_contact'})}},general_btn_contact,,Contactanos,Contattaci,Contact us,Entre em contato conosco,Nous contacter
+,Header,{{$store.getters.getTags({tag:'general_header'})}},general_header,Líderes <br>en la construcción<br> de negocios<br> y Éxitos Digitales.,"Líderes en la construcción de negocios
+y Éxitos Digitales. ",Lider nella costruzione di business e successi digitali.,"Leaders in business construction
+ and Digital Successes.","Líderes na construção de empresas
+ e Sucessos Digitais.","Leaders en construction d'entreprise
+ et Succès Numériques."
+,Bloque 1,{{$store.getters.getTags({tag:'home_text1'})}},home_text1,,Nuestras Especialidades,Le nostre specialità,Our Specialties,Nossas Especialidades,Nos Spécialités
+,Bloque 1,{{$store.getters.getTags({tag:'home_text2'})}},home_text2,,"Convertimos en soluciones digitales tus ideas y proyectos, impulsando tu modelo de negocio con estrategias para el mundo online.","Trasformiamo in soluzioni digitali le tue idee e i tuoi progetti, dando impulso al tuo modello di business con strategie specifiche per il mondo online.","We convert your ideas and projects into digital solutions, driving your business model with strategies for the online world.","Nós convertemos suas idéias e projetos em soluções digitais, conduzindo seu modelo de negócios com estratégias para o mundo on-line.",Nous convertissons vos idées et vos projets en solutions numériques et développons votre modèle d’affaires avec des stratégies pour le monde en ligne.
+,Bloque 1,{{$store.getters.getTags({tag:'home_title2'})}},home_title2,,Jumperr Studio,Jumperr Studio,Jumperr Studio,Jumperr Studio,Jumperr Studio
+,Bloque 1,{{$store.getters.getTags({tag:'home_text3'})}},home_text3,,Ponemos a tu disposición un equipo de profesionales  calificados  para lograr los resultados deseados,Mettiamo a tua dispozione un team di professionisti qualificati per ottenere i risultati desiderati.,We put at your disposal a team of qualified professionals to achieve the desired results,Colocamos à sua disposição uma equipe de profissionais qualificados para alcançar os resultados desejados,Nous mettons à votre disposition une équipe de professionnels qualifiés pour atteindre les résultats souhaités
+,Bloque 1,{{$store.getters.getTags({tag:'home_title3'})}},home_title3,,Desarrollo web y Apps,Sviluppo web e Apps,Web development and Apps,Desenvolvimento Web e Apps,Développement Web et Apps
+,Bloque 1,{{$store.getters.getTags({tag:'home_text4'})}},home_text4,,"Una página web altamente efectiva, visualmente atractiva y adaptada a los diferentes dispositivos, que te permite dar a conocer productos, servicios, trabajos y proyectos.","Una pagina efficente, esteticamente attraente e adattata ai differenti dispositivi ,che ti permette far conoscere i tuoi prodotti, servizi, lavori e progetti.","A highly effective website, visually attractive and adapted to different devices, which allows you to publicize products, services, jobs and projects.","Um site web altamente eficaz, visualmente atraente e adaptado a diferentes dispositivos, que permite divulgar produtos, serviços, empregos e projetos.","Un site web très efficace, attrayant visuellement et adapté à différents appareils, qui vous permet de faire connaître des produits, des services, des emplois et des projets."
+,Bloque 1,{{$store.getters.getTags({tag:'home_title4'})}},home_title4,,Jumperr Start,Jumperr Start,Jumperr Start,Jumperr Start,Jumperr Start
+,Bloque 1,{{$store.getters.getTags({tag:'home_text5'})}},home_text5,,Crea tu página web de la manera más rápida y fácil con nuestras plantillas categorizadas y con una herramienta adaptada a tus necesidades de negocio.,Crea la tua pagina nel modo più facile e veloce con le nostre schermate categorizzate e con uno strumento adattato alle esigenze della tua attività.,Create your website in the fastest and easiest way with our categorized templates and with a tool adapted to your business needs.,Crie seu site da maneira mais rápida e fácil com nossos modelos categorizados e com uma ferramenta adaptada às suas necessidades de negócios.,Créez votre site web de la manière la plus rapide et la plus simple avec nos modèles catégorisés et avec un outil adapté aux besoins de votre entreprise.
+,Bloque 1,{{$store.getters.getTags({tag:'home_title5'})}},home_title5,,Redes Sociales,Social Network,Social Networks,Redes Sociais,Réseaux Sociaux
+,Bloque 2,{{$store.getters.getTags({tag:'home_text6'})}},home_text6,,Atiende tus necesidades en cuanto a la gestión de redes sociales con una estrategia de marketing digital orientada a resultados y bien ejecutada.,Rispondi ai tuoi bisogni per quanto concerne la gestione dei social network con una strategia di marketing digitale orientata ai risultati e ben realizzata.,Address your needs in terms of managing social networks with a digital marketing strategy focused on results and well executed.,Atenda suas necessidades em termos de gerenciamento de redes sociais com uma estratégia de marketing digital focada em resultados e bem executada.,Répondez à vos besoins en termes de gestion des réseaux sociaux avec une stratégie de marketing numérique axée sur les résultats et bien exécutée.
+,Bloque 2,{{$store.getters.getTags({tag:'home_title6'})}},home_title6,,CMS y CRM,CMS e CRM,CMS and CRM,CMS e CRM,CMS et CRM
+,Bloque 2,{{$store.getters.getTags({tag:'home_text7'})}},home_text7,,"La mejor solución para optimizar la gestión comercial, el marketing y el servicio postventa o de atención al cliente de tu empresa de forma fácil y útil.","La miglior soluzione per ottimizzare la gestione commerciale, il marketing, il servizio post vendita o di attenzione al cliente della tua azienda , in un modo semplice e utile.","The best solution to optimize the commercial management, marketing and post-sale service or customer service of your company in an easy and useful way.","A melhor solução para otimizar a gestão comercial, marketing e serviço pós-venda ou atendimento ao cliente de sua empresa de uma maneira fácil e útil.","La meilleure solution pour optimiser la gestion commerciale, le marketing et le service après-vente ou le service client de votre entreprise de manière simple et utile."
+,Bloque 2,{{$store.getters.getTags({tag:'home_title7'})}},home_title,,Diseño Gráfico,Disegno Grafico,Graphic Design,Design Gráfico,Conception graphique
+,Bloque 2,{{$store.getters.getTags({tag:'home_text8'})}},home_text8,,"Todo tipo de diseños que impulsen la comunicación visual de tu idea de negocio, con estilo propio e innovador.","La grafica  pensata per migliorare l'immagine della tua azienda, con uno stile proprio ed innovativo.","All kinds of designs that promote the visual communication of your business idea, with a unique and innovative style.","Todos os tipos de designs que promovem a comunicação visual da sua ideia de negócio, com um estilo único e inovador.","Toutes sortes de conceptions favorisant la communication visuelle de votre idée d'entreprise, avec un style unique et innovant."
+,Bloque 3,{{$store.getters.getTags({tag:home_text9'})}},home_text9,,"Te ofrecemos
+Soluciones Digitales",Ti offriamo soluzioni digitali,"We offer you
+Digital Solutions","Oferecemos-lhe
+Soluções Digitais","Nous vous offrons
+Solutions Numériques"
+,Bloque 3,{{$store.getters.getTags({tag:'home_text10'})}},home_text10,"Combinamos <strong>estrategia</strong>, UX / UI, diseño web, <strong>tecnología</strong> y <strong>creatividad</strong> para ayudar a las empresas a <strong>crecer</strong> a su máximo potencial y <strong>alcanzar</strong> rápidamente nuevos niveles de éxito.","Combinamos estrategia, UX / UI, diseño web, tecnología y creatividad para ayudar a las empresas a crecer a su máximo potencial y alcanzar rápidamente nuevos niveles de éxito.","Combiniamo strategia, UX/UI , disegno web, tecnologia e creatività per aiutare le aziende a crescere, a raggiungere il loro maggior potenziale e nuovi livelli di successo.","We combine strategy, UX / UI, web design, technology and creativity to help companies grow to their full potential and quickly reach new levels of success.","Combinamos estratégia, UX / UI, web design, tecnologia e criatividade para ajudar as empresas a crescerem ao máximo e alcançar rapidamente novos níveis de sucesso.","Nous combinons stratégie, UX / UI, conception de sites web, technologie et créativité pour aider les entreprises à atteindre leur plein potentiel et à atteindre rapidement de nouveaux niveaux de réussite."
+,Bloque 4,{{$store.getters.getTags({tag:'home_text11'})}},home_text11,,"Creamos la identidad 
+corporativa de tu marca",Creiamo la tua identità corporativa ,"We create a corporate identity
+of your brand","Nós criamos uma identidade corporativa
+da sua marca","Nous créons une identité d'entreprise
+de votre marque"
+,Bloque 4,{{$store.getters.getTags({tag:'home_text12'})}},home_text12,,"Fortalece la imagen de tu marca, con la planificación de estrategias en marketing digital ajustada a tus necesidades.","Fortifica l'immagine del tuo marchio, con la pianificazione di strategie di marketing digitale adatte alle tue necessità.","Strengthen the image of your brand, with the planning of digital marketing strategies tailored to your needs.","Fortalecer a imagem da sua marca, com o planejamento de estratégias de marketing digital adaptadas às suas necessidades.",Renforcez l'image de votre marque grâce à la planification de stratégies de marketing numérique adaptées à vos besoins.
+,Bloque 5,{{$store.getters.getTags({tag:'home_text13'})}},home_text13,,Últimos proyectos,Ultimi progetti,Last projects,Últimos projetos,Derniers projets
+,Bloque 6,{{$store.getters.getTags({tag:'home_text14'})}},home_text14,,Portafolio,Portafoglio,Portfolio,Portfólio,Portefeuille
+,Bloque 6,{{$store.getters.getTags({tag:'home_text15'})}},home_text15,,"restaurantes
+","ristoranti
+","restaurants
+","restaurantes
+","Restaurants
+"
+,Bloque 6,{{$store.getters.getTags({tag:'home_text21'})}},home_text21,,posadas,posadas ,inns ,pousadas,auberges
+,Bloque 6,{{$store.getters.getTags({tag:'home_text22'})}},home_text22,,branding,branding ,branding,marca,l'image de marque
+,Bloque 6,{{$store.getters.getTags({tag:'home_text23'})}},home_text23,,delivery,delivery,delivery ,entrega,livraison
+,Bloque 6,{{$store.getters.getTags({tag:'home_text24'})}},home_text24,,ecommerce,ecommerce,e-commerce,comércio eletrônico,commerce électronique
+,Bloque 6,{{$store.getters.getTags({tag:'home_text25'})}},home_text25,,booking ,booking,booking, reserva,réservation
+,Bloque 6,{{$store.getters.getTags({tag:'home_text26'})}},home_text26,,identity ,identity,identity ,identidade ,identité
+,Bloque 6,{{$store.getters.getTags({tag:'home_text27'})}},home_text27,,merchandising,merchandising,merchandising,merchandising,merchandising
+,Bloque 7,{{$store.getters.getTags({tag:'home_text16'})}},home_text16,,Nuestras sedes,Le nostre sedi,Where we are,Onde estamos,Où nous sommes
+,Contact,{{$store.getters.getTags({tag:'conctac_title1'})}},conctac_title1,,¿Cómo te podemos ayudar?,Come possiamo aiutarti?,How can we help you?,Como podemos te ajudar?,Comment pouvons-nous vous aider?
+,Bloque 8,{{$store.getters.getTags({tag:'home_title1'})}},home_title1,,Carreras profesionales,Percorsi Professionali,Professional careers,Carreiras profissionais,Carrières professionnelles
+,Bloque 8,{{$store.getters.getTags({tag:'home_text18'})}},home_text18,,"Colaboramos con diseñadores, desarrolladores y estrategas talentosos para crear un trabajo increíble. Buscamos personas creativas, comprometidas, con pasión dispuestas a romper y expandir límites.","Collaboriamo con disegnatori, sviluppatori e strateghi talentuosi per creare un lavoro incredibile. Cerchiamo persone creative, con compromesso, passione e disposti a rompere e superare i limiti.","We collaborate with talented designers, developers and strategists to create incredible work. We are looking for creative, committed people with passion willing to break and expand limits.","Colaboramos com designers, desenvolvedores e estrategistas talentosos para criar um trabalho incrível. Estamos à procura de pessoas criativas e comprometidas com paixão, dispostas a quebrar e expandir os limites.","Nous collaborons avec des concepteurs, des développeurs et des stratèges talentueux pour créer un travail incroyable. Nous recherchons des personnes créatives, engagées, passionnées et désireuses de dépasser les limites."
+,Bloque 8,{{$store.getters.getTags({tag:'home_text19'})}},home_text19,,Ver Perfiles,Vedi Profili,See Profiles,Veja os Perfis,Voir les profils
+,Bloque 9,{{$store.getters.getTags({tag:home_text29'})}},home_text29,,Nuestras últimas noticias de logros y actualidades.,Le nostre ultime notizie di risultati e notizie.,Our latest news of achievements and news.,Nossas últimas notícias de conquistas e novidades.,Nos dernières nouvelles des réalisations et des nouvelles.
+,Bloque 9,{{$store.getters.getTags({tag:home_text28'})}},home_text28,,Visitar Blog,Visita il Blog,Visit Blog,Visite o Blog,Visitez le blog
+,Footer,{{$store.getters.getTags({tag:'footer_text20'})}},footer_text20,,Inicio La Compañia Agencias Carreras,Home La Compagnia Agenzie Percorsi Professionali,Home The Companies Agencies Career,Home As Companhias Agências Carreira,Accueil Les Entreprises Agences Carrière
+,Header,{{$store.getters.getTags({tag:'general_vermas'})}},general_vermas,,Ver más,Vedi di più,See more,Ver mais,Voir plus
+,especialidades_botonera,{{$store.getters.getTags({tag:'general_btn_especialities'})}},general_btn_especialities,,Especialidades,Specialità,Specialties,Especialidades,Spécialités
+,especialidades_header,{{$store.getters.getTags({tag:'specialties_text1'})}},specialties_text1,,Especialistas en el área digital,Specialisti del Digitale,Specialists in the digital area,Especialistas na área digital,Spécialistes du numérique
+,especialidades_header,{{$store.getters.getTags({tag:'specialties_text2'})}},specialties_text2,,Generamos Inteligencia Digital y la distribuimos a todos los miembros de nuestra comunidad a través del procesamiento de Big Data.,Creiamo Intelligenza Digitale e la distribuiamo a tutti i membri della nostra comunità attraverso l'elaborazione dei Big Data.,We generate Digital Intelligence and deliver it to all members of our community through Big Data processing.,Nós geramos Inteligência Digital e entregamos a todos os membros de nossa comunidade através do processamento de Big Data.,Nous générons Digital Intelligence et le diffusons à tous les membres de notre communauté par le biais du traitement Big Data.
+,especialidades_seccion1,{{$store.getters.getTags({tag:'specialties_title1'})}},specialties_title1,,Jumperr Studio,Jumperr Studio,Jumperr Studio,Jumperr Studio,Jumperr Studio
+,especialidades_seccion1,{{$store.getters.getTags({tag:'specialties_text3'})}},specialties_text3,"<p class=""mb-4"">
+                                Podrás acceder a estudios sectoriales, modelos
+                                de negocio y análisis de tus competidores, evaluando
+                                las oportunidades de crecimiento del mercado al que
+                                aspiras, impulsando tu negocio con nuestro apoyo.
+                            </p>
+                            <p class=""mb-4"">
+                                Te ofrecemos la creación de un sitio web totalmente nuevo
+                                o una revisión del actual, mejorando su contenido para
+                                permitir un mejor posicionamiento en los motores de búsqueda.
+                            </p>
+
+                            <ul>
+                                <li>Consejos de los mejores profesionales de <strong>Jumperr.</strong></li>
+                                <li>Estudios sectoriales.</li>
+                                <li>Revenue model.</li>
+                                <li>Análisis de presencia en <strong>redes sociales.</strong></li>
+                                <li>Análisis de motores de búsqueda.</li>
+                                <li>Nueva <strong>página web</strong> u optimización de la actual.</li>
+                                <li>Draft Proposal con la propuesta de negocio.</li>
+                            </ul>","<p class=""mb-4"">
+Podrás acceder a estudios sectoriales, modelos de negocio y análisis de tus competidores, evaluando las oportunidades de crecimiento del mercado al que aspiras, impulsando tu negocio con nuestro apoyo. 
+ </p>
+
+ <p class=""mb-4""> 
+Te ofrecemos la creación de un sitio web totalmente nuevo o una revisión del actual, mejorando su contenido para permitir un mejor posicionamiento en los motores de búsqueda.
+</p>
+
+ <ul>
+ <li>Consejos de los mejores profesionales de Jumperr. </li>
+ <li>Estudios sectoriales. </li>
+ <li>Revenue model. </li>
+ <li>Análisis de presencia en redes sociales. </li>
+ <li>Análisis de motores de búsqueda.</li>
+ <li>Nueva página web u optimización de la actual. </li>
+ <li>Draft Proposal con la propuesta de negocio.</li>
+</ul>
+
+","<p class=""mb-4"">Potrai accedere a studi di settore, modelli di business e analisi della concorrenza, valutando le opportunità di crescita del mercato al quale ambisci. </p>  
+
+<p class=""mb-4"">Ti offriamo la creazione di un sito web totalmente nuovo o un restyling di quello già esistente, migliorandone i contenuti per permettere un miglior posizionamento nei motori di ricerca. </p>
+
+<ul>
+  <li>Suggerimenti da parte dei migliori professionisti di Jumperr. </li>
+  <li>Studi di settore.</li>
+  <li>Revenue Model.</li>
+  <li>Analisi della presenza sui Social Network.</li>
+  <li>Analisi dei motori di ricerca. </li>
+ <li> Nuova pagina web o ottimizzazione di quella già esistente. </li>
+  <li>Draft Proposal con la proposta di business.</li>
+</ul>","
+
+<p class=""mb-4"">You will be able to access sectoral studies, business models and analysis of your competitors, evaluating the growth opportunities of the market to which you aspire, boosting your business with our support.</p>
+
+<p class=""mb-4"">We offer you the creation of a totally new website or a revision of the current one, improving its content to allow a better positioning in the search engines.</p>
+
+<ul>
+<li>Tips from Jumperr's best professionals.</li>
+<li>Sector studies.</li>
+<li>Revenue model.</li>
+<li>Analysis of presence in social networks.</li>
+<li>Search engine analysis.</li>
+<li>New website or optimization of the current one.</li>
+<li>Draft Proposal with the business proposal.</li>
+</ul>
+","
+
+<p class=""mb-4"">Você poderá acessar estudos setoriais, modelos de negócios e análises de seus concorrentes, avaliando as oportunidades de crescimento do mercado a que você aspira, impulsionando seus negócios com nosso apoio.</p>
+
+<p class=""mb-4"">Oferecemos-lhe a criação de um site totalmente novo ou uma revisão do atual, melhorando o seu conteúdo para permitir um melhor posicionamento nos motores de busca.</p>
+
+<ul>
+<li>Dicas dos melhores profissionais da Jumperr.</li>
+<li>Estudos setoriais.</li>
+<li>Modelo de receita.</li>
+<li>Análise de presença nas redes sociais.</li>
+<li>Análise do mecanismo de pesquisa.</li>
+<li>Novo site ou otimização do atual.</li>
+<li>Proposta preliminar com a proposta comercial.</li>
+</ul>
+","
+
+<p class=""mb-4"">Vous serez en mesure d'accéder aux études sectorielles, aux modèles économiques et à l'analyse de vos concurrents, d'évaluer les opportunités de croissance du marché auquel vous aspirez et de dynamiser votre entreprise avec notre soutien.<p>
+
+<p class=""mb-4"">Nous vous proposons la création d'un site web totalement nouveau ou une révision du site actuel, en améliorant son contenu afin de permettre un meilleur positionnement dans les moteurs de recherche.<p>
+
+<ul>
+<li>Conseils des meilleurs professionnels de Jumperr.</li>
+<li>Etudes sectorielles.</li>
+<li>Modèle de revenus.</li>
+<li>Analyse de présence dans les réseaux sociaux.</li>
+<li>Analyse de moteur de recherche.</li>
+<li>Nouveau site ou optimisation du site actuel.</li>
+<li>Projet de proposition avec la proposition commerciale.</li>
+<ul>"
+,especialidades_seccion2,{{$store.getters.getTags({tag:'specialties_title2'})}},specialties_title2,,DESARROLLO WEB y APPS,Sviluppo Web e Apps,WEB DEVELOPMENT and APPS,DESENVOLVIMENTO DA WEB e APPS,DÉVELOPPEMENT WEB et APPS
+,especialidades_seccion2,{{$store.getters.getTags({tag:'specialties_text4'})}},specialties_text4,"<p class=""mb-4 text-white"">
+Somos la solución digital para el desarrollo de tu proyecto web
+ </p>
+
+ <p class=""mb-4 text-white"">
+ Con técnicas de codificación y configuración precisa que incluyen aplicaciones para móviles, 
+ lleva tu sitio web a nuevos niveles de éxito y aumenta el potencial de tu negocio al máximo, 
+ para permitir a tus usuarios acceder a los servicios de una manera más directa y personal.
+ </p>
+
+<ul class=""text-white"">
+<li>Experiencia de Usuario</li>
+<li>Diseño de Interface</li>
+<li>Web Responsivo</li>
+ </ul>","<p class=""mb-4 text-white"">
+Somos la solución digital para el desarrollo de tu proyecto web.</p>
+
+<p class=""mb-4 text-white"">Con técnicas de codificación y configuración precisa que incluyen aplicaciones para móviles, lleva tu sitio web a nuevos niveles de éxito y aumenta el potencial de tu negocio al máximo, para permitir a tus usuarios acceder a los servicios de una manera más directa y personal.</p>
+
+<ul class=""text-white"">
+<li>Experiencia de Usuario</li>
+<li>Diseño de Interface</li>
+<li>Web Responsivo</li>
+</ul>","<p class=""mb-4 text-white"">Siamo la soluzione digitale per lo sviluppo del tuoi progetto web.  </p>
+
+<p class=""mb-4 text-white"">Grazie a  tecniche di codificazione e configurazione precise che includono applicazioni specifiche per Mobile, permetterai al tuo sito di raggiungere nuovi livelli di successo, per poter così aumentare le potenzialità della tua attività, e per permettere ai tuoi utenti di accedere ai tuoi servizi più facilmente e in un modo più esclusivo.</p>
+
+<ul class=""text-white"">
+<li>User Experience     </li>
+<li>Disegno di Interfaccia </li>
+<li>Web Responsive </li>
+</ul>","<p class=""mb-4 text-white"">
+We are the digital solution for the development of your web project</p>
+
+<p class=""mb-4 text-white"">With precise coding and configuration techniques that include mobile applications, take your website to new levels of success and increase the potential of your business to the maximum, to allow your users to access services in a more direct and personal way.</p>
+
+<ul class=""text-white"">
+<li>User Experience </li>
+<li>Interface Design </li>
+<li>Responsive Websites </li>
+</ul>","
+<p class=""mb-4 text-white"">Somos a solução digital para o desenvolvimento do seu projeto web</p>
+
+<p class=""mb-4 text-white"">Com técnicas precisas de codificação e configuração que incluem aplicativos móveis, leve seu site a novos níveis de sucesso e aumente o potencial de seus negócios ao máximo, para permitir que seus usuários acessem os serviços de maneira mais direta e pessoal.</p>
+
+<ul class=""text-white"">
+<li>Experiência de Usuário</li>
+<li>Design de Interface</li>
+<li>Websites Responsivos</li>
+</ul>
+","<p class=""mb-4 text-white"">Nous sommes la solution numérique pour le développement de votre projet web</p>
+
+<p class=""mb-4 text-white"">Grâce à des techniques de codage et de configuration précises incluant des applications mobiles, optimisez le succès de votre site web et augmentez au maximum le potentiel de votre entreprise pour permettre à vos utilisateurs d'accéder aux services de manière plus directe et plus personnelle.</p>
+
+
+<ul class=""text-white"">
+<li>Expérience Utilisateur</li>
+<li>Design d'interface</li>
+<li>Sites Web réactifs</li>
+</ul>"
+,especialidades_seccion3,{{$store.getters.getTags({tag:'specialties_title3'})}},specialties_title3,,Jumperr Start,Jumperr Start,Jumperr Start,Jumperr Start,Jumperr Start
+,especialidades_seccion3,{{$store.getters.getTags({tag:'specialties_text5'})}},specialties_text5,,"
+La herramienta que te permitirá hacer tu página web de la manera más rápida y fácil con plantillas categorizadas.
+
+
+
+
+","    Lo strumento che ti permetterà di creare la tua pagina web nel modo più facile e veloce, grazie a modelli di disegno categorizzati.
+ 
+   
+","
+The tool that will allow you to make your web page in the fastest and easiest way with categorized templates.
+
+
+
+
+","
+A ferramenta que permitirá que você crie sua página da maneira mais rápida e fácil com modelos categorizados.
+
+
+
+","
+L'outil qui vous permettra de créer votre page web de la manière la plus rapide et la plus simple avec des modèles catégorisés.
+
+
+
+
+"
+,especialidades_seccion3,{{$store.getters.getTags({tag:'specialties_text6'})}},specialties_text6,,Crea tu sitio web,Crea la tua pagina web,Create your website,Crie seu site,Créez votre site web
+,especialidades_seccion3,{{$store.getters.getTags({tag:'specialties_text7'})}},specialties_text7,,Sube tus productos,Carica i tuoi prodotti,Upload your products,Envie seus produtos,Téléchargez vos produits
+,especialidades_seccion3,{{$store.getters.getTags({tag:'specialties_text8'})}},specialties_text8,, Sube tu calendario,Carica i tuoi calendario,Upload your calendar,Envie seu calendário,Téléchargez votre calendrier
+,especialidades_seccion3,{{$store.getters.getTags({tag:'specialties_tex9'})}},specialties_text9,,Crea tu blog,Crea il tuo blog,Create your blog,Crie seu blog,Créez votre blog
+,especialidades_seccion3,{{$store.getters.getTags({tag:'specialties_text10'})}},specialties_text10,,Revisa tus estadísticas,Visualizza le tue statistiche,Check your statistics,Verifique suas estatísticas,Vérifiez vos statistiques
+,especialidades_seccion3,{{$store.getters.getTags({tag:'specialties_text11'})}},specialties_text11,,Elige tu dominio,Scegli il tuo dominio,Choose your domain,Escolha seu domínio,Choisissez votre domaine
+,especialidades_seccion9,{{$store.getters.getTags({tag:'specialties_text63'})}},specialties_text63,,Estamos desarrollando una nueva versión,Stiamo sviluppando una nuova versione,We are developing a new version,Estamos desenvolvendo uma nova versão,Nous développons une nouvelle version
+,especialidades_seccion4,{{$store.getters.getTags({tag:'specialties_text12'})}},specialties_text12,,Suscríbete y te enviaremos una notificación para que seas uno de los primeros en probar Jumperr Start,Iscriviti e ti avviseremo con un messaggio affinchè tu sia uno dei primi a poter provare Jumperr Start,Subscribe and we will send you a notification to be one of the first to try Jumperr Start,Assine e nós lhe enviaremos uma notificação para ser um dos primeiros a tentar Jumperr Start,bonnez-vous et nous vous enverrons une notification pour que vous soyez l'un des premiers à essayer Jumperr Start
+,especialidades_seccion4,{{$store.getters.getTags({tag:'specialties_text13'})}},specialties_text13,,Tu Correo Electrónico,La tua email,Your e-mail,Teu e-mail,Ton adresse mail
+,especialidades_seccion4,{{$store.getters.getTags({tag:'specialties_text14'})}},specialties_text14,,Enviar,inviare,Submit,Enviar,Envoyer
+,especialidades_seccion4,{{$store.getters.getTags({tag:'specialties_text15'})}},specialties_text15,,"Sí, deseo mantenerme actualizado","Sì, ho bisogno di rimanere aggiornato","Yes, I need to stay updated","Sim, preciso ficar atualizado","Oui, je dois rester à jour"
+,especialidades_seccion5,{{$store.getters.getTags({tag:'specialties_title4'})}},specialties_title4,,REDES SOCIALES,Social Networks,SOCIAL NETWORKS,REDES SOCIAIS,RÉSEAUX SOCIAUX
+,especialidades_seccion5,{{$store.getters.getTags({tag:'specialties_text16'})}},specialties_text16,"<p class=""text-white"">   
+                                Conecta, interactúa y ten éxito junto con tus clientes.
+                            </p>
+
+                            <p class=""text-white"">   
+                                Ten la posibilidad de administrar tus redes sociales 
+                                para potenciar y garantizar la presencia en la web y llegar a millones de usuarios.
+                            </p>
+
+                            <p class=""text-white"">   
+                                Conectate con tu audiencia y ten presencia con tu marca
+                                a través de estrategias de marketing digital, 
+                                desde content marketing, mailing, SEO, automatización 
+                                y comercio electrónico, 
+                                que permitirán la promoción de productos y 
+                                servicios en las diferentes plataformas online.
+                            </p>
+
+                            <p class=""text-white"">   
+                                <strong>¡Haz crecer tu negocio con nosotros!</strong>
+                            </p>","
+ 
+<p class=""text-white"">   Conectáte, interactúa y alcanza hoy el éxito optimizando tu posicionamiento online.</p>  
+
+<p class=""text-white"">   Ten la posibilidad de administrar tus redes sociales para potenciar y garantizar tu presencia en la web globalizando tu marca, para llegar a millones de usuarios. </p>  
+
+<p class=""text-white"">   Conéctate con tu audiencia y ten presencia con tu marca a través de estrategias de marketing digital, desde content marketing, mailing, SEO, automatización y comercio electrónico, que permitirán la promoción de productos y servicios en las diferentes plataformas online.</p>  
+
+<p class=""text-white"">   ¡Haz crecer tu negocio con nosotros!</p>  
+</p>   ","    <p class=""text-white"">Connettiti, interagisci e raggiungi  il successo ottimizzando il tuo posizionamento online. </p>
+
+  <p class=""text-white"">  Avrai la possibilità di gestire facilmente i tuoi Social Networks, per potenziare  la tua presenza sul web globalizzando il tuo marchio, e così raggiungere milioni di utenti.   </p>
+
+<p class=""text-white""> Connettiti col tuo pubblico e fai conoscere il tuo marchio attraverso le migliori strategie di Marketing DIgitale come il Content Marketing, il Mailing, Il SEO, l' automatizzazione e il commercio elettronico, che ti permetteranno di promuovere i tuoi prodotti e servizi sulle diverse piattaforme online dedicate.</p>
+
+<p class=""text-white"">    Fai crescere il tuo business con noi!</p>","
+<p class=""text-white"">Connect, interact and achieve success today by optimizing your online ranking.</p>
+
+<p class=""text-white"">Be able to manage your social networks to enhance and guarantee your presence on the web by globalizing your brand, to reach millions of users. </p>
+
+<p class=""text-white"">Connect with your audience and have presence with your brand through digital marketing strategies, from content marketing, mailing, SEO, automation and e-commerce, which will allow the promotion of products and services in different online platforms.</p>
+
+<p class=""text-white"">Grow your business with us!</p>","
+
+<p class=""text-white"">Conecte-se, interaja e obtenha sucesso hoje, otimizando sua classificação on-line.</p>
+
+<p class=""text-white"">Seja capaz de gerenciar suas redes sociais para melhorar e garantir sua presença na web, globalizando sua marca para alcançar milhões de usuários. </p>
+
+<p class=""text-white"">Conecte-se com o seu público e tenha presença com a sua marca através de estratégias de marketing digital, desde marketing de conteúdo, mailing, SEO, automação e e-commerce, que permitirão a promoção de produtos e serviços em diferentes plataformas online.</p>
+
+<p class=""text-white"">Aumente seus negócios conosco!</p>","
+
+<p class=""text-white"">Connectez-vous, interagissez et réalisez le succès aujourd'hui en optimisant votre classement en ligne.</p>
+
+<p class=""text-white"">Soyez capable de gérer vos réseaux sociaux pour améliorer et garantir votre présence sur le Web en globalisant votre marque, pour atteindre des millions d'utilisateurs.</p>
+
+<p class=""text-white""> Connectez-vous avec votre public et soyez présent avec votre marque grâce à des stratégies de marketing numérique, telles que marketing de contenu, mailing, référencement, automatisation et commerce électronique, qui permettront de promouvoir des produits et services sur différentes plateformes en ligne.</p>
+
+<p class=""text-white"">Développez votre entreprise avec nous!</p>"
+,especialidades_seccion6,{{$store.getters.getTags({tag:'specialties_title5'})}},specialties_title5,,CMS y CRM,CMS e CRM,CMS and CRM,CMS e CRM,CMS et CRM
+,especialidades_seccion6,{{$store.getters.getTags({tag:'specialties_text17'})}},specialties_text17,"
+                        <p>
+                            Un gestor de contenidos único y eficiente.
+                        </p>
+<p>
+                            Manejar de manera independiente el contenido y 
+                            el diseño de tu sitio web es posible si cuentas con 
+                            una interfaz que controla una o varias bases de datos 
+                            donde se aloja el contenido, 
+                            solo contando con un sistema 
+                            que te permite gestionarlo. Venden más, ten gestores más productivos y 
+                            mejora notablemente la comunicación interna y 
+                            externa, con una atención 100% personalizada y 
+                            rápida a tus clientes, de forma fácil y útil.
+                        </p>
+                        <p>
+                            <strong>
+                                ¡Imagina tener la información de tus cliente condensada en un solo lugar! 
+                            </strong>
+                        </p>
+                        <p>
+                            Contando con un CMS y un CRM, podrás optimizar 
+                            el control de las operaciones con sistemas que 
+                            permiten la gestión de contenidos, así como la 
+                            relación y administración de tus clientes eficientemente.
+                        </p>","
+
+ <p>¡Un gestor de contenidos único y eficiente!</p>
+
+<p>Manejar de manera independiente el contenido y el diseño de tu sitio web es posible, si cuentas con una interfaz que controle una o varias bases de datos donde se aloje tu contenido, solo contando con un sistema que te permita gestionarlo. Vende más, ten gestores más productivos y mejora notablemente la comunicación interna y externa, con una atención 100% personalizada y rápida a tus clientes, de forma fácil y útil.
+
+<p><strong>¡Imagina tener la información de tus cliente condensada en un solo lugar! </strong></p>
+
+<p>Contando con un CMS y un CRM, podrás optimizar el control de las operaciones con sistemas que permitan la gestión de tus contenidos, así como la relación y administración de tus clientes eficientemente.</p>","     <p>Un gestore di contenuti unico ed efficace!  </p>   
+
+ <p>Gestire in maniera indipendente i contenuti e il disegno della tua pagina web è oggi possibile, se puoi contare con un interfaccia che controlli una o più basi dati contemporaneamente. Aumenta le tue vendite e  migliora notevolmente la comunicazione interna ed esterna, con un servizio di attenzione al cliente veloce e  personalizzato al 100% . </p>
+
+ <p><strong>Immagina di poter gestire tutti i principali dati dei tuoi clienti da un solo posto! </strong>   </p>
+
+ <p>Grazie al CMS e al CRM potrai ottimizzare il controllo delle operazioni del tuo sito con sistemi che ne permetteranno la gestione dei contenuti, così come  la relazione con i clienti.</p>","<p>A unique and efficient content manager!</p>
+
+<p>Managing the content and design of your website independently is possible, if you have an interface that controls one or more databases where your content is hosted, only with a system that allows you to manage it. Sell more, have more productive managers and significantly improve internal and external communication, with a 100% personalized and fast attention to your customers, in an easy and useful way.</p>
+
+<p><strong>Imagine having your customer's information condensed in one place!</strong></p>
+
+<p>With a CMS and a CRM, you can optimize the control of operations with systems that allow the management of your content, as well as the relationship and management of your customers efficiently.</p>","
+
+<p>Um gerenciador de conteúdo único e eficiente!</p>
+
+<p>Gerenciar o conteúdo e o design do seu site de forma independente é possível, se você tiver uma interface que controle um ou mais bancos de dados nos quais seu conteúdo está hospedado, somente com um sistema que permita gerenciá-lo. Venda mais, tenha gestores mais produtivos e melhore significativamente a comunicação interna e externa, com atendimento 100% personalizado e rápido aos seus clientes, de forma fácil e útil.</p>
+
+<p><strong>Imagine ter as informações do seu cliente condensadas em um só lugar!</strong></p>
+
+<p>Com um CMS e um CRM, você pode otimizar o controle das operações com sistemas que permitem o gerenciamento de seu conteúdo, bem como o relacionamento e o gerenciamento de seus clientes de forma eficiente.</p>","
+
+<p>Un gestionnaire de contenu unique et efficace!</p>
+
+<p>La gestion indépendante du contenu et de la conception de votre site web est possible, si vous disposez d'une interface qui contrôle une ou plusieurs bases de données sur lesquelles votre contenu est hébergé, uniquement avec un système vous permettant de le gérer. Vendez plus, avez des directeurs plus productifs et améliorez considérablement la communication interne et externe, avec une attention rapide et personnalisée à vos clients, de manière simple et utile.</p>
+
+<p><strong>Imaginez que les informations de vos clients soient condensées au même endroit!</strong></p>
+
+<p>Avec un CMS et un CRM, vous pouvez optimiser le contrôle des opérations grâce à des systèmes qui permettent la gestion de votre contenu, ainsi que la relation et la gestion de vos clients efficacement.</p>"
+,especialidades_seccion7,{{$store.getters.getTags({tag:'specialties_title6'})}},specialties_title6,,DISEÑO GRÁFICO,DISEGNO GRAFICO,GRAPHIC DESIGN,DESIGN GRÁFICO,CONCEPTION GRAPHIQUE
+,especialidades_seccion7,{{$store.getters.getTags({tag:'specialties_text18'})}},specialties_text18,,"
+
+Crea y optimiza la identidad corporativa de tu marca, captando la atención de tus usuarios con estrategias enfocadas al concepto visual que se adapte a tu producto o servicio.
+
+Obten los beneficios invirtiendo en un diseño gráfico de calidad que estimule a los consumidores y refuerce la imagen de tu marca; desde el branding hasta el diseño, desarrollo y producción de packaging para tus productos, con la identidad visual apropiada que permita reconocer a tu marca por su estilo propio.
+
+","  Crea e ottimizza l'identità corporativa del tuo marchio, attirando l'attenzione dei tuoi utenti con strategie focalizzate sul concetto visuale che meglio si adatta al tuo prodotto o servizio. 
+
+ Grazie a un disegno grafico di qualità incoraggerai all'aquisto i consumatori e al tempo stesso rafforzerai l'immagine del tuo marchio; dal branding passando per il disegno, dallo sviluppo alla produzione del packaging dei tuoi prodotti, con l'identità visuale appropiata permetterai al tuo marchio di essere facilmente riconoscibile per il suo stile esclusivo.","Create and optimize the corporate identity of your brand, capturing the attention of your users with strategies focused on the visual concept that suits your product or service.
+
+Reap the benefits by investing in a quality graphic design that stimulates consumers and reinforces the image of your brand; from branding to the design, development and production of packaging for your products, with the appropriate visual identity that allows you to recognize your brand for its own style.
+
+","
+
+Crie e otimize a identidade corporativa de sua marca, capturando a atenção de seus usuários com estratégias focadas no conceito visual que atenda ao seu produto ou serviço.
+
+Aproveite os benefícios investindo em um design gráfico de qualidade que estimule os consumidores e reforce a imagem de sua marca; do branding ao design, desenvolvimento e produção de embalagens para os seus produtos, com a identidade visual adequada que lhe permite reconhecer a sua marca para o seu próprio estilo.
+
+","
+Créez et optimisez l'image de marque de votre marque, en capturant l'attention de vos utilisateurs grâce à des stratégies centrées sur le concept visuel adapté à votre produit ou service.
+
+Profitez des avantages en investissant dans un graphisme de qualité qui stimule les consommateurs et renforce l’image de votre marque. de la marque à la conception, au développement et à la production des emballages de vos produits, avec l'identité visuelle appropriée vous permettant de reconnaître votre marque pour son propre style.
+
+"
+,especialidades_seccion8,{{$store.getters.getTags({tag:'specialties_title7'})}},specialties_title7,,Nuestra Metodología,La nostra Metodologia,Our Methodology,Nossa Metodologia,Notre Méthodologie
+,especialidades_seccion8,{{$store.getters.getTags({tag:'specialties_title8'})}},specialties_title8,,Diseño Gráfico,Branding,Branding,Branding,l'image de marque
+,especialidades_seccion8,{{$store.getters.getTags({tag:'specialties_step1'})}},specialties_step1,,Paso 1,Passo 1,Step 1,Passo 1,Étape 1
+,especialidades_seccion8,{{$store.getters.getTags({tag:'specialties_text19'})}},specialties_text19,,Reunión para clientes,Officina clienti,Client Workshop,Workshop de clientes,Atelier client
+,especialidades_seccion8,{{$store.getters.getTags({tag:'specialties_step2'})}},specialties_step2,,Paso 2,Passo 2,Step 2,Passo 2,Étape 2
+,especialidades_seccion8,{{$store.getters.getTags({tag:'specialties_text20'})}},specialties_text20,,Investigación e inspiración.,Ricerca di ispirazione,Inspiration Research,Pesquisa de Inspiração,Recherche d'inspiration
+,especialidades_seccion8,{{$store.getters.getTags({tag:'specialties_step3'})}},specialties_step3,,Paso 3,Passaggio 3,Step 3,etapa 3,Étape 3
+,especialidades_seccion8,{{$store.getters.getTags({tag:'specialties_text21'})}},specialties_text21,,Dibujo a mano,Disegno a mano,Hand Drawing,Desenho à mão,Dessin à main levée
+,especialidades_seccion8,{{$store.getters.getTags({tag:'specialties_step4'})}},specialties_step4,,Paso 4,Passaggio 4,Step 4,Passo 4,Étape 4
+,especialidades_seccion8,{{$store.getters.getTags({tag:'specialties_text22'})}},specialties_text22,,Conceptualización digital.,Concettualizzazione digitale,Digital Conceptualization,Conceituação Digital,Conceptualisation numérique
+,especialidades_seccion8,{{$store.getters.getTags({tag:'specialties_step5'})}},specialties_step5,,Paso 5,Passaggio 5,Step 5,Passo 5,Étape 5
+,especialidades_seccion8,{{$store.getters.getTags({tag:'specialties_text23'})}},specialties_text23,,Presentación del cliente,Presentazione del cliente,Client Presentation,Apresentação do Cliente,Présentation client
+,especialidades_seccion8,{{$store.getters.getTags({tag:'specialties_title9'})}},specialties_title9,,Diseño Web,Web design.,Web Design.,Web design.,Création de sites web.
+,especialidades_seccion8,{{$store.getters.getTags({tag:'specialties_step6'})}},specialties_step6,,Paso 1,Passo 1,Step 1,Passo 1,Étape 1
+,especialidades_seccion8,{{$store.getters.getTags({tag:'specialties_text24'})}},specialties_text24,,Expectativas del cliente,Aspettative del cliente,Client Expectations,Expectativas do cliente,Attentes du client
+,especialidades_seccion8,{{$store.getters.getTags({tag:'specialties_step7'})}},specialties_step7,,Paso 2,Passo 2,Step 2,Passo 2,Étape 2
+,especialidades_seccion8,{{$store.getters.getTags({tag:'specialties_text25'})}},specialties_text25,,Especificaciones técnicas,Specifiche tecniche,Technical Specifications,Especificações técnicas,Spécifications techniques
+,especialidades_seccion8,{{$store.getters.getTags({tag:'specialties_step8'})}},specialties_step8,,Paso 3,Passaggio 3,Step 3,etapa 3,Étape 3
+,especialidades_seccion8,{{$store.getters.getTags({tag:'specialties_text26'})}},specialties_text26,,Elaboración del experiencia de usuario UX / UI,Elaborazione UX / UI del percorso del cliente,Client Journey Elaboration UX/UI,Elaboração da Jornada do Cliente UX / UI,Elaboration du parcours client UX / UI
+,especialidades_seccion8,{{$store.getters.getTags({tag:'specialties_step9'})}},specialties_step9,,Paso 4,Passaggio 4,Step 4,Passo 4,Étape 4
+,especialidades_seccion8,{{$store.getters.getTags({tag:'specialties_text27'})}},specialties_text27,,Elaboración del diseño a la medida.,Elaborazione del design su misura,Bespoke Design Elaboration ,Elaboração de design sob medida,Élaboration de la conception sur mesure
+,especialidades_seccion8,{{$store.getters.getTags({tag:'specialties_step10'})}},specialties_step10,,Paso 5,Passaggio 5,Step 5,Passo 5,Étape 5
+,especialidades_seccion8,{{$store.getters.getTags({tag:'specialties_text28'})}},specialties_text28,,Presentación del cliente,Presentazione del cliente,Client Presentation ,Apresentação do Cliente,Présentation client
+,especialidades_seccion8,{{$store.getters.getTags({tag:'specialties_title10'})}},specialties_title10,,Desarrollo Web,Sviluppo web.,Web Development.,Desenvolvimento web.,Développement web.
+,especialidades_seccion8,{{$store.getters.getTags({tag:'specialties_step11'})}},specialties_step11,,Paso 1,Passo 1,Step 1,Passo 1,Étape 1
+,especialidades_seccion8,{{$store.getters.getTags({tag:'specialties_text29'})}},specialties_text29,,Codificación del sitio web,Codifica del sito web,Website Coding,Codificação do site,Codage de site Web
+,especialidades_seccion8,{{$store.getters.getTags({tag:'specialties_step12'})}},specialties_step12,,Paso 2,Passo 2,Step 2,Passo 2,Étape 2
+,especialidades_seccion8,{{$store.getters.getTags({tag:'specialties_text30'})}},specialties_text30,,Prueba de sitio web,Test del sito web,Website Testing,Teste de website,Test de site web
+,especialidades_seccion8,{{$store.getters.getTags({tag:'specialties_step13'})}},specialties_step13,,Paso 3,Passaggio 3,Step 3,etapa 3,Étape 3
+,especialidades_seccion8,{{$store.getters.getTags({tag:'specialties_text31'})}},specialties_text31,,Contenido e Integración del SEO.,Contenuto I Integrazione SEO Elaborazione di progetti personalizzati,Content I SEO Integration Bespoke Design Elaboration ,Conteúdo I Integração SEO Anotou Elaboração de Design,Contenu I Intégration SEO Élaboration de conception sur mesure
+,especialidades_seccion8,{{$store.getters.getTags({tag:'specialties_step14'})}},specialties_step14,,Paso 4,Passaggio 4,Step 4,Passo 4,Étape 4
+,especialidades_seccion8,{{$store.getters.getTags({tag:'specialties_text32'})}},specialties_text32,,Presentación de la versión de prueba,Prova la presentazione della versione,Test Version Presentation,Apresentação da versão de teste,Présentation de la version test
+,especialidades_seccion8,{{$store.getters.getTags({tag:'specialties_step15'})}},specialties_step15,,Paso 5,Passaggio 5,Step 5,Passo 5,Étape 5
+,especialidades_seccion8,{{$store.getters.getTags({tag:'specialties_text33'})}},specialties_text33,,Lanzamiento del sitio,Andare in diretta,Go Live,Ir viver,Go Live
+,especialidades_seccion8,{{$store.getters.getTags({tag:'specialties_title11'})}},specialties_title11,,Mercadeo en línea,Marketing online.,Online Marketing.,Marketing on-line.,Marketing en ligne.
+,especialidades_seccion8,{{$store.getters.getTags({tag:'specialties_step16'})}},specialties_step16,,Paso 1,Passo 1,Step 1,Passo 1,Étape 1
+,especialidades_seccion8,{{$store.getters.getTags({tag:'specialties_text34'})}},specialties_text34,,Optimización de motores de búsqueda,Ottimizzazioni per i motori di ricerca,Search Engine Optimizations,Otimizações de mecanismos de pesquisa,Optimisations de moteur de recherche
+,especialidades_seccion8,{{$store.getters.getTags({tag:'specialties_step17'})}},specialties_step17,,Paso 2,Passo 2,Step 2,Passo 2,Étape 2
+,especialidades_seccion8,{{$store.getters.getTags({tag:'specialties_text35'})}},specialties_text35,,Publicidad en buscadores,Pubblicità sui motori di ricerca,Search Engine Advertising ,Publicidade no motor de pesquisa,Publicité dans les moteurs de recherche
+,especialidades_seccion8,{{$store.getters.getTags({tag:'specialties_step18'})}},specialties_step18,,Paso 3,Passaggio 3,Step 3,etapa 3,Étape 3
+,especialidades_seccion8,{{$store.getters.getTags({tag:'specialties_text36'})}},specialties_text36,,Gestión de redes sociales,Gestione dei social media,Social Media Management,Gestão de Mídias Sociais,Gestion des médias sociaux
+,especialidades_seccion8,{{$store.getters.getTags({tag:'specialties_step19'})}},specialties_step19,,Paso 4,Passaggio 4,Step 4,Passo 4,Étape 4
+,especialidades_seccion8,{{$store.getters.getTags({tag:'specialties_text37'})}},specialties_text37,,Análisis de resultados,Analisi dei risultati,Results Analysis,Análise de Resultados,L'analyse des résultats
+,especialidades_seccion8,{{$store.getters.getTags({tag:'specialties_step21'})}},specialties_step21,,Paso 5,Passaggio 5,Step 5,Passo 5,Étape 5
+,especialidades_seccion8,{{$store.getters.getTags({tag:'specialties_text38'})}},specialties_text38,,Actualizaciones continuas,Ottimizzazioni continue,Continuous Optimizations,Otimizações contínuas,Optimisations continues
+,especialidades_seccion9,{{$store.getters.getTags({tag:'specialties_title12'})}},specialties_title12,,Jumperr Digital Company ,Jumperr Digital Company ,Jumperr Digital Company ,Jumperr Digital Company ,Jumperr Digital Company 
+,especialidades_seccion9,{{$store.getters.getTags({tag:'specialties_text39'})}},specialties_text39,,"Jumperr Digital Company Lleva mas de 5 años en el mundo del desarrollo digital. Hemos trabajado con todo tipo de empresas, grandes y pequeñas, en casi todas las industrias. Startups, pymes, multinacionales, gobiernos, entregando soluciones y satisfacción.","Jumperr Digital Company Ci vogliono più di 5 anni nel mondo dello sviluppo digitale. Abbiamo lavorato con tutti i tipi di aziende, grandi e piccole, in quasi tutti i settori. Startup, PMI, multinazionali, governi, offrendo soluzioni e soddisfazione.","Jumperr Digital Company It takes more than 5 years in the world of digital development. We have worked with all types of companies, large and small, in almost all industries. Startups, SMEs, multinationals, governments, delivering solutions and satisfaction.","Jumperr Digital Company Demora mais de 5 anos no mundo do desenvolvimento digital. Temos trabalhado com todos os tipos de empresas, grandes e pequenas, em quase todas as indústrias. Startups, PMEs, multinacionais, governos, entregando soluções e satisfação.","Jumperr Digital Company Il faut plus de 5 ans dans le monde du développement numérique. Nous avons travaillé avec tous les types de sociétés, grandes et petites, dans presque toutes les industries. Startups, PME, multinationales, gouvernements, solutions et satisfaction."
+,especialidades_seccion9,{{$store.getters.getTags({tag:'specialties_text40'})}},specialties_text40,,Correo :,mail:,Mail :,Mail:,Mail:
+,especialidades_seccion9,{{$store.getters.getTags({tag:'specialties_text41'})}},specialties_text41,,Info@jumperr.com,Info@jumperr.com,Info@jumperr.com,Info@jumperr.com,Info@jumperr.com
+,especialidades_seccion9,{{$store.getters.getTags({tag:'specialties_title13'})}},specialties_title13,,Links,link,Links,Links,Liens
+,especialidades_seccion9,{{$store.getters.getTags({tag:'specialties_text42'})}},specialties_text42,,La compañia,La compagnia,The company,A companhia,La compagnie
+,especialidades_seccion9,{{$store.getters.getTags({tag:'specialties_text43'})}},specialties_text43,,Especialidades,specialità,Specialties,Especialidades,Spécialités
+,especialidades_seccion9,{{$store.getters.getTags({tag:'specialties_text44'})}},specialties_text44,,Blog,blog,Blog,Blog,Blog
+,especialidades_seccion9,{{$store.getters.getTags({tag:'specialties_text45'})}},specialties_text45,,Agencias,agenzie,Agencies,Agências,Agences
+,especialidades_seccion9,{{$store.getters.getTags({tag:'specialties_text46'})}},specialties_text46,,Carreras,corsa,Careers,Carreiras,Carrières
+,especialidades_seccion9,{{$store.getters.getTags({tag:'contact_text47'})}},contact_text47,,Contactanos,Contattaci,Contact us,Entre em contato conosco,Nous contacter
+,especialidades_seccion9,{{$store.getters.getTags({tag:'specialties_title14'})}},specialties_title14,,Servicios,servizi,Services,Serviços,Les services
+,especialidades_seccion9,{{$store.getters.getTags({tag:'specialties_text47'})}},specialties_text47,,Jumperr Start,Jumperr Start,Jumperr Start,Jumperr Start,Jumperr Start
+,especialidades_seccion9,{{$store.getters.getTags({tag:'specialties_text48'})}},specialties_text48,,Desarollo Web,Sviluppo Web,Web Development,Desenvolvimento Web,Développement Web
+,especialidades_seccion9,{{$store.getters.getTags({tag:'specialties_text49'})}},specialties_text49,,Cms,Cms,Cms,Cms,Cms
+,especialidades_seccion9,{{$store.getters.getTags({tag:'specialties_text50'})}},specialties_text50,,Crm,crm,Crm,Crm,Crm
+,especialidades_seccion9,{{$store.getters.getTags({tag:'specialties_text51'})}},specialties_text51,,Apps,applicazioni,Apps,Apps,Applications
+,especialidades_seccion9,{{$store.getters.getTags({tag:'specialties_text52'})}},specialties_text52,,Redes Sociales,Reti sociali,Social networks,Redes sociais,Réseaux sociaux
+,especialidades_seccion9,{{$store.getters.getTags({tag:'specialties_title15'})}},specialties_title15,,Tags,tag,Tags,Tags,Tags
+,especialidades_seccion9,{{$store.getters.getTags({tag:'specialties_text53'})}},specialties_text53,,UX/UI,UX / UI,UX / UI,UX / UI,UX / UI
+,especialidades_seccion9,{{$store.getters.getTags({tag:'specialties_text54'})}},specialties_text54,,Diseño,disegno,Design,Design,Conception
+,especialidades_seccion9,{{$store.getters.getTags({tag:'specialties_text55'})}},specialties_text55,,Olbia,Olbia,Olbia,Olbia,Olbia
+,especialidades_seccion9,{{$store.getters.getTags({tag:'specialties_text56'})}},specialties_text56,,Argentina,Argentina,Argentina,Argentina,Argentine
+,especialidades_seccion9,{{$store.getters.getTags({tag:'specialties_text57'})}},specialties_text57,,Creatividad,creatività,Creativity,Criatividade,La créativité
+,especialidades_seccion9,{{$store.getters.getTags({tag:'specialties_text58'})}},specialties_text58,,Italia,Italia,Italy,Itália,Italie
+,especialidades_seccion9,{{$store.getters.getTags({tag:'specialties_text59'})}},specialties_text59,,RRSS,RRSS,RRSS,RRSS,RRSS
+,especialidades_seccion9,{{$store.getters.getTags({tag:'specialties_text60'})}},specialties_text60,,SEO,SEO,SEO,SEO,SEO
+,especialidades_seccion9,{{$store.getters.getTags({tag:'specialties_text61'})}},specialties_text61,,Web Site,Sito Web,Web Site,Web Site,Site web
+,especialidades_seccion9,{{$store.getters.getTags({tag:'specialties_text62'})}},specialties_text62,,Marketing,marketing,Marketing,Marketing,Le marketing
+,especialidades_seccion9,{{$store.getters.getTags({tag:'specialties_link1'})}},specialties_link1,,Enlace Facebook,Link di Facebook,Facebook link,Link do Facebook,Lien Facebook
+,especialidades_seccion9,{{$store.getters.getTags({tag:'specialties_link2'})}},specialties_link2,,Enlace Linkedin,Link Linkedin,Link Linkedin,Link Linkedin,Lien Linkedin
+,especialidades_seccion9,{{$store.getters.getTags({tag:'specialties_link3'})}},specialties_link3,,Enlace Instagram,Collegamento Instagram,Instagram link,Link do Instagram,Lien Instagram
+,especialidades_seccion9,{{$store.getters.getTags({tag:'specialties_link4'})}},specialties_link4,,Enlace Youtube,Collegamento Youtube,Youtube link,Link do Youtube,Lien Youtube
+,especialidades_seccion10,{{$store.getters.getTags({tag:'specialties_title16'})}},specialties_title16,,© Jumperr Digital Company,© Jumperr Digital Company,© Jumperr Digital Company,© Jumperr Digital Company,© Jumperr Digital Company
+,especialidades_seccion10,{{$store.getters.getTags({tag:'specialties_title17'})}},specialties_title17,,Políticas y Privacidad,Politiche e privacy,Policies and Privacy,Políticas e Privacidade,Politiques et confidentialité
+,especialidades_seccion10,{{$store.getters.getTags({tag:'specialties_title18'})}},specialties_title18,,Términos y Condiciones,Termini e condizioni,Terms and Conditions,Termos e Condições,Termes et conditions
+,Contacto,{{$store.getters.getTags({tag:'conctac_text1'})}},conctac_text1,,Queremos conocer qué necesidades tienes para asesorarte de manera integral en la proyección de tu marca.,Vogliamo sapere cosa stai cercando per poterti consigliare  integralmente sulla proiezione del tuo marchio.,We want to know what are your needs in order to advise you in an integral way in the projection of your brand.,"Queremos saber quais são as suas necessidades, a fim de aconselhá-lo de forma integral na projeção de sua marca.",Nous voulons savoir quels sont vos besoins afin de vous conseiller de manière intégrale dans la projection de votre marque.
+,Contacto,{{$store.getters.getTags({tag:'conctac_text3'})}},conctac_text3,,"La Compañía
+Diseñamos, desarrollamos, implementamos y creamos soluciones, utilizando altos estándares de calidad con tecnología de vanguardia, dándole un enfoque auténtico a tus proyectos; desarrollando una experiencia significativa y duradera con ideas innovadoras e incorporando nuevas estrategias adaptadas a tus necesidades.
+¡Asumamos el reto de forjar el futuro!","La Compagnia    Disegnamo, sviluppiamo, implementiamo e creiamo soluzioni digitali, secondo i più  alti standard di qualità, con tecnologie all'avanguardia, dando al tuo progetto un carattere autentico; svliluppando un 'esperienza significativa e duratura con idee innovative ed incorporando nuove strategie adatte alle tue necessità. Accettiamo la sfida di forgiare il futuro!","The Company
+We design, develop, implement and create solutions, using high quality standards with state-of-the-art technology, giving you an authentic approach to your projects; developing a meaningful and lasting experience with innovative ideas and incorporating new strategies adapted to your needs.
+Let's take up the challenge of forging the future!","A Empresa
+Nós projetamos, desenvolvemos, implementamos e criamos soluções, usando padrões de alta qualidade com tecnologia de ponta, dando a você uma abordagem autêntica para seus projetos; desenvolver uma experiência significativa e duradoura com ideias inovadoras e incorporar novas estratégias adaptadas às suas necessidades.
+Vamos aceitar o desafio de forjar o futuro!","L'Entreprise
+Nous concevons, développons, mettons en œuvre et créons des solutions en respectant des normes de qualité élevées et une technologie de pointe, vous donnant ainsi une approche authentique de vos projets. développer une expérience significative et durable avec des idées innovantes et incorporer de nouvelles stratégies adaptées à vos besoins.
+Relevons le défi de forger l'avenir!"
+,Contacto,{{$store.getters.getTags({tag:'conctac_text4'})}},conctac_text4,,"Servicios
+Servicios innovadores que marcan tendencia en el diseño web. Buscar una solución a tus necesidades y sueños, con una buena estrategia de inversión para agilizar y garantizar tus planes de negocios y opciones, para satisfacer necesidades con acciones que garantizan tu éxito.
+¡Innovamos ideas, creamos soluciones!","Servizi    Servizi innovativi che fanno tendenza nel mondo del disegno web. Cercare una soluzione alle tue necessità e una risposta ai tuoi sogni, con una buona strategia d'investimento per agilizzare i tuoi business plan, per soddisfare nuove esigenze. Innoviamo idee, creiamo soluzioni!","About Us
+Innovative services that set trends in web design. Find a solution to your needs and dreams, with a good investment strategy to streamline and guarantee your business plans and options, to satisfy your needs with actions that guarantee your success.
+We innovate ideas, we create solutions!","Sobre Nós
+Serviços inovadores que definem tendências em web design. Encontre uma solução para suas necessidades e sonhos, com uma boa estratégia de investimento para agilizar e garantir seus planos e opções de negócios, para satisfazer suas necessidades com ações que garantam seu sucesso.
+Inovamos ideias, criamos soluções!","À Propos de Nous
+Services innovants qui définissent les tendances de la conception web. Trouvez une solution à vos besoins et à vos rêves, avec une bonne stratégie d’investissement pour rationaliser et garantir vos plans d’affaires et vos options, pour satisfaire vos besoins.
+Nous innovons des idées, nous créons des solutions!"
+,Contacto,{{$store.getters.getTags({tag:'conctac_text2'})}},conctac_text2,,Queremos vivir contigo la experiencia de crecer profesionalmente.,Vogliamo vivere con te l'esperienza di crescere professionalmente.,We want to live with you the experience of growing professionally.,Queremos conviver com você a experiência de crescer profissionalmente.,Nous voulons vivre avec vous l'expérience de la croissance professionnelle.
+,Contacto,{{$store.getters.getTags({tag:'conctac_text5'})}},conctac_text5,,Nombre,Nome,Name,Nome,Prénom
+,partners,{{$store.getters.getTags({tag:'partners_titulo'})}},partners_titulo,,Partners,Partners,Partners,Parceiros,Nos Partenaires
+,partners,{{$store.getters.getTags({tag:'partners_text1'})}},partners_text1,,¿Estás buscando un aliado digital para tu empresa?,Stai cercando un alleato digitale per la tua azienda?,Are you looking for a digital ally for your company?,Você está procurando um aliado digital para sua empresa?,Vous recherchez un allié numérique pour votre entreprise?
+,partners,{{$store.getters.getTags({tag:'partners_text22'})}},partners_text22,"<h4 class=""text-center title-border-bottom"">Potenciamos tus ideas, <strong>aumentamos tu exito</strong>.</h4>","<h4 class=""text-center title-border-bottom"">Potenciamos tu idea, <strong>aumentamos tu éxito</strong></h4>.","<h4 class=""text-center title-border-bottom"">Potenziamo la tua idea, <strong>aumentiamo il tuo successo.</strong></h4>.","<h4 class=""text-center title-border-bottom"">We empower your idea,<strong> we increase your success.</strong></h4>.","<h4 class=""text-center title-border-bottom"">Nós fortalecemos sua ideia, <strong>aumentamos seu sucesso.</strong></h4>.","<h4 class=""text-center title-border-bottom"">Nous renforçons votre idée, <strong>nous augmentons votre succès.</strong></h4>."
+,partners,{{$store.getters.getTags({tag:'partners_text23'})}},partners_text23,,"
+¿Qué ofrecemos para hacer crecer la cartera de clientes a nuestros socios?",Cosa offriamo per far crescere il portafoglio clienti dei nostri soci?,"
+ What do we offer to grow the client portfolio of our partners?",O que oferecemos para aumentar a carteira de clientes de nossos parceiros?,Que proposons-nous pour développer le portefeuille de clients de nos partenaires?
+,partners,{{$store.getters.getTags({tag:'partners_text2'})}},partners_text2,,Proveemos servicios digitales de calidad.,Forniamo servizi digitali di alta qualità., We provide quality digital services., Nós fornecemos serviços digitais de qualidade.,Nous fournissons des services numériques de qualité.
+,partners,{{$store.getters.getTags({tag:'partners_title1'})}},partners_title1,,IDENTIDAD DE MARCA Y COMUNICACIÓN,IDENTITA' DEL MARCHIO E COMUNICAZIONE,IDENTITY OF BRAND AND COMMUNICATION,IDENTIDADE DE MARCA E COMUNICAÇÃO,IDENTITÉ DE MARQUE ET DE COMMUNICATION
+,partners,{{$store.getters.getTags({tag:'partners_text3'})}},partners_text3,,A través de nuestra red de técnicos y colaboradores podemos apoyar a nuestros clientes en el posicionamiento estratégico online de su marca.,Attraverso la nostra rete di tecnici e collaboratori possiamo aiutare i nostri clienti a posizionare strategicamente  il proprio marchio sul web., Through our network of technicians and collaborators we can support our clients in the strategic online positioning of your brand.," Através da nossa rede de técnicos e colaboradores, podemos apoiar os nossos clientes no posicionamento estratégico online da sua marca."," Grâce à notre réseau de techniciens et de collaborateurs, nous pouvons assister nos clients dans le positionnement stratégique en ligne de votre marque."
+,partners,{{$store.getters.getTags({tag:'partners_title2'})}},partners_title2,,INNOVACIÓN DE PROCESO,INNOVAZIONE DEI PROCESSI,PROCESS INNOVATION,INOVAÇÃO DO PROCESSO,INNOVATION DE PROCESSUS
+,partners,{{$store.getters.getTags({tag:'partners_text4'})}},partners_text4,,"Nuestros socios y clientes siempre pueden contar con nuestros consejos y asesoramiento, garantizados por décadas de experiencia y conocimiento.","I nostri soci e clienti possono sempre contare su i nostri consigli, garantiti da anni di esperienza e conoscenza.","Our partners and clients can always count on our advice and counseling, guaranteed by decades of experience and knowledge.","Nossos parceiros e clientes podem sempre contar com nossos conselhos e aconselhamento, garantidos por décadas de experiência e conhecimento.","Nos partenaires et clients peuvent toujours compter sur nos conseils et nos conseils, garantis par des décennies d'expérience et de connaissances."
+,partners,{{$store.getters.getTags({tag:'partners_title3'})}},partners_title3,,DISEÑO Y DESARROLLO,DISEGNO E SVILUPPO,DESIGN AND DEVELOPMENT,DESIGN E DESENVOLVIMENTO,DESIGN ET DÉVELOPPEMENT
+,partners,{{$store.getters.getTags({tag:'partners_text5'})}},partners_text5,,"Todos nuestros proyectos se llevan a cabo con la concepción de una relación que perdura en el tiempo, para mejorar y refinar cada proceso.","Tutti i nostri progetti si portano avanti nel segno di una relazione che perduri nel tempo, per migliorare ed affinare ogni processo.","All our projects are carried out with the conception of a relationship that lasts over time, to improve and refine each process.","Todos os nossos projetos são realizados com a concepção de um relacionamento que dura ao longo do tempo, para melhorar e refinar cada processo.","Tous nos projets sont réalisés avec la conception d'une relation qui dure dans le temps, afin d'améliorer et d'affiner chaque processus."
+,partners,{{$store.getters.getTags({tag:'partners_title4'})}},partners_title4,,ESTRATEGIAS Y CAMPAÑAS DE MARKETING,STRATEGIE E CAMPAGNE MARKETING,STRATEGIES AND MARKETING CAMPAIGNS,ESTRATÉGIAS E CAMPANHAS DE MARKETING,STRATÉGIES ET CAMPAGNES DE MARKETING
+,partners,{{$store.getters.getTags({tag:'partners_text6'})}},partners_text6,,"Prestando especial atención al mundo de las redes sociales y los motores de búsqueda, apoyamos a nuestros clientes en todas las fases de lanzamiento y crecimiento.","Dedicando particolare attenzione al mondo dei Social Networks e dei motori di ricerca, affianchiamo ai nostri clienti in tutte le fasi di lancio e crescita della loro pagina web."," Paying special attention to the world of social networks and search engines, we support our clients in all phases of launch and growth."," Prestando atenção especial ao mundo das redes sociais e dos mecanismos de busca, apoiamos nossos clientes em todas as fases de lançamento e crescimento","En accordant une attention particulière au monde des réseaux sociaux et des moteurs de recherche, nous assistons nos clients dans toutes les phases de lancement et de croissance."
+,partners,{{$store.getters.getTags({tag:'partners_text7'})}},partners_text7,,¿Qué ofrecemos para hacer crecer tu empresa?,Cosa offriamo per far crescere la tua azienda?,What do we offer to grow your company?,O que oferecemos para expandir sua empresa?,Que proposons-nous pour développer votre entreprise?
+,partners,{{$store.getters.getTags({tag:'partners_text8'})}},partners_text8,,SERVICIOS PARA LA AGENCIA,SERVIZI PER LE AGENZIE,SERVICES FOR THE AGENCY,SERVIÇOS PARA A AGÊNCIA,SERVICES POUR L'AGENCE
+,partners,{{$store.getters.getTags({tag:'partners_title5'})}},partners_title5,,DOMINIO & HOSTING,DOMINIO E HOSTING,DOMAIN & HOSTING,DOMÍNIO E HOSPEDAGEM,DOMAINE & HEBERGEMENT
+,partners,{{$store.getters.getTags({tag:'partners_text9'})}},partners_text9,,"Identificación del dominio de un nuevo registro o transferencia del dominio existente, con su correspondiente web mail. El servicio de alojamiento se proporcionará a través de nuestros servidores.","Identificazione del dominio di  nuova registrazione o trasferimento di quello già esistente, includendo la corrispondente web mail. Il servizio di hosting avverrà attraverso i nostri server.","Identification of the domain of a new registration or transfer of the existing domain, with its corresponding web mail service. The hosting service will be provided through our servers.","Identificação do domínio de um novo registro ou transferência do domínio existente, com seu serviço de webmail correspondente. O serviço de hospedagem será fornecido através de nossos servidores.","Identification du domaine d'un nouvel enregistrement ou transfert du domaine existant, avec son service de messagerie web correspondant. Le service d'hébergement sera fourni via nos serveurs."
+,partners,{{$store.getters.getTags({tag:'partners_title6'})}},partners_title6,,BOLETÍN,NEWSLETTER,NEWSLETTER,BOLETIM DE NOTÍCIAS,BULLETIN
+,partners,{{$store.getters.getTags({tag:'partners_text10'})}},partners_text10,,Gestión de una lista de contactos personales con la posibilidad de enviar correo electrónico y boletines personalizados con software profesional.,Gestione di una lista di contatti personali con la possibilità di inviare posta elettronica e newsletter personalizzati attraverso un interfaccia professionale.,Management of a list of personal contacts with the possibility of send personalized emails and newsletters using professional software.,Gestão de uma lista de contatos pessoais com a possibilidade de enviar e-mails personalizados e boletim de notícias usando software profissional.,Gestion d'une liste de contacts personnels avec possibilité d'envoyer des emails et des bulletin personnalisés à l'aide d'un logiciel professionnel.
+,partners,{{$store.getters.getTags({tag:'partners_title7'})}},partners_title7,,ENTREVISTA,INTERVISTA,INTERVIEW,ENTREVISTA,ENTREVUE
+,partners,{{$store.getters.getTags({tag:'partners_text11'})}},partners_text11,,"
+Realización de una entrevista telefónica para recopilar información específica sobre tu empresa",Realizzazione di un' intervista telefonica per raccogliere informazioni specifiche sulla tua azienda.,We perform a telephone interview to gather specific information about your company,Realizamos uma entrevista por telefone para coletar informações específicas sobre sua empresa,Nous effectuons un entretien téléphonique pour recueillir des informations spécifiques sur votre entreprise.
+,partners,{{$store.getters.getTags({tag:'partners_title8'})}},partners_title8,,BANNERS E IMÁGENES,BANNERS E IMMAGINI,BANNERS AND IMAGES,BANNERS E IMAGENS,BANNIERS ET IMAGES
+,partners,{{$store.getters.getTags({tag:'partners_text12'})}},partners_text12,,Creación y publicación de banners e imágenes (usando fotos del cliente o categoría de los archivos fotográficos) cargadas por el equipo editorial.,Creazione e pubblicazione di banners e immagini (utilizzando le foto del cliente o immagini d'archivio online)  caricate dalla nostra redazione.,Creation and publication of banners and images (using photos provided by the client or category of photographic archives) loaded by the editorial team.,Criação e publicação de banners e imagens (usando fotos fornecidas pelo cliente ou categoria de arquivos fotográficos) carregadas pela equipe editorial.,Création et publication de bannières et d'images (à l'aide de photos fournies par le client ou d'une catégorie d'archives photographiques) chargées par l'équipe éditoriale.
+,partners,{{$store.getters.getTags({tag:'partners_title9'})}},partners_title9,,RESPONSIVE,RESPONSIVE,RESPONSIVE,RESPONSIVO,RESPONSIVE
+,partners,{{$store.getters.getTags({tag:'partners_text13'})}},partners_text13,,"Optimización de sitios web para computadoras, teléfonos inteligentes y tablets.","Ottimizzazione dei siti web per computer, smartphone  e tablet.","Optimization of websites for PCs, smartphones and tablets.","Otimização de sites para PCs, smartphones e tablets.","Optimisation des sites web pour PCs, smartphones et tablettes."
+,partners,{{$store.getters.getTags({tag:'partners_title10'})}},partners_title10,,PANEL DE CONTROL,PANNELLO DI CONTROLLO,CONTROL PANEL,PAINEL DE CONTROLE,PANNEAU DE CONTRÔLE
+,partners,{{$store.getters.getTags({tag:'partners_text14'})}},partners_text14,,"Acceso a un panel de control para la gestión autónoma de sus textos, imágenes, videos y ofertas.","Accesso a un pannello di controllo per la gestione autonoma di testi, immagini, video e offerte.","Access to a control panel for the autonomous management of your texts, images, videos and offers.","Acesso a um painel de controle para o gerenciamento autônomo de seus textos, imagens, vídeos e ofertas.","Accès à un panneau de contrôle pour la gestion autonome de vos textes, images, vidéos et offres."
+,partners,{{$store.getters.getTags({tag:'partners_title11'})}},partners_title11,,REDACCIÓN DE CONTENIDO,REDAZIONE DEI CONTENUTI,WRITING OF CONTENT,ESCRITA DO CONTEÚDO,ECRITURE DE CONTENU
+,partners,{{$store.getters.getTags({tag:'partners_text15'})}},partners_text15,,Creación e inserción de contenido textual en una perspectiva SEO para una correcta optimización de su sitio web.,"Creazione ed inserzione dei contenuti testuali in prospettiva SEO, per una corretta ottimizzazione della presenza sui motori di ricerca del suo sito.",Creation and insertion of textual content in an SEO perspective for a correct optimization of your website.,Criação e inserção de conteúdo textual em uma perspectiva de SEO para uma otimização correta do seu site.,Création et insertion de contenu textuel dans une perspective de référencement pour une optimisation correcte de votre site web.
+,partners,{{$store.getters.getTags({tag:'partners_title12'})}},partners_title12,,BLOG,BLOG,BLOG,BLOG,BLOG
+,partners,{{$store.getters.getTags({tag:'partners_text16'})}},partners_text16,,"Apertura y configuración, primer post de bienvenida, guía y manual de usuario.","Apertura e configurazione, primo post di benvenuto, guida e manuale dell'utente.","Opening and configuration, first welcome post, guide and user manual.","Abertura e configuração, primeiro post de boas-vindas, guia e manual do usuário.","Ouverture et configuration, premier message de bienvenue, guide et manuel d'utilisation"
+,partners,{{$store.getters.getTags({tag:'partners_title17'})}},partners_title17,,ASISTENCIA WEB,ASSISTENZA WEB,WEB ASSISTANCE,ASSISTÊNCIA WEB,ASSISTANCE WEB
+,partners,{{$store.getters.getTags({tag:'partners_text17'})}},partners_text17,,"Soporte y asistencia de un equipo web profesional, hasta que su sitio esté en línea y se vcumplan 7 tickets de asistencia post-publicación.","Supporto e assistenza da parte di un web team professionale, fino alla messa online del suo sito e con 7 tickets di assistenza post-pubblicazione.","Support and assistance from a professional web team, until your site is online and the 7 post-publication assistance tickets quota are fully paid.","Suporte e assistência de uma equipe web profissional, até que seu site esteja on-line e a cota de tickets de assistência pós-publicação 7 seja totalmente paga.",Assistance et assistance d'une équipe web professionnelle jusqu'à la mise en ligne de votre site et le paiement intégral du quota de 7 tickets d'assistance post-publication.
+,partners,{{$store.getters.getTags({tag:'partners_title13'})}},partners_title13,,SECCIONES DEL SITIO,SEZIONI DEL SITO,SITE SECTIONS,SEÇÕES DO SITE,SECTIONS DU SITE
+,partners,{{$store.getters.getTags({tag:'partners_text18'})}},partners_text18,"<ol>
+                        <li>Página de inicio</li>
+                        <li>Nosotros</li>
+                        <li>Galería y Banners</li>
+                        <li>Ofertas</li>
+                        <li>Blog</li>
+                        <li>Contactos</li>
+                        <li>Comercio Electrónico / Reserva, etc</li>
+                    </ol>","<p>Creación en línea y puesta en los servicio de secciones:</p>
+<ol><li>Página de inicio</li>
+<li>Nosotros</li>
+<li> Galería y Banners</li>
+<li>Ofertas</li>
+<li> Blog</li>
+<li>Contactos</li>
+<li>Comercio Electrónico / Reserva, etc</li></ol>","<p>Creazione e posizionamento online nel servizio sezioni:</p>
+<ol><li>Home page </li>
+ <li>Su di noi   </li>
+<li>Galleria e Banners  </li>
+<li>Offerte  </li>
+ <li>.Blog  </li>
+ <li>Contatti  </li>
+ <li>E-Commerce/Prenotazioni, etc.</li></ol>","<p>Online creation and placement in the sections service:</p>
+<ol><li> Home page</li>
+<li>Us</li>
+<li> Gallery and Banners</li>
+<li>Offers</li>
+<li> Blog</li>
+<li> Contacts</li>
+<li>E-Commerce / Reservation, etc</li></ol>","<p>Criação e colocação online no serviço de seções:</p>
+<ol><li>Página inicial</li>
+<li>Nós</li>
+<li> Galeria e Banners</li>
+<li>Ofertas</li>
+<li> Blog</li>
+<li> Contatos</li>
+<li> E-Commerce / Reserva, etc</li></ol>","<p>Création et placement en ligne dans le service des sections:</p>
+<ol><li>Page d'accueil</li>
+<li>Nous</li>
+<li> Galerie et Bannières</li>
+<li> Offres</li>
+<li> Blog</li>
+<li> Contacts</li>
+<li> E-Commerce / Réservation, etc</li>.</ol>"
+,partners,{{$store.getters.getTags({tag:'partners_title14'})}},partners_title14,,TAG,TAG,TAG,TAG,TAG
+,partners,{{$store.getters.getTags({tag:'partners_text19'})}},partners_text19,"Sistema de asignación de etiquetas TAG:<br>
+                    Palabra clave + Municipio<br>
+                    Palabra clave + Provincia<br>
+                    Palabra clave + Pipo<br>
+                    Palabra clave + Social Ash #<br>","Sistema de asignación de etiquetas TAG:<br>
+Palabra clave + Municipio<br>
+Palabra clave + Provincia<br>
+Palabra clave + Pipo<br>
+Palabra clave + Social Ash #<br>","Sistema di assegnazione TAG:<br>
+  Parola chiave+ Municipio <br>
+   Parola chiave + provincia <br>
+  Parola chiave + Pipo<br>
+    Parola chiave + Social Ash#<br>","TAG assignment system:<br>
+Keyword + City<br>
+Keyword + Province<br>
+Keyword + Pipo<br>
+Keyword + Social Hash #<br>","Sistema de atribuição TAG:<br>
+Palavra-chave + Cidade<br>
+Palavra-chave + Província<br>
+Palavra-chave + Pipo<br>
+Palavra-chave + Hash Social #<br>","Système d'attribution de TAG:<br>
+Mot-clé + Ville<br>
+Mot-clé + Province<br>
+Mot-clé + Pipo<br>
+Mot-clé +  Hachage Social #<br>"
+,partners,{{$store.getters.getTags({tag:'partners_title15'})}},partners_title15,,E-COMMERCE,E-COMMERCE,E-COMMERCE,COMÉRCIO ELETRÔNICO,COMMERCE ÉLECTRONIQUE
+,partners,{{$store.getters.getTags({tag:'partners_text20'})}},partners_text20,,Acceso al panel para la publicación y venta de productos o servicios.,Accesso al pannello per la pubblicazione e la vendita di prodotti o servizi.,Access to the panel for the publication and sale of products or services.,Acesso ao painel para a publicação e venda de produtos ou serviços.,Accès au panneau pour la publication et la vente de produits ou services.
+,partners,{{$store.getters.getTags({tag:'partners_title16'})}},partners_title16,,SOCIAL MEDIA,SOCIAL MEDIA,SOCIAL MEDIA,MÍDIA SOCIAL,DES MÉDIAS SOCIAUX
+,partners,{{$store.getters.getTags({tag:'partners_text21'})}},partners_text21,,"Apertura de la FanPage de Facebook, Google+, Google MyBusiness e Instagram. 
+Plug-in automático para compartir sus noticias / promo de su sitio web.","Apertura della FanPage di Facebook, Google+, Google My Business e Instagram.  Plug-in automatico per condividere notizie/ promozioni della sua pagina web.","Opening of FanPage for Facebook, Google+, Google MyBusiness and Instagram.
+Automatic plug-in to share your news / promo of your website.","Abertura da FanPage para Facebook, Google+, Google MyBusiness e Instagram.
+Plug-in automático para compartilhar suas notícias / promoções de seu website.","Ouverture de FanPage pour Facebook, Google+, Google MyBusiness et Instagram.
+Plug-in automatique pour partager vos news / promo de votre site web."
+,Contact,{{$store.getters.getTags({tag:'conctac_text6'})}},conctac_text6,,Email,Email,Email,E-mail,E-mail
+,Contact,{{$store.getters.getTags({tag:'conctac_text7'})}},conctac_text7,,Telefono,Telefono,Phone,Telefone,Téléphone
+,Contact,{{$store.getters.getTags({tag:'conctac_text8'})}},conctac_text8,,Comentario,Commento,Commet,Comentário,Commentaire
+,Careras,{{$store.getters.getTags({tag:'careers_titulo'})}},careers_titulo,,Carreras,Lavora con noi,Careers,Carreiras,Carrières
+,Careras,{{$store.getters.getTags({tag:'careers_text1'})}},careers_text1,Queremos vivir contigo la experiencia de <strong>crecer profesionalmente</strong>,Queremos vivir contigo la experiencia de <strong>crecer profesionalmente.</strong>,Vogliamo vivere con te l'esperienza di <strong>crescere professionalmente.</strong>,We want to live with you the experience of <strong>growing professionally.</strong>,Queremos conviver com você a experiência de<strong> crescer profissionalmente.</strong>,Nous voulons vivre avec vous l'expérience de la <strong>croissance professionnelle.</strong>
+,Careras,{{$store.getters.getTags({tag:'careers_text2'})}},careers_text2,<h2>¡Tu <span>futuro</span> está aquí!</h2>,<h2>¡Tu futuro está aquí!</h2>,<h2>Il tuo futuro è qui!</h2>,<h2>Your future is here!</h2>,<h2>Seu futuro está aqui!</h2>,<h2>Votre avenir est ici!</h2>
+,Careras,{{$store.getters.getTags({tag:'careers_text3'})}},careers_text3,,Proceso de reclutamiento y selección,Processo di selezione e reclutamento,Recruitment and selection process,Recrutamento e processo de seleção,Processus de recrutement et de sélection
+,Careras,{{$store.getters.getTags({tag:'careers_text4'})}},careers_text4,Contáctanos,Entrevista por teléfono,Contatto telefonico o via e-mail.,Telephone or e-mail contact,Contato por telefone ou e-mail,Contact téléphonique ou e-mail
+,Careras,{{$store.getters.getTags({tag:'careers_text7'})}},careers_text7,,Primera entrevista (presencial u online),Pimo colloquio (presenziale /online),First interview (face-to-face or online),Primeira entrevista (face a face ou online),Première interview (face à face ou en ligne)
+,Careras,{{$store.getters.getTags({tag:'careers_text8'})}},careers_text8,,Prueba técnica,Prova tecnica,Technical test,Teste técnico,Test technique
+,Careras,{{$store.getters.getTags({tag:'careers_text9'})}},careers_text9,,Oferta Salarial,Offerta salariale,Salary Offer,Oferta de salário,Offre de salaire
+,Careras,{{$store.getters.getTags({tag:'careers_text10'})}},careers_text10,,Team Jumperr,Team Jumperr, Team Jumperr, Equipe Jumperr, Équipe Jumperr
+,Careras,{{$store.getters.getTags({tag:'careers_text5'})}},careers_text5,,Ofertas de empleo,Offerte d'impiego,Job Vacancies,Férias do Trabalho,Offres D'Emploi
+,Careras,{{$store.getters.getTags({tag:'careers_text11'})}},careers_text11,,Diseñador Gráfico,Disegnatore Grafico,Graphic Designer,Designer Gráfico,Designer Graphique
+,Careras,{{$store.getters.getTags({tag:'careers_text12'})}},careers_text12,,Desarrollador Front end,Sviluppatore Front end,Frontend Developer,Desenvolvedor Frontend,Développeur Frontend
+,Careras,{{$store.getters.getTags({tag:'careers_text13'})}},careers_text13,,Desarrollador Back end,Sviluppatore Back end,Backend Developer,Desenvolvedor Backend,Développeur Backend
+,Careras,{{$store.getters.getTags({tag:'careers_text14'})}},careers_text14,,Community Manager,Community Manager,Community Manager,Gerente de Comunidade,Community Manager
+,Careras,{{$store.getters.getTags({tag:'careers_text15'})}},careers_text15,,Social Media Manager,Social Media Manager,Social Media Manager,Gerente de Mídia Social,Gestionnaire de Médias Sociaux
+,Careras,{{$store.getters.getTags({tag:'careers_text16'})}},careers_text16,,Tiempo Completo,Tempo Pieno,Full time,Tempo completo,Temps complet
+,Careras,{{$store.getters.getTags({tag:'careers_text17'})}},careers_text17,,Remoto,Distanza,Remote,Remoto,À distance
+,Careras,{{$store.getters.getTags({tag:'careers_text18'})}},careers_text18,,Mas información,Maggiori informazioni,More information,Mais informação,Plus d'informations
+,Careras,{{$store.getters.getTags({tag:'careers_text19'})}},careers_text19,,"Encuentra tu perfil, envía tu curriculum y portafolio para formar parte del equipo Jumperr Digital Company","Trova il tuo profilo, invia il tuo curriculum e portfolio per far parte del team Jumperr Digital Company","Find your profile, send your resume and portfolio to be part of the Jumperr Digital Company team","Encontre seu perfil, envie seu currículo e portfólio para fazer parte da equipe da Jumperr Digital Company","Trouvez votre profil, envoyez votre CV et votre portfolio pour faire partie de l'équipe Jumperr Digital Company"
+,Careras,{{$store.getters.getTags({tag:'careers_text20'})}},careers_text20,,¿Listo/a para trabajar con nosotros?,Sei pronto per lavorare con noi?,Ready to work with us?,Pronto para trabalhar conosco?,Prêt à travailler avec nous?
+,Careras,{{$store.getters.getTags({tag:'careers_text6'})}},careers_text6,,¡Impúlsate con Jumperr!, Datti slancio e lavora con Jumperr!,Propel yourself to work with us at Jumperr!, Prepare-se para trabalhar conosco no Jumper!, Propulsez-vous pour travailler avec nous chez Jumper!
+,Careras,{{$store.getters.getTags({tag:'careers_text21'})}},careers_text21,,"Caracas,Venezuela","Caracas, Venezuela",Caracas Venezuela,Caracas Venezuela,"Caracas, Venezuela"
+,Careras,{{$store.getters.getTags({tag:'careers_text22'})}},careers_text22,,"Olbia, Italia","Olbia, Italia","Olbia, Italy","Olbia, Itália","Olbia, Italie"
+,Careras,{{$store.getters.getTags({tag:'careers_text23'})}},careers_text23,,"Buenos Aires, Argentina","Buenos Aires, Argentina","Buenos Aires, Argentina","Buenos Aires, Argentina","Buenos Aires, Argentine"
+,Careras,{{$store.getters.getTags({tag:'careers_text24'})}},careers_text24,,"Sao Puolo, Brasil","San Paolo, Brasile","Sao Paulo, Brazil","São Paulo, Brasil","Sao Paulo, Brésil"
+,Careras,{{$store.getters.getTags({tag:'careers_text25'})}},careers_text25,,"Miami, EEUU","Miami, Stati Uniti","Miami, USA","Miami, EUA","Miami, États-Unis"
+,Careras,{{$store.getters.getTags({tag:'careers_text26'})}},careers_text26,,Presencial,Presencial,Presential,Presencial,Présentiel
+,,{{$store.getters.getTags({tag:'careers_text27'})}},careers_text27,,Bienvenido al Team Jumperr,Benvenuto in Team Jumper,Welcome to Team Jumper,Bem vindo ao Team Jumper,Bienvenue chez Team Jumper
+,La Compañia,{{$store.getters.getTags({tag:'company_text1'})}},company_text1,"<strong>Con pasión y entrega</strong> logramos nuestros objectivos de innovar y ayudar a nuestros clientes,
+                        al ofrecer <strong>Cultura e Inteligencia Digital.</strong>","<strong>Con pasión y entrega</strong>  logramos nuestros objetivos de innovar y ayudar a nuestros clientes, al ofrecer <strong>Cultura e Inteligencia Digital.</strong> ","<strong>Con passione e dedicazione</strong>  raggiungiamo i nostri obiettivi di innovare ed aiutare ai nostri clienti, offrendo <strong>Cultura e Intelligenza Digitale.</strong> ",<strong>With passion and dedication</strong>  we achieve our objectives of innovating and helping our clients by offering <strong>Culture and Digital Intelligence.</strong> ,"<strong>Com paixão e dedicação</strong> , alcançamos nossos objetivos de inovar e ajudar nossos clientes oferecendo <strong>Cultura e Inteligência Digital.</strong> ","<strong>Avec passion et dévouement,</strong>  nous atteignons nos objectifs d'innover et d'aider nos clients en offrant <strong>Culture et Intelligence numérique.</strong> "
+,La Compañia,{{$store.getters.getTags({tag:'text1'})}},text1,,QUIÉNES SOMOS:,CHI SIAMO:,ABOUT US:,SOBRE NÓS:,À PROPOS DE NOUS:
+,La Compañia,{{$store.getters.getTags({tag:'company_title1'})}},company_title1,,¡Transformamos tus ideas en Oportunidades Digitales!,Trasformiamo le tue idee in opportunità digitali!,We transform your ideas into Digital Opportunities!,Transformamos suas ideias em Oportunidades Digitais!,Nous transformons vos idées en opportunités numériques!
+,La Compañia,{{$store.getters.getTags({tag:'company_text2'})}},company_text2,"<p>
+                        Somos una <strong>Digital Company</strong> nacida de la pasión por el mundo digital, 
+                        formada por un grupo de <strong>expertos en el desarrollo de tecnología</strong>, 
+                        procesamiento de datos y marketing.
+                    </p>","<p>Somos una Digital Company nacida de la pasión por el mundo digital, formada por un grupo de expertos en el desarrollo de tecnología, procesamiento de datos y marketing.</p>","<p>Siamo una Digital Company nata dalla passione per il mondo digitale, composta da un gruppo di esperti nello sviluppo della tecnologia, elaborazione dati e marketing.</p>","<p>We are a Digital Company born from a passion for the digital world, formed by a group of experts in technology development, data processing and marketing.</p>","<p>Somos uma empresa digital nascida de uma paixão pelo mundo digital, formada por um grupo de especialistas em desenvolvimento de tecnologia, processamento de dados e marketing.</p>","<p>Nous sommes une entreprise numérique née d'une passion pour le monde numérique, formée d'un groupe d'experts en développement technologique, en traitement de données et en marketing.</p>"
+,La Compañia,{{$store.getters.getTags({tag:'text2'})}},text2,,NUESTRA MISIÓN:,MISSIONE:,MISSION:,MISSÃO:,MISSION:
+,La Compañia,{{$store.getters.getTags({tag:'company_text3'})}},company_text3,,"Jumperr eres tú, haciendo lo que siempre quisiste hacer.","Jumperr sei tu, facendo quello che hai sempre voluto fare.","Jumperr is you, doing what you always wanted to do.","Jumperr é você, fazendo o que você sempre quis fazer.","Jumperr, c'est vous qui faites ce que vous avez toujours voulu faire."
+,La Compañia,{{$store.getters.getTags({tag:'company_text14'})}},company_text14,"<p>
+                        Simplificamos la vida de nuestros clientes
+                        con la creación de activos digitales como:
+
+                        <strong>sitios web, tiendas online y campañas publicitarias</strong>
+                        que generen valor e impacto en los negocios locales, con
+                        herramientas que los introduzcan de forma eficiente en el
+                        <strong>mercado de comercio electrónico</strong> y del <strong>marketing digital</strong>.
+                    </p>","<p>Simplificamos la vida de nuestros clientes con la creación de activos digitales como:  <strong>sitios web, tiendas online y campañas publicitarias</strong> que generen valor e impacto en los negocios locales, con herramientas que los introduzcan de forma eficiente en el  <strong>mercado de comercio electrónico</strong> y del <strong>marketing digital.</strong></p>","<p>Semplifichiamo la vita dei nostri clienti con la creazione di attivi digitali come:  <strong>pagine web, negozi online e campagne pubblicitarie</strong> che generano valore e impatto tra i negozi locali, con strumenti che lo introducano efficacemente nel  <strong>mercato del commercio elettronico</strong> e del <strong>marketing digitale</strong>.</p>","<p>We simplify the lives of our clients with the creation of digital assets such as:  <strong>websites, online stores and advertising campaigns</strong> that generate value and impact on local businesses, with tools that introduce them  <strong>efficiently in the e-commerce</strong> and<strong> digital marketing venue.</strong></p>","<p>Simplificamos a vida de nossos clientes com a criação de ativos digitais como:  <strong>sites, lojas online e campanhas publicitárias</strong> que geram valor e impacto nas empresas locais, com ferramentas que os introduzem de forma <strong> eficiente no e-commerce</strong> e no <strong>marketing digital.</strong></p>","<p>Nous simplifions la vie de nos clients grâce à la création d'actifs numériques tels que des  <strong>sites web, des magasins en ligne et des campagnes publicitaires</strong> générant de la valeur et un impact sur les entreprises locales, avec des outils qui les introduisent  <strong>efficacement dans l'espace de commerce électronique</strong> et de<strong> marketing numérique.</strong></p>"
+,La Compañia,{{$store.getters.getTags({tag:'text3'})}},text3,,VISIÓN:,VISIONE:,VIEW:,VISÃO:,VUE:
+,La Compañia,{{$store.getters.getTags({tag:'company_text4'})}},company_text4,"<p>
+                            Queremos <strong>emocratizar el acceso al comercio electrónico</strong> y al <strong>mercado digital</strong> gracias a nuestros productos automatizados, la inteligencia digital aplicada y el trabajo constante en nombre de nuestros clientes y aliados.
+                        </p>","<p>Queremos democratizar el acceso al comercio electrónico y al mercado digital gracias a nuestros productos automatizados, la inteligencia digital aplicada y el trabajo constante en nombre de nuestros clientes y aliados.</p>","<p>Vogliamo democratizzare l'accesso al commercio elettronico e al mercato digitale grazie ai nostri prodotti automatizzati, all'intelligenza digitale applicata ed al lavoro costante per i nostri clienti e partners.</p>","<p>We want to democratize access to electronic commerce and the digital market thanks to our automated products, applied digital intelligence and constant work on behalf of our clients and allies.</p>","<p>Queremos democratizar o acesso ao comércio eletrônico e ao mercado digital graças aos nossos produtos automatizados, inteligência digital aplicada e trabalho constante em prol de nossos clientes e aliados.</p>","<p>Nous voulons démocratiser l'accès au commerce électronique et au marché numérique grâce à nos produits automatisés, à notre intelligence numérique appliquée et à notre travail constant pour le compte de nos clients et alliés.</p>"
+,La Compañia,{{$store.getters.getTags({tag:'text4'})}},text4,,¿Por qué elegirnos?,Perchè sceglierci?,Why choose us?,Porque escolher-nos?,Pourquoi nous choisir?
+,La Compañia,{{$store.getters.getTags({tag:'company_text5'})}},company_text5,"<p class=""text-white text-center"">
+                            Hoy en día hay muchas casas de software que ofrecen servicios y productos digitales; sin embargo, ¡pocas empresas trabajan en <strong>sinergia con sus socios comerciales</strong> para crecer juntos!
+                        </p>","<p class=""text-white text-center"">Hoy en día hay muchas casas de software que ofrecen servicios y productos digitales; sin embargo, ¡pocas empresas trabajan en sinergia con sus socios comerciales para crecer juntos!</p>","<p class=""text-white text-center"">Al giorno d'oggi esistono  molte software house che offrono servizi e prodotti digitali; ciononostante poche aziende lavorano in sinergia con i loro clienti per poter crescere insieme! </p>","<p class=""text-white text-center"">Today there are many software houses that offer digital products and services; however, few companies work in synergy with their business partners to grow together!</p>","<p class=""text-white text-center"">Hoje existem muitas casas de software que oferecem produtos e serviços digitais; no entanto, poucas empresas trabalham em sinergia com seus parceiros de negócios para crescer juntas!</p>","<p class=""text-white text-center"">Aujourd'hui, de nombreux éditeurs de logiciels proposent des produits et des services numériques. Cependant, peu d'entreprises travaillent en synergie avec leurs partenaires commerciaux pour se développer ensemble!</p>"
+,La Compañia,{{$store.getters.getTags({tag:'company_text6'})}},company_text6,,¿Dónde estamos?,Dove siamo?,Where we are?,Onde estamos?,Où nous sommes?
+,La Compañia,{{$store.getters.getTags({tag:'text5'})}},text5,,TEAM JUMPERR,TEAM JUMPERR,TEAM JUMPERR,EQUIPE JUMPERR,ÉQUIPE JUMPERR
+,La Compañia,{{$store.getters.getTags({tag:'company_text7'})}},company_text7,,"Un equipo ágil, dinámico y altamente capacitado te brinda soluciones acordes a tus ideas o negocio.
+","Un gruppo agile, dinamico e altamente qualificato ti offre soluzioni adeguate alle tue esigenze.","An agile, dynamic and highly trained team provides solutions according to your ideas or business model.","Uma equipe ágil, dinâmica e altamente treinada fornece soluções de acordo com suas ideias ou modelo de negócio.","Une équipe agile, dynamique et hautement qualifiée fournit des solutions adaptées à vos idées ou à votre modèle d'entreprise."
+,La Compañia,{{$store.getters.getTags({tag:'company_text8'})}},company_text8,,Confiabilidad,affidabilità,Reliability,Confiabilidade,La fiabilité
+,La Compañia,{{$store.getters.getTags({tag:'company_text9'})}},company_text9,,Velocidad,velocità,Speed,Speed,La vitesse
+,La Compañia,{{$store.getters.getTags({tag:'company_text10'})}},company_text10,,Calidad,qualità,Quality,Qualidade,La qualité
+,La Compañia,{{$store.getters.getTags({tag:'company_text11'})}},company_text11,,Transparencia,trasparenza,Transparency,Transparência,La transparence
+,La Compañia,{{$store.getters.getTags({tag:'company_text12'})}},company_text12,,Profesionalidad,professionismo,Professionalism,Profissionalismo,Le professionnalisme
+,La Compañia,{{$store.getters.getTags({tag:'company_text13'})}},company_text13,,Conquistando el mundo digital,Conquistare il mondo digitale,Conquering the digital world,Conquistando o mundo digital,À la conquête du monde numérique
+,blog_botonera,{{$store.getters.getTags({tag:'general_btn_blog'})}},general_btn_blog,,Blog,blog,Blog,Blog,Blog
+,blog_art1,{{$store.getters.getTags({tag:'blog_title1'})}},blog_title1,,Crea Tu Página Web de la Mejor Manera ,Crea il tuo sito web nel modo migliore,Create Your Website in the Best Way,Cria Tu Página Web do Mejor Manera,Créer une page Web de la bibliothèque Manera
+,blog_art1,{{$store.getters.getTags({tag:'blog_fecha1'})}},log_fecha1,,08/01/2019,2019/01/08,01/08/2019,08/01/2019,01/08/2019
+,blog_art1,{{$store.getters.getTags({tag:'blog_categ1'})}},blog_categ1,,Tendencia,Tendenza,Trend,Tendencia,Tendencia
+,blog_art1,{{$store.getters.getTags({tag:'blog_author1'})}},blog_author1,,jumperr,jumperr,jumperr,jumperr,jumperr
+,blog_art1,{{$store.getters.getTags({tag:'blog_content1'})}},blog_content1,,Crea tu página web de la manera más rapida y facil con nuestras plantillas categorizadas y con una herramienta adaptada a tus necesidades de negocio.,Crea il tuo sito Web nel modo più semplice e veloce con i nostri modelli categorizzati e con uno strumento adatto alle tue esigenze aziendali.,Create your website in the fastest and easiest way with our categorized templates and with a tool adapted to your business needs.,Crea tu page web de manera mais rapida y facil con nuestras plantillas categorizadas y con una herramienta adaptada a tus necesidades de negocio.,Créer une page Web de gestion plus rapidement et plus facilement avec les plantes cultivées et leur contenu adapté aux besoins des personnes en négociation.
+,blog_art1,{{$store.getters.getTags({tag:'blog_btn_art2'})}},blog_btn_art1,,Ver Más,Vedi altro,See more,Ver más,Voir plus
+,blog_art2,{{$store.getters.getTags({tag:'blog_title2'})}},blog_title2,,Crea Tu Negocio Online ,Crea il tuo business online,Create Your Online Business,Crea Tu Negocio Online,Crea Tu Negocio en ligne
+,blog_art2,{{$store.getters.getTags({tag:'blog_fecha2'})}},log_fecha2,,08/01/2019,2019/01/08,01/08/2019,08/01/2019,01/08/2019
+,blog_art2,{{$store.getters.getTags({tag:'blog_categ2'})}},blog_categ2,,Tendencia,Tendenza,Trend,Tendencia,Tendencia
+,blog_art2,{{$store.getters.getTags({tag:'blog_author2'})}},blog_author2,,jumperr,jumperr,jumperr,jumperr,jumperr
+,blog_art2,{{$store.getters.getTags({tag:'blog_content2'})}},blog_content2,,Crea tu Negocio Web facil con una herramienta adaptada a tus necesidades de negocio.,Crea la tua Easy Web Business con uno strumento adatto alle tue esigenze aziendali.,Create your Easy Web Business with a tool adapted to your business needs.,Crea tu Negocio Web facil con una ferramenta adaptada a necessidades de negocio.,Créer un site Web avec un réseau adapté aux règles de négociation.
+,blog_art2,{{$store.getters.getTags({tag:'blog_btn_art2'})}},blog_btn_art2,,Ver Más,Vedi altro,See more,Ver más,Voir plus
+,blog_art3,{{$store.getters.getTags({tag:'blog_title3'})}},blog_title3,,Jumperr es tu impulso al Emprendimiento,Jumperr è il tuo impulso all'Imprenditorialità,Jumperr is your impulse to Entrepreneurship,Jumperr é tu impulso ao Empréstimo,Jumperr es tu impulso al Emprendimiento
+,blog_art3,{{$store.getters.getTags({tag:'blog_fecha3'})}},blog_fecha3,,08/01/2019,2019/01/08,01/08/2019,08/01/2019,01/08/2019
+,blog_art3,{{$store.getters.getTags({tag:'blog_categ3'})}},blog_categ3,,Publicidad,pubblicità,publicity,Publicidad,Publicidad
+,blog_art3,{{$store.getters.getTags({tag:'blog_author3'})}},blog_author3,,jumperr,jumperr,jumperr,jumperr,jumperr
+,blog_art3,{{$store.getters.getTags({tag:'blog_content3'})}},blog_content3,,Te guiaremos de la mano de profesionales capacitados para tomar tu proyecto e impulsarte al exito que deseas.,Ti guideremo per mano di professionisti qualificati per portare il tuo progetto e spingerti al successo che desideri.,We will guide you by the hand of trained professionals to take your project and push you to the success you want.,Te guiaremos o mano de profesionales capacitados para tomar seu projeto e impulsionar o exito que deseas.,Vous êtes ici: Guide de référence pour les capacités professionnelles pour les tâches à accomplir et pour imposer votre délit exotique.
+,blog_art3,{{$store.getters.getTags({tag:'blog_btn_art3'})}},blog_btn_art3,,Ver Más,Vedi altro,See more,Ver más,Voir plus
+,blog_art4,{{$store.getters.getTags({tag:'blog_title4'})}},blog_title4,,Jumperr es tu impulso al Emprendimiento,Jumperr è il tuo impulso all'Imprenditorialità,Jumperr is your impulse to Entrepreneurship,Jumperr é tu impulso ao Empréstimo,Jumperr es tu impulso al Emprendimiento
+,blog_art4,{{$store.getters.getTags({tag:'blog_fecha4'})}},blog_fecha4,,08/01/2019,2019/01/08,01/08/2019,08/01/2019,01/08/2019
+,blog_art4,{{$store.getters.getTags({tag:blog_categ4'})}},blog_categ4,,Publicidad,pubblicità,publicity,Publicidad,Publicidad
+,blog_art4,{{$store.getters.getTags({tag:'blog_author4'})}},blog_author4,,jumperr,jumperr,jumperr,jumperr,jumperr
+,blog_art4,{{$store.getters.getTags({tag:'blog_content4'})}},blog_content4,,Te guiaremos de la mano de profesionales capacitados para tomar tu proyecto e impulsarte al exito que deseas.,Ti guideremo per mano di professionisti qualificati per portare il tuo progetto e spingerti al successo che desideri.,We will guide you by the hand of trained professionals to take your project and push you to the success you want.,Te guiaremos o mano de profesionales capacitados para tomar seu projeto e impulsionar o exito que deseas.,Vous êtes ici: Guide de référence pour les capacités professionnelles pour les tâches à accomplir et pour imposer votre délit exotique.
+,blog_art4,{{$store.getters.getTags({tag:'blog_btn_art4'})}},blog_btn_art4,,Ver Más,Vedi altro,See more,Ver más,Voir plus
+,blog_art5,{{$store.getters.getTags({tag:'blog_title5'})}},blog_title5,,Ven y visita nuestro nuevo proyecto recien salido al aire,Vieni a visitare il nostro nuovo progetto recentemente pubblicato,Come and visit our new project recently released,Ven y visita nuestro novo proyecto recien salido al aire,Ven y visita nuestro prue a reco salido al aire
+,blog_art5,{{$store.getters.getTags({tag:'blog_fecha5'})}},blog_fecha5,,08/01/2019,2019/01/08,01/08/2019,08/01/2019,01/08/2019
+,blog_art5,{{$store.getters.getTags({tag:'blog_categ5'})}},blog_categ5,,Proyectos,progetti,Projects,Proyectos,Proyectos
+,blog_art5,{{$store.getters.getTags({tag:blog_author5'})}},blog_author5,,jumperr,jumperr,jumperr,jumperr,jumperr
+,blog_art5,{{$store.getters.getTags({tag:'blog_content5'})}},blog_content5,,Nuestros proyectos estan sincronizados a la vanguardia tecnologica en ecommerce.,I nostri progetti sono sincronizzati con l'avanguardia tecnologica nell'e-commerce.,Our projects are synchronized to the technological vanguard in ecommerce.,Nuestros proyectos estão sincronizados com a vanguardia tecnologica en ecommerce.,Nuestros proyectos est une association de spécialistes en commerce électronique.
+,blog_art5,{{$store.getters.getTags({tag:'blog_btn_art5'})}},blog_btn_art5,,Ver Más,Vedi altro,See more,Ver más,Voir plus
+,blog_art6,{{$store.getters.getTags({tag:'blog_title6'})}},log_title6,,"Necesitas pedir una pizza en italia, !Ven a Olbia!","Hai bisogno di ordinare una pizza in Italia, vieni a Olbia!","You need to order a pizza in Italy, come to Olbia!","Necesitas pedir uma pizza na italia, Ven Ven a Olbia!","Necesitas pedir una pizza en italia,! Ven a Olbia!"
+,blog_art6,{{$store.getters.getTags({tag:'blog_fecha6'})}},blog_fecha6,,08/01/2019,2019/01/08,01/08/2019,08/01/2019,01/08/2019
+,blog_art6,{{$store.getters.getTags({tag:'blog_categ6'})}},blog_categ,,Proyectos,progetti,Projects,Proyectos,Proyectos
+,blog_art6,{{$store.getters.getTags({tag:'blog_author6'})}},blog_author6,,jumperr,jumperr,jumperr,jumperr,jumperr
+,blog_art6,{{$store.getters.getTags({tag:'blog_content6'})}},blog_content6,,La pizzeria mas famosa en olbia es la muy nombra Pizzeria Da Adriano.,La pizzeria più famosa di olbia è il nome stesso Pizzeria Da Adriano.,The most famous pizzeria in olbia is the very name Pizzeria Da Adriano.,La pizzaria mas famosa en olbia é muito nombra Pizzeria Da Adriano.,La pizzeria mas famosa en olbia est la nouvelle pizzeria Pizzeria Da Adriano.
+,blog_art6,{{$store.getters.getTags({tag:'blog_btn_art6'})}},blog_btn_art6,,Ver Más,Vedi altro,See more,Ver más,Voir plus
+,blog_art7,{{$store.getters.getTags({tag:'blog_title7'})}},blog_title7,,Bienvenido al 2019,Benvenuto nel 2019,Welcome to 2019,Bienvenido al 2019,Bienvenido al 2019
+,blog_art7,{{$store.getters.getTags({tag:'blog_fecha7'})}},blog_fecha7,,08/01/2019,2019/01/08,01/08/2019,08/01/2019,01/08/2019
+,blog_art7,{{$store.getters.getTags({tag:'blog_categ7'})}},blog_categ7,,Tendencia,Tendenza,Trend,Tendencia,Tendencia
+,blog_art7,{{$store.getters.getTags({tag:'blog_author7'})}},,,jumperr,jumperr,jumperr,jumperr,jumperr
+,blog_art7,{{$store.getters.getTags({tag:'blog_content7'})}},blog_content7,,"Si logramos superar en el 2000 el ""Y2K"", unidos lograremos superar todo lo que encontremos en el camino.
+
+Le damos la bienvenida al 2019.","Se riusciremo a superare il ""Y2K"" ""nel 2000, insieme saremo in grado di superare tutto ciò che troviamo lungo il percorso.
+
+Vi diamo il benvenuto fino al 2019. """" ""","If we manage to overcome the ""Y2K"" in 2000, together we will be able to overcome everything we find along the way.
+
+We welcome you to 2019. ""","Si logramos superar en el 2000, ""Y2K"", unidos lograremos super todos os que encontramos no camino.
+
+O damos la bienvenida al 2019. ""","Si logramos superar en el 2000 el ""Y2K"" "", un journal contenant des informations superbes sur ce qui est souscrit au camino.
+
+Le damos la bienvenida al 2019. """
+,blog_art7,{{$store.getters.getTags({tag:'blog_btn_art7'})}},blog_btn_art7,,Ver Más,Vedi altro,See more,Ver más,Voir plus

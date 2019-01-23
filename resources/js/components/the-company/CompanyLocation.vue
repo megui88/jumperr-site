@@ -1,102 +1,55 @@
 <template>
     <div class="position-relative">
         <section class="grid-wrapper">
-            <article class="">
+            <article>
                 <div class="mb-5">
-                    <h3 class="title-border-bottom">
-                        {$store.getters.getTags({tag:'company_text6'})}}
-                    </h3>
-                    <p class="text-center mb-0 text-theme">
-                        {$store.getters.getTags({tag:'company_text13'})}}
-                    </p>
+                    <h3 class="title-border-bottom">{{ $store.getters.getTags({ tag: 'company_text6' }) }}</h3>
+                    <p class="text-center mb-0 text-theme">{{ $store.getters.getTags({ tag: 'company_text13' }) }}</p>
                 </div>
             </article>
+
             <aside id="wrapper-scrolling">
                 <div class="container">
                     <div class="row">
                         <div class="col-12 col-md-10 m-auto">
-                            <!-- slider que se usa como paginador -->
                             <swiper :options="swiperOptionThumbs" class="gallery-thumbs" ref="swiperThumbs">
-                                <swiper-slide>
-                                    <div class="circle-slider">
-                                    </div>
-                                    <p class="text-center mb-0">2014</p>
-                                </swiper-slide>
-                                <swiper-slide>
-                                    <div class="circle-slider">
-                                    </div>
-                                    <p class="text-center mb-0">2015</p>
-                                </swiper-slide>
-                                <swiper-slide>
-                                    <div class="circle-slider">
-                                    </div>
-                                    <p class="text-center mb-0">2016</p>
-                                </swiper-slide>
-                                <swiper-slide>
-                                    <div class="circle-slider">
-                                    </div>
-                                    <p class="text-center mb-0">2017</p>
-                                </swiper-slide>
-                                <swiper-slide>
-                                    <div class="circle-slider">
-                                    </div>
-                                    <p class="text-center mb-0">2018</p>
-                                </swiper-slide>
-                                <swiper-slide>
-                                    <div class="circle-slider">
-                                    </div>
-                                    <p class="text-center mb-0">2019</p>
-                                </swiper-slide>
+                                <template v-for="slide in [2014, 2015, 2016, 2017, 2018]">
+                                    <swiper-slide class="c-pointer">
+                                        <div class="circle-slider"></div>
+                                        <p class="text-center mb-0">{{ slide }}</p>
+                                    </swiper-slide>
+                                </template>
                             </swiper>
-                            <!-- end slider que se usa como paginador -->
                         </div>
                     </div>
                 </div>
+
                 <div id="scrolling" class="zonas">
+                    <img class="nube-1" src="/images/iconos/nube.svg" alt="img-cloud">
+                    <img class="nube-2" src="/images/iconos/nube.svg" alt="img-cloud">
 
-                    <img class="nube-1" src="/images/iconos/nube.svg" alt="">
-                    <img class="nube-2" src="/images/iconos/nube.svg" alt="">
-                    <swiper :options="swiperOptionTop" class="gallery-top" ref="swiperTop">
+                    <swiper :options="swiperOptionTop" class="gallery-top">
                         <div class="parallax-bg" slot="parallax-bg" data-swiper-parallax="-5%"></div>
-                        <swiper-slide>
-                            <div class="zona zona-1">
-                                <img class="item-1" src="/images/la-empresa/vectores/1_ciudad.svg" alt="">
-                                <img class="item-2" src="/images/la-empresa/vectores/1_personas.svg" alt="">
-                                <img class="item-3" src="/images/la-empresa/vectores/2_personas.svg" alt="">
-                            </div>
-                        </swiper-slide>
-                        <swiper-slide>
-                            <div class="zona zona-2">
-                                <img class="item-1" src="/images/la-empresa/vectores/3_ciudad.svg" alt="">
-                                <img class="item-2" src="/images/la-empresa/vectores/5_personas.svg" alt="">
-                            </div>
-                        </swiper-slide>
-                        <swiper-slide>
-                            <div id="zona3" class="zona zona-3">
-                                <img class="item-1" src="/images/la-empresa/vectores/2_ciudad.svg" alt="">
-                                <img class="item-2" src="/images/la-empresa/vectores/3_personas.svg" alt="">
-                            </div>
-                        </swiper-slide>
-                        <swiper-slide>
-                            <div id="zona4" class="zona zona-4">
-                                <img class="item-1" src="/images/la-empresa/vectores/4_ciudad.svg" alt="">
-                                <img class="item-2" src="/images/la-empresa/vectores/8_personas.svg" alt="">
-                            </div>
-                        </swiper-slide>
-                        <swiper-slide>
-                            <div id="zona5" class="zona zona-5">
-                                <img class="item-1" src="/images/la-empresa/vectores/5_ciudad.svg" alt="">
-                                <img class="item-2" src="/images/la-empresa/vectores/7_personas.svg" alt="">
-                            </div>
-                        </swiper-slide>
-                        <swiper-slide>
-                            <div id="zona6" class="zona zona-6">
-                                <img class="item-1" src="/images/la-empresa/vectores/6_ciudad.svg" alt="">
-                                <img class="item-2" src="/images/la-empresa/vectores/4_personas.svg" alt="">
-                            </div>
-                        </swiper-slide>
+                       <template v-for="slide in cities">
+                           <swiper-slide>
+                               <div class="zona" :class="'zona-' + slide.id">
+                                   <template v-for="item in slide.images">
+                                       <img :class="'item-' + item.id" :src="item.img" :alt="'img-' + item.id">
+                                       <div class="dropdown">
+                                           <div class="circle-pulse" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></div>
+                                           <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                               <p class="dropdown-item-text">
+                                                   <strong>Nuestro Inicio</strong>
+                                                   <br>
+                                                   Hoy en día hay muchas casas de software que ofrecen servicios y productos digitales; sin embargo, pocas empresas trabajan en sinergia con sus socios comerciales para crecer juntos.
+                                               </p>
+                                           </div>
+                                       </div>
+                                   </template>
+                               </div>
+                           </swiper-slide>
+                       </template>
                     </swiper>
-
                 </div>
             </aside>
         </section>
@@ -107,6 +60,51 @@
         name: 'company-location',
         data() {
             return {
+                cities: [
+                    {
+                        id: 1,
+                        images: [
+                            { id: 1, img: '/images/la-empresa/vectores/1_ciudad.svg' },
+                            { id: 2, img: '/images/la-empresa/vectores/1_personas.svg' },
+                            { id: 3, img: '/images/la-empresa/vectores/2_personas.svg' }
+                        ]
+                    },
+                    {
+                    id: 2,
+                    images: [
+                        { id: 1, img: '/images/la-empresa/vectores/3_ciudad.svg' },
+                        { id: 2, img:  '/images/la-empresa/vectores/5_personas.svg' },
+                    ]
+                    },
+                    {
+                        id: 3,
+                        images: [
+                            { id: 1, img: '/images/la-empresa/vectores/2_ciudad.svg' },
+                            { id: 2, img:  '/images/la-empresa/vectores/3_personas.svg' },
+                        ]
+                    },
+                    {
+                        id: 4,
+                        images: [
+                            { id: 1, img: '/images/la-empresa/vectores/4_ciudad.svg' },
+                            { id: 2, img: '/images/la-empresa/vectores/8_personas.svg' },
+                        ]
+                    },
+                    {
+                        id: 5,
+                        images: [
+                            { id: 1, img: '/images/la-empresa/vectores/5_ciudad.svg' },
+                            { id: 2, img:  '/images/la-empresa/vectores/7_personas.svg' },
+                        ]
+                    },
+                    {
+                        id: 6,
+                        images: [
+                            { id: 1, img: '/images/la-empresa/vectores/6_ciudad.svg' },
+                            { id: 2, img:  '/images/la-empresa/vectores/4_personas.svg' },
+                        ]
+                    }
+                ],
                 swiperOptionTop: {
                     slidesPerView: 'auto',
                     freeMode: true,
@@ -418,5 +416,8 @@
         100% {
             transform: translatey(0px);
         }
+    }
+    .c-pointer {
+        cursor: pointer;
     }
 </style>

@@ -7,8 +7,9 @@
                 <img class="circulo-jumperr" src="/images/iconos/circulo.svg" alt="Jumperr anuncio">
                 <img class="chica-jumperr" src="/images/carreras/chica-tablet-jumperr.png" alt="Jumperr anuncio">
             </aside>
+
             <article>
-                {{ $store.getters.getTags({ tag: 'careers_text2' }) }}
+                <span v-html="$store.getters.getTags({ tag: 'careers_text2' })"></span>
             </article>
         </section>
     </div>

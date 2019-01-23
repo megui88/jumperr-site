@@ -1,64 +1,31 @@
 <template>
     <div class="position-relative py-4">
         <div class="objecto-bg">
-            <img src="/images/la-empresa/fondoelegirnos_compañia-min.png" alt="">
+            <img src="/images/la-empresa/fondoelegirnos_compañia-min.png" alt="header-img-company">
         </div>
         <div class="wrapper-position">
             <section class="grid-wrapper">
                 <article class="">
                     <div class="w-100">
-                        <h3 class="title-border-bottom text-white">
-                            {$store.getters.getTags({tag:'text4'})}}
-                        </h3>
-                        {$store.getters.getTags({tag:'company_text5'})}}
+                        <h3 class="title-border-bottom text-white">{{ $store.getters.getTags({ tag: 'text4' }) }}</h3>
+
+                        <span v-html="$store.getters.getTags({ tag: 'company_text5' })"></span>
                     </div>
                     <div class="w-100 mt-3">
                         <div class="wrapper-motivos">
                             <swiper :options="swiperOption">
-                                <swiper-slide>
-                                    <div class="item mt-2 text-center">
-                                        <img src="/images/la-empresa/5.svg" alt="Jumperr">
-                                        <h6 class="text-center text-white text-uppercase mt-2">
-                                            {$store.getters.getTags({tag:'company_text8'})}}</h6>
-                                    </div>
-                                </swiper-slide>
-                                <swiper-slide>
-                                    <div class="item mt-2 text-center">
-                                        <img src="/images/la-empresa/2.svg" alt="Jumperr">
-                                        <h6 class="text-center text-white text-uppercase mt-2">
-                                            {$store.getters.getTags({tag:'company_text9'})}}</h6>
-                                    </div>
-                                </swiper-slide>
-                                <swiper-slide>
-                                    <div class="item mt-2 text-center">
-                                        <img src="/images/la-empresa/4.svg" alt="Jumperr">
-                                        <h6 class="text-center text-white text-uppercase mt-2">
-                                            {$store.getters.getTags({tag:'company_text10'})}}</h6>
-                                    </div>
-                                </swiper-slide>
-                                <swiper-slide>
-                                    <div class="item mt-2 text-center">
-                                        <img src="/images/la-empresa/1.svg" alt="Jumperr">
-                                        <h6 class="text-center text-white text-uppercase mt-2">
-                                            {$store.getters.getTags({tag:'company_text11'})}}</h6>
-                                    </div>
-                                </swiper-slide>
-                                <swiper-slide>
-                                    <div class="item mt-2 text-center">
-                                        <img src="/images/la-empresa/3.svg" alt="Jumperr">
-                                        <h6 class="text-center text-white text-uppercase mt-2">
-                                            {$store.getters.getTags({tag:'company_text12'})}}</h6>
-                                    </div>
-                                </swiper-slide>
-                                <!-- <div class="swiper-pagination" slot="pagination"></div> -->
+                                <template v-for="(slide, index) in slides">
+                                    <swiper-slide>
+                                        <div class="item mt-2 text-center">
+                                            <img :src="slide.img" :alt="'img-' + index">
+                                            <h6 class="text-center text-white text-uppercase mt-2">{{ slide.title }}</h6>
+                                        </div>
+                                    </swiper-slide>
+                                </template>
                             </swiper>
-
                         </div>
                     </div>
                 </article>
-                <aside class="">
-
-                </aside>
             </section>
         </div>
     </div>
@@ -98,6 +65,17 @@
                         },
                     }
                 },
+            }
+        },
+        computed: {
+            slides() {
+             return [
+                    { title: this.$store.getters.getTags({ tag: 'company_text8' }), img: '/images/la-empresa/5.svg'},
+                    { title: this.$store.getters.getTags({ tag: 'company_text9' }), img: '/images/la-empresa/2.svg'},
+                    { title: this.$store.getters.getTags({ tag: 'company_text10' }), img: '/images/la-empresa/4.svg'},
+                    { title: this.$store.getters.getTags({ tag: 'company_text11' }), img: '/images/la-empresa/1.svg'},
+                    { title: this.$store.getters.getTags({ tag: 'company_text12' }), img: '/images/la-empresa/3.svg'},
+                ];
             }
         }
     }
@@ -147,12 +125,6 @@
         flex-wrap: wrap;
     }
 
-    /* .bg{
-        background-image: url('/images/la-the-company/fondoelegirnos_compañia-min.png');
-        background-size: cover;
-        background-position: center left;
-        background-repeat: no-repeat;
-    } */
     .objecto-bg {
         width: 100%;
         height: auto;
@@ -168,11 +140,6 @@
     .wrapper-motivos {
     }
 
-    /* .wrapper-motivos .item{
-        width: 20%;
-        display: inline-block;
-        text-align: center;
-    } */
     .wrapper-motivos .item img {
         height: 100px;
         width: auto;

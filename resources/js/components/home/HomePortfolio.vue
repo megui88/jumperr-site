@@ -11,28 +11,22 @@
             <div class="portafolio-container">
                 <div class="portafolio-item">
                     <div class="portafolio-image">
-                        <img class="" src="images/home/imagenes/portafolio/thumbnail/jumperr_fd_desktop.jpg" alt="FDGRAFIK">
+                        <img src="images/home/imagenes/portafolio/thumbnail/jumperr_fd_desktop.jpg" alt="FDGRAFIK">
                     </div>
                     <div class="portafolio-caption">
                         <router-link to="#" class="p-3">
-                            <img src="/images/home/iconos/loupe.svg" alt="view">
-                        </router-link>
-                        <router-link to="#" class="p-3">
-                            <img src="/images/home/iconos/loupe.svg" alt="view">
+                            <img src="/images/iconos/link-symbol.svg" alt="view">
                         </router-link>
                     </div>
                 </div>
 
                 <div class="portafolio-item">
                     <div class="portafolio-image">
-                        <img class="" src="images/home/imagenes/portafolio/thumbnail/jumperr_geco_dekstop.jpg" alt="FDGRAFIK">
+                        <img src="images/home/imagenes/portafolio/thumbnail/jumperr_geco_dekstop.jpg" alt="FDGRAFIK">
                     </div>
                     <div class="portafolio-caption">
                         <router-link to="#" class="p-3">
-                            <img src="/images/home/iconos/loupe.svg" alt="view">
-                        </router-link>
-                        <router-link to="#" class="p-3">
-                            <img src="/images/home/iconos/loupe.svg" alt="view">
+                            <img src="/images/iconos/link-symbol.svg" alt="view">
                         </router-link>
                     </div>
                 </div>
@@ -43,10 +37,7 @@
                     </div>
                     <div class="portafolio-caption">
                         <router-link to="#" class="p-3">
-                            <img src="/images/home/iconos/loupe.svg" alt="view">
-                        </router-link>
-                        <router-link to="#" class="p-3">
-                            <img src="/images/home/iconos/loupe.svg" alt="view">
+                            <img src="/images/iconos/link-symbol.svg" alt="view">
                         </router-link>
                     </div>
                 </div>
@@ -57,38 +48,29 @@
                     </div>
                     <div class="portafolio-caption">
                         <router-link to="#" class="p-3">
-                            <img src="/images/home/iconos/loupe.svg" alt="view">
-                        </router-link>
-                        <router-link to="#" class="p-3">
-                            <img src="/images/home/iconos/loupe.svg" alt="view">
+                            <img src="/images/iconos/link-symbol.svg" alt="view">
                         </router-link>
                     </div>
                 </div>
 
                 <div class="portafolio-item">
                     <div class="portafolio-image">
-                        <img class="" src="images/home/imagenes/portafolio/thumbnail/jumperr_zu_desktop.jpg" alt="FDGRAFIK">
+                        <img src="images/home/imagenes/portafolio/thumbnail/jumperr_zu_desktop.jpg" alt="FDGRAFIK">
                     </div>
                     <div class="portafolio-caption">
                         <router-link to="#" class="p-3">
-                            <img src="/images/home/iconos/loupe.svg" alt="view">
-                        </router-link>
-                        <router-link to="#" class="p-3">
-                            <img src="/images/home/iconos/loupe.svg" alt="view">
+                            <img src="/images/iconos/link-symbol.svg" alt="view">
                         </router-link>
                     </div>
                 </div>
 
                 <div class="portafolio-item">
                     <div class="portafolio-image">
-                        <img class="" src="images/home/imagenes/portafolio/thumbnail/jumperr_zu_logo.jpg" alt="FDGRAFIK">
+                        <img src="images/home/imagenes/portafolio/thumbnail/jumperr_zu_logo.jpg" alt="FDGRAFIK">
                     </div>
                     <div class="portafolio-caption">
                         <router-link to="#" class="p-3">
-                            <img src="/images/home/iconos/loupe.svg" alt="view">
-                        </router-link>
-                        <router-link to="#" class="p-3">
-                            <img src="/images/home/iconos/loupe.svg" alt="view">
+                            <img src="/images/iconos/link-symbol.svg" alt="view">
                         </router-link>
                     </div>
                 </div>

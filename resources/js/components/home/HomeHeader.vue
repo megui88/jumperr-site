@@ -8,16 +8,25 @@
                     </div>
                 </div>
             </div>
-            <img class="img-1" src="/images/iconos/circulo.svg" alt="elemento jumperr">
-            <img class="img-2" src="/images/iconos/signodemas.svg" alt="elemento jumperr">
-            <img class="img-3" src="/images/iconos/circulo.svg" alt="elemento jumperr">
-            <img class="img-4" src="/images/iconos/signodemas.svg" alt="elemento jumperr">
+            <template v-for="(item, index) in images">
+                <img :src="item.img" :alt="'img-' + index" :class="item.class">
+            </template>
         </header>
     </div>
 </template>
 <script>
     export default {
         name: 'home-header',
+        data() {
+            return {
+                images: [
+                    { class: 'img-1', img: '/images/iconos/circulo.svg' },
+                    { class: 'img-2', img: '/images/iconos/signodemas.svg' },
+                    { class: 'img-3', img: '/images/iconos/circulo.svg' },
+                    { class: 'img-4', img: '/images/iconos/signodemas.svg' }
+                ]
+            }
+        }
     }
 </script>
 <style scoped>

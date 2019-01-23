@@ -5,8 +5,7 @@
                 <div class="col-12 col-md-10 mx-auto">
                     <article class="text-center">
                         <h3 class="title-border-bottom">{{ $store.getters.getTags({ tag: 'home_text1' }) }}</h3>
-
-                        <h4 class="mb-md-5">{{ $store.getters.getTags({ tag: 'home_text2' }) }}</h4>
+                        <h4 class="mb-3 mb-md-5">{{ $store.getters.getTags({ tag: 'home_text2' }) }}</h4>
                     </article>
                 </div>
             </div>
@@ -19,10 +18,9 @@
                             <img :src="service.image" class="card-img-top" :alt="service.title">
                             <img class="icono-service" :src="service.icono" :alt="service.title">
                         </div>
+
                         <div class="card-body text-center">
-                            <p class="card-text">
-                                {{ service.descripcion }}
-                            </p>
+                            <p class="card-text">{{ service.descripcion }}</p>
                             <router-link :to="service.enlace" class="btn btn-primary text-uppercase">{{ $store.getters.getTags({ tag: 'general_vermas'}) }}</router-link>
                         </div>
                     </div>

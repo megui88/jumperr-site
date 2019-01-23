@@ -6,7 +6,9 @@
                     <div class="col-12">
                         <h3 class="title-border-bottom">{{ $store.getters.getTags({ tag: 'specialties_title5' }) }}</h3>
                     </div>
-                    <div class="col-12 col-md-6">{{ $store.getters.getTags({ tag: 'specialties_text17' }) }}</div>
+                    <div class="col-12 col-md-6">
+                        <span v-html="$store.getters.getTags({ tag: 'specialties_text17' })"></span>
+                    </div>
                     <div class="col-12 col-md-6">
                         <img class="img-fluid" src="/images/especialidades/jumperr_cmsycrm_especialidades.png" alt="Jumperr-cms">
                     </div>
@@ -15,6 +17,11 @@
         </section>
     </div>
 </template>
+<script>
+    export default {
+        name: 'specialties-cms'
+    }
+</script>
 <style scoped>
     .cms{
         padding-top: 80px;

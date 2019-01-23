@@ -4,11 +4,9 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-md-6 ml-auto">
-                        <article class="">
-                            <h3 class="title-border-bottom text-white">
-                                {$store.getters.getTags({tag:'specialties_title4'})}}
-                            </h3>
-                            {$store.getters.getTags({tag:'specialties_text16'})}}
+                        <article>
+                            <h3 class="title-border-bottom text-white">{{ $store.getters.getTags({ tag: 'specialties_title4' }) }}</h3>
+                            <span v-html="$store.getters.getTags({ tag: 'specialties_text16' })"></span>
                         </article>
                     </div>
                 </div>
@@ -45,6 +43,4 @@
         width: 160px;
         margin: 1.3rem 0 1.1rem;
     }
-
 </style>
-

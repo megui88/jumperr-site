@@ -3,14 +3,13 @@
         <header>
             <div class="grid-container">
                 <div class="grid-row">
-                    <h2 class="text-white">{$store.getters.getTags({tag:'company_text1'})}}</h2>
+                    <h2 class="text-white" v-html="$store.getters.getTags({ tag: 'company_text1' })"></h2>
                 </div>
             </div>
         </header>
     </div>
 </template>
 <script>
-
     export default {
         name: 'company-header',
     }
@@ -52,6 +51,17 @@
     }
 
     @media (min-width: 768px) {
+        .grid-container {
+            grid-template-columns: 75%;
+        }
+
+        h2 {
+            line-height: 1.5;
+            font-size: 2.4rem;
+        }
+    }
+
+    @media (min-width: 992px) {
         .grid-container {
             grid-template-columns: 50%;
         }

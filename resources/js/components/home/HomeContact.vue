@@ -15,8 +15,8 @@
             <div class="row">
                 <div class="col-12 col-md-6 m-auto">
                     <div class="form-group">
-                        <label for="">{{ $store.getters.getTags({ tag: 'conctac_text5' }) }}*</label>
-                        <input class="form-control" type="text" v-model="form.fullname">
+                        <label for="fullname">{{ $store.getters.getTags({ tag: 'conctac_text5' }) }}*</label>
+                        <input id="fullname" class="form-control" type="text" v-model="form.fullname">
                     </div>
                     <div class="form-group">
                         <label for="">{{ $store.getters.getTags({ tag: 'conctac_text6' }) }}*</label>

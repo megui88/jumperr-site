@@ -1,85 +1,27 @@
 <template>
     <div>
         <section class="container-fluid position-relative">
-            <!-- nube  -->
-            <img class="nube" src="/images/especialidades/nube.svg" alt="nube jumperr">
-            <!--  -->
+            <img class="nube" src="/images/especialidades/nube.svg" alt="img-cloud">
             <div class="row">
                 <div class="col-12">
                     <article class="py-4">
-                        <h3 class="title-border-bottom text-center">
-                            {$store.getters.getTags({tag:'specialties_title3'})}}
-                        </h3>
-                        <p class="mb-4 text-center">
-                            {$store.getters.getTags({tag:'specialties_text5'})}}
-                        </p>
+                        <h3 class="title-border-bottom text-center">{{ $store.getters.getTags({ tag: 'specialties_title3' }) }}</h3>
+                        <p class="mb-4 text-center">{{ $store.getters.getTags({ tag: 'specialties_text5' }) }}</p>
                     </article>
                 </div>
+
                 <div class="col-12 col-lg-10 mx-auto">
                     <swiper :options="swiperOption">
-                        <swiper-slide>
-                            <div>
-                                <figure class="bg-oscuro">
-                                    <img src="/images/especialidades/Jumperr_creatusitioweb_especialidades.svg"
-                                         alt="jumperr start">
-                                </figure>
-                                <p class="text-center mt-3"><strong>{$store.getters.getTags({tag:'specialties_text6'})}}</strong>
-                                </p>
-                            </div>
-                        </swiper-slide>
-
-                        <swiper-slide>
-                            <div>
-                                <figure class="bg-naranja">
-                                    <img src="/images/especialidades/jumperr_creartublog_especialidades.svg"
-                                         alt="jumperr start">
-                                </figure>
-                                <p class="text-center mt-3">
-                                    <strong>{$store.getters.getTags({tag:'specialties_tex9'})}}</strong></p>
-                            </div>
-                        </swiper-slide>
-
-
-                        <swiper-slide>
-                            <div>
-                                <figure class="bg-naranja">
-                                    <img src="/images/especialidades/Jumperr_subetusproductos_especialidades.svg"
-                                         alt="jumperr start">
-                                </figure>
-                                <p class="text-center mt-3"><strong>{$store.getters.getTags({tag:'specialties_text7'})}}</strong>
-                                </p>
-                            </div>
-                        </swiper-slide>
-                        <swiper-slide>
-                            <div>
-                                <figure class="bg-oscuro">
-                                    <img src="/images/especialidades/jumperr_estadisticas_especialidades.svg"
-                                         alt="jumperr start">
-                                </figure>
-                                <p class="text-center mt-3"><strong>{$store.getters.getTags({tag:'specialties_text10'})}}</strong>
-                                </p>
-                            </div>
-                        </swiper-slide>
-                        <swiper-slide>
-                            <div>
-                                <figure class="bg-oscuro">
-                                    <img src="/images/especialidades/Jumperr_calendario_especialidades.svg"
-                                         alt="jumperr start">
-                                </figure>
-                                <p class="text-center mt-3"><strong>{$store.getters.getTags({tag:'specialties_text8'})}}</strong>
-                                </p>
-                            </div>
-                        </swiper-slide>
-                        <swiper-slide>
-                            <div>
-                                <figure class="bg-naranja">
-                                    <img src="/images/especialidades/jumperr_eligetudominio_especialidades.svg"
-                                         alt="jumperr start">
-                                </figure>
-                                <p class="text-center mt-3"><strong>{$store.getters.getTags({tag:'specialties_text11'})}}</strong>
-                                </p>
-                            </div>
-                        </swiper-slide>
+                        <template v-for="card in cards">
+                            <swiper-slide>
+                                <div>
+                                    <figure :class="card.class">
+                                        <img :src="card.img" :alt="'img-' + card.title">
+                                    </figure>
+                                    <p class="text-center mt-3 font-weight-bold">{{ card.title }}</p>
+                                </div>
+                            </swiper-slide>
+                        </template>
                         <div class="swiper-pagination swiper-pagination-x" slot="pagination"></div>
                     </swiper>
                 </div>
@@ -126,6 +68,42 @@
                         }
                     }
                 }
+            }
+        },
+        computed: {
+            cards() {
+                return [
+                    {
+                        title: this.$store.getters.getTags({ tag: 'specialties_text6' }),
+                        img: '/images/especialidades/Jumperr_creatusitioweb_especialidades.svg',
+                        class: 'bg-oscuro'
+                    },
+                    {
+                        title: this.$store.getters.getTags({ tag: 'specialties_text9' }),
+                        img: '/images/especialidades/jumperr_creartublog_especialidades.svg',
+                        class: 'bg-naranja'
+                    },
+                    {
+                        title: this.$store.getters.getTags({ tag: 'specialties_text7' }),
+                        img: '/images/especialidades/Jumperr_subetusproductos_especialidades.svg',
+                        class: 'bg-naranja'
+                    },
+                    {
+                        title: this.$store.getters.getTags({ tag: 'specialties_text10' }),
+                        img: '/images/especialidades/jumperr_estadisticas_especialidades.svg',
+                        class: 'bg-oscuro'
+                    },
+                    {
+                        title: this.$store.getters.getTags({ tag: 'specialties_text8' }),
+                        img: '/images/especialidades/Jumperr_calendario_especialidades.svg',
+                        class: 'bg-oscuro'
+                    },
+                    {
+                        title: this.$store.getters.getTags({ tag: 'specialties_text11' }),
+                        img: '/images/especialidades/jumperr_eligetudominio_especialidades.svg',
+                        class: 'bg-naranja'
+                    }
+                ];
             }
         }
     }
