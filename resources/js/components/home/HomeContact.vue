@@ -15,23 +15,92 @@
             <div class="row">
                 <div class="col-12 col-md-6 m-auto">
                     <div class="form-group">
-                        <label for="fullname">{{ $store.getters.getTags({ tag: 'conctac_text5' }) }}*</label>
-                        <input id="fullname" class="form-control" type="text" v-model="form.fullname">
+                        <label for="fullName">
+                            {{ $store.getters.getTags({ tag:'conctac_text5' }) }}
+                        <span :class="{ 'text-danger': errors.has('fullName') }">*</span>
+                        </label>
+                        <input
+                            type="text"
+                            id="fullName"
+                            name="fullName"
+                            v-model="form.fullName"
+                            :maxlength="50"
+                            v-validate="'required|alpha_spaces|min:2|max:50'"
+                            :data-vv-as="$store.getters.getTags({ tag:'conctac_text5' })"
+                            data-vv-delay="600"
+                            :class="{ 'text-danger': errors.has('fullName') }"
+                            class="form-control"
+                        >
+                        <small v-show="errors.has('fullName')" class="help text-danger">{{ errors.first('fullName') }}</small>
                     </div>
+
                     <div class="form-group">
-                        <label for="">{{ $store.getters.getTags({ tag: 'conctac_text6' }) }}*</label>
-                        <input class="form-control" type="text" v-model="form.email">
+                        <label for="email">
+                            {{ $store.getters.getTags({ tag:'conctac_text6' }) }}
+                        <span :class="{ 'text-danger': errors.has('fullName') }">*</span>
+                        </label>
+                        <input
+                            type="text"
+                            id="email"
+                            name="email"
+                            v-model="form.email"
+                            :maxlength="50"
+                            v-validate="'required|email|min:9|max:50'"
+                            :data-vv-as="$store.getters.getTags({ tag:'conctac_text6' })"
+                            data-vv-delay="600"
+                            :class="{ 'text-danger': errors.has('email') }"
+                            class="form-control"
+                        >
+                        <small v-show="errors.has('email')" class="help text-danger">{{ errors.first('email') }}</small>
                     </div>
+
                     <div class="form-group">
-                        <label for="">{{ $store.getters.getTags({ tag: 'conctac_text7' })  }}*</label>
-                        <input class="form-control" type="text" v-model="form.phone">
+                        <label for="phone">
+                            {{ $store.getters.getTags({ tag:'conctac_text7' }) }}
+                            <span :class="{ 'text-danger': errors.has('fullName') }">*</span>
+                        </label>
+                        <input
+                            type="number"
+                            id="phone"
+                            name="phone"
+                            v-model="form.phone"
+                            :maxlength="16"
+                            v-validate="'required|numeric|min:9|max:16'"
+                            :data-vv-as="$store.getters.getTags({ tag:'conctac_text7' })"
+                            data-vv-delay="600"
+                            :class="{ 'text-danger': errors.has('phone') }"
+                            class="form-control"
+                        >
+                        <small v-show="errors.has('phone')" class="help text-danger">{{ errors.first('phone') }}</small>
                     </div>
+
                     <div class="form-group">
-                        <label for="">{{ $store.getters.getTags({ tag: 'conctac_text8' }) }}*</label>
-                        <input class="form-control" type="text" v-model="form.comment">
+                        <label for="comment">
+                            {{ $store.getters.getTags({ tag:'conctac_text8' }) }}
+                            <span :class="{ 'text-danger': errors.has('comment') }">*</span>
+                        </label>
+                        <input
+                            type="text"
+                            id="comment"
+                            name="comment"
+                            v-model="form.comment"
+                            :maxlength="150"
+                            v-validate="'required|min:2|max:150'"
+                            :data-vv-as="$store.getters.getTags({ tag:'conctac_text8' })"
+                            data-vv-delay="600"
+                            :class="{ 'text-danger': errors.has('comment') }"
+                            class="form-control"
+                        >
+                        <small v-show="errors.has('comment')" class="help text-danger">{{ errors.first('comment') }}</small>
                     </div>
+
                     <div class="form-group text-center">
-                        <button class="btn btn-primary text-uppercase">{{ $store.getters.getTags({ tag: 'general_btn_send' }) }}</button>
+                        <button :disabled="errors.any() || isDisabled || loading" @click.prevent="sendMail()" type="button" class="btn btn-primary text-uppercase">
+                            {{ $store.getters.getTags({ tag:'general_btn_send' }) }}
+                            <span v-if="loading">
+                                <clip-loader :loading="loading" color="black" size="5px"/>
+                            </span>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -42,19 +111,71 @@
     </section>
 </template>
 <script>
-export default {
-    name: 'home-contact',
-    data(){
-        return {
-            form: {
-                fullname: null,
-                email: null,
-                phone: null,
-                comment: null
+    import { ClipLoader } from 'vue-spinner/dist/vue-spinner.min';
+
+    export default {
+        name: 'home-contact',
+        components: { ClipLoader },
+        data() {
+            return {
+                form: {
+                    fullName: null,
+                    email: null,
+                    phone: null,
+                    comment: null
+                },
+                loading: false
             }
+        },
+        computed: {
+            isDisabled() {
+                return !this.form.fullName || !this.form.email || !this.form.phone || !this.form.comment
+            }
+        },
+        methods: {
+            sendMail() {
+                this.loading = true;
+
+                this.$validator.validateAll().then(result => {
+                    if (result) {
+                        axios.post('/api/contactus', this.form).then(responseApi => {
+                             if (responseApi.status === 200) {
+                                 this.loading = false;
+                                 this.cleanForm();
+                                 this.showAlert('success', 'Ok');
+                             }
+                         }).catch(error => {
+                             console.log('axios error: ' + error);
+                             this.loading = false;
+                             this.showAlert('error', 'Error');
+                         })
+
+                    } else {
+                        this.showAlert('error');
+                        this.loading = false;
+                    }
+
+                }).catch(error => console.log('vee-validate error: ' + error));
+            },
+            showAlert(type, title) {
+                this.$swal({
+                    position: 'center',
+                    type: type,
+                    title: title,
+                    showConfirmButton: false,
+                    showCloseButton: true,
+                })
+            },
+            cleanForm() {
+                this.form = {
+                        fullName: null,
+                        email: null,
+                        phone: null,
+                        comment: null
+                    }
+                }
         }
     }
-}
 </script>
 <style scoped>
     .img-1 {

@@ -22,7 +22,7 @@
                                  </li>
                              </template>
                                 <li class="nav-item">
-                                    <select name="lang" @change="changeLanguage" v-model="lang">
+                                    <select name="lang" @change="changeLanguage" v-model="lang" class="form-control text-uppercase">
                                         <template v-for="flag in getFlags">
                                             <option :value="flag.code">{{ flag.code }}</option>
                                         </template>
@@ -51,6 +51,7 @@
         },
         created() {
             this.lang = this.$store.getters.getFlagActive;
+            this.$validator.localize(this.lang); // change language for vee-validate
 
             this.$store.dispatch('APIGetAllLanguagesTags');
         },
@@ -78,7 +79,7 @@
         },
         methods: {
             changeLanguage() {
-                //this.$validator.localize(this.lang); // change language for vee-validate
+                this.$validator.localize(this.lang); // change language for vee-validate
 
                 this.$store.commit('changeLanguage', { list: this.lang });
             },
