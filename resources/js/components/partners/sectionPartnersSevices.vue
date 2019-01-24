@@ -54,7 +54,7 @@ export default {
                 {
                     icono:  '/images/partners/009-web-site.svg',
                     title: $store.getters.getTags({tag:'partners_title7'}),
-                    description: $store.getters.getTags({tag:'partners_text11'})}}
+                    description: $store.getters.getTags({tag:'partners_text11'})
                 },
                 {
                     icono:  '/images/partners/003-picture.svg',

@@ -8,7 +8,7 @@
                 <nav class="navbar navbar-expand-lg"                :class="sticky ? 'navbar-dark' : 'navbar-light'">
                     <div class="container">
                         <router-link class="navbar-brand" to="/">
-                            <img src="images/logo/logojumperr.svg" alt="Jumperr" class="logo">
+                            <img src="/images/logo/logojumperr.svg" alt="Jumperr" class="logo">
                         </router-link>
                         <button class="navbar-toggler" v-on:click="fondoNav=!fondoNav" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                             <i class="fas fa-bars"></i>
@@ -20,19 +20,19 @@
                                     <router-link class="nav-link" to="/">{{$store.getters.getTags({tag:'general_btn_home'})}}</router-link>
                                 </li>
                                 <li class="nav-item">
-                                    <router-link class="nav-link" to="/#lacompañia">{{$store.getters.getTags({tag:'general_btn_company'})}}</router-link>
+                                    <router-link class="nav-link" to="/la-compagnia">{{$store.getters.getTags({tag:'general_btn_company'})}}</router-link>
                                 </li>
                                 <li class="nav-item">
-                                    <router-link class="nav-link" to="/#especialidades" >{{$store.getters.getTags({tag:'general_btn_especialities'})}}</router-link>
+                                    <router-link class="nav-link" to="/specialita" >{{$store.getters.getTags({tag:'general_btn_especialities'})}}</router-link>
                                 </li>
                                 <li class="nav-item">
-                                    <router-link class="nav-link" to="/#blog" >{{$store.getters.getTags({tag:'partners_title12'})}}</router-link>
+                                    <router-link class="nav-link" to="/blog" >{{$store.getters.getTags({tag:'partners_title12'})}}</router-link>
                                 </li>
                                 <li class="nav-item">
                                     <router-link class="nav-link" to="/partners" >{{$store.getters.getTags({tag:'partners_titulo'})}}</router-link>
                                 </li>
                                 <li class="nav-item">
-                                    <router-link class="nav-link" to="/#carreras" >{{$store.getters.getTags({tag:'careers_titulo'})}}</router-link>
+                                    <router-link class="nav-link" to="/labori" >{{$store.getters.getTags({tag:'careers_titulo'})}}</router-link>
                                 </li>
                             </ul>
                             <a href="/#contacto" class="btn btn-primary ml-lg-3 d-none d-lg-block">{{$store.getters.getTags({tag:'general_btn_contact'})}}</a>
@@ -83,9 +83,16 @@ export default {
 }
 @media (min-width: 992px){
 .navbar-expand-lg .navbar-nav .nav-link {
-    padding-right: 1.1rem;
-    padding-left: 1.1rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    font-size: .8rem;
 }
+}
+@media (min-width: 1200px){
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: 1.1rem;
+        padding-left: 1.1rem;
+    }
 }
 .btn {
     padding: 0.375rem 1.1rem;

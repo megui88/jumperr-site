@@ -1,16 +1,43 @@
 <template>
     <div>
-        <navbar></navbar>
-        <router-view></router-view>
-        <section_footer/>
+        <template v-if="isLoading">
+            <div class="container d-flex justify-content-center pt-50vh">
+                <clip-loader :loading="isLoading" :color="color" :size="size"/>
+            </div>
+        </template>
+
+        <template v-else>
+            <nav-bar />
+            <router-view />
+            <footer />
+        </template>
     </div>
 </template>
 <script>
+    import { ClipLoader } from 'vue-spinner/dist/vue-spinner.min';
+    import NavBar from './globals/NavBar';
+    import Footer from './globals/Footer';
+
     export default {
+        components: { ClipLoader, NavBar, Footer },
         data() {
             return {
-
+                color: '#f26336',
+                size: '50px'
             }
         },
+        created() {
+            this.$store.dispatch('APIGetAllLanguagesTags');
+        },
+        computed: {
+            isLoading() {
+                return (this.$store.getters.getLanguages === null)
+            }
+        }
     }
 </script>
+<style scoped>
+    .pt-50vh {
+        padding-top: 50vh;
+    }
+</style>
