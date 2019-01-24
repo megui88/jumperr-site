@@ -4,28 +4,25 @@
             <div class="container position-relative">
                 <div class="row">
                     <div class="col-12">
-                        <h3 class="title-border-bottom text-center text-white">{$store.getters.getTags({tag:'specialties_title7'})}}</h3>
+                        <h3 class="title-border-bottom text-center text-white">{{ $store.getters.getTags({ tag: 'specialties_title7' }) }}</h3>
                     </div>
                     <div class="col-12">
                         <div class="d-flex justify-content-between text-white text-center">
-                            <span :class="menuSlide == 0 ? 'active-slide' : ''">{$store.getters.getTags({tag:'specialties_title8'})}}</span>
-                            <span :class="menuSlide == 1 ? 'active-slide' : ''">{$store.getters.getTags({tag:'specialties_title9'})}}</span>
-                            <span :class="menuSlide == 2 ? 'active-slide' : ''">{$store.getters.getTags({tag:'specialties_title10'})}}</span>
-                            <span :class="menuSlide == 3 ? 'active-slide' : ''">{$store.getters.getTags({tag:'specialties_title11'})}}</span>
+                            <span :class="menuSlide == 0 ? 'active-slide' : ''">{{ $store.getters.getTags({ tag: 'specialties_title8' }) }}</span>
+                            <span :class="menuSlide == 1 ? 'active-slide' : ''">{{ $store.getters.getTags({ tag: 'specialties_title9' }) }}</span>
+                            <span :class="menuSlide == 2 ? 'active-slide' : ''">{{ $store.getters.getTags({ tag: 'specialties_title10' }) }}</span>
+                            <span :class="menuSlide == 3 ? 'active-slide' : ''">{{ $store.getters.getTags({ tag: 'specialties_title11' }) }}</span>
                         </div>
                         <div class="mt-3">
                             <div class="circulos-procesos mt-4">
-                                <img class="circulo-dotted" src="/images/especialidades/jumperr-proceso-2.svg"
-                                     alt="Jumperr especialidades">
-                                <img class="circulo-orange"
-                                     src="/images/especialidades/jumperr-nuestroprocesos-especialidades.svg"
-                                     alt="Jumperr especialidades">
+                                <img class="circulo-dotted" src="/images/especialidades/jumperr-proceso-2.svg" alt="Jumperr especialidades">
+                                <img class="circulo-orange" src="/images/especialidades/jumperr-nuestroprocesos-especialidades.svg" alt="Jumperr especialidades">
                             </div>
                             <swiper :options="swiperOption" ref="mySwiper">
-                                <swiper-slide v-for="(paso, index) in pasos" :key="index">
+                                <swiper-slide v-for="(step, index) in steps" :key="index">
                                     <div>
-                                        <p class="text-center text-themes">{{ paso.step }}</p>
-                                        <h4 class="text-center text-white">{{ paso.text }}</h4>
+                                        <p class="text-center text-themes">{{ step.step }}</p>
+                                        <h4 class="text-center text-white">{{ step.text }}</h4>
                                     </div>
                                 </swiper-slide>
                                 <div class="swiper-pagination" slot="pagination"></div>
@@ -34,7 +31,6 @@
                             </swiper>
                         </div>
                     </div>
-
                 </div>
             </div>
         </section>
@@ -60,29 +56,33 @@
                     },
                     speed: 2500,
                 },
-               /* pasos: [
-                    {
-                        step: $store.getters.getTags({tag: 'specialties_step1'}),
-                        text: $store.getters.getTags({tag: 'specialties_text19'})
-                    },
-                    {
-                        step: $store.getters.getTags({tag: 'specialties_step1'}),
-                        text: $store.getters.getTags({tag: 'specialties_text20'})
-                    },
-                    {
-                        step: $store.getters.getTags({tag: 'specialties_step1'}),
-                        text: $store.getters.getTags({tag: 'specialties_text21'})
-                    },
-                    {
-                        step: $store.getters.getTags({tag: 'specialties_step1'}),
-                        text: $store.getters.getTags({tag: 'specialties_text22'})
-                    },
-                ],*/
                 menuSlide: 0,
             }
         },
         mounted() {
             this.detectarCambioSlide();
+        },
+        computed: {
+            steps() {
+                return [
+                    {
+                        step: this.$store.getters.getTags({ tag: 'specialties_step1' }),
+                        text: this.$store.getters.getTags({ tag: 'specialties_text19' })
+                    },
+                    {
+                        step: this.$store.getters.getTags({ tag: 'specialties_step2' }),
+                        text: this.$store.getters.getTags({ tag: 'specialties_text20' })
+                    },
+                    {
+                        step: this.$store.getters.getTags({ tag: 'specialties_step3' }),
+                        text: this.$store.getters.getTags({ tag: 'specialties_text21' })
+                    },
+                    {
+                        step: this.$store.getters.getTags({ tag: 'specialties_step4' }),
+                        text: this.$store.getters.getTags({ tag: 'specialties_text22' })
+                    },
+                ];
+            }
         },
         methods: {
             detectarCambioSlide() {
@@ -94,7 +94,7 @@
             },
             activarSlide(value) {
                 this.menuSlide = value;
-            },
+            }
         }
     }
 </script>

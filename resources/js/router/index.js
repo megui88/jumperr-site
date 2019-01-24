@@ -4,11 +4,30 @@ import Vue from 'vue';
 import Router from 'vue-router';
 Vue.use(Router);
 
-// Swiper slider
+// Swiper Slider
 import VueAwesomeSwiper from 'vue-awesome-swiper';
 Vue.use(VueAwesomeSwiper, {});
 
-//youtube
+// Vee Validate
+import VeeValidate from 'vee-validate';
+import langIT from '../../js/vee-validate-languaje/it';
+import langEN from '../../js/vee-validate-languaje/en';
+import langES from '../../js/vee-validate-languaje/es';
+import langPT from '../../js/vee-validate-languaje/pt_PT';
+import langFR from '../../js/vee-validate-languaje/fr';
+Vue.use(VeeValidate, {
+    locale: 'it',
+    fieldsBagName: 'veeFields',
+    dictionary: {
+        it: langIT,
+        en: langEN,
+        es: langES,
+        pt: langPT,
+        fr: langFR
+    }
+});
+
+// Youtube
 import VueYoutube from 'vue-youtube';
 Vue.use(VueYoutube);
 

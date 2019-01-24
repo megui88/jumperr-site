@@ -11,7 +11,7 @@
             <div class="portafolio-container">
                 <div class="portafolio-item">
                     <div class="portafolio-image">
-                        <img class="" src="images/home/imagenes/portafolio/thumbnail/jumperr_fd_desktop.jpg" alt="FDGRAFIK">
+                        <img src="images/home/imagenes/portafolio/thumbnail/jumperr_fd_desktop.jpg" alt="FDGRAFIK">
                     </div>
                     <div class="portafolio-caption">
                         <router-link to="#" class="p-3">
@@ -22,7 +22,7 @@
 
                 <div class="portafolio-item">
                     <div class="portafolio-image">
-                        <img class="" src="images/home/imagenes/portafolio/thumbnail/jumperr_geco_dekstop.jpg" alt="FDGRAFIK">
+                        <img src="images/home/imagenes/portafolio/thumbnail/jumperr_geco_dekstop.jpg" alt="FDGRAFIK">
                     </div>
                     <div class="portafolio-caption">
                         <router-link to="#" class="p-3">
@@ -55,7 +55,7 @@
 
                 <div class="portafolio-item">
                     <div class="portafolio-image">
-                        <img class="" src="images/home/imagenes/portafolio/thumbnail/jumperr_zu_desktop.jpg" alt="FDGRAFIK">
+                        <img src="images/home/imagenes/portafolio/thumbnail/jumperr_zu_desktop.jpg" alt="FDGRAFIK">
                     </div>
                     <div class="portafolio-caption">
                         <router-link to="#" class="p-3">
@@ -66,7 +66,7 @@
 
                 <div class="portafolio-item">
                     <div class="portafolio-image">
-                        <img class="" src="images/home/imagenes/portafolio/thumbnail/jumperr_zu_logo.jpg" alt="FDGRAFIK">
+                        <img src="images/home/imagenes/portafolio/thumbnail/jumperr_zu_logo.jpg" alt="FDGRAFIK">
                     </div>
                     <div class="portafolio-caption">
                         <router-link to="#" class="p-3">

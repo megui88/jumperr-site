@@ -6,13 +6,10 @@
             </aside>
             <article>
                 <div class="mb-0 mb-md-5">
-                    <h6 class="text-uppsercase text-theme">
-                        {$store.getters.getTags({tag:'text2'})}}
-                    </h6>
-                    <h3 class="title-border-bottom">
-                        {$store.getters.getTags({tag:'company_text3'})}}
-                    </h3>
-                    {$store.getters.getTags({tag:'company_text14'})}}
+                    <h6 class="text-uppsercase text-theme">{{ $store.getters.getTags({ tag: 'text2' }) }}</h6>
+                    <h3 class="title-border-bottom">{{ $store.getters.getTags({ tag: 'company_text3' }) }}</h3>
+
+                    <span v-html="$store.getters.getTags({ tag: 'company_text14' })"></span>
                 </div>
             </article>
         </section>

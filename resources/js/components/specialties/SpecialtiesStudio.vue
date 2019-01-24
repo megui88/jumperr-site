@@ -2,22 +2,19 @@
     <div>
         <div class="wrapper py-5 py-md-0">
             <div class="column-row">
-                <img class="img-fluid" src="/images/especialidades/Jumperr_laptop_Especialidades-min.png" alt="">
+                <img class="img-fluid" src="/images/especialidades/Jumperr_laptop_Especialidades-min.png" alt="img-specialties-studio">
             </div>
 
             <div class="column-row">
                 <div class="container">
                     <div class="row">
                         <div class="col-12 col-lg-11 ml-lg-auto">
-                            <h3 class="title-border-bottom">
-                                {$store.getters.getTags({tag:'specialties_title1'})}}
-                            </h3>
-                            {$store.getters.getTags({tag:'specialties_text3'})}}
+                            <h3 class="title-border-bottom">{{ $store.getters.getTags({ tag: 'specialties_title1' }) }}</h3>
+                           <p v-html="$store.getters.getTags({ tag: 'specialties_text3' })"></p>
                         </div>
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
 </template>

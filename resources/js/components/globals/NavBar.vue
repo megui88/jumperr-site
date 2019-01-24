@@ -10,32 +10,19 @@
                         <router-link class="navbar-brand" to="/">
                             <img src="images/logo/logojumperr.svg" alt="Jumperr" class="logo">
                         </router-link>
-                        <button class="navbar-toggler" v-on:click="fondoNav=!fondoNav" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                        <button class="navbar-toggler" @click="fondoNav=!fondoNav" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                             <i class="fas fa-bars"></i>
                         </button>
 
                         <div class="collapse navbar-collapse text-uppercase font-weight-bold" id="navbarTogglerDemo02">
                             <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                             <template v-for="item in routes">
+                                 <li class="nav-item">
+                                     <router-link class="nav-link" :to="item.link">{{ item.name }}</router-link>
+                                 </li>
+                             </template>
                                 <li class="nav-item">
-                                    <router-link class="nav-link" to="/">{{ $store.getters.getTags({ tag: 'general_btn_home' }) }}</router-link>
-                                </li>
-                                <li class="nav-item">
-                                    <router-link class="nav-link" to="/#lacompañia">{{ $store.getters.getTags({ tag: 'general_btn_company' }) }}</router-link>
-                                </li>
-                                <li class="nav-item">
-                                    <router-link class="nav-link" to="/#especialidades" >{{ $store.getters.getTags({ tag: 'general_btn_especialities' }) }}</router-link>
-                                </li>
-                                <li class="nav-item">
-                                    <router-link class="nav-link" to="/#blog" >{{ $store.getters.getTags({ tag: 'partners_title12' }) }}</router-link>
-                                </li>
-                                <li class="nav-item">
-                                    <router-link class="nav-link" to="/partners" >{{ $store.getters.getTags({ tag: 'partners_titulo' }) }}</router-link>
-                                </li>
-                                <li class="nav-item">
-                                    <router-link class="nav-link" to="/#carreras" >{{ $store.getters.getTags({ tag: 'careers_titulo' }) }}</router-link>
-                                </li>
-                                <li class="nav-item">
-                                    <select name="lang" @change="changeLanguage" v-model="lang">
+                                    <select name="lang" @change="changeLanguage" v-model="lang" class="form-control text-uppercase">
                                         <template v-for="flag in getFlags">
                                             <option :value="flag.code">{{ flag.code }}</option>
                                         </template>
@@ -59,11 +46,12 @@
             return {
                 sticky: true,
                 fondoNav: false,
-                lang: 'es'
+                lang: 'it'
             }
         },
         created() {
             this.lang = this.$store.getters.getFlagActive;
+            this.$validator.localize(this.lang); // change language for vee-validate
 
             this.$store.dispatch('APIGetAllLanguagesTags');
         },
@@ -75,16 +63,23 @@
             };
         },
         computed: {
-            /* isLoading() {
-                 return (this.$store.getters.getLanguagesTagActive.length === 0)
-             }*/
             getFlags() {
                 return this.$store.getters.getFlags;
+            },
+            routes() {
+                return [
+                        { name: this.$store.getters.getTags({ tag: 'general_btn_home' }), link: '/'},
+                        { name: this.$store.getters.getTags({ tag: 'general_btn_company' }), link: '/la-compagnia'},
+                        { name: this.$store.getters.getTags({ tag: 'general_btn_especialities' }), link: '/specialita'},
+                        { name: this.$store.getters.getTags({ tag: 'partners_title12' }), link: '/blog'},
+                        { name: this.$store.getters.getTags({ tag: 'partners_titulo' }), link: '/partners'},
+                        { name: this.$store.getters.getTags({ tag: 'careers_titulo' }), link: '/labori'}
+                    ]
             }
         },
         methods: {
             changeLanguage() {
-                // this.$validator.localize(this.lang); // change language for vee-validate
+                this.$validator.localize(this.lang); // change language for vee-validate
 
                 this.$store.commit('changeLanguage', { list: this.lang });
             },
@@ -109,6 +104,14 @@
     }
 
     @media (min-width: 992px) {
+        .navbar-expand-lg .navbar-nav .nav-link {
+            padding-right: 1rem;
+            padding-left: 1rem;
+            font-size: .8rem;
+        }
+    }
+
+    @media (min-width: 1200px) {
         .navbar-expand-lg .navbar-nav .nav-link {
             padding-right: 1.1rem;
             padding-left: 1.1rem;

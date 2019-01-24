@@ -2,38 +2,111 @@
     <div>
         <div class="newsletter">
             <div class="container">
-                <div class="row">
-                    <div class="col-12 col-lg-9 mx-auto">
-                        <h3 class="text-white text-center">
-                            {$store.getters.getTags({tag:'specialties_text63'})}}
-                        </h3>
-                        <p class="text-white text-center">
-                            {$store.getters.getTags({tag:'specialties_text12'})}}
-                        </p>
+                <template v-if="loading">
+                    <div class="container d-flex justify-content-center">
+                        <clip-loader :loading="loading" color="#292052" size="60px"/>
                     </div>
-                    <div class="col-12 col-lg-5 mx-auto">
-                        <div class="input-group mb-3">
-                            <input type="text" class="form-control" placeholder="Recipient's username"
-                                   aria-label="Recipient's username" aria-describedby="button-addon2">
-                            <div class="input-group-append">
-                                <button class="btn btn-primary" type="button" id="button-addon2">
-                                    {$store.getters.getTags({tag:'general_btn_send'})}}
-                                </button>
-                            </div>
+                </template>
+
+                <template v-else>
+                    <div class="row">
+                        <div class="col-12 col-lg-9 mx-auto">
+                            <h3 class="text-white text-center">{{ $store.getters.getTags({ tag: 'specialties_text63' }) }}</h3>
+                            <p class="text-white text-center">{{ $store.getters.getTags({ tag: 'specialties_text12' }) }}</p>
                         </div>
-                        <label for="term" class="d-block text-center text-white mb-0">
-                            <input type="checkbox" name="term" id="">
-                            {$store.getters.getTags({tag:'specialties_text15'})}}
-                        </label>
+                        <div class="col-12 col-lg-5 mx-auto">
+                            <div class="input-group mb-3">
+                                <input
+                                    type="text"
+                                    id="email"
+                                    name="email"
+                                    v-model="email"
+                                    :maxlength="50"
+                                    v-validate="'required|email|min:9|max:50'"
+                                    :data-vv-as="$store.getters.getTags({ tag:'conctac_text6' })"
+                                    data-vv-delay="600"
+                                    :class="{ 'text-danger': errors.has('email') }"
+                                    class="form-control"
+                                >
+
+                                <div class="input-group-append">
+                                    <button :disabled="errors.any() || isDisabled || loading" @click.prevent="sendMail()" type="button" class="btn btn-primary" id="button-addon2">
+                                        {{ $store.getters.getTags({ tag:'general_btn_send' }) }}
+                                    </button>
+                                </div>
+                            </div>
+
+                            <label for="terms" class="d-block text-center text-white mb-0">
+                                <span v-show="errors.has('terms')" class="text-danger">*</span>
+                                <input
+                                    type="checkbox"
+                                    id="terms"
+                                    name="terms"
+                                    v-model="terms"
+                                    v-validate="'required'"
+                                >
+                                <span :class="{ 'text-danger': errors.has('terms') }">{{ $store.getters.getTags({ tag: 'specialties_text15' }) }}</span>
+                            </label>
+                        </div>
+                        <small v-show="errors.has('email')" class="text-center text-danger">{{ errors.first('email') }}</small>
                     </div>
-                </div>
+                </template>
             </div>
         </div>
     </div>
 </template>
 <script>
+    import { ClipLoader } from 'vue-spinner/dist/vue-spinner.min';
+
     export default {
-        name: 'specialties-newsletter'
+        name: 'specialties-newsletter',
+        components: { ClipLoader },
+        data() {
+            return {
+                email: null,
+                terms: false,
+                loading: false
+            }
+        },
+        computed: {
+            isDisabled() {
+                return !this.email || !this.terms
+            }
+        },
+        methods: {
+            sendMail() {
+                this.loading = true;
+
+                this.$validator.validateAll().then(result => {
+                    if (result) {
+                        axios.post('/api/newsletter', this.email).then(responseApi => {
+                            if (responseApi.status === 200) {
+                                this.loading = false;
+                                this.showAlert('success', 'Ok');
+                            }
+                        }).catch(error => {
+                            console.log('axios error: ' + error);
+                            this.loading = false;
+                            this.showAlert('error', 'Error');
+                        })
+
+                    } else {
+                        this.showAlert('error');
+                        this.loading = false;
+                    }
+
+                }).catch(error => console.log('vee-validate error: ' + error));
+            },
+            showAlert(type, title) {
+                this.$swal({
+                    position: 'center',
+                    type: type,
+                    title: title,
+                    showConfirmButton: false,
+                    showCloseButton: true,
+                })
+            },
+        }
     }
 </script>
 <style scoped>

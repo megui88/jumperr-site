@@ -9,7 +9,7 @@
             <div class="d-flex flex-column justify-content-center">
                 <div>
                     <h3 class="title-border-bottom">{{ $store.getters.getTags({ tag: 'home_text11' }) }}</h3>
-                    img-1<p>{{ $store.getters.getTags({ tag: 'home_text12' }) }}</p>
+                    <p>{{ $store.getters.getTags({ tag: 'home_text12' }) }}</p>
 
                     <router-link to="#" class="btn btn-primary text-uppercase mt-4">
                         <a>{{ $store.getters.getTags({ tag: 'general_vermas' }) }}</a>

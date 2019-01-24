@@ -4,14 +4,10 @@
             <div id="slider-especialidades" class="wrapper">
                 <swiper :options="swiperOption">
                     <swiper-slide>
-                        <h2 class="text-white text-center mb-0">
-                            {$store.getters.getTags({tag:'specialties_text1'})}}
-                        </h2>
+                        <h2 class="text-white text-center mb-0">{{$store.getters.getTags({tag:'specialties_text1'})}}</h2>
                     </swiper-slide>
                     <swiper-slide>
-                        <h2 class="text-white text-left text-md-center mb-0">
-                            {$store.getters.getTags({tag:'specialties_text2'})}}
-                        </h2>
+                        <h2 class="text-white text-left text-md-center mb-0">{{ $store.getters.getTags({tag:'specialties_text2'}) }}</h2>
                     </swiper-slide>
                     <div class="swiper-pagination swiper-pagination-x" slot="pagination"></div>
                 </swiper>
