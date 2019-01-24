@@ -144,9 +144,9 @@ export default {
             max-width: 320px;
         }
     }
-    
-    .swiper-pagination-fraction, 
-    .swiper-pagination-custom, 
+
+    .swiper-pagination-fraction,
+    .swiper-pagination-custom,
     .swiper-container-horizontal > .swiper-pagination-bullets{
         margin-top: 1rem;
         bottom: 0px;
@@ -163,7 +163,7 @@ export default {
         transform: translate3d(0, 0, 0);
         z-index: 10;
     }
-    
+
 
     /*Card bootstrap*/
     .card {
