@@ -1,5 +1,5 @@
 <template>
-    <cookie-law :buttonText="$store.getters.getTags({ tag: 'cookies_btn' })" position="bottom" theme="jumperr" buttonClass="btn btn-primary btn-md">
+    <cookie-law :buttonText="$store.getters.getTags({ tag: 'cookies_btn' })" position="bottom" theme="jumperr" buttonClass="btn btn-primary btn-sm">
         <div class="text-center" slot="message">
             {{ $store.getters.getTags({ tag: 'cookies_text' }) }}
             <router-link to="/cookiespolicies">{{ $store.getters.getTags({ tag: 'cookies_link' }) }}</router-link>
