@@ -2759,8 +2759,11 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
-  name: 'footer'
+  name: 'footer-jumperr'
 });
 
 /***/ }),
@@ -3759,7 +3762,7 @@ __webpack_require__.r(__webpack_exports__);
   components: {
     ClipLoader: vue_spinner_dist_vue_spinner_min__WEBPACK_IMPORTED_MODULE_0__["ClipLoader"],
     NavBar: _globals_NavBar__WEBPACK_IMPORTED_MODULE_1__["default"],
-    Footer: _globals_Footer__WEBPACK_IMPORTED_MODULE_2__["default"]
+    FooterJumperr: _globals_Footer__WEBPACK_IMPORTED_MODULE_2__["default"]
   },
   data: function data() {
     return {
@@ -61883,7 +61886,24 @@ var render = function() {
     _c("footer", [
       _c("div", { staticClass: "container" }, [
         _c("div", { staticClass: "row align-items-center" }, [
-          _vm._m(0),
+          _c(
+            "div",
+            { staticClass: "col-12 col-md-3 text-center" },
+            [
+              _c("router-link", { attrs: { to: "/" } }, [
+                _c("a", [
+                  _c("img", {
+                    attrs: {
+                      alt: "img-logo",
+                      src: "/images/logo/logojumperrwhite.svg",
+                      width: "200px"
+                    }
+                  })
+                ])
+              ])
+            ],
+            1
+          ),
           _vm._v(" "),
           _c(
             "div",
@@ -61948,31 +61968,15 @@ var render = function() {
             ]
           ),
           _vm._v(" "),
-          _vm._m(1)
+          _vm._m(0)
         ])
       ])
     ]),
     _vm._v(" "),
-    _vm._m(2)
+    _vm._m(1)
   ])
 }
 var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "col-12 col-md-3 text-center" }, [
-      _c("a", { attrs: { href: "#" } }, [
-        _c("img", {
-          attrs: {
-            src: "/images/logo/logojumperrwhite.svg",
-            alt: "",
-            width: "200px"
-          }
-        })
-      ])
-    ])
-  },
   function() {
     var _vm = this
     var _h = _vm.$createElement
@@ -61984,15 +61988,15 @@ var staticRenderFns = [
         _c(
           "a",
           {
-            attrs: { href: "#", target: "_blank", rel: "noopener noreferrer" }
+            attrs: { href: "#", rel: "noopener noreferrer", target: "_blank" }
           },
           [
             _c("img", {
               staticClass: "d-inline-block mx-2",
               attrs: {
-                width: "36px",
+                alt: "Facebook",
                 src: "/images/iconos/001-facebook.svg",
-                alt: "Facebook"
+                width: "36px"
               }
             })
           ]
@@ -62001,15 +62005,15 @@ var staticRenderFns = [
         _c(
           "a",
           {
-            attrs: { href: "#", target: "_blank", rel: "noopener noreferrer" }
+            attrs: { href: "#", rel: "noopener noreferrer", target: "_blank" }
           },
           [
             _c("img", {
               staticClass: "d-inline-block mx-2",
               attrs: {
-                width: "36px",
+                alt: "Instagram",
                 src: "/images/iconos/002-instagram.svg",
-                alt: "Instagram"
+                width: "36px"
               }
             })
           ]
@@ -62018,15 +62022,15 @@ var staticRenderFns = [
         _c(
           "a",
           {
-            attrs: { href: "#", target: "_blank", rel: "noopener noreferrer" }
+            attrs: { href: "#", rel: "noopener noreferrer", target: "_blank" }
           },
           [
             _c("img", {
               staticClass: "d-inline-block mx-2",
               attrs: {
-                width: "36px",
+                alt: "Linkedin",
                 src: "/images/iconos/003-linkedin.svg",
-                alt: "Linkedin"
+                width: "36px"
               }
             })
           ]
@@ -62035,15 +62039,15 @@ var staticRenderFns = [
         _c(
           "a",
           {
-            attrs: { href: "#", target: "_blank", rel: "noopener noreferrer" }
+            attrs: { href: "#", rel: "noopener noreferrer", target: "_blank" }
           },
           [
             _c("img", {
               staticClass: "d-inline-block mx-2",
               attrs: {
-                width: "36px",
+                alt: "Youtube",
                 src: "/images/iconos/004-youtube.svg",
-                alt: "Youtube"
+                width: "36px"
               }
             })
           ]
@@ -62070,8 +62074,8 @@ var staticRenderFns = [
                   {
                     attrs: {
                       href: "#",
-                      target: "_blank",
-                      rel: "noopener noreferrer"
+                      rel: "noopener noreferrer",
+                      target: "_blank"
                     }
                   },
                   [
@@ -62092,8 +62096,8 @@ var staticRenderFns = [
                   {
                     attrs: {
                       href: "#",
-                      target: "_blank",
-                      rel: "noopener noreferrer"
+                      rel: "noopener noreferrer",
+                      target: "_blank"
                     }
                   },
                   [
@@ -62400,11 +62404,13 @@ var render = function() {
                 )
               ]),
               _vm._v(" "),
-              _c("p", [
-                _vm._v(
-                  _vm._s(_vm.$store.getters.getTags({ tag: "home_text10" }))
-                )
-              ])
+              _c("p", {
+                domProps: {
+                  innerHTML: _vm._s(
+                    _vm.$store.getters.getTags({ tag: "home_text10" })
+                  )
+                }
+              })
             ]
           )
         ])
@@ -62470,9 +62476,14 @@ var render = function() {
               )
             ]),
             _vm._v(" "),
-            _c("h4", { staticClass: "mb-md-5" }, [
-              _vm._v(_vm._s(_vm.$store.getters.getTags({ tag: "home_text10" })))
-            ])
+            _c("h4", {
+              staticClass: "mb-md-5",
+              domProps: {
+                innerHTML: _vm._s(
+                  _vm.$store.getters.getTags({ tag: "home_text10" })
+                )
+              }
+            })
           ])
         ])
       ])
@@ -63174,11 +63185,13 @@ var render = function() {
         _c("div", { staticClass: "container" }, [
           _c("div", { staticClass: "row" }, [
             _c("div", { staticClass: "col-12 col-md-8 col-lg-6" }, [
-              _c("h1", [
-                _vm._v(
-                  _vm._s(_vm.$store.getters.getTags({ tag: "general_header" }))
-                )
-              ])
+              _c("h1", {
+                domProps: {
+                  innerHTML: _vm._s(
+                    _vm.$store.getters.getTags({ tag: "general_header" })
+                  )
+                }
+              })
             ])
           ])
         ]),
@@ -63699,7 +63712,7 @@ var render = function() {
             _vm._v(" "),
             _c("router-view"),
             _vm._v(" "),
-            _c("footer")
+            _c("footer-jumperr")
           ]
     ],
     2
