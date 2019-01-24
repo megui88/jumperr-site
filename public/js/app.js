@@ -3289,6 +3289,10 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'home-contact',
@@ -62825,7 +62829,8 @@ var render = function() {
                   "data-vv-as": _vm.$store.getters.getTags({
                     tag: "conctac_text5"
                   }),
-                  "data-vv-delay": "600"
+                  "data-vv-delay": "600",
+                  disabled: _vm.loading
                 },
                 domProps: { value: _vm.form.fullName },
                 on: {
@@ -62896,7 +62901,8 @@ var render = function() {
                   "data-vv-as": _vm.$store.getters.getTags({
                     tag: "conctac_text6"
                   }),
-                  "data-vv-delay": "600"
+                  "data-vv-delay": "600",
+                  disabled: _vm.loading
                 },
                 domProps: { value: _vm.form.email },
                 on: {
@@ -62967,7 +62973,8 @@ var render = function() {
                   "data-vv-as": _vm.$store.getters.getTags({
                     tag: "conctac_text7"
                   }),
-                  "data-vv-delay": "600"
+                  "data-vv-delay": "600",
+                  disabled: _vm.loading
                 },
                 domProps: { value: _vm.form.phone },
                 on: {
@@ -63038,7 +63045,8 @@ var render = function() {
                   "data-vv-as": _vm.$store.getters.getTags({
                     tag: "conctac_text8"
                   }),
-                  "data-vv-delay": "600"
+                  "data-vv-delay": "600",
+                  disabled: _vm.loading
                 },
                 domProps: { value: _vm.form.comment },
                 on: {
@@ -63099,8 +63107,8 @@ var render = function() {
                           _c("clip-loader", {
                             attrs: {
                               loading: _vm.loading,
-                              color: "black",
-                              size: "5px"
+                              color: "#FFF",
+                              size: "15px"
                             }
                           })
                         ],

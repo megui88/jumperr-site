@@ -30,6 +30,7 @@
                             data-vv-delay="600"
                             :class="{ 'text-danger': errors.has('fullName') }"
                             class="form-control"
+                            :disabled="loading"
                         >
                         <small v-show="errors.has('fullName')" class="help text-danger">{{ errors.first('fullName') }}</small>
                     </div>
@@ -50,6 +51,7 @@
                             data-vv-delay="600"
                             :class="{ 'text-danger': errors.has('email') }"
                             class="form-control"
+                            :disabled="loading"
                         >
                         <small v-show="errors.has('email')" class="help text-danger">{{ errors.first('email') }}</small>
                     </div>
@@ -70,6 +72,7 @@
                             data-vv-delay="600"
                             :class="{ 'text-danger': errors.has('phone') }"
                             class="form-control"
+                            :disabled="loading"
                         >
                         <small v-show="errors.has('phone')" class="help text-danger">{{ errors.first('phone') }}</small>
                     </div>
@@ -90,6 +93,7 @@
                             data-vv-delay="600"
                             :class="{ 'text-danger': errors.has('comment') }"
                             class="form-control"
+                            :disabled="loading"
                         >
                         <small v-show="errors.has('comment')" class="help text-danger">{{ errors.first('comment') }}</small>
                     </div>
@@ -98,7 +102,7 @@
                         <button :disabled="errors.any() || isDisabled || loading" @click.prevent="sendMail()" type="button" class="btn btn-primary text-uppercase">
                             {{ $store.getters.getTags({ tag:'general_btn_send' }) }}
                             <span v-if="loading">
-                                <clip-loader :loading="loading" color="black" size="5px"/>
+                                <clip-loader :loading="loading" color="#FFF" size="15px"/>
                             </span>
                         </button>
                     </div>
