@@ -4,7 +4,7 @@
             <div class="container">
                 <template v-if="loading">
                     <div class="container d-flex justify-content-center">
-                        <clip-loader :loading="loading" color="black" size="60px"/>
+                        <clip-loader :loading="loading" color="#292052" size="60px"/>
                     </div>
                 </template>
 

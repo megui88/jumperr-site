@@ -64464,7 +64464,7 @@ var render = function() {
                     _c("clip-loader", {
                       attrs: {
                         loading: _vm.loading,
-                        color: "black",
+                        color: "#292052",
                         size: "60px"
                       }
                     })
