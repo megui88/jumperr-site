@@ -146,19 +146,14 @@
                              if (responseApi.status === 200) {
                                  this.loading = false;
                                  this.cleanForm();
-                                 this.showAlert('success', 'Ok');
+                                 this.showAlert('success', this.$store.getters.getTags({tag:'modal_contact_success_response'}));
                              }
                          }).catch(error => {
                              console.log('axios error: ' + error);
                              this.loading = false;
-                             this.showAlert('error', 'Error');
+                             this.showAlert('error', this.$store.getters.getTags({tag:'modal_contact_success_response'}));
                          })
-
-                    } else {
-                        this.showAlert('error');
-                        this.loading = false;
                     }
-
                 }).catch(error => console.log('vee-validate error: ' + error));
             },
             showAlert(type, title) {

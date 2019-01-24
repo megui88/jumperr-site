@@ -10,6 +10,7 @@
             <nav-bar />
             <router-view />
             <footer-jumperr />
+            <cookies />
         </template>
     </div>
 </template>
@@ -17,9 +18,10 @@
     import { ClipLoader } from 'vue-spinner/dist/vue-spinner.min';
     import NavBar from './globals/NavBar';
     import FooterJumperr from './globals/Footer';
+    import Cookies from './globals/Cookies';
 
     export default {
-        components: { ClipLoader, NavBar, FooterJumperr },
+        components: { ClipLoader, NavBar, FooterJumperr, Cookies },
         data() {
             return {
                 color: '#f26336',
