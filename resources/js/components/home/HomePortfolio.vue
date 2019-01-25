@@ -14,9 +14,9 @@
                         <img src="images/home/imagenes/portafolio/thumbnail/jumperr_fd_desktop.jpg" alt="FDGRAFIK">
                     </div>
                     <div class="portafolio-caption">
-                        <router-link to="http://fdgrafik.com" class="p-3" target='_blank'>
+                        <a href="http://fdgrafik.com" class="p-3" target='_blank'>
                             <img src="/images/iconos/link-symbol.svg" alt="view">
-                        </router-link>
+                        </a>
                     </div>
                 </div>
 
@@ -25,9 +25,9 @@
                         <img src="images/home/imagenes/portafolio/thumbnail/jumperr_geco_dekstop.jpg" alt="GECO">
                     </div>
                     <div class="portafolio-caption">
-                        <router-link to="https://www.gecodigiada.com/" class="p-3" target='_blank'>
+                        <a href="https://www.gecodigiada.com/" class="p-3" target='_blank'>
                             <img src="/images/iconos/link-symbol.svg" alt="view">
-                        </router-link>
+                        </a>
                     </div>
                 </div>
 
@@ -36,9 +36,9 @@
                         <img src="images/home/imagenes/portafolio/thumbnail/jumperr_gmk_desktop.jpg" alt="GMK OLBIA">
                     </div>
                     <div class="portafolio-caption">
-                        <router-link to="https://www.gmkolbia.com/" class="p-3" target='_blank'>
+                        <a href="https://www.gmkolbia.com/" class="p-3" target='_blank'>
                             <img src="/images/iconos/link-symbol.svg" alt="view">
-                        </router-link>
+                        </a>
                     </div>
                 </div>
 
@@ -47,9 +47,9 @@
                         <img src="images/home/imagenes/portafolio/thumbnail/jumperr_porto_desktop.jpg" alt="HOTEL PORTO RAFAEL">
                     </div>
                     <div class="portafolio-caption">
-                        <router-link to="https://www.hotelportorafael.com/" class="p-3" target='_blank'>
+                        <a href="https://www.hotelportorafael.com/" class="p-3" target='_blank'>
                             <img src="/images/iconos/link-symbol.svg" alt="view">
-                        </router-link>
+                        </a>
                     </div>
                 </div>
 
@@ -58,9 +58,9 @@
                         <img src="images/home/imagenes/portafolio/thumbnail/jumperr_zu_desktop.jpg" alt="Zu pietru">
                     </div>
                     <div class="portafolio-caption">
-                        <router-link to="https://www.zupietru.com/" class="p-3" target='_blank'>
+                        <a href="https://www.zupietru.com/" class="p-3" target='_blank'>
                             <img src="/images/iconos/link-symbol.svg" alt="view">
-                        </router-link>
+                        </a>
                     </div>
                 </div>
 
@@ -69,9 +69,9 @@
                         <img src="images/home/imagenes/portafolio/thumbnail/jumperr_zu_logo.jpg" alt="Zu pietru">
                     </div>
                     <div class="portafolio-caption">
-                        <router-link to="https://www.zupietru.com/" class="p-3" target='_blank'>
+                        <a href="https://www.zupietru.com/" class="p-3" target='_blank'>
                             <img src="/images/iconos/link-symbol.svg" alt="view">
-                        </router-link>
+                        </a>
                     </div>
                 </div>
                 
@@ -80,9 +80,9 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12 text-center">
-                        <router-link to="#" class="btn btn-primary text-uppercase mt-5">
+                        <a href="#" class="btn btn-primary text-uppercase mt-5">
                             <a>{{ $store.getters.getTags({ tag: 'general_vermas' }) }}</a>
-                        </router-link>
+                        </a>
                     </div>
                 </div>
             </div>
