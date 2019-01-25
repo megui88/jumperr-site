@@ -63,6 +63,9 @@ import Partners from '../components/partners/';
 import Careers from '../components/careers/';
 import showCarreras from '../components/careers/show/showCarreras';
 
+// terminos
+import terms from '../components/globals/terms';
+
 
 // Routes
 let router = new Router({
@@ -107,6 +110,11 @@ let router = new Router({
             path: '/labori/1',
             name: 'showCarreras',
             component: showCarreras,
+        },
+        {
+            path: '/termini',
+            name: 'terms',
+            component: terms,
         }
     ],
     scrollBehavior (to, from, savedPosition) {

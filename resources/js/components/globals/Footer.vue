@@ -40,13 +40,13 @@
                 <div class="row">
                     <div class="col-12 col-md-6 text-center text-md-left">
                         <a href="/" rel="noopener noreferrer" target="_blank">
-                            © Jumperr Digital Company
+                            {{ $store.getters.getTags({ tag: 'footer_jumperr' }) }}
                         </a>
                     </div>
                     <div class="col-12 col-md-6 text-center text-md-right">
                         <a href="#" rel="noopener noreferrer" target="_blank">
                             <!-- Politica de privacidad | Terminos y condiciones -->
-                            {{ $store.getters.getTags({ tag: 'footer_terms_polity' }) }}
+                            {{ $store.getters.getTags({ tag: 'footer_polity' }) }} | {{ $store.getters.getTags({ tag: 'footer_terms' }) }}
                         </a>
                     </div>
                 </div>
@@ -63,7 +63,7 @@
                         { name: this.$store.getters.getTags({ tag: 'general_btn_home' }), link: '/'},
                         { name: this.$store.getters.getTags({ tag: 'general_btn_company' }), link: '/la-compagnia'},
                         { name: this.$store.getters.getTags({ tag: 'general_btn_especialities' }), link: '/specialita'},
-                        { name: this.$store.getters.getTags({ tag: 'partners_title12' }), link: '/blog'},
+                        // { name: this.$store.getters.getTags({ tag: 'partners_title12' }), link: '/blog'},
                         { name: this.$store.getters.getTags({ tag: 'partners_titulo' }), link: '/partners'},
                         { name: this.$store.getters.getTags({ tag: 'careers_titulo' }), link: '/labori'}
                     ]

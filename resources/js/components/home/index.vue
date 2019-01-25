@@ -6,7 +6,7 @@
         <home-brand />
         <home-youtube />
         <home-portfolio />
-        <home-blog />
+        <!-- <home-blog /> -->
         <home-careers />
         <!--<home-our-offices />-->
         <home-contact />
