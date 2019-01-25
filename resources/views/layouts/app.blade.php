@@ -22,7 +22,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>{{ config('app.name', 'Jumperr') }}</title>
-    <link rel="shortcut icon" type="image/png" href="{{asset('favicon.png')}}"/>
+    <link rel="shortcut icon" type="image/png" href="{{asset('/images/iconos/favicon.png')}}"/>
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
