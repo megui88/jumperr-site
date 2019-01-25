@@ -2787,12 +2787,43 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
-  name: 'footer-jumperr'
+  name: 'footer-jumperr',
+  computed: {
+    routes: function routes() {
+      return [{
+        name: this.$store.getters.getTags({
+          tag: 'general_btn_home'
+        }),
+        link: '/'
+      }, {
+        name: this.$store.getters.getTags({
+          tag: 'general_btn_company'
+        }),
+        link: '/la-compagnia'
+      }, {
+        name: this.$store.getters.getTags({
+          tag: 'general_btn_especialities'
+        }),
+        link: '/specialita'
+      }, {
+        name: this.$store.getters.getTags({
+          tag: 'partners_title12'
+        }),
+        link: '/blog'
+      }, {
+        name: this.$store.getters.getTags({
+          tag: 'partners_titulo'
+        }),
+        link: '/partners'
+      }, {
+        name: this.$store.getters.getTags({
+          tag: 'careers_titulo'
+        }),
+        link: '/labori'
+      }];
+    }
+  }
 });
 
 /***/ }),
@@ -5309,12 +5340,22 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'company-location',
   data: function data() {
     return {
       cities: [{
         id: 1,
+        title: this.$store.getters.getTags({
+          tag: 'company_text2014'
+        }),
+        description: this.$store.getters.getTags({
+          tag: 'company_description2014'
+        }),
         images: [{
           id: 1,
           img: '/images/la-empresa/vectores/1_ciudad.svg'
@@ -5327,6 +5368,12 @@ __webpack_require__.r(__webpack_exports__);
         }]
       }, {
         id: 2,
+        title: this.$store.getters.getTags({
+          tag: 'company_text2015'
+        }),
+        description: this.$store.getters.getTags({
+          tag: 'company_description2015'
+        }),
         images: [{
           id: 1,
           img: '/images/la-empresa/vectores/3_ciudad.svg'
@@ -5336,6 +5383,12 @@ __webpack_require__.r(__webpack_exports__);
         }]
       }, {
         id: 3,
+        title: this.$store.getters.getTags({
+          tag: 'company_text2016'
+        }),
+        description: this.$store.getters.getTags({
+          tag: 'company_description2016'
+        }),
         images: [{
           id: 1,
           img: '/images/la-empresa/vectores/2_ciudad.svg'
@@ -5344,7 +5397,13 @@ __webpack_require__.r(__webpack_exports__);
           img: '/images/la-empresa/vectores/3_personas.svg'
         }]
       }, {
-        id: 4,
+        id: 47,
+        title: this.$store.getters.getTags({
+          tag: 'company_text2017'
+        }),
+        description: this.$store.getters.getTags({
+          tag: 'company_description2017'
+        }),
         images: [{
           id: 1,
           img: '/images/la-empresa/vectores/4_ciudad.svg'
@@ -5354,6 +5413,12 @@ __webpack_require__.r(__webpack_exports__);
         }]
       }, {
         id: 5,
+        title: this.$store.getters.getTags({
+          tag: 'company_text2018'
+        }),
+        description: this.$store.getters.getTags({
+          tag: 'company_description2018'
+        }),
         images: [{
           id: 1,
           img: '/images/la-empresa/vectores/5_ciudad.svg'
@@ -5363,6 +5428,12 @@ __webpack_require__.r(__webpack_exports__);
         }]
       }, {
         id: 6,
+        title: this.$store.getters.getTags({
+          tag: 'company_text2019'
+        }),
+        description: this.$store.getters.getTags({
+          tag: 'company_description2019'
+        }),
         images: [{
           id: 1,
           img: '/images/la-empresa/vectores/6_ciudad.svg'
@@ -64443,60 +64514,20 @@ var render = function() {
                 "col-12 col-md-5 col-lg-4 d-none d-md-flex enlaces mx-auto"
             },
             [
-              _c("a", { attrs: { href: "#" } }, [
-                _vm._v(
-                  _vm._s(
-                    _vm.$store.getters.getTags({ tag: "general_btn_company" })
+              _vm._l(_vm.routes, function(item) {
+                return [
+                  _c(
+                    "router-link",
+                    {
+                      staticClass: "text-uppercase",
+                      attrs: { to: item.link, class: "text-uppercase" }
+                    },
+                    [_vm._v(_vm._s(item.name))]
                   )
-                )
-              ]),
-              _vm._v(" "),
-              _c("a", { attrs: { href: "#" } }, [
-                _vm._v(
-                  _vm._s(
-                    _vm.$store.getters.getTags({
-                      tag: "general_btn_especialities"
-                    })
-                  )
-                )
-              ]),
-              _vm._v(" "),
-              _c("a", { attrs: { href: "#" } }, [
-                _vm._v(
-                  _vm._s(
-                    _vm.$store.getters.getTags({ tag: "general_btn_agencies" })
-                  )
-                )
-              ]),
-              _vm._v(" "),
-              _c("a", { attrs: { href: "#" } }, [
-                _vm._v(
-                  _vm._s(
-                    _vm.$store.getters.getTags({ tag: "general_btn_contact" })
-                  )
-                )
-              ]),
-              _vm._v(" "),
-              _c("a", { attrs: { href: "#" } }, [_vm._v("Jumperr Start")]),
-              _vm._v(" "),
-              _c("a", { attrs: { href: "#" } }, [
-                _vm._v(
-                  _vm._s(_vm.$store.getters.getTags({ tag: "home_title5" }))
-                )
-              ]),
-              _vm._v(" "),
-              _c("a", { attrs: { href: "#" } }, [
-                _vm._v(
-                  _vm._s(_vm.$store.getters.getTags({ tag: "home_title7" }))
-                )
-              ]),
-              _vm._v(" "),
-              _c("a", { attrs: { href: "#" } }, [
-                _vm._v(
-                  _vm._s(_vm.$store.getters.getTags({ tag: "home_title3" }))
-                )
-              ])
-            ]
+                ]
+              })
+            ],
+            2
           ),
           _vm._v(" "),
           _vm._m(0)
@@ -64504,7 +64535,41 @@ var render = function() {
       ])
     ]),
     _vm._v(" "),
-    _vm._m(1)
+    _c("div", { staticClass: "power-by-jumperr d-flex align-items-end pb-3" }, [
+      _c("div", { staticClass: "container" }, [
+        _c("div", { staticClass: "row" }, [
+          _vm._m(1),
+          _vm._v(" "),
+          _c(
+            "div",
+            { staticClass: "col-12 col-md-6 text-center text-md-right" },
+            [
+              _c(
+                "a",
+                {
+                  attrs: {
+                    href: "#",
+                    rel: "noopener noreferrer",
+                    target: "_blank"
+                  }
+                },
+                [
+                  _vm._v(
+                    "\n                        " +
+                      _vm._s(
+                        _vm.$store.getters.getTags({
+                          tag: "footer_terms_polity"
+                        })
+                      ) +
+                      "\n                    "
+                  )
+                ]
+              )
+            ]
+          )
+        ])
+      ])
+    ])
   ])
 }
 var staticRenderFns = [
@@ -64604,55 +64669,19 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c(
       "div",
-      { staticClass: "power-by-jumperr d-flex align-items-end pb-3" },
+      { staticClass: "col-12 col-md-6 text-center text-md-left" },
       [
-        _c("div", { staticClass: "container" }, [
-          _c("div", { staticClass: "row" }, [
-            _c(
-              "div",
-              { staticClass: "col-12 col-md-6 text-center text-md-left" },
-              [
-                _c(
-                  "a",
-                  {
-                    attrs: {
-                      href: "/",
-                      rel: "noopener noreferrer",
-                      target: "_blank"
-                    }
-                  },
-                  [
-                    _vm._v(
-                      "\n                        © Jumperr Digital Company\n                    "
-                    )
-                  ]
-                )
-              ]
-            ),
-            _vm._v(" "),
-            _c(
-              "div",
-              { staticClass: "col-12 col-md-6 text-center text-md-right" },
-              [
-                _c(
-                  "a",
-                  {
-                    attrs: {
-                      href: "#",
-                      rel: "noopener noreferrer",
-                      target: "_blank"
-                    }
-                  },
-                  [
-                    _vm._v(
-                      "\n                        Politica de privacidad | Terminos y condiciones\n                    "
-                    )
-                  ]
-                )
-              ]
+        _c(
+          "a",
+          {
+            attrs: { href: "/", rel: "noopener noreferrer", target: "_blank" }
+          },
+          [
+            _vm._v(
+              "\n                        © Jumperr Digital Company\n                    "
             )
-          ])
-        ])
+          ]
+        )
       ]
     )
   }
@@ -65899,201 +65928,28 @@ var render = function() {
         ])
       ]),
       _vm._v(" "),
-      _c("div", { staticClass: "portafolio-container" }, [
-        _c("div", { staticClass: "portafolio-item" }, [
-          _vm._m(0),
-          _vm._v(" "),
-          _c(
-            "div",
-            { staticClass: "portafolio-caption" },
-            [
-              _c(
-                "router-link",
-                {
-                  staticClass: "p-3",
-                  attrs: { to: "http://fdgrafik.com", target: "_blank" }
-                },
-                [
-                  _c("img", {
-                    attrs: {
-                      src: "/images/iconos/link-symbol.svg",
-                      alt: "view"
-                    }
-                  })
-                ]
-              )
-            ],
-            1
-          )
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "portafolio-item" }, [
-          _vm._m(1),
-          _vm._v(" "),
-          _c(
-            "div",
-            { staticClass: "portafolio-caption" },
-            [
-              _c(
-                "router-link",
-                {
-                  staticClass: "p-3",
-                  attrs: {
-                    to: "https://www.gecodigiada.com/",
-                    target: "_blank"
-                  }
-                },
-                [
-                  _c("img", {
-                    attrs: {
-                      src: "/images/iconos/link-symbol.svg",
-                      alt: "view"
-                    }
-                  })
-                ]
-              )
-            ],
-            1
-          )
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "portafolio-item" }, [
-          _vm._m(2),
-          _vm._v(" "),
-          _c(
-            "div",
-            { staticClass: "portafolio-caption" },
-            [
-              _c(
-                "router-link",
-                {
-                  staticClass: "p-3",
-                  attrs: { to: "https://www.gmkolbia.com/", target: "_blank" }
-                },
-                [
-                  _c("img", {
-                    attrs: {
-                      src: "/images/iconos/link-symbol.svg",
-                      alt: "view"
-                    }
-                  })
-                ]
-              )
-            ],
-            1
-          )
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "portafolio-item" }, [
-          _vm._m(3),
-          _vm._v(" "),
-          _c(
-            "div",
-            { staticClass: "portafolio-caption" },
-            [
-              _c(
-                "router-link",
-                {
-                  staticClass: "p-3",
-                  attrs: {
-                    to: "https://www.hotelportorafael.com/",
-                    target: "_blank"
-                  }
-                },
-                [
-                  _c("img", {
-                    attrs: {
-                      src: "/images/iconos/link-symbol.svg",
-                      alt: "view"
-                    }
-                  })
-                ]
-              )
-            ],
-            1
-          )
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "portafolio-item" }, [
-          _vm._m(4),
-          _vm._v(" "),
-          _c(
-            "div",
-            { staticClass: "portafolio-caption" },
-            [
-              _c(
-                "router-link",
-                {
-                  staticClass: "p-3",
-                  attrs: { to: "https://www.zupietru.com/", target: "_blank" }
-                },
-                [
-                  _c("img", {
-                    attrs: {
-                      src: "/images/iconos/link-symbol.svg",
-                      alt: "view"
-                    }
-                  })
-                ]
-              )
-            ],
-            1
-          )
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "portafolio-item" }, [
-          _vm._m(5),
-          _vm._v(" "),
-          _c(
-            "div",
-            { staticClass: "portafolio-caption" },
-            [
-              _c(
-                "router-link",
-                {
-                  staticClass: "p-3",
-                  attrs: { to: "https://www.zupietru.com/", target: "_blank" }
-                },
-                [
-                  _c("img", {
-                    attrs: {
-                      src: "/images/iconos/link-symbol.svg",
-                      alt: "view"
-                    }
-                  })
-                ]
-              )
-            ],
-            1
-          )
-        ])
-      ]),
+      _vm._m(0),
       _vm._v(" "),
       _c("div", { staticClass: "container" }, [
         _c("div", { staticClass: "row" }, [
-          _c(
-            "div",
-            { staticClass: "col-12 text-center" },
-            [
-              _c(
-                "router-link",
-                {
-                  staticClass: "btn btn-primary text-uppercase mt-5",
-                  attrs: { to: "#" }
-                },
-                [
-                  _c("a", [
-                    _vm._v(
-                      _vm._s(
-                        _vm.$store.getters.getTags({ tag: "general_vermas" })
-                      )
+          _c("div", { staticClass: "col-12 text-center" }, [
+            _c(
+              "a",
+              {
+                staticClass: "btn btn-primary text-uppercase mt-5",
+                attrs: { href: "#" }
+              },
+              [
+                _c("a", [
+                  _vm._v(
+                    _vm._s(
+                      _vm.$store.getters.getTags({ tag: "general_vermas" })
                     )
-                  ])
-                ]
-              )
-            ],
-            1
-          )
+                  )
+                ])
+              ]
+            )
+          ])
         ])
       ])
     ])
@@ -66104,83 +65960,171 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "portafolio-image" }, [
-      _c("img", {
-        attrs: {
-          src:
-            "images/home/imagenes/portafolio/thumbnail/jumperr_fd_desktop.jpg",
-          alt: "FDGRAFIK"
-        }
-      })
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "portafolio-image" }, [
-      _c("img", {
-        attrs: {
-          src:
-            "images/home/imagenes/portafolio/thumbnail/jumperr_geco_dekstop.jpg",
-          alt: "GECO"
-        }
-      })
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "portafolio-image" }, [
-      _c("img", {
-        attrs: {
-          src:
-            "images/home/imagenes/portafolio/thumbnail/jumperr_gmk_desktop.jpg",
-          alt: "GMK OLBIA"
-        }
-      })
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "portafolio-image" }, [
-      _c("img", {
-        attrs: {
-          src:
-            "images/home/imagenes/portafolio/thumbnail/jumperr_porto_desktop.jpg",
-          alt: "HOTEL PORTO RAFAEL"
-        }
-      })
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "portafolio-image" }, [
-      _c("img", {
-        attrs: {
-          src:
-            "images/home/imagenes/portafolio/thumbnail/jumperr_zu_desktop.jpg",
-          alt: "Zu pietru"
-        }
-      })
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "portafolio-image" }, [
-      _c("img", {
-        attrs: {
-          src: "images/home/imagenes/portafolio/thumbnail/jumperr_zu_logo.jpg",
-          alt: "Zu pietru"
-        }
-      })
+    return _c("div", { staticClass: "portafolio-container" }, [
+      _c("div", { staticClass: "portafolio-item" }, [
+        _c("div", { staticClass: "portafolio-image" }, [
+          _c("img", {
+            attrs: {
+              src:
+                "images/home/imagenes/portafolio/thumbnail/jumperr_fd_desktop.jpg",
+              alt: "FDGRAFIK"
+            }
+          })
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "portafolio-caption" }, [
+          _c(
+            "a",
+            {
+              staticClass: "p-3",
+              attrs: { href: "http://fdgrafik.com", target: "_blank" }
+            },
+            [
+              _c("img", {
+                attrs: { src: "/images/iconos/link-symbol.svg", alt: "view" }
+              })
+            ]
+          )
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "portafolio-item" }, [
+        _c("div", { staticClass: "portafolio-image" }, [
+          _c("img", {
+            attrs: {
+              src:
+                "images/home/imagenes/portafolio/thumbnail/jumperr_geco_dekstop.jpg",
+              alt: "GECO"
+            }
+          })
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "portafolio-caption" }, [
+          _c(
+            "a",
+            {
+              staticClass: "p-3",
+              attrs: { href: "https://www.gecodigiada.com/", target: "_blank" }
+            },
+            [
+              _c("img", {
+                attrs: { src: "/images/iconos/link-symbol.svg", alt: "view" }
+              })
+            ]
+          )
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "portafolio-item" }, [
+        _c("div", { staticClass: "portafolio-image" }, [
+          _c("img", {
+            attrs: {
+              src:
+                "images/home/imagenes/portafolio/thumbnail/jumperr_gmk_desktop.jpg",
+              alt: "GMK OLBIA"
+            }
+          })
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "portafolio-caption" }, [
+          _c(
+            "a",
+            {
+              staticClass: "p-3",
+              attrs: { href: "https://www.gmkolbia.com/", target: "_blank" }
+            },
+            [
+              _c("img", {
+                attrs: { src: "/images/iconos/link-symbol.svg", alt: "view" }
+              })
+            ]
+          )
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "portafolio-item" }, [
+        _c("div", { staticClass: "portafolio-image" }, [
+          _c("img", {
+            attrs: {
+              src:
+                "images/home/imagenes/portafolio/thumbnail/jumperr_porto_desktop.jpg",
+              alt: "HOTEL PORTO RAFAEL"
+            }
+          })
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "portafolio-caption" }, [
+          _c(
+            "a",
+            {
+              staticClass: "p-3",
+              attrs: {
+                href: "https://www.hotelportorafael.com/",
+                target: "_blank"
+              }
+            },
+            [
+              _c("img", {
+                attrs: { src: "/images/iconos/link-symbol.svg", alt: "view" }
+              })
+            ]
+          )
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "portafolio-item" }, [
+        _c("div", { staticClass: "portafolio-image" }, [
+          _c("img", {
+            attrs: {
+              src:
+                "images/home/imagenes/portafolio/thumbnail/jumperr_zu_desktop.jpg",
+              alt: "Zu pietru"
+            }
+          })
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "portafolio-caption" }, [
+          _c(
+            "a",
+            {
+              staticClass: "p-3",
+              attrs: { href: "https://www.zupietru.com/", target: "_blank" }
+            },
+            [
+              _c("img", {
+                attrs: { src: "/images/iconos/link-symbol.svg", alt: "view" }
+              })
+            ]
+          )
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "portafolio-item" }, [
+        _c("div", { staticClass: "portafolio-image" }, [
+          _c("img", {
+            attrs: {
+              src:
+                "images/home/imagenes/portafolio/thumbnail/jumperr_zu_logo.jpg",
+              alt: "Zu pietru"
+            }
+          })
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "portafolio-caption" }, [
+          _c(
+            "a",
+            {
+              staticClass: "p-3",
+              attrs: { href: "https://www.zupietru.com/", target: "_blank" }
+            },
+            [
+              _c("img", {
+                attrs: { src: "/images/iconos/link-symbol.svg", alt: "view" }
+              })
+            ]
+          )
+        ])
+      ])
     ])
   }
 ]
@@ -68099,7 +68043,9 @@ var render = function() {
                     attrs: { options: _vm.swiperOptionThumbs }
                   },
                   [
-                    _vm._l([2014, 2015, 2016, 2017, 2018], function(slide) {
+                    _vm._l([2014, 2015, 2016, 2017, 2018, 2019], function(
+                      slide
+                    ) {
                       return [
                         _c("swiper-slide", { staticClass: "c-pointer" }, [
                           _c("div", { staticClass: "circle-slider" }),
@@ -68136,6 +68082,7 @@ var render = function() {
             _c(
               "swiper",
               {
+                ref: "swiperTop",
                 staticClass: "gallery-top",
                 attrs: { options: _vm.swiperOptionTop }
               },
@@ -68184,12 +68131,14 @@ var render = function() {
                                       { staticClass: "dropdown-item-text" },
                                       [
                                         _c("strong", [
-                                          _vm._v("Nuestro Inicio")
+                                          _vm._v(_vm._s(slide.title))
                                         ]),
                                         _vm._v(" "),
                                         _c("br"),
                                         _vm._v(
-                                          "\n                                               Hoy en día hay muchas casas de software que ofrecen servicios y productos digitales; sin embargo, pocas empresas trabajan en sinergia con sus socios comerciales para crecer juntos.\n                                           "
+                                          "\n                                               " +
+                                            _vm._s(slide.description) +
+                                            "\n                                           "
                                         )
                                       ]
                                     )

@@ -9,14 +9,9 @@
                         </router-link>
                     </div>
                     <div class="col-12 col-md-5 col-lg-4 d-none d-md-flex enlaces mx-auto">
-                        <a href="#">{{ $store.getters.getTags({ tag: 'general_btn_company' }) }}</a>
-                        <a href="#">{{ $store.getters.getTags({ tag: 'general_btn_especialities' }) }}</a>
-                        <a href="#">{{ $store.getters.getTags({ tag: 'general_btn_agencies' }) }}</a>
-                        <a href="#">{{ $store.getters.getTags({ tag: 'general_btn_contact' }) }}</a>
-                        <a href="#">Jumperr Start</a>
-                        <a href="#">{{ $store.getters.getTags({ tag: 'home_title5' }) }}</a>
-                        <a href="#">{{ $store.getters.getTags({ tag: 'home_title7' }) }}</a>
-                        <a href="#">{{ $store.getters.getTags({ tag: 'home_title3' }) }}</a>
+                        <template v-for="item in routes">
+                                <router-link class="" :to="item.link" class="text-uppercase">{{ item.name }}</router-link>
+                        </template>
                     </div>
                     <div class="col-12 col-md-3 text-center mt-4 mt-md-0">
                         <a href="https://www.facebook.com/wearejumperr/" rel="noopener noreferrer" target="_blank">
@@ -50,7 +45,8 @@
                     </div>
                     <div class="col-12 col-md-6 text-center text-md-right">
                         <a href="#" rel="noopener noreferrer" target="_blank">
-                            Politica de privacidad | Terminos y condiciones
+                            <!-- Politica de privacidad | Terminos y condiciones -->
+                            {{ $store.getters.getTags({ tag: 'footer_terms_polity' }) }}
                         </a>
                     </div>
                 </div>
@@ -60,8 +56,21 @@
 </template>
 <script>
     export default {
-        name: 'footer-jumperr'
+        name: 'footer-jumperr',
+        computed: {
+            routes() {
+                return [
+                        { name: this.$store.getters.getTags({ tag: 'general_btn_home' }), link: '/'},
+                        { name: this.$store.getters.getTags({ tag: 'general_btn_company' }), link: '/la-compagnia'},
+                        { name: this.$store.getters.getTags({ tag: 'general_btn_especialities' }), link: '/specialita'},
+                        { name: this.$store.getters.getTags({ tag: 'partners_title12' }), link: '/blog'},
+                        { name: this.$store.getters.getTags({ tag: 'partners_titulo' }), link: '/partners'},
+                        { name: this.$store.getters.getTags({ tag: 'careers_titulo' }), link: '/labori'}
+                    ]
+            }
+        },
     }
+    
 </script>
 <style scoped>
     #section_footer {

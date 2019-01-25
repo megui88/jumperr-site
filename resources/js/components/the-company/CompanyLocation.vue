@@ -13,7 +13,7 @@
                     <div class="row">
                         <div class="col-12 col-md-10 m-auto">
                             <swiper :options="swiperOptionThumbs" class="gallery-thumbs" ref="swiperThumbs">
-                                <template v-for="slide in [2014, 2015, 2016, 2017, 2018]">
+                                <template v-for="slide in [2014, 2015, 2016, 2017, 2018, 2019]">
                                     <swiper-slide class="c-pointer">
                                         <div class="circle-slider"></div>
                                         <p class="text-center mb-0">{{ slide }}</p>
@@ -28,7 +28,7 @@
                     <img class="nube-1" src="/images/iconos/nube.svg" alt="img-cloud">
                     <img class="nube-2" src="/images/iconos/nube.svg" alt="img-cloud">
 
-                    <swiper :options="swiperOptionTop" class="gallery-top">
+                    <swiper :options="swiperOptionTop" class="gallery-top" ref="swiperTop">
                         <div class="parallax-bg" slot="parallax-bg" data-swiper-parallax="-5%"></div>
                        <template v-for="slide in cities">
                            <swiper-slide>
@@ -39,10 +39,14 @@
                                            <div class="circle-pulse" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></div>
                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                                                <p class="dropdown-item-text">
-                                                   <strong>Nuestro Inicio</strong>
+                                                   <strong>{{ slide.title }}</strong>
                                                    <br>
-                                                   Hoy en día hay muchas casas de software que ofrecen servicios y productos digitales; sin embargo, pocas empresas trabajan en sinergia con sus socios comerciales para crecer juntos.
+                                                   {{slide.description}}
                                                </p>
+                                               <!-- 
+                                                   Nuestro Inicio
+                                                   Hoy en día hay muchas casas de software que ofrecen servicios y productos digitales; sin embargo, pocas empresas trabajan en sinergia con sus socios comerciales para crecer juntos.
+                                                -->
                                            </div>
                                        </div>
                                    </template>
@@ -63,6 +67,8 @@
                 cities: [
                     {
                         id: 1,
+                        title: this.$store.getters.getTags({ tag: 'company_text2014' }),
+                        description: this.$store.getters.getTags({ tag: 'company_description2014' }),
                         images: [
                             { id: 1, img: '/images/la-empresa/vectores/1_ciudad.svg' },
                             { id: 2, img: '/images/la-empresa/vectores/1_personas.svg' },
@@ -71,6 +77,8 @@
                     },
                     {
                     id: 2,
+                    title: this.$store.getters.getTags({ tag: 'company_text2015' }),
+                    description: this.$store.getters.getTags({ tag: 'company_description2015' }),
                     images: [
                         { id: 1, img: '/images/la-empresa/vectores/3_ciudad.svg' },
                         { id: 2, img:  '/images/la-empresa/vectores/5_personas.svg' },
@@ -78,13 +86,17 @@
                     },
                     {
                         id: 3,
+                        title: this.$store.getters.getTags({ tag: 'company_text2016' }),
+                        description: this.$store.getters.getTags({ tag: 'company_description2016' }),
                         images: [
                             { id: 1, img: '/images/la-empresa/vectores/2_ciudad.svg' },
                             { id: 2, img:  '/images/la-empresa/vectores/3_personas.svg' },
                         ]
                     },
                     {
-                        id: 4,
+                        id: 47,
+                        title: this.$store.getters.getTags({ tag: 'company_text2017' }),
+                        description: this.$store.getters.getTags({ tag: 'company_description2017' }),
                         images: [
                             { id: 1, img: '/images/la-empresa/vectores/4_ciudad.svg' },
                             { id: 2, img: '/images/la-empresa/vectores/8_personas.svg' },
@@ -92,6 +104,8 @@
                     },
                     {
                         id: 5,
+                        title: this.$store.getters.getTags({ tag: 'company_text2018' }),
+                        description: this.$store.getters.getTags({ tag: 'company_description2018' }),
                         images: [
                             { id: 1, img: '/images/la-empresa/vectores/5_ciudad.svg' },
                             { id: 2, img:  '/images/la-empresa/vectores/7_personas.svg' },
@@ -99,6 +113,8 @@
                     },
                     {
                         id: 6,
+                        title: this.$store.getters.getTags({ tag: 'company_text2019' }),
+                        description: this.$store.getters.getTags({ tag: 'company_description2019' }),
                         images: [
                             { id: 1, img: '/images/la-empresa/vectores/6_ciudad.svg' },
                             { id: 2, img:  '/images/la-empresa/vectores/4_personas.svg' },
