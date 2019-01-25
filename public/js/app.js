@@ -4690,7 +4690,9 @@ __webpack_require__.r(__webpack_exports__);
       this.loading = true;
       this.$validator.validateAll().then(function (result) {
         if (result) {
-          axios.post('/api/newsletter', _this.email).then(function (responseApi) {
+          axios.post('/api/newsletter', {
+            email: _this.email
+          }).then(function (responseApi) {
             if (responseApi.status === 200) {
               _this.loading = false;
 
@@ -89513,8 +89515,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /home/usuario/lampstack-7.2.9-0/apache2/htdocs/jumperr/resources/js/app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! /home/usuario/lampstack-7.2.9-0/apache2/htdocs/jumperr/resources/sass/app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! /home/usuario/lampstack-7.2.8-0/apache2/htdocs/jumperr/resources/js/app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! /home/usuario/lampstack-7.2.8-0/apache2/htdocs/jumperr/resources/sass/app.scss */"./resources/sass/app.scss");
 
 
 /***/ })

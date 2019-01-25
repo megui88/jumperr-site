@@ -79,7 +79,7 @@
 
                 this.$validator.validateAll().then(result => {
                     if (result) {
-                        axios.post('/api/newsletter', this.email).then(responseApi => {
+                        axios.post('/api/newsletter', { email: this.email }).then(responseApi => {
                             if (responseApi.status === 200) {
                                 this.loading = false;
                                 this.showAlert('success', this.$store.getters.getTags({tag:'modal_success_response_title'}), this.$store.getters.getTags({tag:'modal_newsletter_success_response_text'}));

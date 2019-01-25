@@ -2,15 +2,88 @@
 
 namespace App\Http\Controllers\Utils;
 
+use App\Http\Controllers\AppBaseController;
 use App\Http\Controllers\Controller;
+use App\Http\Controllers\MailController;
+use App\Http\Controllers\sendResponse;
+use App\Http\Requests\API\Admin\CreateNewsletterUserAPIRequest;
 use App\Models\Admin\TagTranslation;
+use App\Repositories\Admin\NewsletterUserRepository;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Session;
 
-class UtilsController extends Controller
+class UtilsController extends AppBaseController
 {
+    /** @var  NewsletterUserRepository */
+    private $newsletterUserRepository;
+
+    /** @var  ModuleRepository */
+    // private $moduleRepository;
+
+    public function __construct(NewsletterUserRepository $newsletterUserRepo)
+    {
+        $this->newsletterUserRepository = $newsletterUserRepo;
+        // $this->moduleRepository = $moduleRepo;
+    }
+
     public function csvIndex(){
         return view('utils.csv.index');
+    }
+
+    /**
+     * Send the email to contact us.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
+    public function contactUs(Request $request)
+    {
+        try{
+            $request['textmail'] = 'Titulo';
+            $request['textmail_sub'] = 'Sub titulo';
+            $flag="ERROR NO ENVIO";
+
+
+            $send = MailController::sendMail($request->all(),'contacto');
+
+            if($send=='OK'){
+                $flag="FINO";
+            }
+            else{
+                $flag=var_dump($send);
+            }
+
+            return response()->json(["success"=>true,"message"=>$flag],200);
+        }catch(Exeption $e){
+            return $e->message();
+        }
+    }
+
+    /**
+     * Send the email to newsletter.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
+    public function newsLetter(CreateNewsletterUserAPIRequest $request)
+    {
+        try{
+            $exist = $this->newsletterUserRepository->findByField('email',$request->email)->first();
+            if(!$exist){
+                // dd($request->all());
+                $newsletterUsers = $this->newsletterUserRepository->create($request->all());
+                // dd($newsletterUsers);
+                $send=MailController::sendMail($request->all(),'newsletter');
+                if($send=='OK'){
+                    return $this->sendResponse($newsletterUsers->toArray(), 'Newsletter Utente salvato correttamente');
+                }
+            }
+
+            return response()->json(["success"=>true,"message"=>"La tua email è già registrata"],422);
+        }catch(Exeption $e){
+            return response()->json(["success"=>true,"message"=>$e->message()],500);
+            return $e->message();
+        }
     }
 
     public function uploadFile( Request $request ) {
@@ -18,7 +91,7 @@ class UtilsController extends Controller
 
             $file = $request->file('file');
 
-            // File Details 
+            // File Details
             $filename = $file->getClientOriginalName();
             $extension = $file->getClientOriginalExtension();
             $tempPath = $file->getRealPath();
@@ -29,7 +102,7 @@ class UtilsController extends Controller
             $valid_extension = array( "csv" );
 
             // 2MB in Bytes
-            $maxFileSize = 2097152; 
+            $maxFileSize = 2097152;
 
             // Check file extension
             if ( in_array( strtolower( $extension ), $valid_extension ) ) {
@@ -64,8 +137,8 @@ class UtilsController extends Controller
 
 		            fclose( $file );
 
-		            $languages = array( 
-		            				'Italiano'  => 1, 
+		            $languages = array(
+		            				'Italiano'  => 1,
 		            				'Ingles'    => 2,
 		            				'Español'   => 3,
 		            				'Portugues' => 4,
@@ -105,7 +178,7 @@ class UtilsController extends Controller
 				]);
 			return $tag->save();
     	}
-    }   
+    }
 
     public function getAllTags() {
     	$languages = array( 1 => 'it', 2 => 'en', 3 => 'es', 4 => 'pt', 5 => 'fr' );
