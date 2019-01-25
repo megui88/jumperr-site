@@ -64642,23 +64642,6 @@ var staticRenderFns = [
               }
             })
           ]
-        ),
-        _vm._v(" "),
-        _c(
-          "a",
-          {
-            attrs: { href: "#", rel: "noopener noreferrer", target: "_blank" }
-          },
-          [
-            _c("img", {
-              staticClass: "d-inline-block mx-2",
-              attrs: {
-                alt: "Youtube",
-                src: "/images/iconos/004-youtube.svg",
-                width: "36px"
-              }
-            })
-          ]
         )
       ]
     )
@@ -65183,7 +65166,7 @@ var render = function() {
               },
               [
                 _vm._v(
-                  _vm._s(_vm.$store.getters.getTags({ tag: "home_text11" }))
+                  _vm._s(_vm.$store.getters.getTags({ tag: "general_vermas" }))
                 )
               ]
             )
