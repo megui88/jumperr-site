@@ -2864,6 +2864,19 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'nav-bar',
@@ -2896,12 +2909,8 @@ __webpack_require__.r(__webpack_exports__);
       return this.$store.getters.getFlags;
     },
     routes: function routes() {
-      return [{
-        name: this.$store.getters.getTags({
-          tag: 'general_btn_home'
-        }),
-        link: '/'
-      }, {
+      return [// { name: this.$store.getters.getTags({ tag: 'general_btn_home' }), link: '/'},
+      {
         name: this.$store.getters.getTags({
           tag: 'general_btn_company'
         }),
@@ -9954,7 +9963,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\n.logo[data-v-500d0d4c] {\n    width: 160px;\n    height: auto;\n}\n#container-nav[data-v-500d0d4c] {\n}\n@media (min-width: 992px) {\n.navbar-expand-lg .navbar-nav .nav-link[data-v-500d0d4c] {\n        padding-right: 1rem;\n        padding-left: 1rem;\n        font-size: .8rem;\n}\n}\n@media (min-width: 1200px) {\n.navbar-expand-lg .navbar-nav .nav-link[data-v-500d0d4c] {\n        padding-right: 1.1rem;\n        padding-left: 1.1rem;\n}\n}\n.btn[data-v-500d0d4c] {\n    padding: 0.375rem 1.1rem;\n    font-size: 0.9rem;\n    line-height: 1.6;\n    border-radius: 1.25rem;\n    font-weight: bold;\n}\n\n/*link menu color blanco*/\n.navbar-dark .navbar-nav .nav-link[data-v-500d0d4c] {\n    color: rgba(255, 255, 255, 1);\n}\n.navbar-dark .navbar-nav .show > .nav-link[data-v-500d0d4c], .navbar-dark .navbar-nav .active > .nav-link[data-v-500d0d4c], .navbar-dark .navbar-nav .nav-link.show[data-v-500d0d4c], .navbar-dark .navbar-nav .nav-link.active[data-v-500d0d4c] {\n    color: rgb(206, 206, 206);\n}\n\n/*link menu color negro*/\n.navbar-light .navbar-nav .nav-link[data-v-500d0d4c] {\n    color: rgba(0, 0, 0, 0.5);\n}\n.navbar-light .navbar-nav .show > .nav-link[data-v-500d0d4c], .navbar-light .navbar-nav .active > .nav-link[data-v-500d0d4c], .navbar-light .navbar-nav .nav-link.show[data-v-500d0d4c], .navbar-light .navbar-nav .nav-link.active[data-v-500d0d4c] {\n    color: rgba(0, 0, 0, 1);\n}\n.navbar-dark .nav-link.router-link-exact-active.router-link-active[data-v-500d0d4c] {\n    color: #ffffffed;\n}\n.navbar-light .nav-link.router-link-exact-active.router-link-active[data-v-500d0d4c] {\n    color: #f26336;\n}\n@media (max-width: 991.98px) {\n.navbar[data-v-500d0d4c] {\n        background-color: #fff;\n}\n.navbar-dark .navbar-nav .nav-link[data-v-500d0d4c] {\n        color: rgba(0, 0, 0, 0.5);\n}\n.navbar-dark .navbar-nav .show > .nav-link[data-v-500d0d4c], .navbar-dark .navbar-nav .active > .nav-link[data-v-500d0d4c], .navbar-dark .navbar-nav .nav-link.show[data-v-500d0d4c], .navbar-dark .navbar-nav .nav-link.active[data-v-500d0d4c] {\n        color: rgba(0, 0, 0, 0.5);\n}\n\n    /*link menu color negro*/\n.navbar-light .navbar-nav .nav-link[data-v-500d0d4c] {\n        color: rgba(0, 0, 0, 0.5);\n}\n.navbar-light .navbar-nav .show > .nav-link[data-v-500d0d4c], .navbar-light .navbar-nav .active > .nav-link[data-v-500d0d4c], .navbar-light .navbar-nav .nav-link.show[data-v-500d0d4c], .navbar-light .navbar-nav .nav-link.active[data-v-500d0d4c] {\n        color: rgba(0, 0, 0, 1);\n}\n.navbar-dark .nav-link.router-link-exact-active.router-link-active[data-v-500d0d4c] {\n        color: #f26336;\n}\n.navbar-light .nav-link.router-link-exact-active.router-link-active[data-v-500d0d4c] {\n        color: #f26336;\n}\n.navbar-dark .navbar-toggler[data-v-500d0d4c] {\n        color: rgba(0, 0, 0, 0.5);\n        border-color: rgba(0, 0, 0, 0.1);\n}\n.navbar-light .navbar-toggler[data-v-500d0d4c] {\n        color: rgba(0, 0, 0, 0.5);\n        border-color: rgba(0, 0, 0, 0.1);\n}\n}\n@media (max-width: 991.98px) {\n.navbar[data-v-61279d3a][data-v-500d0d4c] {\n        background-color: #fff0;\n}\nbutton.navbar-toggler[data-v-500d0d4c] {\n        color: #fff;\n}\n@media (max-width: 991.98px) {\n}\n.navbar-dark .navbar-toggler[data-v-500d0d4c] {\n        color: rgb(242, 105, 55);\n        border-color: rgb(242, 105, 55);\n}\n}\n", ""]);
+exports.push([module.i, "\n.logo[data-v-500d0d4c] {\n    width: 160px;\n    height: auto;\n}\n#container-nav[data-v-500d0d4c] {\n}\n.btn[data-v-500d0d4c]{\n    font-size: 0.8rem;\n    white-space: nowrap;\n    overflow: hidden;\n    text-overflow: ellipsis;\n    max-width: 167px;\n}\n.form-control[data-v-500d0d4c]{\n    background-color: transparent;\n    background-position: right center;\n    background-repeat: no-repeat;\n    background-size: 24px;\n    padding: 0.375rem 1.6rem 0.375rem .5rem;\n    outline: none;\n    -webkit-appearance: none;\n    -moz-appearance: none;\n         appearance: none;\n    border: none;\n    border-radius: 0;\n    font-weight: 700;\n    margin-left: 5px;\n}\n.form-control[data-v-500d0d4c]:focus{\n    outline: none;\n    box-shadow: none;\n}\n.form-control.transparent[data-v-500d0d4c]{\n    background-image: url('/images/iconos/internet-white.svg');\n    border-left: 1px solid #fff;\n    color: #fff;\n}\n.form-control.transparent option[data-v-500d0d4c]{\n    color: #f26336;\n}\n.form-control.dark[data-v-500d0d4c]{\n    background-image: url('/images/iconos/internet.svg');\n    border-left: 1px solid #4b4b4b9b;\n    color: #4b4b4b;\n}\n@media (min-width: 992px) {\n.navbar-expand-lg .navbar-nav .nav-link[data-v-500d0d4c] {\n        padding-right: 1rem;\n        padding-left: 1rem;\n        font-size: 1rem;\n}\n}\n@media (min-width: 1200px) {\n.navbar-expand-lg .navbar-nav .nav-link[data-v-500d0d4c] {\n        padding-right: .6rem;\n        padding-left: .6rem;\n}\n}\n.btn[data-v-500d0d4c] {\n    padding: 0.375rem 1.1rem;\n    font-size: 0.9rem;\n    line-height: 1.6;\n    border-radius: 1.25rem;\n    font-weight: bold;\n}\n\n/*link menu color blanco*/\n.navbar-dark .navbar-nav .nav-link[data-v-500d0d4c] {\n    color: rgba(255, 255, 255, 1);\n}\n.navbar-dark .navbar-nav .show > .nav-link[data-v-500d0d4c], .navbar-dark .navbar-nav .active > .nav-link[data-v-500d0d4c], .navbar-dark .navbar-nav .nav-link.show[data-v-500d0d4c], .navbar-dark .navbar-nav .nav-link.active[data-v-500d0d4c] {\n    color: rgb(206, 206, 206);\n}\n\n/*link menu color negro*/\n.navbar-light .navbar-nav .nav-link[data-v-500d0d4c] {\n    color: rgba(0, 0, 0, 0.5);\n}\n.navbar-light .navbar-nav .show > .nav-link[data-v-500d0d4c], .navbar-light .navbar-nav .active > .nav-link[data-v-500d0d4c], .navbar-light .navbar-nav .nav-link.show[data-v-500d0d4c], .navbar-light .navbar-nav .nav-link.active[data-v-500d0d4c] {\n    color: rgba(0, 0, 0, 1);\n}\n.navbar-dark .nav-link.router-link-exact-active.router-link-active[data-v-500d0d4c] {\n    color: #ffffffed;\n}\n.navbar-light .nav-link.router-link-exact-active.router-link-active[data-v-500d0d4c] {\n    color: #f26336;\n}\n@media (max-width: 991.98px) {\n.navbar[data-v-500d0d4c] {\n        background-color: #fff;\n}\n.navbar-dark .navbar-nav .nav-link[data-v-500d0d4c] {\n        color: rgba(0, 0, 0, 0.5);\n}\n.navbar-dark .navbar-nav .show > .nav-link[data-v-500d0d4c], .navbar-dark .navbar-nav .active > .nav-link[data-v-500d0d4c], .navbar-dark .navbar-nav .nav-link.show[data-v-500d0d4c], .navbar-dark .navbar-nav .nav-link.active[data-v-500d0d4c] {\n        color: rgba(0, 0, 0, 0.5);\n}\n\n    /*link menu color negro*/\n.navbar-light .navbar-nav .nav-link[data-v-500d0d4c] {\n        color: rgba(0, 0, 0, 0.5);\n}\n.navbar-light .navbar-nav .show > .nav-link[data-v-500d0d4c], .navbar-light .navbar-nav .active > .nav-link[data-v-500d0d4c], .navbar-light .navbar-nav .nav-link.show[data-v-500d0d4c], .navbar-light .navbar-nav .nav-link.active[data-v-500d0d4c] {\n        color: rgba(0, 0, 0, 1);\n}\n.navbar-dark .nav-link.router-link-exact-active.router-link-active[data-v-500d0d4c] {\n        color: #f26336;\n}\n.navbar-light .nav-link.router-link-exact-active.router-link-active[data-v-500d0d4c] {\n        color: #f26336;\n}\n.navbar-dark .navbar-toggler[data-v-500d0d4c] {\n        color: rgba(0, 0, 0, 0.5);\n        border-color: rgba(0, 0, 0, 0.1);\n}\n.navbar-light .navbar-toggler[data-v-500d0d4c] {\n        color: rgba(0, 0, 0, 0.5);\n        border-color: rgba(0, 0, 0, 0.1);\n}\n}\n@media (max-width: 991.98px) {\n.navbar[data-v-61279d3a][data-v-500d0d4c] {\n        background-color: #fff0;\n}\nbutton.navbar-toggler[data-v-500d0d4c] {\n        color: #fff;\n}\n@media (max-width: 991.98px) {\n}\n.navbar-dark .navbar-toggler[data-v-500d0d4c] {\n        color: rgb(242, 105, 55);\n        border-color: rgb(242, 105, 55);\n}\n}\n", ""]);
 
 // exports
 
@@ -62276,56 +62285,119 @@ var render = function() {
                             ]
                           }),
                           _vm._v(" "),
-                          _c("li", { staticClass: "nav-item" }, [
-                            _c(
-                              "select",
-                              {
-                                directives: [
-                                  {
-                                    name: "model",
-                                    rawName: "v-model",
-                                    value: _vm.lang,
-                                    expression: "lang"
-                                  }
-                                ],
-                                staticClass: "form-control text-uppercase",
-                                attrs: { name: "lang" },
-                                on: {
-                                  change: [
-                                    function($event) {
-                                      var $$selectedVal = Array.prototype.filter
-                                        .call($event.target.options, function(
-                                          o
-                                        ) {
-                                          return o.selected
-                                        })
-                                        .map(function(o) {
-                                          var val =
-                                            "_value" in o ? o._value : o.value
-                                          return val
-                                        })
-                                      _vm.lang = $event.target.multiple
-                                        ? $$selectedVal
-                                        : $$selectedVal[0]
+                          _vm.sticky
+                            ? [
+                                _c("li", { staticClass: "nav-item" }, [
+                                  _c(
+                                    "select",
+                                    {
+                                      directives: [
+                                        {
+                                          name: "model",
+                                          rawName: "v-model",
+                                          value: _vm.lang,
+                                          expression: "lang"
+                                        }
+                                      ],
+                                      staticClass:
+                                        "form-control transparent text-uppercase",
+                                      attrs: { name: "lang" },
+                                      on: {
+                                        change: [
+                                          function($event) {
+                                            var $$selectedVal = Array.prototype.filter
+                                              .call(
+                                                $event.target.options,
+                                                function(o) {
+                                                  return o.selected
+                                                }
+                                              )
+                                              .map(function(o) {
+                                                var val =
+                                                  "_value" in o
+                                                    ? o._value
+                                                    : o.value
+                                                return val
+                                              })
+                                            _vm.lang = $event.target.multiple
+                                              ? $$selectedVal
+                                              : $$selectedVal[0]
+                                          },
+                                          _vm.changeLanguage
+                                        ]
+                                      }
                                     },
-                                    _vm.changeLanguage
-                                  ]
-                                }
-                              },
-                              [
-                                _vm._l(_vm.getFlags, function(flag) {
-                                  return [
-                                    _c(
-                                      "option",
-                                      { domProps: { value: flag.code } },
-                                      [_vm._v(_vm._s(flag.code))]
-                                    )
-                                  ]
-                                })
-                              ],
-                              2
-                            )
-                          ])
+                                    [
+                                      _vm._l(_vm.getFlags, function(flag) {
+                                        return [
+                                          _c(
+                                            "option",
+                                            { domProps: { value: flag.code } },
+                                            [_vm._v(_vm._s(flag.code))]
+                                          )
+                                        ]
+                                      })
+                                    ],
+                                    2
+                                  )
+                                ])
+                              ]
+                            : [
+                                _c("li", { staticClass: "nav-item" }, [
+                                  _c(
+                                    "select",
+                                    {
+                                      directives: [
+                                        {
+                                          name: "model",
+                                          rawName: "v-model",
+                                          value: _vm.lang,
+                                          expression: "lang"
+                                        }
+                                      ],
+                                      staticClass:
+                                        "form-control dark text-uppercase",
+                                      attrs: { name: "lang" },
+                                      on: {
+                                        change: [
+                                          function($event) {
+                                            var $$selectedVal = Array.prototype.filter
+                                              .call(
+                                                $event.target.options,
+                                                function(o) {
+                                                  return o.selected
+                                                }
+                                              )
+                                              .map(function(o) {
+                                                var val =
+                                                  "_value" in o
+                                                    ? o._value
+                                                    : o.value
+                                                return val
+                                              })
+                                            _vm.lang = $event.target.multiple
+                                              ? $$selectedVal
+                                              : $$selectedVal[0]
+                                          },
+                                          _vm.changeLanguage
+                                        ]
+                                      }
+                                    },
+                                    [
+                                      _vm._l(_vm.getFlags, function(flag) {
+                                        return [
+                                          _c(
+                                            "option",
+                                            { domProps: { value: flag.code } },
+                                            [_vm._v(_vm._s(flag.code))]
+                                          )
+                                        ]
+                                      })
+                                    ],
+                                    2
+                                  )
+                                ])
+                              ]
                         ],
                         2
                       ),
@@ -62388,7 +62460,7 @@ var render = function() {
         _c("div", { staticClass: "row h-100" }, [
           _c(
             "div",
-            { staticClass: "col-12 col-md-6 col-lg-4 align-self-center" },
+            { staticClass: "col-12 col-md-6 col-lg-6 align-self-center" },
             [
               _c("h3", { staticClass: "title-border-bottom" }, [
                 _vm._v(
@@ -63230,11 +63302,21 @@ var render = function() {
             "div",
             { staticClass: "portafolio-caption" },
             [
-              _c("router-link", { staticClass: "p-3", attrs: { to: "#" } }, [
-                _c("img", {
-                  attrs: { src: "/images/iconos/link-symbol.svg", alt: "view" }
-                })
-              ])
+              _c(
+                "router-link",
+                {
+                  staticClass: "p-3",
+                  attrs: { to: "http://fdgrafik.com", target: "_blank" }
+                },
+                [
+                  _c("img", {
+                    attrs: {
+                      src: "/images/iconos/link-symbol.svg",
+                      alt: "view"
+                    }
+                  })
+                ]
+              )
             ],
             1
           )
@@ -63247,11 +63329,24 @@ var render = function() {
             "div",
             { staticClass: "portafolio-caption" },
             [
-              _c("router-link", { staticClass: "p-3", attrs: { to: "#" } }, [
-                _c("img", {
-                  attrs: { src: "/images/iconos/link-symbol.svg", alt: "view" }
-                })
-              ])
+              _c(
+                "router-link",
+                {
+                  staticClass: "p-3",
+                  attrs: {
+                    to: "https://www.gecodigiada.com/",
+                    target: "_blank"
+                  }
+                },
+                [
+                  _c("img", {
+                    attrs: {
+                      src: "/images/iconos/link-symbol.svg",
+                      alt: "view"
+                    }
+                  })
+                ]
+              )
             ],
             1
           )
@@ -63264,11 +63359,21 @@ var render = function() {
             "div",
             { staticClass: "portafolio-caption" },
             [
-              _c("router-link", { staticClass: "p-3", attrs: { to: "#" } }, [
-                _c("img", {
-                  attrs: { src: "/images/iconos/link-symbol.svg", alt: "view" }
-                })
-              ])
+              _c(
+                "router-link",
+                {
+                  staticClass: "p-3",
+                  attrs: { to: "https://www.gmkolbia.com/", target: "_blank" }
+                },
+                [
+                  _c("img", {
+                    attrs: {
+                      src: "/images/iconos/link-symbol.svg",
+                      alt: "view"
+                    }
+                  })
+                ]
+              )
             ],
             1
           )
@@ -63281,11 +63386,24 @@ var render = function() {
             "div",
             { staticClass: "portafolio-caption" },
             [
-              _c("router-link", { staticClass: "p-3", attrs: { to: "#" } }, [
-                _c("img", {
-                  attrs: { src: "/images/iconos/link-symbol.svg", alt: "view" }
-                })
-              ])
+              _c(
+                "router-link",
+                {
+                  staticClass: "p-3",
+                  attrs: {
+                    to: "https://www.hotelportorafael.com/",
+                    target: "_blank"
+                  }
+                },
+                [
+                  _c("img", {
+                    attrs: {
+                      src: "/images/iconos/link-symbol.svg",
+                      alt: "view"
+                    }
+                  })
+                ]
+              )
             ],
             1
           )
@@ -63298,11 +63416,21 @@ var render = function() {
             "div",
             { staticClass: "portafolio-caption" },
             [
-              _c("router-link", { staticClass: "p-3", attrs: { to: "#" } }, [
-                _c("img", {
-                  attrs: { src: "/images/iconos/link-symbol.svg", alt: "view" }
-                })
-              ])
+              _c(
+                "router-link",
+                {
+                  staticClass: "p-3",
+                  attrs: { to: "https://www.zupietru.com/", target: "_blank" }
+                },
+                [
+                  _c("img", {
+                    attrs: {
+                      src: "/images/iconos/link-symbol.svg",
+                      alt: "view"
+                    }
+                  })
+                ]
+              )
             ],
             1
           )
@@ -63315,11 +63443,21 @@ var render = function() {
             "div",
             { staticClass: "portafolio-caption" },
             [
-              _c("router-link", { staticClass: "p-3", attrs: { to: "#" } }, [
-                _c("img", {
-                  attrs: { src: "/images/iconos/link-symbol.svg", alt: "view" }
-                })
-              ])
+              _c(
+                "router-link",
+                {
+                  staticClass: "p-3",
+                  attrs: { to: "https://www.zupietru.com/", target: "_blank" }
+                },
+                [
+                  _c("img", {
+                    attrs: {
+                      src: "/images/iconos/link-symbol.svg",
+                      alt: "view"
+                    }
+                  })
+                ]
+              )
             ],
             1
           )
@@ -63380,7 +63518,7 @@ var staticRenderFns = [
         attrs: {
           src:
             "images/home/imagenes/portafolio/thumbnail/jumperr_geco_dekstop.jpg",
-          alt: "FDGRAFIK"
+          alt: "GECO"
         }
       })
     ])
@@ -63394,7 +63532,7 @@ var staticRenderFns = [
         attrs: {
           src:
             "images/home/imagenes/portafolio/thumbnail/jumperr_gmk_desktop.jpg",
-          alt: "FDGRAFIK"
+          alt: "GMK OLBIA"
         }
       })
     ])
@@ -63408,7 +63546,7 @@ var staticRenderFns = [
         attrs: {
           src:
             "images/home/imagenes/portafolio/thumbnail/jumperr_porto_desktop.jpg",
-          alt: "FDGRAFIK"
+          alt: "HOTEL PORTO RAFAEL"
         }
       })
     ])
@@ -63422,7 +63560,7 @@ var staticRenderFns = [
         attrs: {
           src:
             "images/home/imagenes/portafolio/thumbnail/jumperr_zu_desktop.jpg",
-          alt: "FDGRAFIK"
+          alt: "Zu pietru"
         }
       })
     ])
@@ -63435,7 +63573,7 @@ var staticRenderFns = [
       _c("img", {
         attrs: {
           src: "images/home/imagenes/portafolio/thumbnail/jumperr_zu_logo.jpg",
-          alt: "FDGRAFIK"
+          alt: "Zu pietru"
         }
       })
     ])

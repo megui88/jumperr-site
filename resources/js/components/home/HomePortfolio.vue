@@ -14,7 +14,7 @@
                         <img src="images/home/imagenes/portafolio/thumbnail/jumperr_fd_desktop.jpg" alt="FDGRAFIK">
                     </div>
                     <div class="portafolio-caption">
-                        <router-link to="#" class="p-3">
+                        <router-link to="http://fdgrafik.com" class="p-3" target='_blank'>
                             <img src="/images/iconos/link-symbol.svg" alt="view">
                         </router-link>
                     </div>
@@ -22,10 +22,10 @@
 
                 <div class="portafolio-item">
                     <div class="portafolio-image">
-                        <img src="images/home/imagenes/portafolio/thumbnail/jumperr_geco_dekstop.jpg" alt="FDGRAFIK">
+                        <img src="images/home/imagenes/portafolio/thumbnail/jumperr_geco_dekstop.jpg" alt="GECO">
                     </div>
                     <div class="portafolio-caption">
-                        <router-link to="#" class="p-3">
+                        <router-link to="https://www.gecodigiada.com/" class="p-3" target='_blank'>
                             <img src="/images/iconos/link-symbol.svg" alt="view">
                         </router-link>
                     </div>
@@ -33,10 +33,10 @@
 
                 <div class="portafolio-item">
                     <div class="portafolio-image">
-                        <img src="images/home/imagenes/portafolio/thumbnail/jumperr_gmk_desktop.jpg" alt="FDGRAFIK">
+                        <img src="images/home/imagenes/portafolio/thumbnail/jumperr_gmk_desktop.jpg" alt="GMK OLBIA">
                     </div>
                     <div class="portafolio-caption">
-                        <router-link to="#" class="p-3">
+                        <router-link to="https://www.gmkolbia.com/" class="p-3" target='_blank'>
                             <img src="/images/iconos/link-symbol.svg" alt="view">
                         </router-link>
                     </div>
@@ -44,10 +44,10 @@
 
                 <div class="portafolio-item">
                     <div class="portafolio-image">
-                        <img src="images/home/imagenes/portafolio/thumbnail/jumperr_porto_desktop.jpg" alt="FDGRAFIK">
+                        <img src="images/home/imagenes/portafolio/thumbnail/jumperr_porto_desktop.jpg" alt="HOTEL PORTO RAFAEL">
                     </div>
                     <div class="portafolio-caption">
-                        <router-link to="#" class="p-3">
+                        <router-link to="https://www.hotelportorafael.com/" class="p-3" target='_blank'>
                             <img src="/images/iconos/link-symbol.svg" alt="view">
                         </router-link>
                     </div>
@@ -55,10 +55,10 @@
 
                 <div class="portafolio-item">
                     <div class="portafolio-image">
-                        <img src="images/home/imagenes/portafolio/thumbnail/jumperr_zu_desktop.jpg" alt="FDGRAFIK">
+                        <img src="images/home/imagenes/portafolio/thumbnail/jumperr_zu_desktop.jpg" alt="Zu pietru">
                     </div>
                     <div class="portafolio-caption">
-                        <router-link to="#" class="p-3">
+                        <router-link to="https://www.zupietru.com/" class="p-3" target='_blank'>
                             <img src="/images/iconos/link-symbol.svg" alt="view">
                         </router-link>
                     </div>
@@ -66,10 +66,10 @@
 
                 <div class="portafolio-item">
                     <div class="portafolio-image">
-                        <img src="images/home/imagenes/portafolio/thumbnail/jumperr_zu_logo.jpg" alt="FDGRAFIK">
+                        <img src="images/home/imagenes/portafolio/thumbnail/jumperr_zu_logo.jpg" alt="Zu pietru">
                     </div>
                     <div class="portafolio-caption">
-                        <router-link to="#" class="p-3">
+                        <router-link to="https://www.zupietru.com/" class="p-3" target='_blank'>
                             <img src="/images/iconos/link-symbol.svg" alt="view">
                         </router-link>
                     </div>

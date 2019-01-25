@@ -21,13 +21,26 @@
                                      <router-link class="nav-link" :to="item.link">{{ item.name }}</router-link>
                                  </li>
                              </template>
+                             <!-- lenguaje -->
+                             <template v-if="sticky">
                                 <li class="nav-item">
-                                    <select name="lang" @change="changeLanguage" v-model="lang" class="form-control text-uppercase">
+                                    <select name="lang" @change="changeLanguage" v-model="lang" class="form-control transparent text-uppercase">
                                         <template v-for="flag in getFlags">
                                             <option :value="flag.code">{{ flag.code }}</option>
                                         </template>
                                     </select>
                                 </li>
+                            </template>
+                            <template v-else>
+                                <li class="nav-item">
+                                    <select name="lang" @change="changeLanguage" v-model="lang" class="form-control dark text-uppercase">
+                                        <template v-for="flag in getFlags">
+                                            <option :value="flag.code">{{ flag.code }}</option>
+                                        </template>
+                                    </select>
+                                </li>
+                            </template>
+                            <!-- lenguaje -->
                             </ul>
                             <a href="/#contacto" class="btn btn-primary ml-lg-3 d-none d-lg-block">{{ $store.getters.getTags({ tag: 'general_btn_contact'}) }}</a>
                         </div>
@@ -68,7 +81,7 @@
             },
             routes() {
                 return [
-                        { name: this.$store.getters.getTags({ tag: 'general_btn_home' }), link: '/'},
+                        // { name: this.$store.getters.getTags({ tag: 'general_btn_home' }), link: '/'},
                         { name: this.$store.getters.getTags({ tag: 'general_btn_company' }), link: '/la-compagnia'},
                         { name: this.$store.getters.getTags({ tag: 'general_btn_especialities' }), link: '/specialita'},
                         { name: this.$store.getters.getTags({ tag: 'partners_title12' }), link: '/blog'},
@@ -102,19 +115,57 @@
     #container-nav {
 
     }
+    .btn{
+        font-size: 0.8rem;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 167px;
+    }
+    .form-control{
+        background-color: transparent;
+        background-position: right center;
+        background-repeat: no-repeat;
+        background-size: 24px;
+        padding: 0.375rem 1.6rem 0.375rem .5rem;
+        outline: none;
+        -webkit-appearance: none;
+        appearance: none;
+        border: none;
+        border-radius: 0;
+        font-weight: 700;
+        margin-left: 5px;
 
+    }
+    .form-control:focus{
+        outline: none;
+        box-shadow: none;
+    }
+    .form-control.transparent{
+        background-image: url('/images/iconos/internet-white.svg');
+        border-left: 1px solid #fff;
+        color: #fff;
+    }
+    .form-control.transparent option{
+        color: #f26336;
+    }
+    .form-control.dark{
+        background-image: url('/images/iconos/internet.svg');
+        border-left: 1px solid #4b4b4b9b;
+        color: #4b4b4b; 
+    }
     @media (min-width: 992px) {
         .navbar-expand-lg .navbar-nav .nav-link {
             padding-right: 1rem;
             padding-left: 1rem;
-            font-size: .8rem;
+            font-size: 1rem;
         }
     }
 
     @media (min-width: 1200px) {
         .navbar-expand-lg .navbar-nav .nav-link {
-            padding-right: 1.1rem;
-            padding-left: 1.1rem;
+            padding-right: .6rem;
+            padding-left: .6rem;
         }
     }
 
