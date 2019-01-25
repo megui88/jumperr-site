@@ -8,6 +8,7 @@
         <home-portfolio />
         <home-blog />
         <home-careers />
+        <!--<home-our-offices />-->
         <home-contact />
     </div>
 </template>
@@ -20,12 +21,13 @@
     import HomePortfolio from './HomePortfolio';
     import HomeBlog from './HomeBlog';
     import HomeCareers from './HomeCareers';
+    import HomeOurOffices from './HomeOurOffices';
     import HomeContact from './HomeContact';
 
     export default {
         name: 'home',
         components: {
-            HomeHeader, HomeServices, HomeBio, HomeBrand, HomeYoutube, HomePortfolio, HomeBlog, HomeCareers, HomeContact
+            HomeHeader, HomeServices, HomeBio, HomeBrand, HomeYoutube, HomePortfolio, HomeBlog, HomeCareers, HomeOurOffices, HomeContact
         }
     }
 </script>

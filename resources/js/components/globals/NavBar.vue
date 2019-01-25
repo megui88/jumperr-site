@@ -8,7 +8,7 @@
                 <nav class="navbar navbar-expand-lg" :class="sticky ? 'navbar-dark' : 'navbar-light'">
                     <div class="container">
                         <router-link class="navbar-brand" to="/">
-                            <img src="images/logo/logojumperr.svg" alt="Jumperr" class="logo">
+                            <img src="/images/logo/logojumperr.svg" alt="Jumperr" class="logo">
                         </router-link>
                         <button class="navbar-toggler" @click="fondoNav=!fondoNav" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                             <i class="fas fa-bars"></i>

@@ -8,7 +8,7 @@
                 <img class="chica-jumperr" src="/images/carreras/chica-tablet-jumperr.png" alt="Jumperr anuncio">
             </aside>
 
-            <article>
+            <article class="text-center text-md-left">
                 <span v-html="$store.getters.getTags({ tag: 'careers_text2' })"></span>
             </article>
         </section>

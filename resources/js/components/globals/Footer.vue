@@ -1,63 +1,66 @@
 <template>
-<div id="section_footer">
-
-    <footer>
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-12 col-md-3 text-center">
-                    <a href="#">
-                        <img src="/images/logo/logojumperrwhite.svg" alt="" width="200px">
-                    </a>
-                </div>
-                <div class="col-12 col-md-5 col-lg-4 d-none d-md-flex enlaces mx-auto">
-                    <a href="#">{{ $store.getters.getTags({ tag: 'general_btn_company' }) }}</a>
-                    <a href="#">{{ $store.getters.getTags({ tag: 'general_btn_especialities' }) }}</a>
-                    <a href="#">{{ $store.getters.getTags({ tag: 'general_btn_agencies' }) }}</a>
-                    <a href="#">{{ $store.getters.getTags({ tag: 'general_btn_contact' }) }}</a>
-                    <a href="#">Jumperr Start</a>
-                    <a href="#">{{ $store.getters.getTags({ tag: 'home_title5' }) }}</a>
-                    <a href="#">{{ $store.getters.getTags({ tag: 'home_title7' }) }}</a>
-                    <a href="#">{{ $store.getters.getTags({ tag: 'home_title3' }) }}</a>
-                </div>
-                <div class="col-12 col-md-3 text-center mt-4 mt-md-0">
-                    <a href="#" target="_blank" rel="noopener noreferrer">
-                        <img class="d-inline-block mx-2" width="36px" src="/images/iconos/001-facebook.svg" alt="Facebook">
-                    </a>
-                    <a href="#" target="_blank" rel="noopener noreferrer">
-                        <img class="d-inline-block mx-2" width="36px" src="/images/iconos/002-instagram.svg" alt="Instagram">
-                    </a>
-                    <a href="#" target="_blank" rel="noopener noreferrer">
-                        <img class="d-inline-block mx-2" width="36px" src="/images/iconos/003-linkedin.svg" alt="Linkedin">
-                    </a>
-                    <a href="#" target="_blank" rel="noopener noreferrer">
-                        <img class="d-inline-block mx-2" width="36px" src="/images/iconos/004-youtube.svg" alt="Youtube">
-                    </a>
+    <div id="section_footer">
+        <footer>
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-12 col-md-3 text-center">
+                        <router-link to="/">
+                            <a><img alt="img-logo" src="/images/logo/logojumperrwhite.svg" width="200px"></a>
+                        </router-link>
+                    </div>
+                    <div class="col-12 col-md-5 col-lg-4 d-none d-md-flex enlaces mx-auto">
+                        <a href="#">{{ $store.getters.getTags({ tag: 'general_btn_company' }) }}</a>
+                        <a href="#">{{ $store.getters.getTags({ tag: 'general_btn_especialities' }) }}</a>
+                        <a href="#">{{ $store.getters.getTags({ tag: 'general_btn_agencies' }) }}</a>
+                        <a href="#">{{ $store.getters.getTags({ tag: 'general_btn_contact' }) }}</a>
+                        <a href="#">Jumperr Start</a>
+                        <a href="#">{{ $store.getters.getTags({ tag: 'home_title5' }) }}</a>
+                        <a href="#">{{ $store.getters.getTags({ tag: 'home_title7' }) }}</a>
+                        <a href="#">{{ $store.getters.getTags({ tag: 'home_title3' }) }}</a>
+                    </div>
+                    <div class="col-12 col-md-3 text-center mt-4 mt-md-0">
+                        <a href="https://www.facebook.com/wearejumperr/" rel="noopener noreferrer" target="_blank">
+                            <img alt="Facebook" class="d-inline-block mx-2" src="/images/iconos/001-facebook.svg"
+                                 width="36px">
+                        </a>
+                        <a href="https://www.instagram.com/wearejumperr/" rel="noopener noreferrer" target="_blank">
+                            <img alt="Instagram" class="d-inline-block mx-2" src="/images/iconos/002-instagram.svg"
+                                 width="36px">
+                        </a>
+                        <a href="https://www.linkedin.com/company/wearejumperr/" rel="noopener noreferrer" target="_blank">
+                            <img alt="Linkedin" class="d-inline-block mx-2" src="/images/iconos/003-linkedin.svg"
+                                 width="36px">
+                        </a>
+                        <a href="#" rel="noopener noreferrer" target="_blank">
+                            <img alt="Youtube" class="d-inline-block mx-2" src="/images/iconos/004-youtube.svg"
+                                 width="36px">
+                        </a>
+                    </div>
                 </div>
             </div>
-        </div>
 
-    </footer>
-    <div class="power-by-jumperr d-flex align-items-end pb-3">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-md-6 text-center text-md-left">
-                    <a href="#" target="_blank" rel="noopener noreferrer">
-                        © Jumperr Digital Company
-                    </a>
-                </div>
-                <div class="col-12 col-md-6 text-center text-md-right">
-                    <a href="#" target="_blank" rel="noopener noreferrer">
-                        Politica de privacidad | Terminos y condiciones
-                    </a>
+        </footer>
+        <div class="power-by-jumperr d-flex align-items-end pb-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6 text-center text-md-left">
+                        <a href="/" rel="noopener noreferrer" target="_blank">
+                            © Jumperr Digital Company
+                        </a>
+                    </div>
+                    <div class="col-12 col-md-6 text-center text-md-right">
+                        <a href="#" rel="noopener noreferrer" target="_blank">
+                            Politica de privacidad | Terminos y condiciones
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
 </template>
 <script>
     export default {
-        name: 'footer'
+        name: 'footer-jumperr'
     }
 </script>
 <style scoped>

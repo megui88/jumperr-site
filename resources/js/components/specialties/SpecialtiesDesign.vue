@@ -30,6 +30,11 @@
         grid-column-gap: 50px;
     }
 
+    .float-left{
+        position: relative;
+        z-index: 1010;
+    }
+
     .title-border-bottom:after {
         content: ' ';
         border-bottom: 1px solid #f26336;

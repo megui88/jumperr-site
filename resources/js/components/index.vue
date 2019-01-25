@@ -9,17 +9,19 @@
         <template v-else>
             <nav-bar />
             <router-view />
-            <footer />
+            <footer-jumperr />
+            <cookies />
         </template>
     </div>
 </template>
 <script>
     import { ClipLoader } from 'vue-spinner/dist/vue-spinner.min';
     import NavBar from './globals/NavBar';
-    import Footer from './globals/Footer';
+    import FooterJumperr from './globals/Footer';
+    import Cookies from './globals/Cookies';
 
     export default {
-        components: { ClipLoader, NavBar, Footer },
+        components: { ClipLoader, NavBar, FooterJumperr, Cookies },
         data() {
             return {
                 color: '#f26336',

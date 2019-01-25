@@ -5,7 +5,7 @@
                 <div class="col-12 col-md-10 mx-auto">
                     <article class="text-center">
                         <h3 class="title-border-bottom">{{ $store.getters.getTags({ tag: 'partners_title12' }) }}</h3>
-                        <h4 class="mb-md-5">{{ $store.getters.getTags({ tag: 'home_text10' }) }}</h4>
+                        <h4 class="mb-md-5" v-html="$store.getters.getTags({ tag: 'home_text10' })"></h4>
                     </article>
                 </div>
             </div>

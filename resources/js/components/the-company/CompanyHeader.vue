@@ -49,7 +49,6 @@
     h2 strong {
         font-weight: 700;
     }
-
     @media (min-width: 768px) {
         .grid-container {
             grid-template-columns: 75%;
@@ -71,5 +70,4 @@
             font-size: 1.88rem;
         }
     }
-
 </style>

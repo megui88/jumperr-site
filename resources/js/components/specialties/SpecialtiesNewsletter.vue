@@ -4,7 +4,7 @@
             <div class="container">
                 <template v-if="loading">
                     <div class="container d-flex justify-content-center">
-                        <clip-loader :loading="loading" color="black" size="60px"/>
+                        <clip-loader :loading="loading" color="#292052" size="60px"/>
                     </div>
                 </template>
 
@@ -82,26 +82,26 @@
                         axios.post('/api/newsletter', this.email).then(responseApi => {
                             if (responseApi.status === 200) {
                                 this.loading = false;
-                                this.showAlert('success', 'Ok');
+                                this.showAlert('success', this.$store.getters.getTags({tag:'modal_success_response_title'}), this.$store.getters.getTags({tag:'modal_newsletter_success_response_text'}));
                             }
                         }).catch(error => {
                             console.log('axios error: ' + error);
                             this.loading = false;
-                            this.showAlert('error', 'Error');
+                            this.showAlert('error', this.$store.getters.getTags({tag:'modal_newsletter_error_response'}));
                         })
 
-                    } else {
-                        this.showAlert('error');
-                        this.loading = false;
                     }
-
-                }).catch(error => console.log('vee-validate error: ' + error));
+                }).catch(error => {
+                    this.loading = false;
+                    console.log('vee-validate error: ' + error)
+                });
             },
-            showAlert(type, title) {
+            showAlert(type, title, text) {
                 this.$swal({
                     position: 'center',
                     type: type,
                     title: title,
+                    text: text,
                     showConfirmButton: false,
                     showCloseButton: true,
                 })
