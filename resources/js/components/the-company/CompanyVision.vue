@@ -5,7 +5,7 @@
                 <article class="col-12 col-md-6 d-flex">
                     <div class="align-self-center">
                         <h6 class="text-uppsercase text-theme">{{ $store.getters.getTags({ tag: 'text3' }) }}</h6>
-                        <h3 class="title-border-bottom">{{ $store.getters.getTags({ tag: 'company_text3' }) }}</h3>
+                        <h3 class="title-border-bottom">{{$store.getters.getTags({tag:'company_text15'})}}</h3>
                         <span v-html="$store.getters.getTags({ tag:'company_text4'})"></span>
                     </div>
                 </article>

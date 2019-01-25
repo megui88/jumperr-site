@@ -42,7 +42,7 @@
                             </template>
                             <!-- lenguaje -->
                             </ul>
-                            <a href="/#contacto" class="btn btn-primary ml-lg-3 d-none d-lg-block">{{ $store.getters.getTags({ tag: 'general_btn_contact'}) }}</a>
+                            <a href="/#section_contacto" class="btn btn-primary ml-lg-3 d-none d-lg-block">{{ $store.getters.getTags({ tag: 'general_btn_contact'}) }}</a>
                         </div>
                     </div>
                 </nav>
@@ -84,7 +84,7 @@
                         // { name: this.$store.getters.getTags({ tag: 'general_btn_home' }), link: '/'},
                         { name: this.$store.getters.getTags({ tag: 'general_btn_company' }), link: '/la-compagnia'},
                         { name: this.$store.getters.getTags({ tag: 'general_btn_especialities' }), link: '/specialita'},
-                        { name: this.$store.getters.getTags({ tag: 'partners_title12' }), link: '/blog'},
+                        // { name: this.$store.getters.getTags({ tag: 'partners_title12' }), link: '/blog'},
                         { name: this.$store.getters.getTags({ tag: 'partners_titulo' }), link: '/partners'},
                         { name: this.$store.getters.getTags({ tag: 'careers_titulo' }), link: '/labori'}
                     ]

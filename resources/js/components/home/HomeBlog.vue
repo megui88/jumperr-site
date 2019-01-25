@@ -30,7 +30,7 @@
                 </div>
                 
                 <div class="col-12 text-center">
-                        <router-link to="#" class="btn btn-primary mt-5 text-uppercase">{{ $store.getters.getTags({ tag: 'home_text11' }) }}</router-link>
+                        <router-link to="#" class="btn btn-primary mt-5 text-uppercase">{{ $store.getters.getTags({ tag: 'general_vermas' }) }}</router-link>
                 </div>
             </div>
         </div>
