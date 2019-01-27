@@ -3809,45 +3809,73 @@ __webpack_require__.r(__webpack_exports__);
             freeMode: false
           }
         }
-      },
-      services: [{
-        titulo: 'Jumperr Studio',
-        descripcion: 'Ponemos a tu disposición un equipo de profesionales  calificados  para lograr los resultados deseados.',
+      }
+    };
+  },
+  computed: {
+    services: function services() {
+      return [{
+        titulo: this.$store.getters.getTags({
+          tag: 'home_title2'
+        }),
+        descripcion: this.$store.getters.getTags({
+          tag: 'home_text3'
+        }),
         image: '/images/home/imagenes/jumperr-studio.jpg',
         icono: '/images/home/iconos/jumperrstudio_home.svg',
         enlace: '#'
       }, {
-        titulo: 'Desarrollo web y Apps',
-        descripcion: 'Una página web altamente efectiva, visualmente atractiva y adaptada a los diferentes dispositivos, que te permite dar a conocer productos, servicios, trabajos y proyectos.',
+        titulo: this.$store.getters.getTags({
+          tag: 'home_title3'
+        }),
+        descripcion: this.$store.getters.getTags({
+          tag: 'home_text4'
+        }),
         image: '/images/home/imagenes/jumperr-desarrollowebyapp.jpg',
         icono: '/images/home/iconos/jumperr_desarrolloweb.svg',
         enlace: '#'
       }, {
-        titulo: 'Jumperr Start',
-        descripcion: 'Crea tu página web de la manera más rápida y fácil con nuestras plantillas categorizadas y con una herramienta adaptada a tus necesidades de negocio.',
+        titulo: this.$store.getters.getTags({
+          tag: 'home_title4'
+        }),
+        descripcion: this.$store.getters.getTags({
+          tag: 'home_text5'
+        }),
         image: '/images/home/imagenes/jumperr-start.jpg',
         icono: '/images/home/iconos/jumperrstart_home.svg',
         enlace: '#'
       }, {
-        titulo: 'Redes Sociales',
-        descripcion: 'Atiende tus necesidades en cuanto a la gestión de redes sociales con una estrategia de marketing digital orientada a resultados y bien ejecutada.',
+        titulo: this.$store.getters.getTags({
+          tag: 'home_title5'
+        }),
+        descripcion: this.$store.getters.getTags({
+          tag: 'home_text6'
+        }),
         image: '/images/home/imagenes/jumperr-redessociales.jpg',
         icono: '/images/home/iconos/redessociales.svg',
         enlace: '#'
       }, {
-        titulo: 'CMS y CRM',
-        descripcion: 'La mejor solución para optimizar la gestión comercial, el marketing y el servicio postventa o de atención al cliente de tu the-company de forma fácil y útil.',
+        titulo: this.$store.getters.getTags({
+          tag: 'home_title6'
+        }),
+        descripcion: this.$store.getters.getTags({
+          tag: 'home_text7'
+        }),
         image: '/images/home/imagenes/jumperr-cms.jpg',
         icono: '/images/home/iconos/cmsycrm.svg',
         enlace: '#'
       }, {
-        titulo: 'Diseño Gráfico',
-        descripcion: 'Todo tipo de diseños que impulsen la comunicación visual de tu idea de negocio, con estilo propio e innovador.',
+        titulo: this.$store.getters.getTags({
+          tag: 'home_title7'
+        }),
+        descripcion: this.$store.getters.getTags({
+          tag: 'home_text8'
+        }),
         image: '/images/home/imagenes/jumperr-diseñografico.jpg',
         icono: '/images/home/iconos/diseñografico.svg',
         enlace: '#'
-      }]
-    };
+      }];
+    }
   }
 });
 
@@ -5343,10 +5371,6 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-//
-//
-//
-//
 //
 //
 //
@@ -64562,7 +64586,7 @@ var render = function() {
               _vm._s(_vm.$store.getters.getTags({ tag: "cookies_text" })) +
               "\n        "
           ),
-          _c("router-link", { attrs: { to: "/cookiespolicies" } }, [
+          _c("router-link", { attrs: { to: "/termini" } }, [
             _vm._v(_vm._s(_vm.$store.getters.getTags({ tag: "cookies_link" })))
           ])
         ],
@@ -64681,7 +64705,7 @@ var render = function() {
                 "a",
                 {
                   attrs: {
-                    href: "#",
+                    href: "/termini",
                     rel: "noopener noreferrer",
                     target: "_blank"
                   }
@@ -68436,46 +68460,7 @@ var render = function() {
                               _c("img", {
                                 class: "item-" + item.id,
                                 attrs: { src: item.img, alt: "img-" + item.id }
-                              }),
-                              _vm._v(" "),
-                              _c("div", { staticClass: "dropdown" }, [
-                                _c("div", {
-                                  staticClass: "circle-pulse",
-                                  attrs: {
-                                    "data-toggle": "dropdown",
-                                    "aria-haspopup": "true",
-                                    "aria-expanded": "false"
-                                  }
-                                }),
-                                _vm._v(" "),
-                                _c(
-                                  "div",
-                                  {
-                                    staticClass: "dropdown-menu",
-                                    attrs: {
-                                      "aria-labelledby": "dropdownMenuButton"
-                                    }
-                                  },
-                                  [
-                                    _c(
-                                      "p",
-                                      { staticClass: "dropdown-item-text" },
-                                      [
-                                        _c("strong", [
-                                          _vm._v(_vm._s(slide.title))
-                                        ]),
-                                        _vm._v(" "),
-                                        _c("br"),
-                                        _vm._v(
-                                          "\n                                               " +
-                                            _vm._s(slide.description) +
-                                            "\n                                           "
-                                        )
-                                      ]
-                                    )
-                                  ]
-                                )
-                              ])
+                              })
                             ]
                           })
                         ],

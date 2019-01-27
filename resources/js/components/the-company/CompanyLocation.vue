@@ -35,20 +35,16 @@
                                <div class="zona" :class="'zona-' + slide.id">
                                    <template v-for="item in slide.images">
                                        <img :class="'item-' + item.id" :src="item.img" :alt="'img-' + item.id">
-                                       <div class="dropdown">
-                                           <div class="circle-pulse" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></div>
-                                           <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                               <p class="dropdown-item-text">
-                                                   <strong>{{ slide.title }}</strong>
-                                                   <br>
-                                                   {{slide.description}}
-                                               </p>
-                                               <!-- 
-                                                   Nuestro Inicio
-                                                   Hoy en día hay muchas casas de software que ofrecen servicios y productos digitales; sin embargo, pocas empresas trabajan en sinergia con sus socios comerciales para crecer juntos.
-                                                -->
-                                           </div>
-                                       </div>
+                                        <!-- <div class="dropdown">
+                                            <div class="circle-pulse" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></div>
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                <p class="dropdown-item-text">
+                                                    <strong>{{ slide.title }}</strong>
+                                                    <br>
+                                                    {{slide.description}}
+                                                </p>
+                                            </div>
+                                        </div> -->
                                    </template>
                                </div>
                            </swiper-slide>

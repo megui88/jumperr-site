@@ -44,7 +44,7 @@
                         </a>
                     </div>
                     <div class="col-12 col-md-6 text-center text-md-right">
-                        <a href="#" rel="noopener noreferrer" target="_blank">
+                        <a href="/termini" rel="noopener noreferrer" target="_blank">
                             <!-- Politica de privacidad | Terminos y condiciones -->
                             {{ $store.getters.getTags({ tag: 'footer_polity' }) }} | {{ $store.getters.getTags({ tag: 'footer_terms' }) }}
                         </a>
