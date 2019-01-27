@@ -289,7 +289,7 @@
                                                         <table style="border-collapse:collapse;border-spacing:0;padding:0;text-align:left;vertical-align:top;width:100%">
                                                             <tbody>
                                                                 <tr style="padding:0;text-align:left;vertical-align:top">
-                                                                    <th style="margin:auto;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;line-height:1.3;margin:0;padding:0;text-align:center"><img src="{{ asset('/images/logos/solaria-logo.png') }}" style="-ms-interpolation-mode:bicubic;clear:both;display:block;max-width:500%;outline:0;text-decoration:none;width: 80px; margin: auto;"></th>
+                                                                    <th style="margin:auto;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;line-height:1.3;margin:0;padding:0;text-align:center"><img src="{{ asset('/images/logos/logojumperr.svg') }}" style="-ms-interpolation-mode:bicubic;clear:both;display:block;max-width:500%;outline:0;text-decoration:none;width: 80px; margin: auto;"></th>
                                                                     <th style="margin:auto;text-align:left; font-family: 'Nunito', sans-serif; vertical-align: middle;"><h2 class="text-center" style="Margin:0;Margin-bottom:10px;color:#fff;font-family: 'Nunito', sans-serif;font-size:30px;font-weight:400;line-height:1.3;margin:0;margin-bottom:10px;padding:0;text-align:left;word-wrap:normal">Jumperr</h2></th>
                                                                 </tr>
                                                             </tbody>
