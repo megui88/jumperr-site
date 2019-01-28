@@ -4997,6 +4997,12 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'specialties-process',
   data: function data() {
@@ -68195,9 +68201,7 @@ var render = function() {
                   [
                     _vm._v(
                       _vm._s(
-                        _vm.$store.getters.getTags({
-                          tag: "specialties_title8"
-                        })
+                        _vm.$store.getters.getTags({ tag: "specialties_step1" })
                       )
                     )
                   ]
@@ -68209,9 +68213,7 @@ var render = function() {
                   [
                     _vm._v(
                       _vm._s(
-                        _vm.$store.getters.getTags({
-                          tag: "specialties_title9"
-                        })
+                        _vm.$store.getters.getTags({ tag: "specialties_step2" })
                       )
                     )
                   ]
@@ -68223,9 +68225,7 @@ var render = function() {
                   [
                     _vm._v(
                       _vm._s(
-                        _vm.$store.getters.getTags({
-                          tag: "specialties_title10"
-                        })
+                        _vm.$store.getters.getTags({ tag: "specialties_step3" })
                       )
                     )
                   ]
@@ -68237,9 +68237,7 @@ var render = function() {
                   [
                     _vm._v(
                       _vm._s(
-                        _vm.$store.getters.getTags({
-                          tag: "specialties_title11"
-                        })
+                        _vm.$store.getters.getTags({ tag: "specialties_step4" })
                       )
                     )
                   ]

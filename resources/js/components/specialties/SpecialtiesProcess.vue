@@ -7,11 +7,17 @@
                         <h3 class="title-border-bottom text-center text-white">{{ $store.getters.getTags({ tag: 'specialties_title7' }) }}</h3>
                     </div>
                     <div class="col-12">
-                        <div class="d-flex justify-content-between text-white text-center">
+                        <!-- <div class="d-flex justify-content-between text-white text-center">
                             <span :class="menuSlide == 0 ? 'active-slide' : ''">{{ $store.getters.getTags({ tag: 'specialties_title8' }) }}</span>
                             <span :class="menuSlide == 1 ? 'active-slide' : ''">{{ $store.getters.getTags({ tag: 'specialties_title9' }) }}</span>
                             <span :class="menuSlide == 2 ? 'active-slide' : ''">{{ $store.getters.getTags({ tag: 'specialties_title10' }) }}</span>
                             <span :class="menuSlide == 3 ? 'active-slide' : ''">{{ $store.getters.getTags({ tag: 'specialties_title11' }) }}</span>
+                        </div> -->
+                        <div class="d-flex justify-content-between text-white text-center">
+                            <span :class="menuSlide == 0 ? 'active-slide' : ''">{{ $store.getters.getTags({ tag: 'specialties_step1' }) }}</span>
+                            <span :class="menuSlide == 1 ? 'active-slide' : ''">{{ $store.getters.getTags({ tag: 'specialties_step2' }) }}</span>
+                            <span :class="menuSlide == 2 ? 'active-slide' : ''">{{ $store.getters.getTags({ tag: 'specialties_step3' }) }}</span>
+                            <span :class="menuSlide == 3 ? 'active-slide' : ''">{{ $store.getters.getTags({ tag: 'specialties_step4' }) }}</span>
                         </div>
                         <div class="mt-3">
                             <div class="circulos-procesos mt-4">
