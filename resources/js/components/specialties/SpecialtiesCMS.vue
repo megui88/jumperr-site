@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div id="jumperr-cms">
         <section class="cms bg-white">
             <div class="container">
                 <div class="row">

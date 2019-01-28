@@ -21,7 +21,9 @@
 
                         <div class="card-body text-center">
                             <p class="card-text">{{ service.descripcion }}</p>
-                            <router-link :to="service.enlace" class="btn btn-primary text-uppercase">{{ $store.getters.getTags({ tag: 'general_vermas'}) }}</router-link>
+                            <a :href="service.enlace" class="btn btn-primary text-uppercase">
+                                {{ $store.getters.getTags({ tag: 'general_vermas'}) }}
+                            </a>
                         </div>
                     </div>
                 </swiper-slide>
@@ -77,42 +79,42 @@ export default {
                     descripcion: this.$store.getters.getTags({tag:'home_text3'}),
                     image: '/images/home/imagenes/jumperr-studio.jpg',
                     icono: '/images/home/iconos/jumperrstudio_home.svg',
-                    enlace: '#',
+                    enlace: '/specialita/#jumperr-studio',
                 },
                 {
                     titulo: this.$store.getters.getTags({tag:'home_title3'}),
                     descripcion: this.$store.getters.getTags({tag:'home_text4'}),
                     image: '/images/home/imagenes/jumperr-desarrollowebyapp.jpg',
                     icono: '/images/home/iconos/jumperr_desarrolloweb.svg',
-                    enlace: '#',
+                    enlace: '/specialita/#jumperr-web-app',
                 },
                 {
                     titulo: this.$store.getters.getTags({tag:'home_title4'}),
                     descripcion: this.$store.getters.getTags({tag:'home_text5'}),
                     image: '/images/home/imagenes/jumperr-start.jpg',
                     icono: '/images/home/iconos/jumperrstart_home.svg',
-                    enlace: '#',
+                    enlace: '/specialita/#jumperr-start',
                 },
                 {
                     titulo: this.$store.getters.getTags({tag:'home_title5'}),
                     descripcion: this.$store.getters.getTags({tag:'home_text6'}),
                     image: '/images/home/imagenes/jumperr-redessociales.jpg',
                     icono: '/images/home/iconos/redessociales.svg',
-                    enlace: '#',
+                    enlace: '/specialita/#network',
                 },
                 {
                     titulo: this.$store.getters.getTags({tag:'home_title6'}),
                     descripcion: this.$store.getters.getTags({tag:'home_text7'}),
                     image: '/images/home/imagenes/jumperr-cms.jpg',
                     icono: '/images/home/iconos/cmsycrm.svg',
-                    enlace: '#',
+                    enlace: '/specialita/#jumperr-cms',
                 },
                 {
                     titulo: this.$store.getters.getTags({tag:'home_title7'}),
                     descripcion: this.$store.getters.getTags({tag:'home_text8'}),
                     image: '/images/home/imagenes/jumperr-diseñografico.jpg',
                     icono: '/images/home/iconos/diseñografico.svg',
-                    enlace: '#',
+                    enlace: '/specialita/#disegno-grafico',
                 }
             ]
         }

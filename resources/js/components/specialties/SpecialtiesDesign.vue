@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div id="disegno-grafico">
         <section class="design">
             <div class="pr-4">
                 <img class="float-left img-fluid" src="/images/especialidades/circulo-min.png" alt="Jumper circulo">

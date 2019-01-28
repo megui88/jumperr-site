@@ -63,6 +63,9 @@ import Partners from '../components/partners/';
 import Careers from '../components/careers/';
 import showCarreras from '../components/careers/show/showCarreras';
 
+// Contact
+import Contact from '../components/contact/';
+
 // terminos
 import terms from '../components/globals/terms';
 
@@ -110,6 +113,11 @@ let router = new Router({
             path: '/labori/1',
             name: 'showCarreras',
             component: showCarreras,
+        },
+        {
+            path: '/contatto',
+            name: 'Contact',
+            component: Contact,
         },
         {
             path: '/termini',

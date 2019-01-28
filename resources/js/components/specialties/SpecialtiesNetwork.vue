@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div id="network">
         <section class="redes-sociales">
             <div class="container">
                 <div class="row">

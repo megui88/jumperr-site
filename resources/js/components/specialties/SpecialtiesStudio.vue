@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div id="jumperr-studio">
         <div class="wrapper py-5 py-md-0">
             <div class="column-row">
                 <img class="img-fluid" src="/images/especialidades/Jumperr_laptop_Especialidades-min.png" alt="img-specialties-studio">

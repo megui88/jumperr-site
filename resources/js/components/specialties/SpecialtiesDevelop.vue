@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div id="jumperr-web-app">
         <section class="wrapper">
             <div class="column-row">
                 <img class="img-fluid mano" src="/images/especialidades/jumperr_telefono_especialidades-min.png" alt="img-newsletter">
