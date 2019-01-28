@@ -1,9 +1,9 @@
 <template>
     <div>
         <contact-header />
-        <contact-carreras />
-        <contact-instagram />
         <home-contact />
+        <!-- <contact-carreras /> -->
+        <contact-instagram />
     </div>
 </template>
 <script>

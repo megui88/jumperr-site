@@ -42,7 +42,7 @@
                             </template>
                             <!-- lenguaje -->
                             </ul>
-                            <a href="/#section_contacto" class="btn btn-primary ml-lg-3 d-none d-lg-block">{{ $store.getters.getTags({ tag: 'general_btn_contact'}) }}</a>
+                            <a href="/contatto" class="btn btn-primary ml-lg-3 d-none d-lg-block">{{ $store.getters.getTags({ tag: 'general_btn_contact'}) }}</a>
                         </div>
                     </div>
                 </nav>

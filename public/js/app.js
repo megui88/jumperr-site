@@ -64899,8 +64899,8 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", [
-      _c("div", { staticClass: "container" }, [
+    return _c("div", { staticClass: "bg-white" }, [
+      _c("div", { staticClass: "container my-5 pb-5" }, [
         _c("div", { staticClass: "row" }, [
           _c("div", { staticClass: "col-12" }, [
             _c("iframe", {
@@ -64959,11 +64959,9 @@ var render = function() {
     [
       _c("contact-header"),
       _vm._v(" "),
-      _c("contact-carreras"),
+      _c("home-contact"),
       _vm._v(" "),
-      _c("contact-instagram"),
-      _vm._v(" "),
-      _c("home-contact")
+      _c("contact-instagram")
     ],
     1
   )
@@ -65526,7 +65524,7 @@ var render = function() {
                         {
                           staticClass:
                             "btn btn-primary ml-lg-3 d-none d-lg-block",
-                          attrs: { href: "/#section_contacto" }
+                          attrs: { href: "/contatto" }
                         },
                         [
                           _vm._v(

@@ -1,6 +1,6 @@
 <template>
-    <div>
-        <div class="container">
+    <div class="bg-white">
+        <div class="container my-5 pb-5">
             <div class="row">
                 <div class="col-12">
                     <iframe src="https://snapwidget.com/embed/652347" class="snapwidget-widget" allowtransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%; "></iframe>
