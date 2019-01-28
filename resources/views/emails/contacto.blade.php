@@ -292,7 +292,7 @@
                                                         <table style="border-collapse:collapse;border-spacing:0;padding:0;text-align:left;vertical-align:top;width:100%">
                                                             <tbody>
                                                                 <tr style="padding:0;text-align:left;vertical-align:top">
-                                                                    <th style="margin:auto;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;line-height:1.3;margin:0;padding:0;text-align:center"><img src="{{ asset('/images/logos/logojumperr.svg') }}" style="-ms-interpolation-mode:bicubic;clear:both;display:block;max-width:500%;outline:0;text-decoration:none;width: 80px; margin: auto;"></th>
+                                                                    <th style="margin:auto;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;line-height:1.3;margin:0;padding:0;text-align:center"><img src="{{ asset('/images/logo/logojumperr.svg') }}" style="-ms-interpolation-mode:bicubic;clear:both;display:block;max-width:500%;outline:0;text-decoration:none;width: 200px; margin: auto;"></th>
 
                                                                 </tr>
                                                             </tbody>
@@ -332,19 +332,30 @@
                                                                         </table>
 
 
-                                                                        <p class="text-left" style="Margin:0;Margin-bottom:10px;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;line-height:1.3;margin:0;margin-bottom:10px;padding:0;text-align:left">Hola, <strong>Jumperr</strong></p>
-
+                                                                        <p class="text-left" style="Margin:0;Margin-bottom:10px;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;line-height:1.3;margin:0;margin-bottom:10px;padding:0;text-align:left">
+                                                                            <strong>Messaggio inviato al jumper</strong>
+                                                                        </p>
 
                                                                         @if(!empty($name))
-                                                                        <p style="-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;border-collapse:collapse!important;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;hyphens:auto;line-height:1.3;margin:0;padding:0;text-align:left;vertical-align:top;word-wrap:break-word"><strong>Nome:</strong> {{$name}}</p>
+                                                                        <p style="-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;border-collapse:collapse!important;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;hyphens:auto;line-height:1.3;margin:0;padding:0;text-align:left;vertical-align:top;word-wrap:break-word">
+                                                                            {{$name}}
+                                                                        </p>
                                                                         <br> @endif @if(!empty($email))
-                                                                        <p style="-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;border-collapse:collapse!important;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;hyphens:auto;line-height:1.3;margin:0;padding:0;text-align:left;vertical-align:top;word-wrap:break-word"><strong>Mail:</strong> {{$email}}</p>
+                                                                        <p style="-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;border-collapse:collapse!important;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;hyphens:auto;line-height:1.3;margin:0;padding:0;text-align:left;vertical-align:top;word-wrap:break-word">
+                                                                            {{$email}}
+                                                                        </p>
                                                                         <br> @endif @if(!empty($phone))
-                                                                        <p style="-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;border-collapse:collapse!important;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;hyphens:auto;line-height:1.3;margin:0;padding:0;text-align:left;vertical-align:top;word-wrap:break-word"><strong>Mail:</strong> {{$phone}}</p>
+                                                                        <p style="-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;border-collapse:collapse!important;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;hyphens:auto;line-height:1.3;margin:0;padding:0;text-align:left;vertical-align:top;word-wrap:break-word">
+                                                                            {{$phone}}
+                                                                        </p>
                                                                         <br> @endif @if(!empty($subject))
-                                                                        <p style="-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;border-collapse:collapse!important;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;hyphens:auto;line-height:1.3;margin:0;padding:0;text-align:left;vertical-align:top;word-wrap:break-word"><strong>Soggetto:</strong> {{$subject}}</p>
+                                                                        <p style="-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;border-collapse:collapse!important;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;hyphens:auto;line-height:1.3;margin:0;padding:0;text-align:left;vertical-align:top;word-wrap:break-word">
+                                                                            {{$subject}}
+                                                                        </p>
                                                                         <br> @endif @if(!empty($msg))
-                                                                        <p style="-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;border-collapse:collapse!important;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;hyphens:auto;line-height:1.3;margin:0;padding:0;text-align:left;vertical-align:top;word-wrap:break-word"><strong>Messaggio:</strong> {{$msg}}</p>
+                                                                        <p style="-moz-hyphens:auto;-webkit-hyphens:auto;Margin:0;border-collapse:collapse!important;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;hyphens:auto;line-height:1.3;margin:0;padding:0;text-align:left;vertical-align:top;word-wrap:break-word">
+                                                                            {{$msg}}
+                                                                        </p>
                                                                         @endif
                                                                         <table style="border-collapse:collapse;border-spacing:0;padding:0;text-align:left;vertical-align:top;width:100%">
                                                                             <tbody>
@@ -377,8 +388,8 @@
                                             <tbody style="background-color: #000000;">
                                                 <tr style="padding:0;text-align:left;vertical-align:top">
                                                     <th class="small-12 large-3 columns first" style="Margin:0 auto;color:#0a0a0a;font-family:Helvetica,Arial,sans-serif;font-size:16px;font-weight:400;line-height:1.3;margin:0 auto;padding:0;padding-left:16px;padding-right:8px;padding-top:16px;text-align:left;width:129px">
-                                                        <p class="text-center" style="Margin:0;Margin-bottom:10px;color:#fff;font-family:Helvetica,Arial,sans-serif;font-size:12px;font-weight:400;line-height:1.3;margin:0;margin-bottom:10px;padding:0;text-align:center"><b>© Jumperr 2019 | <a href="{{url('/')}}/policies" style="color:#fff;"> Informativa sulla Privacy</a> | <a href="{{url('/')}}/terms" style="color:#fff;">Termini e Condizioni</a> </b></p>
-                                                        <center data-parsed="" style="min-width:97px;width:100%"><a href="{{ url('/') }}"><img width="160px" height="43px" src="{{ asset('/images/logos/jumperr.png') }}" style="-ms-interpolation-mode:bicubic;clear:both;display:block;max-width:100%;outline:0;text-decoration:none;width:auto"></a></center>
+                                                        <p class="text-center" style="Margin:0;Margin-bottom:10px;color:#fff;font-family:Helvetica,Arial,sans-serif;font-size:12px;font-weight:400;line-height:1.3;margin:0;margin-bottom:10px;padding:0;text-align:center"><b>© Jumperr 2019 | <a href="{{url('/')}}/termini" style="color:#fff;"> Informativa sulla Privacy</a> | <a href="{{url('/')}}/termini" style="color:#fff;">Termini e Condizioni</a> </b></p>
+                                                        <center data-parsed="" style="min-width:97px;width:100%; margin-bottom: 10px;"><a href="{{ url('/') }}"><img width="120px" src="{{ asset('/images/logo/logojumperr.svg') }}" style="-ms-interpolation-mode:bicubic;clear:both;display:block;max-width:100%;outline:0;text-decoration:none;"></a></center>
                                                     </th>
                                                 </tr>
                                             </tbody>

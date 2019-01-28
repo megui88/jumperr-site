@@ -9,8 +9,8 @@ class MailController extends Controller
 {
    public static function sendMail($request,$plantilla)
     {
-        $request['subject']     = isset($request['subject'])?$request['subject']:'Information';
-        $request['msg']         = isset($request['msg'])?$request['msg']:'';
+        $request['subject']     = isset($request['subject'])?$request['subject']:'Informazione';
+        $request['msg']         = isset($request['comment'])?$request['comment']:'';
         $request['plantilla']   = 'emails.'.$plantilla;
 
         $subject                = $request['subject'];
