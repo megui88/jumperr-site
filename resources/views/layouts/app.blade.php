@@ -14,7 +14,7 @@
     <meta property="og:description" content="Jumperr descripcion" />
     <meta property="og:url" content="https://www.jumperr.com/" />
     <meta property="og:site_name" content="Jumperr" />
-    <meta name="description" content="Jumperr descripcion del sitio.">
+    <meta name="description" content="Lider nella costruzione di business e successi digitali.">
     <meta name="keywords" content="Paginas web, Desarrollo Web, Diseño Web">
     <meta name="author" content="Jumperr">
 
