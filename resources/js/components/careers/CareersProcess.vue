@@ -5,8 +5,8 @@
                 <h3 class="title-border-bottom text-center text-white">{{ $store.getters.getTags({ tag: 'careers_text3' }) }}</h3>
             </article>
             <aside>
-                <template v-for="career in careers">
-                    <div class="item">
+                <template v-for="(career, id) in careers">
+                    <div class="item" :key="id">
                         <img :src="career.img" :alt="'img-' + career.id">
                         <strong class="d-block">{{ career.id + '. ' + career.title }}</strong>
                     </div>
@@ -32,16 +32,30 @@
     }
 </script>
 <style scoped>
+
     #section_proceso_carreras {
         background-image: url('/images/carreras/imagen_2-min.jpg');
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
         width: 100%;
-        min-height: 600px;
+        height: auto;
         padding: 50px 0;
         display: grid;
         align-items: center;
+    }
+    @media (min-width: 576px) {
+        #section_proceso_carreras {
+            background-image: url('/images/carreras/imagen_2-min.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 100%;
+            min-height: 600px;
+            padding: 50px 0;
+            display: grid;
+            align-items: center;
+        }
     }
 
     .title-border-bottom:after {

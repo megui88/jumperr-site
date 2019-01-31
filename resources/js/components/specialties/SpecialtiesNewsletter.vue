@@ -127,6 +127,21 @@
         padding: 4rem 0;
     }
 
+    @media (max-width: 575.98px) {
+        h3{
+            font-size: 1.8rem;
+        }
+        .newsletter {
+            width: 100%;
+            min-height: 380px;
+            background-color: rgba(242, 99, 54, 1);
+            background-image: url('/images/especialidades/jumperr_bg1_especialidades.svg'), url('/images/especialidades/jumperr_bg2_especialidades.svg');
+            background-position: 153% center, -83% center;
+            background-repeat: no-repeat, no-repeat;
+            background-size: 180px, 180px;
+        }
+    }
+
     .input-group > .form-control:not(:last-child),
     .input-group > .input-group-append > .btn {
         border-radius: 1.25rem;

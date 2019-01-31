@@ -2993,8 +2993,10 @@ __webpack_require__.r(__webpack_exports__);
       }, {
         link: 'https://www.instagram.com/wearejumperr/',
         icon: 'fab fa-instagram'
-      }, // { link: 'http://', icon: 'fab fa-youtube'},
-      {
+      }, {
+        link: 'https://www.youtube.com/channel/UCrLWu7ntv8P2AV8I5MlIIkA',
+        icon: 'fab fa-youtube'
+      }, {
         link: 'https://www.linkedin.com/company/wearejumperr/',
         icon: 'fab fa-linkedin-in'
       }]
@@ -5151,7 +5153,7 @@ __webpack_require__.r(__webpack_exports__);
         slidesPerColumn: 2,
         spaceBetween: 30,
         autoplay: {
-          delay: 3000
+          delay: 2000
         },
         pagination: {
           el: '.swiper-pagination',
@@ -5520,6 +5522,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'company-header'
 });
@@ -5645,7 +5649,7 @@ __webpack_require__.r(__webpack_exports__);
           img: '/images/la-empresa/vectores/3_personas.svg'
         }]
       }, {
-        id: 47,
+        id: 4,
         title: this.$store.getters.getTags({
           tag: 'company_text2017'
         }),
@@ -5693,26 +5697,23 @@ __webpack_require__.r(__webpack_exports__);
       swiperOptionTop: {
         slidesPerView: 'auto',
         freeMode: true,
-        loop: true,
+        loop: false,
         speed: 1900,
-        parallax: true,
-        loopedSlides: 5,
+        loopedSlides: 6,
         //looped slides should be the same
-        autoplay: {
-          delay: 5000
-        }
+        parallax: true
       },
       swiperOptionThumbs: {
         slidesPerView: 5,
         touchRatio: 0.2,
         centeredSlides: true,
-        loop: true,
-        speed: 1900,
-        loopedSlides: 5,
+        loop: false,
+        loopedSlides: 6,
         //looped slides should be the same
+        speed: 1900,
         slideToClickedSlide: true,
         autoplay: {
-          delay: 5000
+          delay: 1000
         }
       }
     };
@@ -10317,7 +10318,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\nheader[data-v-fe8dbb26] {\n    width: 100%;\n    min-height: 100vh;\n    background-image: url('/images/carreras/banner-1.png');\n    background-size: cover;\n    background-repeat: no-repeat;\n    background-position: center;\n    display: grid;\n    align-items: center;\n    position: relative;\n}\n\n/* ANIMACIONES */\n.circle-pulse[data-v-fe8dbb26] {\n    position: absolute;\n    bottom: 280px;\n    right: 30px;\n    display: block;\n    width: 22px;\n    height: 22px;\n    border-radius: 50%;\n    background: #fff;\n    cursor: pointer;\n    box-shadow: 0 0 0 rgba(255, 255, 255, 0.4);\n    -webkit-animation: pulse-data-v-fe8dbb26 2s infinite;\n            animation: pulse-data-v-fe8dbb26 2s infinite;\n}\n@-webkit-keyframes pulse-data-v-fe8dbb26 {\n0% {\n        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.4);\n}\n70% {\n        box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);\n}\n100% {\n        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);\n}\n}\n@keyframes pulse-data-v-fe8dbb26 {\n0% {\n        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.4);\n}\n70% {\n        box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);\n}\n100% {\n        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);\n}\n}\n.img-float-1[data-v-fe8dbb26] {\n    position: absolute;\n    bottom: 100px;\n    right: -35px;\n    display: inline-block;\n    width: 120px;\n    height: 120px;\n    -webkit-animation: opacidad-data-v-fe8dbb26 5s linear infinite;\n            animation: opacidad-data-v-fe8dbb26 5s linear infinite;\n}\n@-webkit-keyframes opacidad-data-v-fe8dbb26 {\n0% {\n        -webkit-transform: rotate(0deg);\n                transform: rotate(0deg);\n        opacity: 1;\n}\n50% {\n        opacity: .5;\n        -webkit-transform: rotate(180deg);\n                transform: rotate(180deg);\n}\n100% {\n        -webkit-transform: rotate(360deg);\n                transform: rotate(360deg);\n        opacity: 1;\n}\n}\n@keyframes opacidad-data-v-fe8dbb26 {\n0% {\n        -webkit-transform: rotate(0deg);\n                transform: rotate(0deg);\n        opacity: 1;\n}\n50% {\n        opacity: .5;\n        -webkit-transform: rotate(180deg);\n                transform: rotate(180deg);\n}\n100% {\n        -webkit-transform: rotate(360deg);\n                transform: rotate(360deg);\n        opacity: 1;\n}\n}\n.img-float-2[data-v-fe8dbb26] {\n    position: absolute;\n    bottom: 100px;\n    left: 35px;\n    display: inline-block;\n    width: 20px;\n    height: 20px;\n    -webkit-animation: saltar-data-v-fe8dbb26 5s linear infinite;\n            animation: saltar-data-v-fe8dbb26 5s linear infinite;\n}\n@-webkit-keyframes saltar-data-v-fe8dbb26 {\n0% {\n        -webkit-transform: translatey(0px);\n                transform: translatey(0px);\n}\n50% {\n        -webkit-transform: translatey(-20px);\n                transform: translatey(-20px);\n}\n100% {\n        -webkit-transform: translatey(0px);\n                transform: translatey(0px);\n}\n}\n@keyframes saltar-data-v-fe8dbb26 {\n0% {\n        -webkit-transform: translatey(0px);\n                transform: translatey(0px);\n}\n50% {\n        -webkit-transform: translatey(-20px);\n                transform: translatey(-20px);\n}\n100% {\n        -webkit-transform: translatey(0px);\n                transform: translatey(0px);\n}\n}\n", ""]);
+exports.push([module.i, "\nheader[data-v-fe8dbb26] {\n    width: 100%;\n    min-height: 100vh;\n    background-image: url('/images/carreras/banner-1.png');\n    background-size: cover;\n    background-repeat: no-repeat;\n    background-position: center;\n    display: grid;\n    align-items: center;\n    position: relative;\n}\n@media (max-width: 480px) {\nh2[data-v-fe8dbb26] {\n        font-size: 1.8rem;\n}\n}\n\n/* ANIMACIONES */\n.circle-pulse[data-v-fe8dbb26] {\n    position: absolute;\n    bottom: 240px;\n    right: 30px;\n    display: block;\n    width: 22px;\n    height: 22px;\n    border-radius: 50%;\n    background: #fff;\n    cursor: pointer;\n    box-shadow: 0 0 0 rgba(255, 255, 255, 0.4);\n    -webkit-animation: pulse-data-v-fe8dbb26 2s infinite;\n            animation: pulse-data-v-fe8dbb26 2s infinite;\n}\n@-webkit-keyframes pulse-data-v-fe8dbb26 {\n0% {\n        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.4);\n}\n70% {\n        box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);\n}\n100% {\n        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);\n}\n}\n@keyframes pulse-data-v-fe8dbb26 {\n0% {\n        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.4);\n}\n70% {\n        box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);\n}\n100% {\n        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);\n}\n}\n.img-float-1[data-v-fe8dbb26] {\n    position: absolute;\n    bottom: 100px;\n    right: -35px;\n    display: inline-block;\n    width: 120px;\n    height: 120px;\n    -webkit-animation: opacidad-data-v-fe8dbb26 5s linear infinite;\n            animation: opacidad-data-v-fe8dbb26 5s linear infinite;\n}\n@-webkit-keyframes opacidad-data-v-fe8dbb26 {\n0% {\n        -webkit-transform: rotate(0deg);\n                transform: rotate(0deg);\n        opacity: 1;\n}\n50% {\n        opacity: .5;\n        -webkit-transform: rotate(180deg);\n                transform: rotate(180deg);\n}\n100% {\n        -webkit-transform: rotate(360deg);\n                transform: rotate(360deg);\n        opacity: 1;\n}\n}\n@keyframes opacidad-data-v-fe8dbb26 {\n0% {\n        -webkit-transform: rotate(0deg);\n                transform: rotate(0deg);\n        opacity: 1;\n}\n50% {\n        opacity: .5;\n        -webkit-transform: rotate(180deg);\n                transform: rotate(180deg);\n}\n100% {\n        -webkit-transform: rotate(360deg);\n                transform: rotate(360deg);\n        opacity: 1;\n}\n}\n.img-float-2[data-v-fe8dbb26] {\n    position: absolute;\n    bottom: 100px;\n    left: 35px;\n    display: inline-block;\n    width: 20px;\n    height: 20px;\n    -webkit-animation: saltar-data-v-fe8dbb26 5s linear infinite;\n            animation: saltar-data-v-fe8dbb26 5s linear infinite;\n}\n@-webkit-keyframes saltar-data-v-fe8dbb26 {\n0% {\n        -webkit-transform: translatey(0px);\n                transform: translatey(0px);\n}\n50% {\n        -webkit-transform: translatey(-20px);\n                transform: translatey(-20px);\n}\n100% {\n        -webkit-transform: translatey(0px);\n                transform: translatey(0px);\n}\n}\n@keyframes saltar-data-v-fe8dbb26 {\n0% {\n        -webkit-transform: translatey(0px);\n                transform: translatey(0px);\n}\n50% {\n        -webkit-transform: translatey(-20px);\n                transform: translatey(-20px);\n}\n100% {\n        -webkit-transform: translatey(0px);\n                transform: translatey(0px);\n}\n}\n", ""]);
 
 // exports
 
@@ -10336,7 +10337,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\n#section_proceso_carreras[data-v-5e88debf] {\n    background-image: url('/images/carreras/imagen_2-min.jpg');\n    background-size: cover;\n    background-repeat: no-repeat;\n    background-position: center;\n    width: 100%;\n    min-height: 600px;\n    padding: 50px 0;\n    display: grid;\n    align-items: center;\n}\n.title-border-bottom[data-v-5e88debf]:after {\n    content: ' ';\n    border-bottom: 1px solid #f26336;\n    display: block;\n    width: 160px;\n    margin: 1.3rem auto 1.1rem;\n}\n.wrapper[data-v-5e88debf] {\n    width: 100%;\n    max-width: 1140px;\n    height: auto;\n    min-height: 100%;\n    margin: auto;\n    padding-right: 15px;\n    padding-left: 15px;\n    display: grid;\n    align-content: center;\n}\naside[data-v-5e88debf] {\n    display: flex;\n    flex-direction: column;\n    justify-content: space-between;\n    align-items: flex-start;\n}\n.item[data-v-5e88debf] {\n    color: #fff;\n    text-align: center;\n    margin-bottom: 2rem;\n    width: 100%;\n}\n.item img[data-v-5e88debf] {\n    height: 100px;\n    margin-bottom: 1rem;\n}\n@media (min-width: 768px) {\naside[data-v-5e88debf] {\n        display: flex;\n        flex-direction: row;\n        justify-content: space-between;\n        align-items: flex-start;\n}\n.item[data-v-5e88debf] {\n        color: #fff;\n        text-align: center;\n        margin-bottom: 2rem;\n        width: 100%;\n}\n}\n", ""]);
+exports.push([module.i, "\n#section_proceso_carreras[data-v-5e88debf] {\n    background-image: url('/images/carreras/imagen_2-min.jpg');\n    background-size: cover;\n    background-repeat: no-repeat;\n    background-position: center;\n    width: 100%;\n    height: auto;\n    padding: 50px 0;\n    display: grid;\n    align-items: center;\n}\n@media (min-width: 576px) {\n#section_proceso_carreras[data-v-5e88debf] {\n        background-image: url('/images/carreras/imagen_2-min.jpg');\n        background-size: cover;\n        background-repeat: no-repeat;\n        background-position: center;\n        width: 100%;\n        min-height: 600px;\n        padding: 50px 0;\n        display: grid;\n        align-items: center;\n}\n}\n.title-border-bottom[data-v-5e88debf]:after {\n    content: ' ';\n    border-bottom: 1px solid #f26336;\n    display: block;\n    width: 160px;\n    margin: 1.3rem auto 1.1rem;\n}\n.wrapper[data-v-5e88debf] {\n    width: 100%;\n    max-width: 1140px;\n    height: auto;\n    min-height: 100%;\n    margin: auto;\n    padding-right: 15px;\n    padding-left: 15px;\n    display: grid;\n    align-content: center;\n}\naside[data-v-5e88debf] {\n    display: flex;\n    flex-direction: column;\n    justify-content: space-between;\n    align-items: flex-start;\n}\n.item[data-v-5e88debf] {\n    color: #fff;\n    text-align: center;\n    margin-bottom: 2rem;\n    width: 100%;\n}\n.item img[data-v-5e88debf] {\n    height: 100px;\n    margin-bottom: 1rem;\n}\n@media (min-width: 768px) {\naside[data-v-5e88debf] {\n        display: flex;\n        flex-direction: row;\n        justify-content: space-between;\n        align-items: flex-start;\n}\n.item[data-v-5e88debf] {\n        color: #fff;\n        text-align: center;\n        margin-bottom: 2rem;\n        width: 100%;\n}\n}\n", ""]);
 
 // exports
 
@@ -10507,7 +10508,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\n.img-1[data-v-2b1ac5a4] {\n    position: absolute;\n    top: -12px;\n    left: 20px;\n    display: inline-block;\n    width: 120px;\n    height: 120px;\n    -webkit-animation: rotarRight-data-v-2b1ac5a4 3s linear infinite;\n            animation: rotarRight-data-v-2b1ac5a4 3s linear infinite;\n}\n.img-2[data-v-2b1ac5a4] {\n    position: absolute;\n    top: 115px;\n    left: 100px;\n    display: inline-block;\n    width: 20px;\n    height: 20px;\n    -webkit-animation: pulso-data-v-2b1ac5a4 1s linear infinite;\n            animation: pulso-data-v-2b1ac5a4 1s linear infinite;\n}\n.img-3[data-v-2b1ac5a4] {\n    position: absolute;\n    bottom: -60px;\n    right: -40px;\n    display: inline-block;\n    width: 120px;\n    height: 120px;\n    -webkit-animation: rotarRight-data-v-2b1ac5a4 3s linear infinite;\n            animation: rotarRight-data-v-2b1ac5a4 3s linear infinite;\n}\n.img-4[data-v-2b1ac5a4] {\n    position: absolute;\n    bottom: -70px;\n    right: 70px;\n    display: inline-block;\n    width: 20px;\n    height: 20px;\n    -webkit-animation: pulso-data-v-2b1ac5a4 1s linear infinite;\n            animation: pulso-data-v-2b1ac5a4 1s linear infinite;\n}\n.circle-pulse[data-v-2b1ac5a4] {\n    position: absolute;\n    bottom: 80px;\n    right: 30px;\n    display: block;\n    width: 22px;\n    height: 22px;\n    border-radius: 50%;\n    background: #fff;\n    cursor: pointer;\n    box-shadow: 0 0 0 rgba(255, 255, 255, 0.4);\n    -webkit-animation: pulse-data-v-2b1ac5a4 2s infinite;\n            animation: pulse-data-v-2b1ac5a4 2s infinite;\n}\n@-webkit-keyframes pulse-data-v-2b1ac5a4 {\n0% {\n        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.4);\n}\n70% {\n        box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);\n}\n100% {\n        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);\n}\n}\n@keyframes pulse-data-v-2b1ac5a4 {\n0% {\n        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.4);\n}\n70% {\n        box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);\n}\n100% {\n        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);\n}\n}\n@-webkit-keyframes rotarRight-data-v-2b1ac5a4 {\n0% {\n        -webkit-transform: rotate(0deg);\n                transform: rotate(0deg);\n        opacity: 1;\n}\n50% {\n        opacity: .5;\n        -webkit-transform: rotate(180deg);\n                transform: rotate(180deg);\n}\n100% {\n        -webkit-transform: rotate(360deg);\n                transform: rotate(360deg);\n        opacity: 1;\n}\n}\n@keyframes rotarRight-data-v-2b1ac5a4 {\n0% {\n        -webkit-transform: rotate(0deg);\n                transform: rotate(0deg);\n        opacity: 1;\n}\n50% {\n        opacity: .5;\n        -webkit-transform: rotate(180deg);\n                transform: rotate(180deg);\n}\n100% {\n        -webkit-transform: rotate(360deg);\n                transform: rotate(360deg);\n        opacity: 1;\n}\n}\n@-webkit-keyframes pulso-data-v-2b1ac5a4 {\n0% {\n        -webkit-transform: scale(1, 1);\n                transform: scale(1, 1);\n}\n35% {\n        -webkit-transform: scale(1.05, 1.05);\n                transform: scale(1.05, 1.05);\n}\n75% {\n        -webkit-transform: scale(1.1, 1.1);\n                transform: scale(1.1, 1.1);\n}\n100% {\n        -webkit-transform: scale(1, 1);\n                transform: scale(1, 1);\n}\n}\n@keyframes pulso-data-v-2b1ac5a4 {\n0% {\n        -webkit-transform: scale(1, 1);\n                transform: scale(1, 1);\n}\n35% {\n        -webkit-transform: scale(1.05, 1.05);\n                transform: scale(1.05, 1.05);\n}\n75% {\n        -webkit-transform: scale(1.1, 1.1);\n                transform: scale(1.1, 1.1);\n}\n100% {\n        -webkit-transform: scale(1, 1);\n                transform: scale(1, 1);\n}\n}\n#section_bio[data-v-2b1ac5a4] {\n    z-index: 1000;\n    position: relative;\n}\n.fondo[data-v-2b1ac5a4] {\n    background-color: #000;\n    background-image: url('/images/home/imagenes/jumperr-teofrecemos-home.png');\n    background-attachment: fixed;\n    -webkit-background-attachment: fixed;\n    background-repeat: no-repeat;\n    background-size: cover;\n    background-position: center;\n    width: auto;\n    height: 560px;\n    min-height: 560px;\n}\n.title-border-bottom[data-v-2b1ac5a4]:after {\n    content: ' ';\n    border-bottom: 1px solid #f26336;\n    display: block;\n    width: 160px;\n    margin: 1rem 0rem 1.1rem;\n}\nh3[data-v-2b1ac5a4], p[data-v-2b1ac5a4] {\n    color: #fff;\n}\np[data-v-2b1ac5a4] {\n    font-size: 1.2rem;\n}\n@media (min-width: 992px) {\n.img-1[data-v-2b1ac5a4] {\n        position: absolute;\n        top: 50px;\n        left: -50px;\n        display: inline-block;\n        width: 120px;\n        height: 120px;\n        -webkit-animation: rotarRight-data-v-2b1ac5a4 5s linear infinite;\n                animation: rotarRight-data-v-2b1ac5a4 5s linear infinite;\n}\n.img-2[data-v-2b1ac5a4] {\n        position: absolute;\n        top: 180px;\n        left: 25px;\n        display: inline-block;\n        width: 20px;\n        height: 20px;\n        -webkit-animation: pulso-data-v-2b1ac5a4 1s linear infinite;\n                animation: pulso-data-v-2b1ac5a4 1s linear infinite;\n}\n}\n", ""]);
+exports.push([module.i, "\n#section_bio[data-v-2b1ac5a4] {\n    z-index: 1000;\n    position: relative;\n}\n.fondo[data-v-2b1ac5a4] {\n    background-color: #000;\n    background-image: url('/images/home/imagenes/jumperr-teofrecemos-home.png');\n    background-attachment: fixed;\n    -webkit-background-attachment: fixed;\n    background-repeat: no-repeat;\n    background-size: cover;\n    background-position: center;\n    width: auto;\n    height: 100%;\n    min-height: 560px;\n}\n.title-border-bottom[data-v-2b1ac5a4]:after {\n    content: ' ';\n    border-bottom: 1px solid #f26336;\n    display: block;\n    width: 160px;\n    margin: 1rem 0rem 1.1rem;\n}\nh3[data-v-2b1ac5a4], p[data-v-2b1ac5a4] {\n    color: #fff;\n}\np[data-v-2b1ac5a4] {\n    font-size: 1.2rem;\n}\n.img-1[data-v-2b1ac5a4] {\n    position: absolute;\n    top: -60px;\n    right: -55px;\n    left: auto;\n    display: inline-block;\n    width: 120px;\n    height: 120px;\n    -webkit-animation: rotarRight-data-v-2b1ac5a4 3s linear infinite;\n            animation: rotarRight-data-v-2b1ac5a4 3s linear infinite;\n}\n.img-2[data-v-2b1ac5a4] {\n    position: absolute;\n    top: 90px;\n    right: 10px;\n    left: auto;\n    display: inline-block;\n    width: 20px;\n    height: 20px;\n    -webkit-animation: rotarRight-data-v-2b1ac5a4 6s linear infinite;\n            animation: rotarRight-data-v-2b1ac5a4 6s linear infinite;\n}\n.img-3[data-v-2b1ac5a4] {\n    position: absolute;\n    bottom: -60px;\n    right: -40px;\n    display: inline-block;\n    width: 120px;\n    height: 120px;\n    -webkit-animation: rotarRight-data-v-2b1ac5a4 3s linear infinite;\n            animation: rotarRight-data-v-2b1ac5a4 3s linear infinite;\n}\n.img-4[data-v-2b1ac5a4] {\n    position: absolute;\n    bottom: -70px;\n    right: 70px;\n    display: inline-block;\n    width: 20px;\n    height: 20px;\n    -webkit-animation: pulso-data-v-2b1ac5a4 1s linear infinite;\n            animation: pulso-data-v-2b1ac5a4 1s linear infinite;\n}\n.circle-pulse[data-v-2b1ac5a4] {\n    position: absolute;\n    bottom: 200px;\n    right: 10px;\n    display: block;\n    width: 22px;\n    height: 22px;\n    border-radius: 50%;\n    background: #fff;\n    cursor: pointer;\n    box-shadow: 0 0 0 rgba(255, 255, 255, 0.4);\n    -webkit-animation: pulse-data-v-2b1ac5a4 2s infinite;\n            animation: pulse-data-v-2b1ac5a4 2s infinite;\n}\n@-webkit-keyframes pulse-data-v-2b1ac5a4 {\n0% {\n        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.4);\n}\n70% {\n        box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);\n}\n100% {\n        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);\n}\n}\n@keyframes pulse-data-v-2b1ac5a4 {\n0% {\n        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.4);\n}\n70% {\n        box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);\n}\n100% {\n        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);\n}\n}\n@-webkit-keyframes rotarRight-data-v-2b1ac5a4 {\n0% {\n        -webkit-transform: translatey(0px);\n                transform: translatey(0px);\n        opacity: 1;\n}\n50% {\n        opacity: .5;\n        -webkit-transform: translatey(-20px);\n                transform: translatey(-20px);\n}\n100% {\n        -webkit-transform: translatey(0px);\n                transform: translatey(0px);\n        opacity: 1;\n}\n}\n@keyframes rotarRight-data-v-2b1ac5a4 {\n0% {\n        -webkit-transform: translatey(0px);\n                transform: translatey(0px);\n        opacity: 1;\n}\n50% {\n        opacity: .5;\n        -webkit-transform: translatey(-20px);\n                transform: translatey(-20px);\n}\n100% {\n        -webkit-transform: translatey(0px);\n                transform: translatey(0px);\n        opacity: 1;\n}\n}\n@-webkit-keyframes pulso-data-v-2b1ac5a4 {\n0% {\n        -webkit-transform: scale(1, 1);\n                transform: scale(1, 1);\n}\n35% {\n        -webkit-transform: scale(1.05, 1.05);\n                transform: scale(1.05, 1.05);\n}\n75% {\n        -webkit-transform: scale(1.1, 1.1);\n                transform: scale(1.1, 1.1);\n}\n100% {\n        -webkit-transform: scale(1, 1);\n                transform: scale(1, 1);\n}\n}\n@keyframes pulso-data-v-2b1ac5a4 {\n0% {\n        -webkit-transform: scale(1, 1);\n                transform: scale(1, 1);\n}\n35% {\n        -webkit-transform: scale(1.05, 1.05);\n                transform: scale(1.05, 1.05);\n}\n75% {\n        -webkit-transform: scale(1.1, 1.1);\n                transform: scale(1.1, 1.1);\n}\n100% {\n        -webkit-transform: scale(1, 1);\n                transform: scale(1, 1);\n}\n}\n@media (min-width: 992px) {\n.img-1[data-v-2b1ac5a4] {\n        position: absolute;\n        top: 50px;\n        right: auto;\n        left: -50px;\n        display: inline-block;\n        width: 120px;\n        height: 120px;\n        -webkit-animation: rotarRight-data-v-2b1ac5a4 5s linear infinite;\n                animation: rotarRight-data-v-2b1ac5a4 5s linear infinite;\n}\n.img-2[data-v-2b1ac5a4] {\n        position: absolute;\n        top: 180px;\n        right: auto;\n        left: 25px;\n        display: inline-block;\n        width: 20px;\n        height: 20px;\n        -webkit-animation: pulso-data-v-2b1ac5a4 1s linear infinite;\n                animation: pulso-data-v-2b1ac5a4 1s linear infinite;\n}\n.circle-pulse[data-v-2b1ac5a4] {\n        position: absolute;\n        bottom: 80px;\n        right: 30px;\n        display: block;\n        width: 22px;\n        height: 22px;\n        border-radius: 50%;\n        background: #fff;\n        cursor: pointer;\n        box-shadow: 0 0 0 rgba(255, 255, 255, 0.4);\n        -webkit-animation: pulse-data-v-2b1ac5a4 2s infinite;\n                animation: pulse-data-v-2b1ac5a4 2s infinite;\n}\n}\n", ""]);
 
 // exports
 
@@ -10564,7 +10565,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\n#section_carreras[data-v-6871f0d1] {\n    position: relative;\n}\n.img-position[data-v-6871f0d1] {\n    margin-top: -30px;\n}\n.img-position img[data-v-6871f0d1] {\n    width: 96%;\n    height: auto;\n}\n.fondo[data-v-6871f0d1] {\n    background-color: #f8f8f8;\n    background-attachment: fixed;\n    background-repeat: no-repeat;\n    background-size: cover;\n    background-position: center;\n    width: auto;\n    height: auto;\n    min-height: 700px;\n}\n.title-border-bottom[data-v-6871f0d1]:after {\n    content: ' ';\n    border-bottom: 1px solid #f26336;\n    display: block;\n    width: 160px;\n    margin: 1rem 0rem 1.1rem;\n}\np[data-v-6871f0d1] {\n    font-size: 1.2rem;\n}\n@media (max-width: 991.98px) {\n    /* sobre escribiendo estilo de bootstrap */\n.col-xl[data-v-6871f0d1], .col-xl-auto[data-v-6871f0d1], .col-xl-12[data-v-6871f0d1], .col-xl-11[data-v-6871f0d1], .col-xl-10[data-v-6871f0d1], .col-xl-9[data-v-6871f0d1], .col-xl-8[data-v-6871f0d1], .col-xl-7[data-v-6871f0d1], .col-xl-6[data-v-6871f0d1], .col-xl-5[data-v-6871f0d1], .col-xl-4[data-v-6871f0d1], .col-xl-3[data-v-6871f0d1], .col-xl-2[data-v-6871f0d1], .col-xl-1[data-v-6871f0d1], .col-lg[data-v-6871f0d1], .col-lg-auto[data-v-6871f0d1], .col-lg-12[data-v-6871f0d1], .col-lg-11[data-v-6871f0d1], .col-lg-10[data-v-6871f0d1], .col-lg-9[data-v-6871f0d1], .col-lg-8[data-v-6871f0d1], .col-lg-7[data-v-6871f0d1], .col-lg-6[data-v-6871f0d1], .col-lg-5[data-v-6871f0d1], .col-lg-4[data-v-6871f0d1], .col-lg-3[data-v-6871f0d1], .col-lg-2[data-v-6871f0d1], .col-lg-1[data-v-6871f0d1], .col-md[data-v-6871f0d1], .col-md-auto[data-v-6871f0d1], .col-md-12[data-v-6871f0d1], .col-md-11[data-v-6871f0d1], .col-md-10[data-v-6871f0d1], .col-md-9[data-v-6871f0d1], .col-md-8[data-v-6871f0d1], .col-md-7[data-v-6871f0d1], .col-md-6[data-v-6871f0d1], .col-md-5[data-v-6871f0d1], .col-md-4[data-v-6871f0d1], .col-md-3[data-v-6871f0d1], .col-md-2[data-v-6871f0d1], .col-md-1[data-v-6871f0d1], .col-sm[data-v-6871f0d1], .col-sm-auto[data-v-6871f0d1], .col-sm-12[data-v-6871f0d1], .col-sm-11[data-v-6871f0d1], .col-sm-10[data-v-6871f0d1], .col-sm-9[data-v-6871f0d1], .col-sm-8[data-v-6871f0d1], .col-sm-7[data-v-6871f0d1], .col-sm-6[data-v-6871f0d1], .col-sm-5[data-v-6871f0d1], .col-sm-4[data-v-6871f0d1], .col-sm-3[data-v-6871f0d1], .col-sm-2[data-v-6871f0d1], .col-sm-1[data-v-6871f0d1], .col[data-v-6871f0d1], .col-auto[data-v-6871f0d1], .col-12[data-v-6871f0d1], .col-11[data-v-6871f0d1], .col-10[data-v-6871f0d1], .col-9[data-v-6871f0d1], .col-8[data-v-6871f0d1], .col-7[data-v-6871f0d1], .col-6[data-v-6871f0d1], .col-5[data-v-6871f0d1], .col-4[data-v-6871f0d1], .col-3[data-v-6871f0d1], .col-2[data-v-6871f0d1], .col-1[data-v-6871f0d1] {\n        position: relative;\n        width: 100%;\n        padding-right: 15px;\n        padding-left: 50px;\n}\n.container[data-v-6871f0d1] {\n        margin-right: 0;\n        margin-left: 0;\n}\n.fondo[data-v-6871f0d1] {\n        height: auto;\n        min-height: auto;\n}\n}\n@media (min-width: 992px) {\n.fondo[data-v-6871f0d1] {\n        background-color: #f8f8f8;\n        background-attachment: fixed;\n        background-repeat: no-repeat;\n        background-size: cover;\n        background-position: center;\n        width: auto;\n        height: 600px;\n        min-height: 600px;\n}\nimg[data-v-6871f0d1] {\n        width: 688px;\n}\n.img-position[data-v-6871f0d1] {\n        position: absolute;\n        top: -50px;\n        left: 0;\n        margin-top: 0px;\n}\n}\n\n\n/* animacion */\n.img-1[data-v-6871f0d1] {\n    position: absolute;\n    top: -60px;\n    left: -180px;\n    width: 160px;\n    -webkit-animation: float-data-v-6871f0d1 10s linear infinite;\n            animation: float-data-v-6871f0d1 10s linear infinite;\n}\n@-webkit-keyframes float-data-v-6871f0d1 {\n0% {\n        -webkit-transform: translateX(-180px);\n                transform: translateX(-180px);\n}\n50% {\n        -webkit-transform: translateX(1100px);\n                transform: translateX(1100px);\n}\n95% {\n        -webkit-transform: translateX(1100px);\n                transform: translateX(1100px);\n}\n100% {\n        /* transform: translateX(140px, -60px); */\n        -webkit-transform: translateX(1800px);\n                transform: translateX(1800px);\n}\n}\n@keyframes float-data-v-6871f0d1 {\n0% {\n        -webkit-transform: translateX(-180px);\n                transform: translateX(-180px);\n}\n50% {\n        -webkit-transform: translateX(1100px);\n                transform: translateX(1100px);\n}\n95% {\n        -webkit-transform: translateX(1100px);\n                transform: translateX(1100px);\n}\n100% {\n        /* transform: translateX(140px, -60px); */\n        -webkit-transform: translateX(1800px);\n                transform: translateX(1800px);\n}\n}\n", ""]);
+exports.push([module.i, "\n#section_carreras[data-v-6871f0d1] {\n    position: relative;\n}\n.img-position[data-v-6871f0d1] {\n    margin-top: -30px;\n}\n.img-position img[data-v-6871f0d1] {\n    width: 96%;\n    height: auto;\n}\n.fondo[data-v-6871f0d1] {\n    background-color: #f8f8f8;\n    background-attachment: fixed;\n    background-repeat: no-repeat;\n    background-size: cover;\n    background-position: center;\n    width: auto;\n    height: auto;\n    min-height: 700px;\n}\n.title-border-bottom[data-v-6871f0d1]:after {\n    content: ' ';\n    border-bottom: 1px solid #f26336;\n    display: block;\n    width: 160px;\n    margin: 1rem 0rem 1.1rem;\n}\np[data-v-6871f0d1] {\n    font-size: 1.2rem;\n}\n@media (max-width: 991.98px) {\n    /* sobre escribiendo estilo de bootstrap */\n.col-xl[data-v-6871f0d1], .col-xl-auto[data-v-6871f0d1], .col-xl-12[data-v-6871f0d1], .col-xl-11[data-v-6871f0d1], .col-xl-10[data-v-6871f0d1], .col-xl-9[data-v-6871f0d1], .col-xl-8[data-v-6871f0d1], .col-xl-7[data-v-6871f0d1], .col-xl-6[data-v-6871f0d1], .col-xl-5[data-v-6871f0d1], .col-xl-4[data-v-6871f0d1], .col-xl-3[data-v-6871f0d1], .col-xl-2[data-v-6871f0d1], .col-xl-1[data-v-6871f0d1], .col-lg[data-v-6871f0d1], .col-lg-auto[data-v-6871f0d1], .col-lg-12[data-v-6871f0d1], .col-lg-11[data-v-6871f0d1], .col-lg-10[data-v-6871f0d1], .col-lg-9[data-v-6871f0d1], .col-lg-8[data-v-6871f0d1], .col-lg-7[data-v-6871f0d1], .col-lg-6[data-v-6871f0d1], .col-lg-5[data-v-6871f0d1], .col-lg-4[data-v-6871f0d1], .col-lg-3[data-v-6871f0d1], .col-lg-2[data-v-6871f0d1], .col-lg-1[data-v-6871f0d1], .col-md[data-v-6871f0d1], .col-md-auto[data-v-6871f0d1], .col-md-12[data-v-6871f0d1], .col-md-11[data-v-6871f0d1], .col-md-10[data-v-6871f0d1], .col-md-9[data-v-6871f0d1], .col-md-8[data-v-6871f0d1], .col-md-7[data-v-6871f0d1], .col-md-6[data-v-6871f0d1], .col-md-5[data-v-6871f0d1], .col-md-4[data-v-6871f0d1], .col-md-3[data-v-6871f0d1], .col-md-2[data-v-6871f0d1], .col-md-1[data-v-6871f0d1], .col-sm[data-v-6871f0d1], .col-sm-auto[data-v-6871f0d1], .col-sm-12[data-v-6871f0d1], .col-sm-11[data-v-6871f0d1], .col-sm-10[data-v-6871f0d1], .col-sm-9[data-v-6871f0d1], .col-sm-8[data-v-6871f0d1], .col-sm-7[data-v-6871f0d1], .col-sm-6[data-v-6871f0d1], .col-sm-5[data-v-6871f0d1], .col-sm-4[data-v-6871f0d1], .col-sm-3[data-v-6871f0d1], .col-sm-2[data-v-6871f0d1], .col-sm-1[data-v-6871f0d1], .col[data-v-6871f0d1], .col-auto[data-v-6871f0d1], .col-12[data-v-6871f0d1], .col-11[data-v-6871f0d1], .col-10[data-v-6871f0d1], .col-9[data-v-6871f0d1], .col-8[data-v-6871f0d1], .col-7[data-v-6871f0d1], .col-6[data-v-6871f0d1], .col-5[data-v-6871f0d1], .col-4[data-v-6871f0d1], .col-3[data-v-6871f0d1], .col-2[data-v-6871f0d1], .col-1[data-v-6871f0d1] {\n        position: relative;\n        width: 100%;\n        padding-right: 15px;\n        padding-left: 50px;\n}\n.container[data-v-6871f0d1] {\n        margin-right: 0;\n        margin-left: 0;\n}\n.fondo[data-v-6871f0d1] {\n        height: auto;\n        min-height: auto;\n}\n}\n@media (min-width: 992px) {\n.fondo[data-v-6871f0d1] {\n        background-color: #f8f8f8;\n        background-attachment: fixed;\n        background-repeat: no-repeat;\n        background-size: cover;\n        background-position: center;\n        width: auto;\n        height: 600px;\n        min-height: 600px;\n}\nimg[data-v-6871f0d1] {\n        width: 688px;\n}\n.img-position[data-v-6871f0d1] {\n        position: absolute;\n        top: -50px;\n        left: 0;\n        margin-top: 0px;\n}\n}\n\n\n/* animacion */\n.img-1[data-v-6871f0d1] {\n    position: absolute;\n    top: -60px;\n    left: -180px;\n    width: 160px;\n    -webkit-animation: float-data-v-6871f0d1 10s linear infinite;\n            animation: float-data-v-6871f0d1 10s linear infinite;\n    z-index: 1000;\n}\n@-webkit-keyframes float-data-v-6871f0d1 {\n0% {\n        -webkit-transform: translateX(-180px);\n                transform: translateX(-180px);\n}\n50% {\n        -webkit-transform: translateX(1100px);\n                transform: translateX(1100px);\n}\n95% {\n        -webkit-transform: translateX(1100px);\n                transform: translateX(1100px);\n}\n100% {\n        /* transform: translateX(140px, -60px); */\n        -webkit-transform: translateX(1800px);\n                transform: translateX(1800px);\n}\n}\n@keyframes float-data-v-6871f0d1 {\n0% {\n        -webkit-transform: translateX(-180px);\n                transform: translateX(-180px);\n}\n50% {\n        -webkit-transform: translateX(1100px);\n                transform: translateX(1100px);\n}\n95% {\n        -webkit-transform: translateX(1100px);\n                transform: translateX(1100px);\n}\n100% {\n        /* transform: translateX(140px, -60px); */\n        -webkit-transform: translateX(1800px);\n                transform: translateX(1800px);\n}\n}\n", ""]);
 
 // exports
 
@@ -10621,7 +10622,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\nsection[data-v-3ae59ae4] {\n    background-color: #f8f8f8;\n}\n.title-border-bottom[data-v-3ae59ae4]:after {\n    content: ' ';\n    border-bottom: 1px solid #f26336;\n    display: block;\n    width: 160px;\n    margin: 1rem auto 1.1rem;\n}\n.portafolio-container[data-v-3ae59ae4] {\n    display: grid;\n    grid-template-columns: repeat(2, 1fr);\n    grid-gap: 10px;\n}\n@media (min-width: 682px) {\n.portafolio-container[data-v-3ae59ae4] {\n        display: grid;\n        grid-template-columns: repeat(3, 1fr);\n        grid-gap: 10px;\n}\n}\n.portafolio-item[data-v-3ae59ae4] {\n    position: relative;\n    overflow: hidden;\n}\n.portafolio-image img[data-v-3ae59ae4] {\n    width: 100%;\n    -o-object-fit: cover;\n       object-fit: cover;\n}\n.portafolio-caption[data-v-3ae59ae4] {\n    position: absolute;\n    top: -100%;\n    left: 0;\n    width: 100%;\n    height: 100%;\n    background-color: rgba(0, 0, 0, 0.9);\n    color: #fff;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    z-index: 100;\n    transition: top 1s ease-out;\n}\n.portafolio-item:hover .portafolio-caption[data-v-3ae59ae4] {\n    top: 0;\n}\n.portafolio-caption img[data-v-3ae59ae4] {\n    width: 42px;\n    height: auto;\n}\n", ""]);
+exports.push([module.i, "\nsection[data-v-3ae59ae4] {\n    background-color: #f8f8f8;\n}\n.title-border-bottom[data-v-3ae59ae4]:after {\n    content: ' ';\n    border-bottom: 1px solid #f26336;\n    display: block;\n    width: 160px;\n    margin: 1rem auto 1.1rem;\n}\n.portafolio-container[data-v-3ae59ae4] {\n    display: grid;\n    grid-template-columns: repeat(2, 1fr);\n    grid-gap: 10px;\n}\n@media (min-width: 682px) {\n.portafolio-container[data-v-3ae59ae4] {\n        display: grid;\n        grid-template-columns: repeat(3, 1fr);\n        grid-gap: 10px;\n}\n}\n.portafolio-item[data-v-3ae59ae4] {\n    position: relative;\n    overflow: hidden;\n}\n.portafolio-image img[data-v-3ae59ae4] {\n    width: 100%;\n    -o-object-fit: cover;\n       object-fit: cover;\n}\n.portafolio-caption[data-v-3ae59ae4] {\n    position: absolute;\n    top: -100%;\n    left: 0;\n    width: 100%;\n    height: 100%;\n    background-color: #f26236d3;\n    color: #fff;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    z-index: 100;\n    transition: top .5s ease-out;\n}\n.portafolio-item:hover .portafolio-caption[data-v-3ae59ae4] {\n    top: 0;\n}\n.portafolio-caption img[data-v-3ae59ae4] {\n    width: 42px;\n    height: auto;\n}\n", ""]);
 
 // exports
 
@@ -10640,7 +10641,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\n#section_services[data-v-8258a71c]{\n    background-color: #f8f8f8;\n    padding-top: 2rem;\n    padding-bottom: 4rem;\n}\n.title-border-bottom[data-v-8258a71c]:after {\n    content: ' ';\n    border-bottom: 1px solid #f26336;\n    display: block;\n    width: 160px;\n    margin: 1.3rem auto 1.1rem;\n}\n\n/*Slider swiper*/\n.swiper-inner[data-v-8258a71c] {\n    padding-top: 50px;\n    padding-bottom: 50px;\n}\n.swiper-slide[data-v-8258a71c] {\nbackground-position: center;\nbackground-size: cover;\nmax-width: 100%;\n}\n@media (min-width: 992px) {\n.swiper-slide[data-v-8258a71c]{\n        max-width: 320px;\n}\n}\n.swiper-pagination-fraction[data-v-8258a71c],\n.swiper-pagination-custom[data-v-8258a71c],\n.swiper-container-horizontal > .swiper-pagination-bullets[data-v-8258a71c]{\n    margin-top: 1rem;\n    bottom: 0px;\n    left: 0;\n    width: 100%;\n}\n.swiper-pagination[data-v-8258a71c]{\n    position: relative;\n    text-align: center;\n    transition: 300ms opacity;\n    -webkit-transform: translate3d(0, 0, 0);\n    transform: translate3d(0, 0, 0);\n    z-index: 10;\n}\n\n\n/*Card bootstrap*/\n.card[data-v-8258a71c] {\n    position: relative;\n    display: flex;\n    flex-direction: column;\n    min-width: 0;\n    word-wrap: break-word;\n    background-color: #fff;\n    background-clip: border-box;\n    border: 1px solid rgba(0, 0, 0, 0.125);\n    border-radius: 0.5rem;\n    overflow: hidden;\n}\n.card-img-top[data-v-8258a71c] {\n    width: 100%;\n    border-top-left-radius: calc(0.25rem - 1px);\n    border-top-right-radius: calc(0.25rem - 1px);\n}\n.card-body[data-v-8258a71c] {\n    flex: 1 1 auto;\n    padding: 1.3rem;\n    padding-bottom: 2rem;\n    min-height: 270px;\n    display: flex;\n    flex-direction: column;\n    justify-content: space-between;\n}\np[data-v-8258a71c]{\n    font-size: 1rem;\n    line-height: 1.6rem;\n}\n.btn[data-v-8258a71c] {\n    -webkit-user-select: none;\n    -moz-user-select: none;\n    -ms-user-select: none;\n    font-weight: 700;\n    user-select: none;\n    border: 1px solid transparent;\n    padding: 0.275rem 1.8rem;\n    font-size: .9rem;\n    line-height: 1.6;\n    border-radius: 1.25rem;\n    align-self: center;\n}\n.contenedor-img[data-v-8258a71c]{\n    position: relative;\n}\n.contenedor-posicionado[data-v-8258a71c]{\n    position: absolute;\n    top: 50%;\n    left: 50%;\n    -webkit-transform: translate(-50%, -50%);\n            transform: translate(-50%, -50%);\n    text-align: center;\n    width: 80%;\n}\nimg.icono-service[data-v-8258a71c] {\n    height: 80px;\n}\n.title-img[data-v-8258a71c]{\n    color: #fff;\n    margin-top: .6rem;\n    font-size: 1.3rem;\n    font-weight: 300;\n    text-align: center;\n    text-transform: uppercase;\n}\n", ""]);
+exports.push([module.i, "\n#section_services[data-v-8258a71c]{\n    background-color: #f8f8f8;\n}\n.title-border-bottom[data-v-8258a71c]:after {\n    content: ' ';\n    border-bottom: 1px solid #f26336;\n    display: block;\n    width: 160px;\n    margin: 1.3rem auto 1.1rem;\n}\n\n/*Slider swiper*/\n.swiper-inner[data-v-8258a71c] {\n    padding-top: 50px;\n    padding-bottom: 50px;\n}\n.swiper-slide[data-v-8258a71c] {\nbackground-position: center;\nbackground-size: cover;\nmax-width: 100%;\n}\n@media (min-width: 992px) {\n.swiper-slide[data-v-8258a71c]{\n        max-width: 320px;\n}\n}\n.swiper-pagination-fraction[data-v-8258a71c],\n.swiper-pagination-custom[data-v-8258a71c],\n.swiper-container-horizontal > .swiper-pagination-bullets[data-v-8258a71c]{\n    margin-top: 1rem;\n    bottom: 0px;\n    left: 0;\n    width: 100%;\n}\n.swiper-pagination[data-v-8258a71c]{\n    position: relative;\n    text-align: center;\n    transition: 300ms opacity;\n    -webkit-transform: translate3d(0, 0, 0);\n    transform: translate3d(0, 0, 0);\n    z-index: 10;\n}\n\n\n/*Card bootstrap*/\n.card[data-v-8258a71c] {\n    position: relative;\n    display: flex;\n    flex-direction: column;\n    min-width: 0;\n    word-wrap: break-word;\n    background-color: #fff;\n    background-clip: border-box;\n    border: 1px solid rgba(0, 0, 0, 0.125);\n    border-radius: 0.5rem;\n    overflow: hidden;\n}\n.card-img-top[data-v-8258a71c] {\n    width: 100%;\n    border-top-left-radius: calc(0.25rem - 1px);\n    border-top-right-radius: calc(0.25rem - 1px);\n}\n.card-body[data-v-8258a71c] {\n    flex: 1 1 auto;\n    padding: 1.3rem;\n    padding-bottom: 2rem;\n    min-height: 270px;\n    display: flex;\n    flex-direction: column;\n    justify-content: space-between;\n}\np[data-v-8258a71c]{\n    font-size: 1rem;\n    line-height: 1.6rem;\n}\n.btn[data-v-8258a71c] {\n    -webkit-user-select: none;\n    -moz-user-select: none;\n    -ms-user-select: none;\n    font-weight: 700;\n    user-select: none;\n    border: 1px solid transparent;\n    padding: 0.275rem 1.8rem;\n    font-size: .9rem;\n    line-height: 1.6;\n    border-radius: 1.25rem;\n    align-self: center;\n}\n.contenedor-img[data-v-8258a71c]{\n    position: relative;\n}\n.contenedor-posicionado[data-v-8258a71c]{\n    position: absolute;\n    top: 50%;\n    left: 50%;\n    -webkit-transform: translate(-50%, -50%);\n            transform: translate(-50%, -50%);\n    text-align: center;\n    width: 80%;\n}\nimg.icono-service[data-v-8258a71c] {\n    height: 80px;\n}\n.title-img[data-v-8258a71c]{\n    color: #fff;\n    margin-top: .6rem;\n    font-size: 1.3rem;\n    font-weight: 300;\n    text-align: center;\n    text-transform: uppercase;\n}\n", ""]);
 
 // exports
 
@@ -10811,7 +10812,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\nul[data-v-2ff0fac2] {\n    list-style: none;\n    padding: 0;\n}\nli[data-v-2ff0fac2] {\n    line-height: 2;\n}\nli[data-v-2ff0fac2]::before {\n    font-family: \"Font Awesome 5 Free\";\n    content: \"\\F067\";\n    display: inline-block;\n    padding-right: 3px;\n    vertical-align: middle;\n    font-weight: 900;\n    font-size: .8rem;\n    margin-right: .8rem;\n    color: #f26336;\n}\n.title-border-bottom[data-v-2ff0fac2]:after {\n    content: ' ';\n    border-bottom: 1px solid #f26336;\n    display: block;\n    width: 160px;\n    margin: 1.3rem 0 1.1rem;\n}\n.wrapper[data-v-2ff0fac2] {\n    -webkit-clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 95%);\n    clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 95%);\n    background-image: url('/images/especialidades/photo-1541462608143-67571c6738dd copy-min copy-min.jpg');\n    background-size: cover;\n    background-position: center;\n    background-attachment: fixed;\n    background-repeat: no-repeat;\n    width: 100%;\n    min-height: 980px;\n    display: grid;\n    grid-template-columns: 100%;\n    align-items: center;\n    padding-top: 5rem;\n    padding-bottom: 0rem;\n}\n.column-row[data-v-2ff0fac2]:nth-child(1) {\n    order: 1;\n}\n.column-row[data-v-2ff0fac2]:nth-child(2) {\n    order: 0;\n}\n.mano[data-v-2ff0fac2] {\n    width: 240px;\n}\n@media (min-width: 768px) {\n.mano[data-v-2ff0fac2] {\n        width: 400px;\n}\n}\n@media (min-width: 1024px) {\n.wrapper[data-v-2ff0fac2] {\n        -webkit-clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);\n        clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);\n        grid-template-columns: 40% 50%;\n        min-height: 680px;\n        padding-top: 5rem;\n        padding-bottom: 4rem;\n}\n.column-row[data-v-2ff0fac2]:nth-child(1) {\n        order: 0;\n        align-self: flex-end;\n}\n.column-row[data-v-2ff0fac2]:nth-child(2) {\n        order: 1;\n}\n.mano[data-v-2ff0fac2] {\n        width: 450px;\n}\n}\n", ""]);
+exports.push([module.i, "\nul[data-v-2ff0fac2] {\n    list-style: none;\n    padding: 0;\n}\nli[data-v-2ff0fac2] {\n    line-height: 2;\n}\nli[data-v-2ff0fac2]::before {\n    font-family: \"Font Awesome 5 Free\";\n    content: \"\\F067\";\n    display: inline-block;\n    padding-right: 3px;\n    vertical-align: middle;\n    font-weight: 900;\n    font-size: .8rem;\n    margin-right: .8rem;\n    color: #f26336;\n}\n.title-border-bottom[data-v-2ff0fac2]:after {\n    content: ' ';\n    border-bottom: 1px solid #f26336;\n    display: block;\n    width: 160px;\n    margin: 1.3rem 0 1.1rem;\n}\n.wrapper[data-v-2ff0fac2] {\n    -webkit-clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 95%);\n    clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 95%);\n    background-image: url('/images/especialidades/photo-1541462608143-67571c6738dd copy-min copy-min.jpg');\n    background-size: cover;\n    background-position: center;\n    background-attachment: fixed;\n    background-repeat: no-repeat;\n    width: 100%;\n    min-height: 980px;\n    display: grid;\n    grid-template-columns: 100%;\n    align-items: center;\n    padding-top: 5rem;\n    padding-bottom: 0rem;\n}\n.column-row[data-v-2ff0fac2]:nth-child(1) {\n    order: 1;\n}\n.column-row[data-v-2ff0fac2]:nth-child(2) {\n    order: 0;\n}\n.mano[data-v-2ff0fac2] {\n    width: 240px;\n}\n@media (max-width: 575.98px) {\nh3[data-v-2ff0fac2]{\n        font-size: 1.8rem;\n}\n}\n@media (min-width: 768px) {\n.mano[data-v-2ff0fac2] {\n        width: 400px;\n}\n}\n@media (min-width: 1024px) {\n.wrapper[data-v-2ff0fac2] {\n        -webkit-clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);\n        clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);\n        grid-template-columns: 40% 50%;\n        min-height: 680px;\n        padding-top: 5rem;\n        padding-bottom: 4rem;\n}\n.column-row[data-v-2ff0fac2]:nth-child(1) {\n        order: 0;\n        align-self: flex-end;\n}\n.column-row[data-v-2ff0fac2]:nth-child(2) {\n        order: 1;\n}\n.mano[data-v-2ff0fac2] {\n        width: 450px;\n}\n}\n", ""]);
 
 // exports
 
@@ -10830,7 +10831,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\nheader[data-v-2b24913b] {\n    width: 100%;\n    height: 640px;\n    background-image: url('/images/especialidades/Jumperr_banner_especialidades.jpg');\n    background-size: cover;\n    background-repeat: no-repeat;\n    background-position: center;\n    display: grid;\n    align-items: center;\n    grid-template-columns: 100%;\n}\n.wrapper[data-v-2b24913b] {\n    width: 100%;\n    max-width: 1024px;\n    height: auto;\n    margin-left: auto;\n    margin-right: auto;\n    padding-left: 15px;\n    padding-right: 15px;\n}\n.swiper-slide[data-v-2b24913b] {\n    align-self: center;\n}\n@media (max-width: 480px) {\nh2[data-v-2b24913b] {\n        font-size: 2rem;\n}\n}\n", ""]);
+exports.push([module.i, "\nheader[data-v-2b24913b] {\n    width: 100%;\n    height: 640px;\n    background-image: url('/images/especialidades/Jumperr_banner_especialidades.jpg');\n    background-size: cover;\n    background-repeat: no-repeat;\n    background-position: center;\n    display: grid;\n    align-items: center;\n    grid-template-columns: 100%;\n}\n.wrapper[data-v-2b24913b] {\n    width: 100%;\n    max-width: 1024px;\n    height: auto;\n    margin-left: auto;\n    margin-right: auto;\n    padding-left: 15px;\n    padding-right: 15px;\n}\n.swiper-slide[data-v-2b24913b] {\n    align-self: center;\n}\n@media (max-width: 480px) {\nh2[data-v-2b24913b] {\n        font-size: 1.8rem;\n}\n}\n", ""]);
 
 // exports
 
@@ -10868,7 +10869,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\n.newsletter[data-v-a140fb32] {\n    width: 100%;\n    min-height: 380px;\n    background-color: rgba(242, 99, 54, 1);\n    background-image: url('/images/especialidades/jumperr_bg1_especialidades.svg'), url('/images/especialidades/jumperr_bg2_especialidades.svg');\n    background-position: 103% center, -3% center;\n    background-repeat: no-repeat, no-repeat;\n    background-size: 180px, 180px;\n\n    -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);\n    clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);\n\n    display: grid;\n    align-items: center;\n    padding: 4rem 0;\n}\n.input-group > .form-control[data-v-a140fb32]:not(:last-child),\n.input-group > .input-group-append > .btn[data-v-a140fb32] {\n    border-radius: 1.25rem;\n}\n.input-group-append[data-v-a140fb32] {\n    position: absolute;\n    top: 50%;\n    right: 0;\n    -webkit-transform: translateY(-50%);\n            transform: translateY(-50%);\n    z-index: 1010;\n}\n.form-control[data-v-a140fb32] {\n    border: 2px solid transparent;\n}\n.form-control[data-v-a140fb32]:focus {\n    color: #000000;\n    background-color: #fff;\n    border-color: #fac0ae00; /*valor con transparencia*/\n    outline: 0;\n    box-shadow: 0 0 0 0.2rem rgba(242, 99, 54, 0); /*0.5 valor por defecto, se lo quite*/\n}\n.btn-primary[data-v-a140fb32] {\n    background-color: #f04712;\n}\n.btn-primary[data-v-a140fb32]:focus, .btn-primary.focus[data-v-a140fb32] {\n    box-shadow: 0 0 0 0.2rem rgba(244, 122, 84, 0); /*0.5 valor por defecto, se lo quite*/\n}\n", ""]);
+exports.push([module.i, "\n.newsletter[data-v-a140fb32] {\n    width: 100%;\n    min-height: 380px;\n    background-color: rgba(242, 99, 54, 1);\n    background-image: url('/images/especialidades/jumperr_bg1_especialidades.svg'), url('/images/especialidades/jumperr_bg2_especialidades.svg');\n    background-position: 103% center, -3% center;\n    background-repeat: no-repeat, no-repeat;\n    background-size: 180px, 180px;\n\n    -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);\n    clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);\n\n    display: grid;\n    align-items: center;\n    padding: 4rem 0;\n}\n@media (max-width: 575.98px) {\nh3[data-v-a140fb32]{\n        font-size: 1.8rem;\n}\n.newsletter[data-v-a140fb32] {\n        width: 100%;\n        min-height: 380px;\n        background-color: rgba(242, 99, 54, 1);\n        background-image: url('/images/especialidades/jumperr_bg1_especialidades.svg'), url('/images/especialidades/jumperr_bg2_especialidades.svg');\n        background-position: 153% center, -83% center;\n        background-repeat: no-repeat, no-repeat;\n        background-size: 180px, 180px;\n}\n}\n.input-group > .form-control[data-v-a140fb32]:not(:last-child),\n.input-group > .input-group-append > .btn[data-v-a140fb32] {\n    border-radius: 1.25rem;\n}\n.input-group-append[data-v-a140fb32] {\n    position: absolute;\n    top: 50%;\n    right: 0;\n    -webkit-transform: translateY(-50%);\n            transform: translateY(-50%);\n    z-index: 1010;\n}\n.form-control[data-v-a140fb32] {\n    border: 2px solid transparent;\n}\n.form-control[data-v-a140fb32]:focus {\n    color: #000000;\n    background-color: #fff;\n    border-color: #fac0ae00; /*valor con transparencia*/\n    outline: 0;\n    box-shadow: 0 0 0 0.2rem rgba(242, 99, 54, 0); /*0.5 valor por defecto, se lo quite*/\n}\n.btn-primary[data-v-a140fb32] {\n    background-color: #f04712;\n}\n.btn-primary[data-v-a140fb32]:focus, .btn-primary.focus[data-v-a140fb32] {\n    box-shadow: 0 0 0 0.2rem rgba(244, 122, 84, 0); /*0.5 valor por defecto, se lo quite*/\n}\n", ""]);
 
 // exports
 
@@ -10982,7 +10983,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\nheader[data-v-cd059dbe] {\n    width: 100%;\n    min-height: 100vh;\n    background-image: url('/images/la-empresa/jumperr_banner_compañia-min.jpg');\n    background-size: cover;\n    background-position: center;\n    background-repeat: no-repeat;\n}\n.grid-container[data-v-cd059dbe] {\n    max-width: 1140px;\n    min-height: 100vh;\n    margin: auto;\n    padding-right: 15px;\n    padding-left: 15px;\n    display: grid;\n    grid-template-columns: 100%;\n}\n.grid-row[data-v-cd059dbe] {\n    display: flex;\n    align-items: center;\n}\nh2[data-v-cd059dbe] {\n    line-height: 1.5;\n    font-size: 1.4rem;\n    font-weight: 300;\n    margin-top: 25%;\n}\nh2 strong[data-v-cd059dbe] {\n    font-weight: 700;\n}\n@media (min-width: 768px) {\n.grid-container[data-v-cd059dbe] {\n        grid-template-columns: 75%;\n}\nh2[data-v-cd059dbe] {\n        line-height: 1.5;\n        font-size: 2.4rem;\n}\n}\n@media (min-width: 992px) {\n.grid-container[data-v-cd059dbe] {\n        grid-template-columns: 50%;\n}\nh2[data-v-cd059dbe] {\n        line-height: 1.5;\n        font-size: 1.88rem;\n}\n}\n", ""]);
+exports.push([module.i, "\nheader[data-v-cd059dbe] {\n    width: 100%;\n    min-height: 100vh;\n    background-image: url('/images/la-empresa/jumperr_banner_compañia-min.jpg');\n    background-size: cover;\n    background-position: center;\n    background-repeat: no-repeat;\n    position: relative;\n}\n.grid-container[data-v-cd059dbe] {\n    max-width: 1140px;\n    min-height: 100vh;\n    margin: auto;\n    padding-right: 15px;\n    padding-left: 15px;\n    display: grid;\n    grid-template-columns: 100%;\n}\n.grid-row[data-v-cd059dbe] {\n    display: flex;\n    align-items: center;\n}\nh2[data-v-cd059dbe] {\n    line-height: 1.5;\n    font-size: 1.4rem;\n    font-weight: 300;\n    margin-top: 25%;\n}\nh2 strong[data-v-cd059dbe] {\n    font-weight: 700;\n}\n@media (min-width: 768px) {\n.grid-container[data-v-cd059dbe] {\n        grid-template-columns: 75%;\n}\nh2[data-v-cd059dbe] {\n        line-height: 1.5;\n        font-size: 2.4rem;\n}\n}\n@media (min-width: 992px) {\n.grid-container[data-v-cd059dbe] {\n        grid-template-columns: 50%;\n}\nh2[data-v-cd059dbe] {\n        line-height: 1.5;\n        font-size: 1.88rem;\n}\n}\n\n\n/* ANIMACIONES */\n.img-float-1[data-v-cd059dbe] {\n    position: absolute;\n    bottom: 100px;\n    right: -35px;\n    display: inline-block;\n    width: 120px;\n    height: 120px;\n    -webkit-animation: saltar-data-v-cd059dbe 10s linear infinite;\n            animation: saltar-data-v-cd059dbe 10s linear infinite;\n}\n@-webkit-keyframes opacidad-data-v-cd059dbe {\n0% {\n        -webkit-transform: rotate(0deg);\n                transform: rotate(0deg);\n        opacity: 1;\n}\n50% {\n        opacity: .5;\n        -webkit-transform: rotate(180deg);\n                transform: rotate(180deg);\n}\n100% {\n        -webkit-transform: rotate(360deg);\n                transform: rotate(360deg);\n        opacity: 1;\n}\n}\n@keyframes opacidad-data-v-cd059dbe {\n0% {\n        -webkit-transform: rotate(0deg);\n                transform: rotate(0deg);\n        opacity: 1;\n}\n50% {\n        opacity: .5;\n        -webkit-transform: rotate(180deg);\n                transform: rotate(180deg);\n}\n100% {\n        -webkit-transform: rotate(360deg);\n                transform: rotate(360deg);\n        opacity: 1;\n}\n}\n/* Animaciones */\n.img-float-2[data-v-cd059dbe] {\n    position: absolute;\n    bottom: 100px;\n    left: 35px;\n    display: inline-block;\n    width: 20px;\n    height: 20px;\n    -webkit-animation: saltar-data-v-cd059dbe 5s linear infinite;\n            animation: saltar-data-v-cd059dbe 5s linear infinite;\n}\n@-webkit-keyframes saltar-data-v-cd059dbe {\n0% {\n        -webkit-transform: translatey(0px);\n                transform: translatey(0px);\n}\n50% {\n        -webkit-transform: translatey(-20px);\n                transform: translatey(-20px);\n}\n100% {\n        -webkit-transform: translatey(0px);\n                transform: translatey(0px);\n}\n}\n@keyframes saltar-data-v-cd059dbe {\n0% {\n        -webkit-transform: translatey(0px);\n                transform: translatey(0px);\n}\n50% {\n        -webkit-transform: translatey(-20px);\n                transform: translatey(-20px);\n}\n100% {\n        -webkit-transform: translatey(0px);\n                transform: translatey(0px);\n}\n}\n", ""]);
 
 // exports
 
@@ -11001,7 +11002,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\n.text-theme[data-v-1a37296e] {\n    color: #f26336;\n}\nh3[data-v-1a37296e] {\n    font-size: 1.6rem;\n    text-align: center;\n}\np[data-v-1a37296e] {\n    font-size: 1.2rem;\n}\n.title-border-bottom[data-v-1a37296e]:after {\n    content: ' ';\n    border-bottom: 1px solid #f26336;\n    display: block;\n    width: 160px;\n    margin: 1rem auto 1.1rem;\n}\n\n/*  DESDE AQUI COMIENZA EL SLIDER  */\n.wrapper-scrolling[data-v-1a37296e] {\n    min-width: 100%;\n}\n#scrolling[data-v-1a37296e] {\n    position: relative;\n}\n\n/* Div de imagen de fondo. montañas parallax */\n.parallax-bg[data-v-1a37296e] {\n    position: absolute;\n    left: 0;\n    top: 0;\n    width: 1000%;\n    height: 100%;\n    background-size: auto 280px;\n    background-repeat: repeat-x;\n    background-position: center;\n    background-image: url('/images/la-empresa/jumperr-fondo.svg');\n}\n\n/* botones de navegaciones de años 2014 2015 2016 2017 2018 2019 */\n.swiper-slide-active .circle-slider[data-v-1a37296e] {\n    width: 24px;\n    height: 24px;\n    border: 3px solid #f26937;\n    border-radius: 50%;\n    background-color: #fff;\n}\n.circle-slider[data-v-1a37296e] {\n    width: 18px;\n    height: 18px;\n    border: 3px solid #ababab;\n    border-radius: 50%;\n    background-color: #fff;\n}\n.gallery-thumbs .swiper-slide[data-v-1a37296e] {\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n}\n.swiper-slide[data-v-1a37296e] {\n    width: auto;\n}\n\n/* Zonas o items del slider con cada imagen */\n.zonas[data-v-1a37296e] {\n    width: 100%;\n    /* padding-right: 15px;\n    padding-left: 15px; */\n    padding-top: 15px;\n    padding-bottom: 15px;\n    margin-right: auto;\n    margin-left: auto;\n    margin-bottom: 50px;\n}\n\n/* _______________________ */\n.zona-1[data-v-1a37296e] {\n    position: relative;\n    width: 40%;\n    min-width: 460px;\n    height: 600px;\n}\n.zona-1 .item-1[data-v-1a37296e] {\n    width: 90%;\n    height: auto;\n    position: absolute;\n    bottom: 50%;\n    left: 50%;\n    -webkit-transform: translateX(-50%);\n            transform: translateX(-50%);\n}\n.zona-1 .item-2[data-v-1a37296e] {\n    width: 36%;\n    position: absolute;\n    bottom: 4%;\n    left: 50%;\n    -webkit-transform: translateX(-70%);\n            transform: translateX(-70%);\n}\n.zona-1 .item-3[data-v-1a37296e] {\n    width: 18%;\n    position: absolute;\n    bottom: 4%;\n    right: -5%;\n}\n\n/* _______________________ */\n.zona-2[data-v-1a37296e] {\n    position: relative;\n    width: 36%;\n    height: 600px;\n    min-width: 460px;\n}\n.zona-2 .item-1[data-v-1a37296e] {\n    width: 110%;\n    height: auto;\n    position: absolute;\n    bottom: 40%;\n    right: -12%;\n}\n.zona-2 .item-2[data-v-1a37296e] {\n    width: 34%;\n    position: absolute;\n    bottom: 4%;\n    right: 0%;\n}\n\n/* _______________________ */\n.zona-3[data-v-1a37296e] {\n    position: relative;\n    width: 36%;\n    height: 600px;\n    min-width: 460px;\n}\n.zona-3 .item-1[data-v-1a37296e] {\n    width: 20%;\n    height: auto;\n    position: absolute;\n    top: 12%;\n    left: 15%;\n}\n.zona-3 .item-2[data-v-1a37296e] {\n    width: 60%;\n    position: absolute;\n    bottom: 0%;\n    left: 20%;\n}\n\n/*________________________*/\n.zona-4[data-v-1a37296e] {\n    position: relative;\n    width: 36%;\n    height: 600px;\n    min-width: 460px;\n}\n.zona-4 .item-1[data-v-1a37296e] {\n    width: 60%;\n    height: auto;\n    position: absolute;\n    top: 0%;\n    right: 0%;\n}\n.zona-4 .item-2[data-v-1a37296e] {\n    width: 40%;\n    position: absolute;\n    bottom: 0%;\n    left: 0%;\n}\n\n/*_____________________*/\n.zona-5[data-v-1a37296e] {\n    position: relative;\n    width: 36%;\n    height: 600px;\n    min-width: 460px;\n}\n.zona-5 .item-1[data-v-1a37296e] {\n    width: 56%;\n    height: auto;\n    position: absolute;\n    top: 10%;\n    right: 0%;\n}\n.zona-5 .item-2[data-v-1a37296e] {\n    width: 31%;\n    position: absolute;\n    top: 20%;\n    left: 0%;\n}\n\n/*_______________________________*/\n.zona-6[data-v-1a37296e] {\n    position: relative;\n    width: 100%;\n    height: 600px;\n    min-width: 860px;\n}\n.zona-6 .item-1[data-v-1a37296e] {\n    width: 80%;\n    height: auto;\n    position: absolute;\n    bottom: 10%;\n    right: 0%;\n}\n.zona-6 .item-2[data-v-1a37296e] {\n    width: 15%;\n    position: absolute;\n    bottom: 0%;\n    left: 0%;\n}\n\n/* Animacion y nube */\n.nube-1[data-v-1a37296e] {\n    position: absolute;\n    top: 30px;\n    left: 50px;\n    width: 100px;\n    -webkit-animation: float-data-v-1a37296e 2s infinite;\n            animation: float-data-v-1a37296e 2s infinite;\n}\n.nube-2[data-v-1a37296e] {\n    position: absolute;\n    top: 80px;\n    right: 300px;\n    width: 100px;\n    -webkit-animation: float-data-v-1a37296e 2s infinite;\n            animation: float-data-v-1a37296e 2s infinite;\n}\n@media (max-width: 460px) {\n.nube-1[data-v-1a37296e] {\n        position: absolute;\n        top: 30px;\n        left: 50px;\n        width: 100px;\n        -webkit-animation: float-data-v-1a37296e 2s infinite;\n                animation: float-data-v-1a37296e 2s infinite;\n}\n.nube-2[data-v-1a37296e] {\n        position: absolute;\n        top: 100px;\n        right: 10px;\n        width: 100px;\n        -webkit-animation: float-data-v-1a37296e 2s infinite;\n                animation: float-data-v-1a37296e 2s infinite;\n}\n}\n@-webkit-keyframes float-data-v-1a37296e {\n0% {\n        -webkit-transform: translatey(0px);\n                transform: translatey(0px);\n}\n50% {\n        -webkit-transform: translatey(-10px);\n                transform: translatey(-10px);\n}\n100% {\n        -webkit-transform: translatey(0px);\n                transform: translatey(0px);\n}\n}\n@keyframes float-data-v-1a37296e {\n0% {\n        -webkit-transform: translatey(0px);\n                transform: translatey(0px);\n}\n50% {\n        -webkit-transform: translatey(-10px);\n                transform: translatey(-10px);\n}\n100% {\n        -webkit-transform: translatey(0px);\n                transform: translatey(0px);\n}\n}\n\n/* Botones pulse */\n.circle-pulse[data-v-1a37296e] {\n    position: absolute;\n    top: 80px;\n    right: 50%;\n    -webkit-transform: translateX(-50%);\n            transform: translateX(-50%);\n    display: block;\n    width: 22px;\n    height: 22px;\n    border-radius: 50%;\n    background: #f26336;\n    cursor: pointer;\n    box-shadow: 0 0 0 #f2623641;\n    -webkit-animation: pulse-data-v-1a37296e 2s infinite;\n            animation: pulse-data-v-1a37296e 2s infinite;\n    z-index: 1030;\n}\n@-webkit-keyframes pulse-data-v-1a37296e {\n0% {\n    box-shadow: 0 0 0 0 #f2623677;\n}\n70% {\n    box-shadow: 0 0 0 10px #f2623600;\n}\n100% {\n    box-shadow: 0 0 0 0 #f2623600;\n}\n}\n@keyframes pulse-data-v-1a37296e {\n0% {\n    box-shadow: 0 0 0 0 #f2623677;\n}\n70% {\n    box-shadow: 0 0 0 10px #f2623600;\n}\n100% {\n    box-shadow: 0 0 0 0 #f2623600;\n}\n}\n.dropdown-menu[data-v-1a37296e]{\n    max-width: 300px;\n}\n.dropdown-item-text[data-v-1a37296e]{\n    font-size: 1rem;\n    line-height: 1.2;\n}\n.c-pointer[data-v-1a37296e] {\n    cursor: pointer;\n}\n", ""]);
+exports.push([module.i, "\n.text-theme[data-v-1a37296e] {\n    color: #f26336;\n}\nh3[data-v-1a37296e] {\n    font-size: 1.6rem;\n    text-align: center;\n}\np[data-v-1a37296e] {\n    font-size: 1.2rem;\n}\n.title-border-bottom[data-v-1a37296e]:after {\n    content: ' ';\n    border-bottom: 1px solid #f26336;\n    display: block;\n    width: 160px;\n    margin: 1rem auto 1.1rem;\n}\n\n/*  DESDE AQUI COMIENZA EL SLIDER  */\n.wrapper-scrolling[data-v-1a37296e] {\n    min-width: 100%;\n}\n#scrolling[data-v-1a37296e] {\n    position: relative;\n}\n\n/* Div de imagen de fondo. montañas parallax */\n.parallax-bg[data-v-1a37296e] {\n    position: absolute;\n    left: 0;\n    top: 0;\n    width: 1000%;\n    height: 100%;\n    background-size: auto 280px;\n    background-repeat: repeat-x;\n    background-position: center;\n    background-image: url('/images/la-empresa/jumperr-fondo.svg');\n}\n\n/* botones de navegaciones de años 2014 2015 2016 2017 2018 2019 */\n.swiper-slide-active .circle-slider[data-v-1a37296e] {\n    width: 24px;\n    height: 24px;\n    border: 3px solid #f26937;\n    border-radius: 50%;\n    background-color: #fff;\n}\n.circle-slider[data-v-1a37296e] {\n    width: 18px;\n    height: 18px;\n    border: 3px solid #ababab;\n    border-radius: 50%;\n    background-color: #fff;\n}\n.gallery-thumbs .swiper-slide[data-v-1a37296e] {\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n}\n.swiper-slide[data-v-1a37296e] {\n    width: auto;\n}\n\n/* Zonas o items del slider con cada imagen */\n.zonas[data-v-1a37296e] {\n    width: 100%;\n    /* padding-right: 15px;\n    padding-left: 15px; */\n    padding-top: 15px;\n    padding-bottom: 15px;\n    margin-right: auto;\n    margin-left: auto;\n    margin-bottom: 50px;\n}\n\n/* _______________________ */\n.zona-1[data-v-1a37296e] {\n    position: relative;\n    width: 40%;\n    min-width: 460px;\n    height: 600px;\n}\n.zona-1 .item-1[data-v-1a37296e] {\n    width: 90%;\n    height: auto;\n    position: absolute;\n    bottom: 50%;\n    left: 50%;\n    -webkit-transform: translateX(-50%);\n            transform: translateX(-50%);\n}\n.zona-1 .item-2[data-v-1a37296e] {\n    width: 36%;\n    position: absolute;\n    bottom: 4%;\n    left: 50%;\n    -webkit-transform: translateX(-70%);\n            transform: translateX(-70%);\n}\n.zona-1 .item-3[data-v-1a37296e] {\n    width: 18%;\n    position: absolute;\n    bottom: 4%;\n    right: -5%;\n}\n\n/* _______________________ */\n.zona-2[data-v-1a37296e] {\n    position: relative;\n    width: 36%;\n    height: 600px;\n    min-width: 460px;\n}\n.zona-2 .item-1[data-v-1a37296e] {\n    width: 110%;\n    height: auto;\n    position: absolute;\n    bottom: 40%;\n    right: -12%;\n}\n.zona-2 .item-2[data-v-1a37296e] {\n    width: 34%;\n    position: absolute;\n    bottom: 4%;\n    right: 0%;\n}\n\n/* _______________________ */\n.zona-3[data-v-1a37296e] {\n    position: relative;\n    width: 36%;\n    height: 600px;\n    min-width: 460px;\n}\n.zona-3 .item-1[data-v-1a37296e] {\n    width: 20%;\n    height: auto;\n    position: absolute;\n    top: 12%;\n    left: 15%;\n}\n.zona-3 .item-2[data-v-1a37296e] {\n    width: 60%;\n    position: absolute;\n    bottom: 0%;\n    left: 20%;\n}\n\n/*________________________*/\n.zona-4[data-v-1a37296e] {\n    position: relative;\n    width: 36%;\n    height: 600px;\n    min-width: 460px;\n}\n.zona-4 .item-1[data-v-1a37296e] {\n    width: 60%;\n    height: auto;\n    position: absolute;\n    top: 0%;\n    right: 0%;\n}\n.zona-4 .item-2[data-v-1a37296e] {\n    width: 40%;\n    position: absolute;\n    bottom: 0%;\n    left: 0%;\n}\n\n/*_____________________*/\n.zona-5[data-v-1a37296e] {\n    position: relative;\n    width: 36%;\n    height: 600px;\n    min-width: 460px;\n}\n.zona-5 .item-1[data-v-1a37296e] {\n    width: 56%;\n    height: auto;\n    position: absolute;\n    top: 10%;\n    right: 0%;\n}\n.zona-5 .item-2[data-v-1a37296e] {\n    width: 31%;\n    position: absolute;\n    top: 20%;\n    left: 0%;\n}\n\n/*_______________________________*/\n.zona-6[data-v-1a37296e] {\n    position: relative;\n    width: 100%;\n    height: 600px;\n    min-width: 860px;\n}\n.zona-6 .item-1[data-v-1a37296e] {\n    width: 80%;\n    height: auto;\n    position: absolute;\n    bottom: 10%;\n    right: 0%;\n}\n.zona-6 .item-2[data-v-1a37296e] {\n    width: 15%;\n    position: absolute;\n    bottom: 0%;\n    left: 0%;\n}\n\n/* // Extra small devices (portrait phones, less than 576px) */\n@media (max-width: 575.98px) {\n.zona-1[data-v-1a37296e] {\n        position: relative;\n        width: 40%;\n        min-width: 340px;\n        height: 400px;\n}\n.zona-2[data-v-1a37296e] {\n        position: relative;\n        width: 36%;\n        height: 400px;\n        min-width: 340px;\n}\n.zona-3[data-v-1a37296e] {\n        position: relative;\n        width: 36%;\n        height: 400px;\n        min-width: 340px;\n}\n.zona-3 .item-2[data-v-1a37296e] {\n        width: 40%;\n        position: absolute;\n        bottom: 0%;\n        left: 20%;\n}\n.zona-4[data-v-1a37296e] {\n        position: relative;\n        width: 36%;\n        height: 400px;\n        min-width: 340px;\n}\n.zona-4 .item-2[data-v-1a37296e] {\n        width: 40%;\n        position: absolute;\n        bottom: 0%;\n        left: 0%;\n}\n.zona-5[data-v-1a37296e] {\n        position: relative;\n        width: 36%;\n        height: 400px;\n        min-width: 340px;\n}\n.zona-6[data-v-1a37296e] {\n        position: relative;\n        width: 100%;\n        height: 400px;\n        min-width: 340px;\n}\n.zona-6 .item-1[data-v-1a37296e] {\n        width: 440px;\n        height: auto;\n        position: absolute;\n        bottom: 10%;\n        right: 0%;\n}\n.zona-6 .item-2[data-v-1a37296e] {\n        width: 35%;\n        position: absolute;\n        bottom: 0%;\n        left: 0%;\n}\n}\n\n/* // Small devices (landscape phones, 576px and up) */\n@media (min-width: 576px) and (max-width: 767.98px) {\n}\n\n/* // Medium devices (tablets, 768px and up) */\n@media (min-width: 768px) and (max-width: 991.98px) {\n}\n\n/* // Large devices (desktops, 992px and up) */\n@media (min-width: 992px) and (max-width: 1199.98px) {\n}\n\n/* // Extra large devices (large desktops, 1200px and up) */\n@media (min-width: 1200px) {\n}\n\n/* Animacion y nube */\n.nube-1[data-v-1a37296e] {\n    position: absolute;\n    top: 30px;\n    left: 50px;\n    width: 100px;\n    -webkit-animation: float-data-v-1a37296e 2s infinite;\n            animation: float-data-v-1a37296e 2s infinite;\n}\n.nube-2[data-v-1a37296e] {\n    position: absolute;\n    top: 80px;\n    right: 300px;\n    width: 100px;\n    -webkit-animation: float-data-v-1a37296e 2s infinite;\n            animation: float-data-v-1a37296e 2s infinite;\n}\n@media (max-width: 460px) {\n.nube-1[data-v-1a37296e] {\n        position: absolute;\n        top: 30px;\n        left: 50px;\n        width: 100px;\n        -webkit-animation: float-data-v-1a37296e 2s infinite;\n                animation: float-data-v-1a37296e 2s infinite;\n}\n.nube-2[data-v-1a37296e] {\n        position: absolute;\n        top: 100px;\n        right: 10px;\n        width: 100px;\n        -webkit-animation: float-data-v-1a37296e 2s infinite;\n                animation: float-data-v-1a37296e 2s infinite;\n}\n}\n@-webkit-keyframes float-data-v-1a37296e {\n0% {\n        -webkit-transform: translatey(0px);\n                transform: translatey(0px);\n}\n50% {\n        -webkit-transform: translatey(-10px);\n                transform: translatey(-10px);\n}\n100% {\n        -webkit-transform: translatey(0px);\n                transform: translatey(0px);\n}\n}\n@keyframes float-data-v-1a37296e {\n0% {\n        -webkit-transform: translatey(0px);\n                transform: translatey(0px);\n}\n50% {\n        -webkit-transform: translatey(-10px);\n                transform: translatey(-10px);\n}\n100% {\n        -webkit-transform: translatey(0px);\n                transform: translatey(0px);\n}\n}\n\n/* Botones pulse */\n.circle-pulse[data-v-1a37296e] {\n    position: absolute;\n    top: 80px;\n    right: 50%;\n    -webkit-transform: translateX(-50%);\n            transform: translateX(-50%);\n    display: block;\n    width: 22px;\n    height: 22px;\n    border-radius: 50%;\n    background: #f26336;\n    cursor: pointer;\n    box-shadow: 0 0 0 #f2623641;\n    -webkit-animation: pulse-data-v-1a37296e 2s infinite;\n            animation: pulse-data-v-1a37296e 2s infinite;\n    z-index: 1030;\n}\n@-webkit-keyframes pulse-data-v-1a37296e {\n0% {\n    box-shadow: 0 0 0 0 #f2623677;\n}\n70% {\n    box-shadow: 0 0 0 10px #f2623600;\n}\n100% {\n    box-shadow: 0 0 0 0 #f2623600;\n}\n}\n@keyframes pulse-data-v-1a37296e {\n0% {\n    box-shadow: 0 0 0 0 #f2623677;\n}\n70% {\n    box-shadow: 0 0 0 10px #f2623600;\n}\n100% {\n    box-shadow: 0 0 0 0 #f2623600;\n}\n}\n.dropdown-menu[data-v-1a37296e]{\n    max-width: 300px;\n}\n.dropdown-item-text[data-v-1a37296e]{\n    font-size: 1rem;\n    line-height: 1.2;\n}\n.c-pointer[data-v-1a37296e] {\n    cursor: pointer;\n}\n", ""]);
 
 // exports
 
@@ -11020,7 +11021,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\n.text-theme[data-v-b6b199b0] {\n    color: #f26336;\n}\nh3[data-v-b6b199b0] {\n    font-size: 1.6rem;\n}\np[data-v-b6b199b0] {\n    font-size: 1.2rem;\n}\n.title-border-bottom[data-v-b6b199b0]:after {\n    content: ' ';\n    border-bottom: 1px solid #f26336;\n    display: block;\n    width: 160px;\n    margin: 1rem 0rem 1.1rem;\n}\n.grid-wrapper[data-v-b6b199b0] {\n    max-width: 1140px;\n    height: auto;\n    margin: auto;\n    padding-right: 15px;\n    padding-left: 15px;\n    display: grid;\n    grid-template-columns: 100%;\n    grid-template-rows: 470px 430px;\n}\naside[data-v-b6b199b0] {\n    display: flex;\n    justify-content: flex-start;\n    align-items: flex-end;\n    order: 2;\n}\narticle[data-v-b6b199b0] {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    /* margin-bottom: 4rem; */\n    order: 1;\n}\n@media (min-width: 768px) {\n.grid-wrapper[data-v-b6b199b0] {\n        grid-template-columns: 50% 45%;\n        grid-template-rows: 600px;\n}\naside[data-v-b6b199b0] {\n        order: 1;\n}\narticle[data-v-b6b199b0] {\n        justify-content: center;\n        align-items: flex-end;\n        order: 2;\n}\n}\n", ""]);
+exports.push([module.i, "\n.text-theme[data-v-b6b199b0] {\n    color: #f26336;\n}\nh3[data-v-b6b199b0] {\n    font-size: 1.6rem;\n}\np[data-v-b6b199b0] {\n    font-size: 1.2rem;\n}\n.title-border-bottom[data-v-b6b199b0]:after {\n    content: ' ';\n    border-bottom: 1px solid #f26336;\n    display: block;\n    width: 160px;\n    margin: 1rem 0rem 1.1rem;\n}\n.grid-wrapper[data-v-b6b199b0] {\n    max-width: 1140px;\n    height: auto;\n    margin: auto;\n    padding-right: 15px;\n    padding-left: 15px;\n    display: grid;\n    grid-template-columns: 100%;\n    grid-template-rows: auto 430px;\n}\naside[data-v-b6b199b0] {\n    display: flex;\n    justify-content: flex-start;\n    align-items: flex-end;\n    order: 2;\n}\narticle[data-v-b6b199b0] {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    /* margin-bottom: 4rem; */\n    order: 1;\n}\n/* // Extra small devices (portrait phones, less than 576px) */\n@media (max-width: 575.98px) {\n.grid-wrapper[data-v-b6b199b0] {\n        grid-template-rows: auto 415px;\n}\naside[data-v-b6b199b0]{\n        padding: 0rem 1rem;\n}\n}\n\n/* // Small devices (landscape phones, 576px and up) */\n@media (min-width: 576px) and (max-width: 767.98px) {\n.grid-wrapper[data-v-b6b199b0]{\n        grid-template-rows: auto 570px;\n}\n}\n\n/* // Medium devices (tablets, 768px and up) */\n@media (min-width: 768px) and (max-width: 991.98px) {\n.grid-wrapper[data-v-b6b199b0] {\n        grid-template-columns: 50% 45%;\n        grid-template-rows: 470px;\n}\naside[data-v-b6b199b0] {\n        order: 1;\n        padding: 0px 1.4rem;\n}\narticle[data-v-b6b199b0] {\n        justify-content: center;\n        align-items: flex-end;\n        order: 2;\n}\n}\n\n/* // Large devices (desktops, 992px and up) */\n@media (min-width: 992px) and (max-width: 1199.98px) {\n.grid-wrapper[data-v-b6b199b0] {\n        grid-template-columns: 50% 45%;\n        grid-template-rows: 470px;\n}\naside[data-v-b6b199b0] {\n        order: 1;\n        padding: 0px 1.4rem;\n}\narticle[data-v-b6b199b0] {\n        justify-content: center;\n        align-items: flex-end;\n        order: 2;\n}\n}\n\n/* // Extra large devices (large desktops, 1200px and up) */\n@media (min-width: 1200px) {\n.grid-wrapper[data-v-b6b199b0] {\n        grid-template-columns: 50% 45%;\n        grid-template-rows: 500px;\n}\naside[data-v-b6b199b0] {\n        order: 1;\n}\narticle[data-v-b6b199b0] {\n        justify-content: center;\n        align-items: flex-end;\n        order: 2;\n}\n}\n", ""]);
 
 // exports
 
@@ -64564,9 +64565,9 @@ var render = function() {
       _c(
         "aside",
         [
-          _vm._l(_vm.careers, function(career) {
+          _vm._l(_vm.careers, function(career, id) {
             return [
-              _c("div", { staticClass: "item" }, [
+              _c("div", { key: id, staticClass: "item" }, [
                 _c("img", {
                   attrs: { src: career.img, alt: "img-" + career.id }
                 }),
@@ -65258,6 +65259,27 @@ var staticRenderFns = [
               }
             })
           ]
+        ),
+        _vm._v(" "),
+        _c(
+          "a",
+          {
+            attrs: {
+              href: "https://www.youtube.com/channel/UCrLWu7ntv8P2AV8I5MlIIkA",
+              rel: "noopener noreferrer",
+              target: "_blank"
+            }
+          },
+          [
+            _c("img", {
+              staticClass: "d-inline-block mx-2",
+              attrs: {
+                alt: "Youtube",
+                src: "/images/iconos/004-youtube.svg",
+                width: "36px"
+              }
+            })
+          ]
         )
       ]
     )
@@ -65864,28 +65886,22 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", { attrs: { id: "section_bio" } }, [
-    _c("article", { staticClass: "fondo" }, [
-      _c("div", { staticClass: "container h-100" }, [
-        _c("div", { staticClass: "row h-100" }, [
-          _c(
-            "div",
-            { staticClass: "col-12 col-md-6 col-lg-6 align-self-center" },
-            [
-              _c("h3", { staticClass: "title-border-bottom" }, [
-                _vm._v(
-                  _vm._s(_vm.$store.getters.getTags({ tag: "home_text8" }))
+    _c("article", { staticClass: "fondo d-flex py-4" }, [
+      _c("div", { staticClass: "container align-self-center" }, [
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col-12 col-md-6 col-lg-6" }, [
+            _c("h3", { staticClass: "title-border-bottom" }, [
+              _vm._v(_vm._s(_vm.$store.getters.getTags({ tag: "home_text8" })))
+            ]),
+            _vm._v(" "),
+            _c("p", {
+              domProps: {
+                innerHTML: _vm._s(
+                  _vm.$store.getters.getTags({ tag: "home_text10" })
                 )
-              ]),
-              _vm._v(" "),
-              _c("p", {
-                domProps: {
-                  innerHTML: _vm._s(
-                    _vm.$store.getters.getTags({ tag: "home_text10" })
-                  )
-                }
-              })
-            ]
-          )
+              }
+            })
+          ])
         ])
       ])
     ]),
@@ -66072,36 +66088,30 @@ var render = function() {
       _vm._m(0),
       _vm._v(" "),
       _c("div", { staticClass: "d-flex flex-column justify-content-center" }, [
-        _c(
-          "div",
-          [
-            _c("h3", { staticClass: "title-border-bottom" }, [
-              _vm._v(_vm._s(_vm.$store.getters.getTags({ tag: "home_text11" })))
-            ]),
-            _vm._v(" "),
-            _c("p", [
-              _vm._v(_vm._s(_vm.$store.getters.getTags({ tag: "home_text12" })))
-            ]),
-            _vm._v(" "),
-            _c(
-              "router-link",
-              {
-                staticClass: "btn btn-primary text-uppercase mt-4",
-                attrs: { to: "#" }
-              },
-              [
-                _c("a", [
-                  _vm._v(
-                    _vm._s(
-                      _vm.$store.getters.getTags({ tag: "general_vermas" })
-                    )
-                  )
-                ])
-              ]
-            )
-          ],
-          1
-        )
+        _c("div", [
+          _c("h3", { staticClass: "title-border-bottom" }, [
+            _vm._v(_vm._s(_vm.$store.getters.getTags({ tag: "home_text11" })))
+          ]),
+          _vm._v(" "),
+          _c("p", [
+            _vm._v(_vm._s(_vm.$store.getters.getTags({ tag: "home_text12" })))
+          ]),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              staticClass: "btn btn-primary text-uppercase mt-4",
+              attrs: { href: "/specialita/#procesos-especialidades" }
+            },
+            [
+              _c("a", [
+                _vm._v(
+                  _vm._s(_vm.$store.getters.getTags({ tag: "general_vermas" }))
+                )
+              ])
+            ]
+          )
+        ])
       ])
     ])
   ])
@@ -66185,10 +66195,10 @@ var render = function() {
               ]),
               _vm._v(" "),
               _c(
-                "router-link",
+                "a",
                 {
                   staticClass: "btn btn-primary text-uppercase mt-4",
-                  attrs: { to: "#" }
+                  attrs: { href: "/labori" }
                 },
                 [
                   _vm._v(
@@ -66196,8 +66206,7 @@ var render = function() {
                   )
                 ]
               )
-            ],
-            1
+            ]
           )
         ])
       ])
@@ -66766,30 +66775,7 @@ var render = function() {
         ])
       ]),
       _vm._v(" "),
-      _vm._m(0),
-      _vm._v(" "),
-      _c("div", { staticClass: "container" }, [
-        _c("div", { staticClass: "row" }, [
-          _c("div", { staticClass: "col-12 text-center" }, [
-            _c(
-              "a",
-              {
-                staticClass: "btn btn-primary text-uppercase mt-5",
-                attrs: { href: "#" }
-              },
-              [
-                _c("a", [
-                  _vm._v(
-                    _vm._s(
-                      _vm.$store.getters.getTags({ tag: "general_vermas" })
-                    )
-                  )
-                ])
-              ]
-            )
-          ])
-        ])
-      ])
+      _vm._m(0)
     ])
   ])
 }
@@ -66989,7 +66975,10 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "div",
-    { staticClass: "my-5", attrs: { id: "section_services" } },
+    {
+      staticClass: "my-2 my-md-5 py-3 py-md-3",
+      attrs: { id: "section_services" }
+    },
     [
       _c("div", { staticClass: "container" }, [
         _c("div", { staticClass: "row" }, [
@@ -67790,13 +67779,19 @@ var render = function() {
         _c("div", { staticClass: "container" }, [
           _c("div", { staticClass: "row" }, [
             _c("div", { staticClass: "col-12 col-lg-11 ml-lg-auto" }, [
-              _c("h3", { staticClass: "title-border-bottom text-white" }, [
-                _vm._v(
-                  _vm._s(
-                    _vm.$store.getters.getTags({ tag: "specialties_title2" })
+              _c(
+                "h3",
+                {
+                  staticClass: "title-border-bottom text-white text-uppercase"
+                },
+                [
+                  _vm._v(
+                    _vm._s(
+                      _vm.$store.getters.getTags({ tag: "specialties_title2" })
+                    )
                   )
-                )
-              ]),
+                ]
+              ),
               _vm._v(" "),
               _c("p", {
                 domProps: {
@@ -68817,7 +68812,17 @@ var render = function() {
             }
           })
         ])
-      ])
+      ]),
+      _vm._v(" "),
+      _c("img", {
+        staticClass: "img-float-1",
+        attrs: { src: "/images/iconos/circulo.svg", alt: "elemento jumperr" }
+      }),
+      _vm._v(" "),
+      _c("img", {
+        staticClass: "img-float-2",
+        attrs: { src: "/images/iconos/signodemas.svg", alt: "elemento jumperr" }
+      })
     ])
   ])
 }
@@ -68924,16 +68929,17 @@ var render = function() {
                   slot: "parallax-bg"
                 }),
                 _vm._v(" "),
-                _vm._l(_vm.cities, function(slide) {
+                _vm._l(_vm.cities, function(slide, id) {
                   return [
-                    _c("swiper-slide", [
+                    _c("swiper-slide", { key: id }, [
                       _c(
                         "div",
                         { staticClass: "zona", class: "zona-" + slide.id },
                         [
-                          _vm._l(slide.images, function(item) {
+                          _vm._l(slide.images, function(item, imgkey) {
                             return [
                               _c("img", {
+                                key: imgkey,
                                 class: "item-" + item.id,
                                 attrs: { src: item.img, alt: "img-" + item.id }
                               })
@@ -68982,7 +68988,7 @@ var render = function() {
       _vm._m(0),
       _vm._v(" "),
       _c("article", [
-        _c("div", { staticClass: "mb-0 mb-md-5" }, [
+        _c("div", { staticClass: "pt-5 mb-0 mb-md-5" }, [
           _c("h6", { staticClass: "text-uppsercase text-theme" }, [
             _vm._v(_vm._s(_vm.$store.getters.getTags({ tag: "text2" })))
           ]),

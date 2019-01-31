@@ -26,10 +26,10 @@
                             <img alt="Linkedin" class="d-inline-block mx-2" src="/images/iconos/003-linkedin.svg"
                                  width="36px">
                         </a>
-                        <!-- <a href="#" rel="noopener noreferrer" target="_blank">
+                        <a href="https://www.youtube.com/channel/UCrLWu7ntv8P2AV8I5MlIIkA" rel="noopener noreferrer" target="_blank">
                             <img alt="Youtube" class="d-inline-block mx-2" src="/images/iconos/004-youtube.svg"
                                  width="36px">
-                        </a> -->
+                        </a>
                     </div>
                 </div>
             </div>

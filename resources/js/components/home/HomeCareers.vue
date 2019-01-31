@@ -10,7 +10,7 @@
                         <h3 class="title-border-bottom">{{ $store.getters.getTags({ tag: 'home_title1' }) }}</h3>
                         <p>{{ $store.getters.getTags({ tag: 'home_text18' }) }}</p>
 
-                        <router-link to="#" class="btn btn-primary text-uppercase mt-4">{{ $store.getters.getTags({ tag: 'home_text19' }) }}</router-link>
+                        <a href="/labori" class="btn btn-primary text-uppercase mt-4">{{ $store.getters.getTags({ tag: 'home_text19' }) }}</a>
                     </div>
                 </div>
             </div>
@@ -112,6 +112,7 @@
         left: -180px;
         width: 160px;
         animation: float 10s linear infinite;
+        z-index: 1000;
     }
 
     @keyframes float {

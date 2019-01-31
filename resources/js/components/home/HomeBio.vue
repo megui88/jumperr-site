@@ -1,9 +1,9 @@
 <template>
     <div id="section_bio">
-        <article class="fondo">
-            <div class="container h-100">
-                <div class="row h-100">
-                    <div class="col-12 col-md-6 col-lg-6 align-self-center">
+        <article class="fondo d-flex py-4">
+            <div class="container align-self-center">
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-6">
                         <h3 class="title-border-bottom">{{ $store.getters.getTags({ tag: 'home_text8' }) }}</h3>
                         <p v-html="$store.getters.getTags({ tag: 'home_text10' })"></p>
                     </div>
@@ -23,10 +23,49 @@
     }
 </script>
 <style scoped>
+    #section_bio {
+        z-index: 1000;
+        position: relative;
+    }
+
+    .fondo {
+        background-color: #000;
+        background-image: url('/images/home/imagenes/jumperr-teofrecemos-home.png');
+        background-attachment: fixed;
+        -webkit-background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: auto;
+        height: 100%;
+        min-height: 560px;
+    }
+
+    .title-border-bottom:after {
+        content: ' ';
+        border-bottom: 1px solid #f26336;
+        display: block;
+        width: 160px;
+        margin: 1rem 0rem 1.1rem;
+    }
+
+    h3, p {
+        color: #fff;
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
+
+
+
+
+
     .img-1 {
         position: absolute;
-        top: -12px;
-        left: 20px;
+        top: -60px;
+        right: -55px;
+        left: auto;
         display: inline-block;
         width: 120px;
         height: 120px;
@@ -35,12 +74,13 @@
 
     .img-2 {
         position: absolute;
-        top: 115px;
-        left: 100px;
+        top: 90px;
+        right: 10px;
+        left: auto;
         display: inline-block;
         width: 20px;
         height: 20px;
-        animation: pulso 1s linear infinite;
+        animation: rotarRight 6s linear infinite;
     }
 
     .img-3 {
@@ -65,8 +105,8 @@
 
     .circle-pulse {
         position: absolute;
-        bottom: 80px;
-        right: 30px;
+        bottom: 200px;
+        right: 10px;
         display: block;
         width: 22px;
         height: 22px;
@@ -94,15 +134,15 @@
 
     @keyframes rotarRight {
         0% {
-            transform: rotate(0deg);
+            transform: translatey(0px);
             opacity: 1;
         }
         50% {
             opacity: .5;
-            transform: rotate(180deg);
+            transform: translatey(-20px);
         }
         100% {
-            transform: rotate(360deg);
+            transform: translatey(0px);
             opacity: 1;
 
         }
@@ -123,44 +163,11 @@
         }
     }
 
-    #section_bio {
-        z-index: 1000;
-        position: relative;
-    }
-
-    .fondo {
-        background-color: #000;
-        background-image: url('/images/home/imagenes/jumperr-teofrecemos-home.png');
-        background-attachment: fixed;
-        -webkit-background-attachment: fixed;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        width: auto;
-        height: 560px;
-        min-height: 560px;
-    }
-
-    .title-border-bottom:after {
-        content: ' ';
-        border-bottom: 1px solid #f26336;
-        display: block;
-        width: 160px;
-        margin: 1rem 0rem 1.1rem;
-    }
-
-    h3, p {
-        color: #fff;
-    }
-
-    p {
-        font-size: 1.2rem;
-    }
-
     @media (min-width: 992px) {
         .img-1 {
             position: absolute;
             top: 50px;
+            right: auto;
             left: -50px;
             display: inline-block;
             width: 120px;
@@ -171,11 +178,26 @@
         .img-2 {
             position: absolute;
             top: 180px;
+            right: auto;
             left: 25px;
             display: inline-block;
             width: 20px;
             height: 20px;
             animation: pulso 1s linear infinite;
+        }
+
+        .circle-pulse {
+            position: absolute;
+            bottom: 80px;
+            right: 30px;
+            display: block;
+            width: 22px;
+            height: 22px;
+            border-radius: 50%;
+            background: #fff;
+            cursor: pointer;
+            box-shadow: 0 0 0 rgba(255, 255, 255, 0.4);
+            animation: pulse 2s infinite;
         }
     }
 </style>

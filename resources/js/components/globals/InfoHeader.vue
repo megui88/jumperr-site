@@ -25,7 +25,7 @@
                 socialMedia: [
                     { link: 'https://www.facebook.com/wearejumperr/', icon: 'fab fa-facebook-f'},
                     { link: 'https://www.instagram.com/wearejumperr/', icon: 'fab fa-instagram'},
-                    // { link: 'http://', icon: 'fab fa-youtube'},
+                    { link: 'https://www.youtube.com/channel/UCrLWu7ntv8P2AV8I5MlIIkA', icon: 'fab fa-youtube'},
                     { link: 'https://www.linkedin.com/company/wearejumperr/', icon: 'fab fa-linkedin-in'}
                 ]
             }

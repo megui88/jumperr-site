@@ -9,7 +9,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-12 col-lg-11 ml-lg-auto">
-                            <h3 class="title-border-bottom text-white">{{ $store.getters.getTags({ tag: 'specialties_title2' }) }}</h3>
+                            <h3 class="title-border-bottom text-white text-uppercase">{{ $store.getters.getTags({ tag: 'specialties_title2' }) }}</h3>
                             <p v-html="$store.getters.getTags({ tag: 'specialties_text4' })"></p>
                         </div>
                     </div>
@@ -80,6 +80,12 @@
 
     .mano {
         width: 240px;
+    }
+
+    @media (max-width: 575.98px) {
+        h3{
+            font-size: 1.8rem;
+        }
     }
 
     @media (min-width: 768px) {

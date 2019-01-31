@@ -31,11 +31,16 @@
         align-items: center;
         position: relative;
     }
+    @media (max-width: 480px) {
+        h2 {
+            font-size: 1.8rem;
+        }
+    }
 
     /* ANIMACIONES */
     .circle-pulse {
         position: absolute;
-        bottom: 280px;
+        bottom: 240px;
         right: 30px;
         display: block;
         width: 22px;

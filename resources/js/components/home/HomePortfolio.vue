@@ -77,7 +77,7 @@
                 
             </div>
 
-            <div class="container">
+            <!-- <div class="container">
                 <div class="row">
                     <div class="col-12 text-center">
                         <a href="#" class="btn btn-primary text-uppercase mt-5">
@@ -85,7 +85,7 @@
                         </a>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </section>
     </div>
 </template>
@@ -137,13 +137,13 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: rgba(0, 0, 0, 0.9);
+        background-color: #f26236d3;
         color: #fff;
         display: flex;
         justify-content: center;
         align-items: center;
         z-index: 100;
-        transition: top 1s ease-out;
+        transition: top .5s ease-out;
     }
 
     .portafolio-item:hover .portafolio-caption {

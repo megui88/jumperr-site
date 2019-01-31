@@ -70,7 +70,7 @@
 
     @media (max-width: 480px) {
         h2 {
-            font-size: 2rem;
+            font-size: 1.8rem;
         }
     }
 </style>

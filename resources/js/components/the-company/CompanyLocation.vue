@@ -30,11 +30,11 @@
 
                     <swiper :options="swiperOptionTop" class="gallery-top" ref="swiperTop">
                         <div class="parallax-bg" slot="parallax-bg" data-swiper-parallax="-5%"></div>
-                       <template v-for="slide in cities">
-                           <swiper-slide>
+                       <template v-for="(slide, id) in cities">
+                            <swiper-slide :key="id">
                                <div class="zona" :class="'zona-' + slide.id">
-                                   <template v-for="item in slide.images">
-                                       <img :class="'item-' + item.id" :src="item.img" :alt="'img-' + item.id">
+                                   <template v-for="(item, imgkey) in slide.images">
+                                       <img :key="imgkey" :class="'item-' + item.id" :src="item.img" :alt="'img-' + item.id">
                                         <!-- <div class="dropdown">
                                             <div class="circle-pulse" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></div>
                                             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -47,7 +47,7 @@
                                         </div> -->
                                    </template>
                                </div>
-                           </swiper-slide>
+                            </swiper-slide>
                        </template>
                     </swiper>
                 </div>
@@ -90,7 +90,7 @@
                         ]
                     },
                     {
-                        id: 47,
+                        id: 4,
                         title: this.$store.getters.getTags({ tag: 'company_text2017' }),
                         description: this.$store.getters.getTags({ tag: 'company_description2017' }),
                         images: [
@@ -120,24 +120,21 @@
                 swiperOptionTop: {
                     slidesPerView: 'auto',
                     freeMode: true,
-                    loop: true,
+                    loop: false,
                     speed: 1900,
+                    loopedSlides: 6, //looped slides should be the same
                     parallax: true,
-                    loopedSlides: 5, //looped slides should be the same
-                    autoplay: {
-                        delay: 5000,
-                    },
                 },
                 swiperOptionThumbs: {
                     slidesPerView: 5,
                     touchRatio: 0.2,
                     centeredSlides: true,
-                    loop: true,
+                    loop: false,
+                    loopedSlides: 6, //looped slides should be the same
                     speed: 1900,
-                    loopedSlides: 5, //looped slides should be the same
                     slideToClickedSlide: true,
                     autoplay: {
-                        delay: 5000,
+                        delay: 1000,
                     },
                 }
             }
@@ -381,6 +378,93 @@
         position: absolute;
         bottom: 0%;
         left: 0%;
+    }
+
+    /* // Extra small devices (portrait phones, less than 576px) */
+    @media (max-width: 575.98px) {
+        .zona-1 {
+            position: relative;
+            width: 40%;
+            min-width: 340px;
+            height: 400px;
+        }
+        .zona-2 {
+            position: relative;
+            width: 36%;
+            height: 400px;
+            min-width: 340px;
+        }
+        .zona-3 {
+            position: relative;
+            width: 36%;
+            height: 400px;
+            min-width: 340px;
+        }
+        .zona-3 .item-2 {
+            width: 40%;
+            position: absolute;
+            bottom: 0%;
+            left: 20%;
+        }
+        .zona-4 {
+            position: relative;
+            width: 36%;
+            height: 400px;
+            min-width: 340px;
+        }
+        .zona-4 .item-2 {
+            width: 40%;
+            position: absolute;
+            bottom: 0%;
+            left: 0%;
+        }
+
+        .zona-5 {
+            position: relative;
+            width: 36%;
+            height: 400px;
+            min-width: 340px;
+        }
+        .zona-6 {
+            position: relative;
+            width: 100%;
+            height: 400px;
+            min-width: 340px;
+        }
+        .zona-6 .item-1 {
+            width: 440px;
+            height: auto;
+            position: absolute;
+            bottom: 10%;
+            right: 0%;
+        }
+
+        .zona-6 .item-2 {
+            width: 35%;
+            position: absolute;
+            bottom: 0%;
+            left: 0%;
+        } 
+    }
+
+    /* // Small devices (landscape phones, 576px and up) */
+    @media (min-width: 576px) and (max-width: 767.98px) {
+        
+    }
+
+    /* // Medium devices (tablets, 768px and up) */
+    @media (min-width: 768px) and (max-width: 991.98px) {
+       
+    }
+
+    /* // Large devices (desktops, 992px and up) */
+    @media (min-width: 992px) and (max-width: 1199.98px) {
+       
+    }
+
+    /* // Extra large devices (large desktops, 1200px and up) */
+    @media (min-width: 1200px) {
+        
     }
 
     /* Animacion y nube */

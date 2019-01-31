@@ -1,5 +1,5 @@
 <template>
-    <div id="section_services" class="my-5">
+    <div id="section_services" class="my-2 my-md-5 py-3 py-md-3">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-md-10 mx-auto">
@@ -136,8 +136,6 @@ export default {
 <style scoped>
     #section_services{
         background-color: #f8f8f8;
-        padding-top: 2rem;
-        padding-bottom: 4rem;
     }
     .title-border-bottom:after {
         content: ' ';
