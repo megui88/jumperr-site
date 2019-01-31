@@ -4542,10 +4542,6 @@ __webpack_require__.r(__webpack_exports__);
           tag: 'partners_text13'
         })
       }, {
-        icono: '/images/partners/005-close-envelope.svg',
-        title: 'NEWSLETTER',
-        description: "Gestion de una lista de contactos personales con la posibilidad de enviar correo electronico y newsletters personalizados por medio de un software profesional."
-      }, {
         icono: '/images/partners/006-graph.svg',
         title: this.$store.getters.getTags({
           tag: 'partners_title10'
@@ -67101,7 +67097,7 @@ var staticRenderFns = [
             _c("iframe", {
               staticClass: "youtubevid",
               attrs: {
-                src: "https://www.youtube.com/embed/rJOaRTeC21A",
+                src: "https://www.youtube.com/embed/8-r_c2a2jUY",
                 frameborder: "0",
                 allow:
                   "accelerometer; encrypted-media; gyroscope; picture-in-picture",

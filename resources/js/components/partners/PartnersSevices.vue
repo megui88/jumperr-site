@@ -94,7 +94,7 @@
                     {
                         icono:  '/images/partners/002-paper.svg',
                         title: this.$store.getters.getTags({ tag: 'partners_title6' }),
-                        description: this.$store.getters.getTags({ tag: 'partners_text10' })
+                        description: this.$store.getters.getTags({tag:'partners_text10'})
                     },
                     {
                         icono:  '/images/partners/009-web-site.svg',
@@ -110,11 +110,6 @@
                         icono:  '/images/partners/004-global.svg',
                         title: this.$store.getters.getTags({ tag: 'partners_title9' }),
                         description: this.$store.getters.getTags({ tag: 'partners_text13' })
-                    },
-                    {
-                        icono:  '/images/partners/005-close-envelope.svg',
-                        title: 'NEWSLETTER',
-                        description: `Gestion de una lista de contactos personales con la posibilidad de enviar correo electronico y newsletters personalizados por medio de un software profesional.`
                     },
                     {
                         icono:  '/images/partners/006-graph.svg',
