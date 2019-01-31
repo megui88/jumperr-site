@@ -3146,6 +3146,7 @@ __webpack_require__.r(__webpack_exports__);
       this.$store.commit('changeLanguage', {
         list: this.lang
       });
+      $('#menuCollapse').collapse('hide');
     },
     cambiarFondoNav: function cambiarFondoNav() {
       if ($this.fondoNav === true) {
@@ -3153,6 +3154,11 @@ __webpack_require__.r(__webpack_exports__);
       } else {
         $this.fondoNav = true;
       }
+    },
+    cerrarCollapse: function cerrarCollapse() {
+      $('#menuCollapse').collapse({
+        toggle: false
+      });
     }
   }
 });
@@ -65380,219 +65386,202 @@ var render = function() {
               class: _vm.sticky ? "navbar-dark" : "navbar-light"
             },
             [
-              _c(
-                "div",
-                { staticClass: "container" },
-                [
-                  _c(
-                    "router-link",
-                    { staticClass: "navbar-brand", attrs: { to: "/" } },
-                    [
-                      _c("img", {
-                        staticClass: "logo",
-                        attrs: {
-                          src: "/images/logo/logojumperr.svg",
-                          alt: "Jumperr"
-                        }
-                      })
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _vm._m(0),
-                  _vm._v(" "),
-                  _c(
-                    "div",
-                    {
-                      staticClass:
-                        "collapse navbar-collapse text-uppercase font-weight-bold",
-                      attrs: { id: "menuCollapse" }
-                    },
-                    [
-                      _c(
-                        "ul",
-                        { staticClass: "navbar-nav ml-auto mt-2 mt-lg-0" },
-                        [
-                          _vm._l(_vm.routes, function(item) {
-                            return [
-                              _c(
-                                "li",
-                                { staticClass: "nav-item d-md-none" },
-                                [
-                                  _c(
-                                    "router-link",
-                                    {
-                                      staticClass: "nav-link",
-                                      attrs: {
-                                        to: item.link,
-                                        "data-toggle": "collapse",
-                                        "data-target": "#menuCollapse",
-                                        "aria-expanded": "false",
-                                        "aria-controls": "menuCollapse"
-                                      }
-                                    },
-                                    [_vm._v(_vm._s(item.name))]
-                                  )
-                                ],
-                                1
-                              ),
-                              _vm._v(" "),
-                              _c(
-                                "li",
-                                { staticClass: "nav-item d-none d-md-flex" },
-                                [
-                                  _c(
-                                    "router-link",
-                                    {
-                                      staticClass: "nav-link",
-                                      attrs: { to: item.link }
-                                    },
-                                    [_vm._v(_vm._s(item.name))]
-                                  )
-                                ],
-                                1
-                              )
-                            ]
-                          }),
-                          _vm._v(" "),
-                          _vm.sticky
-                            ? [
-                                _c("li", { staticClass: "nav-item" }, [
-                                  _c(
-                                    "select",
-                                    {
-                                      directives: [
-                                        {
-                                          name: "model",
-                                          rawName: "v-model",
-                                          value: _vm.lang,
-                                          expression: "lang"
-                                        }
-                                      ],
-                                      staticClass:
-                                        "form-control transparent text-uppercase",
-                                      attrs: { name: "lang" },
-                                      on: {
-                                        change: [
-                                          function($event) {
-                                            var $$selectedVal = Array.prototype.filter
-                                              .call(
-                                                $event.target.options,
-                                                function(o) {
-                                                  return o.selected
-                                                }
-                                              )
-                                              .map(function(o) {
-                                                var val =
-                                                  "_value" in o
-                                                    ? o._value
-                                                    : o.value
-                                                return val
-                                              })
-                                            _vm.lang = $event.target.multiple
-                                              ? $$selectedVal
-                                              : $$selectedVal[0]
-                                          },
-                                          _vm.changeLanguage
-                                        ]
-                                      }
-                                    },
-                                    [
-                                      _vm._l(_vm.getFlags, function(flag) {
-                                        return [
-                                          _c(
-                                            "option",
-                                            { domProps: { value: flag.code } },
-                                            [_vm._v(_vm._s(flag.code))]
-                                          )
-                                        ]
-                                      })
-                                    ],
-                                    2
-                                  )
-                                ])
-                              ]
-                            : [
-                                _c("li", { staticClass: "nav-item" }, [
-                                  _c(
-                                    "select",
-                                    {
-                                      directives: [
-                                        {
-                                          name: "model",
-                                          rawName: "v-model",
-                                          value: _vm.lang,
-                                          expression: "lang"
-                                        }
-                                      ],
-                                      staticClass:
-                                        "form-control dark text-uppercase",
-                                      attrs: { name: "lang" },
-                                      on: {
-                                        change: [
-                                          function($event) {
-                                            var $$selectedVal = Array.prototype.filter
-                                              .call(
-                                                $event.target.options,
-                                                function(o) {
-                                                  return o.selected
-                                                }
-                                              )
-                                              .map(function(o) {
-                                                var val =
-                                                  "_value" in o
-                                                    ? o._value
-                                                    : o.value
-                                                return val
-                                              })
-                                            _vm.lang = $event.target.multiple
-                                              ? $$selectedVal
-                                              : $$selectedVal[0]
-                                          },
-                                          _vm.changeLanguage
-                                        ]
-                                      }
-                                    },
-                                    [
-                                      _vm._l(_vm.getFlags, function(flag) {
-                                        return [
-                                          _c(
-                                            "option",
-                                            { domProps: { value: flag.code } },
-                                            [_vm._v(_vm._s(flag.code))]
-                                          )
-                                        ]
-                                      })
-                                    ],
-                                    2
-                                  )
-                                ])
-                              ]
-                        ],
-                        2
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "a",
-                        {
-                          staticClass:
-                            "btn btn-primary ml-lg-3 d-none d-lg-block",
-                          attrs: { href: "/contatto" }
-                        },
-                        [
-                          _vm._v(
-                            _vm._s(
-                              _vm.$store.getters.getTags({
-                                tag: "general_btn_contact"
-                              })
+              _c("div", { staticClass: "container" }, [
+                _vm._m(0),
+                _vm._v(" "),
+                _vm._m(1),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {
+                    staticClass:
+                      "collapse navbar-collapse text-uppercase font-weight-bold",
+                    attrs: { id: "menuCollapse" }
+                  },
+                  [
+                    _c(
+                      "ul",
+                      { staticClass: "navbar-nav ml-auto mt-2 mt-lg-0" },
+                      [
+                        _vm._l(_vm.routes, function(item) {
+                          return [
+                            _c(
+                              "li",
+                              { staticClass: "nav-item d-md-none" },
+                              [
+                                _c(
+                                  "router-link",
+                                  {
+                                    staticClass: "nav-link",
+                                    attrs: {
+                                      to: item.link,
+                                      "data-toggle": "collapse",
+                                      "data-target": "#menuCollapse",
+                                      "aria-expanded": "false",
+                                      "aria-controls": "menuCollapse"
+                                    }
+                                  },
+                                  [_vm._v(_vm._s(item.name))]
+                                )
+                              ],
+                              1
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "li",
+                              { staticClass: "nav-item d-none d-md-flex" },
+                              [
+                                _c(
+                                  "router-link",
+                                  {
+                                    staticClass: "nav-link",
+                                    attrs: { to: item.link }
+                                  },
+                                  [_vm._v(_vm._s(item.name))]
+                                )
+                              ],
+                              1
                             )
+                          ]
+                        }),
+                        _vm._v(" "),
+                        _vm.sticky
+                          ? [
+                              _c("li", { staticClass: "nav-item" }, [
+                                _c(
+                                  "select",
+                                  {
+                                    directives: [
+                                      {
+                                        name: "model",
+                                        rawName: "v-model",
+                                        value: _vm.lang,
+                                        expression: "lang"
+                                      }
+                                    ],
+                                    staticClass:
+                                      "form-control transparent text-uppercase",
+                                    attrs: { name: "lang" },
+                                    on: {
+                                      change: [
+                                        function($event) {
+                                          var $$selectedVal = Array.prototype.filter
+                                            .call(
+                                              $event.target.options,
+                                              function(o) {
+                                                return o.selected
+                                              }
+                                            )
+                                            .map(function(o) {
+                                              var val =
+                                                "_value" in o
+                                                  ? o._value
+                                                  : o.value
+                                              return val
+                                            })
+                                          _vm.lang = $event.target.multiple
+                                            ? $$selectedVal
+                                            : $$selectedVal[0]
+                                        },
+                                        _vm.changeLanguage
+                                      ]
+                                    }
+                                  },
+                                  [
+                                    _vm._l(_vm.getFlags, function(flag) {
+                                      return [
+                                        _c(
+                                          "option",
+                                          { domProps: { value: flag.code } },
+                                          [_vm._v(_vm._s(flag.code))]
+                                        )
+                                      ]
+                                    })
+                                  ],
+                                  2
+                                )
+                              ])
+                            ]
+                          : [
+                              _c("li", { staticClass: "nav-item" }, [
+                                _c(
+                                  "select",
+                                  {
+                                    directives: [
+                                      {
+                                        name: "model",
+                                        rawName: "v-model",
+                                        value: _vm.lang,
+                                        expression: "lang"
+                                      }
+                                    ],
+                                    staticClass:
+                                      "form-control dark text-uppercase",
+                                    attrs: { name: "lang" },
+                                    on: {
+                                      change: [
+                                        function($event) {
+                                          var $$selectedVal = Array.prototype.filter
+                                            .call(
+                                              $event.target.options,
+                                              function(o) {
+                                                return o.selected
+                                              }
+                                            )
+                                            .map(function(o) {
+                                              var val =
+                                                "_value" in o
+                                                  ? o._value
+                                                  : o.value
+                                              return val
+                                            })
+                                          _vm.lang = $event.target.multiple
+                                            ? $$selectedVal
+                                            : $$selectedVal[0]
+                                        },
+                                        _vm.changeLanguage
+                                      ]
+                                    }
+                                  },
+                                  [
+                                    _vm._l(_vm.getFlags, function(flag) {
+                                      return [
+                                        _c(
+                                          "option",
+                                          { domProps: { value: flag.code } },
+                                          [_vm._v(_vm._s(flag.code))]
+                                        )
+                                      ]
+                                    })
+                                  ],
+                                  2
+                                )
+                              ])
+                            ]
+                      ],
+                      2
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "a",
+                      {
+                        staticClass:
+                          "btn btn-primary ml-lg-3 d-none d-lg-block",
+                        attrs: { href: "/contatto" }
+                      },
+                      [
+                        _vm._v(
+                          _vm._s(
+                            _vm.$store.getters.getTags({
+                              tag: "general_btn_contact"
+                            })
                           )
-                        ]
-                      )
-                    ]
-                  )
-                ],
-                1
-              )
+                        )
+                      ]
+                    )
+                  ]
+                )
+              ])
             ]
           )
         ]
@@ -65602,6 +65591,17 @@ var render = function() {
   )
 }
 var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("a", { staticClass: "navbar-brand", attrs: { href: "/" } }, [
+      _c("img", {
+        staticClass: "logo",
+        attrs: { src: "/images/logo/logojumperr.svg", alt: "Jumperr" }
+      })
+    ])
+  },
   function() {
     var _vm = this
     var _h = _vm.$createElement

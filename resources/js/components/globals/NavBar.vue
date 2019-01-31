@@ -7,9 +7,9 @@
             <div id="navbar" :class="[sticky ? '' : 'bg-white', fondoNav ? 'bg-white' : '' ]">
                 <nav class="navbar navbar-expand-lg" :class="sticky ? 'navbar-dark' : 'navbar-light'">
                     <div class="container">
-                        <router-link class="navbar-brand" to="/">
+                        <a class="navbar-brand" href="/">
                             <img src="/images/logo/logojumperr.svg" alt="Jumperr" class="logo">
-                        </router-link>
+                        </a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menuCollapse" aria-controls="menuCollapse" aria-expanded="false" aria-label="Toggle navigation">
                             <i class="fas fa-bars"></i>
                         </button>
@@ -110,6 +110,8 @@
                 this.$validator.localize(this.lang); // change language for vee-validate
 
                 this.$store.commit('changeLanguage', { list: this.lang });
+
+                $('#menuCollapse').collapse('hide')
             },
             cambiarFondoNav() {
                 if ($this.fondoNav === true) {
@@ -117,6 +119,11 @@
                 } else {
                     $this.fondoNav = true;
                 }
+            },
+            cerrarCollapse(){
+                $('#menuCollapse').collapse({
+                    toggle: false
+                })
             }
         }
     }
