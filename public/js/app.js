@@ -2988,16 +2988,14 @@ __webpack_require__.r(__webpack_exports__);
     return {
       email: 'info@jumperr.com',
       socialMedia: [{
-        link: 'http://',
+        link: 'https://www.facebook.com/wearejumperr/',
         icon: 'fab fa-facebook-f'
       }, {
-        link: 'http://',
+        link: 'https://www.instagram.com/wearejumperr/',
         icon: 'fab fa-instagram'
-      }, {
-        link: 'http://',
-        icon: 'fab fa-youtube'
-      }, {
-        link: 'http://',
+      }, // { link: 'http://', icon: 'fab fa-youtube'},
+      {
+        link: 'https://www.linkedin.com/company/wearejumperr/',
         icon: 'fab fa-linkedin-in'
       }]
     };
@@ -3016,6 +3014,14 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _InfoHeader__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./InfoHeader */ "./resources/js/components/globals/InfoHeader.vue");
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -3093,6 +3099,13 @@ __webpack_require__.r(__webpack_exports__);
     window.onscroll = function () {
       that.sticky = !(document.body.scrollTop > 10 || document.documentElement.scrollTop > 10);
     };
+
+    $('#menuCollapse').on('show.bs.collapse', function () {
+      that.fondoNav = true;
+    });
+    $('#menuCollapse').on('hide.bs.collapse', function () {
+      that.fondoNav = false;
+    });
   },
   computed: {
     getFlags: function getFlags() {
@@ -3907,6 +3920,18 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'home-services',
   data: function data() {
@@ -3955,7 +3980,7 @@ __webpack_require__.r(__webpack_exports__);
           tag: 'home_text3'
         }),
         image: '/images/home/imagenes/jumperr-studio.jpg',
-        icono: '/images/home/iconos/jumperrstudio_home.svg',
+        icono: '/images/home/iconos/studio.png',
         enlace: '/specialita/#jumperr-studio'
       }, {
         titulo: this.$store.getters.getTags({
@@ -3965,7 +3990,7 @@ __webpack_require__.r(__webpack_exports__);
           tag: 'home_text4'
         }),
         image: '/images/home/imagenes/jumperr-desarrollowebyapp.jpg',
-        icono: '/images/home/iconos/jumperr_desarrolloweb.svg',
+        icono: '/images/home/iconos/desarrolloweb.png',
         enlace: '/specialita/#jumperr-web-app'
       }, {
         titulo: this.$store.getters.getTags({
@@ -3975,7 +4000,7 @@ __webpack_require__.r(__webpack_exports__);
           tag: 'home_text5'
         }),
         image: '/images/home/imagenes/jumperr-start.jpg',
-        icono: '/images/home/iconos/jumperrstart_home.svg',
+        icono: '/images/home/iconos/start.png',
         enlace: '/specialita/#jumperr-start'
       }, {
         titulo: this.$store.getters.getTags({
@@ -3985,7 +4010,7 @@ __webpack_require__.r(__webpack_exports__);
           tag: 'home_text6'
         }),
         image: '/images/home/imagenes/jumperr-redessociales.jpg',
-        icono: '/images/home/iconos/redessociales.svg',
+        icono: '/images/home/iconos/redessociales.png',
         enlace: '/specialita/#network'
       }, {
         titulo: this.$store.getters.getTags({
@@ -3995,17 +4020,17 @@ __webpack_require__.r(__webpack_exports__);
           tag: 'home_text7'
         }),
         image: '/images/home/imagenes/jumperr-cms.jpg',
-        icono: '/images/home/iconos/cmsycrm.svg',
+        icono: '/images/home/iconos/cmsycrm.png',
         enlace: '/specialita/#jumperr-cms'
       }, {
         titulo: this.$store.getters.getTags({
-          tag: 'home_title7'
+          tag: 'home_service_title_design'
         }),
         descripcion: this.$store.getters.getTags({
           tag: 'home_text8'
         }),
         image: '/images/home/imagenes/jumperr-diseñografico.jpg',
-        icono: '/images/home/iconos/diseñografico.svg',
+        icono: '/images/home/iconos/disenografico.png',
         enlace: '/specialita/#disegno-grafico'
       }];
     }
@@ -10444,7 +10469,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\n.logo[data-v-500d0d4c] {\n    width: 160px;\n    height: auto;\n}\n#container-nav[data-v-500d0d4c] {\n}\n.btn[data-v-500d0d4c]{\n    font-size: 0.8rem;\n    white-space: nowrap;\n    overflow: hidden;\n    text-overflow: ellipsis;\n    max-width: 167px;\n}\n.form-control[data-v-500d0d4c]{\n    background-color: transparent;\n    background-position: right center;\n    background-repeat: no-repeat;\n    background-size: 24px;\n    padding: 0.375rem 1.6rem 0.375rem .5rem;\n    outline: none;\n    -webkit-appearance: none;\n    -moz-appearance: none;\n         appearance: none;\n    border: none;\n    border-radius: 0;\n    font-weight: 700;\n    margin-left: 5px;\n}\n.form-control[data-v-500d0d4c]:focus{\n    outline: none;\n    box-shadow: none;\n}\n.form-control.transparent[data-v-500d0d4c]{\n    background-image: url('/images/iconos/internet-white.svg');\n    border-left: 1px solid #fff;\n    color: #fff;\n}\n.form-control.transparent option[data-v-500d0d4c]{\n    color: #f26336;\n}\n.form-control.dark[data-v-500d0d4c]{\n    background-image: url('/images/iconos/internet.svg');\n    border-left: 1px solid #4b4b4b9b;\n    color: #4b4b4b;\n}\n@media (min-width: 992px) {\n.navbar-expand-lg .navbar-nav .nav-link[data-v-500d0d4c] {\n        padding-right: 1rem;\n        padding-left: 1rem;\n        font-size: 1rem;\n}\n}\n@media (min-width: 1200px) {\n.navbar-expand-lg .navbar-nav .nav-link[data-v-500d0d4c] {\n        padding-right: .6rem;\n        padding-left: .6rem;\n}\n}\n.btn[data-v-500d0d4c] {\n    padding: 0.375rem 1.1rem;\n    font-size: 0.9rem;\n    line-height: 1.6;\n    border-radius: 1.25rem;\n    font-weight: bold;\n}\n\n/*link menu color blanco*/\n.navbar-dark .navbar-nav .nav-link[data-v-500d0d4c] {\n    color: rgba(255, 255, 255, 1);\n}\n.navbar-dark .navbar-nav .show > .nav-link[data-v-500d0d4c], .navbar-dark .navbar-nav .active > .nav-link[data-v-500d0d4c], .navbar-dark .navbar-nav .nav-link.show[data-v-500d0d4c], .navbar-dark .navbar-nav .nav-link.active[data-v-500d0d4c] {\n    color: rgb(206, 206, 206);\n}\n\n/*link menu color negro*/\n.navbar-light .navbar-nav .nav-link[data-v-500d0d4c] {\n    color: rgba(0, 0, 0, 0.5);\n}\n.navbar-light .navbar-nav .show > .nav-link[data-v-500d0d4c], .navbar-light .navbar-nav .active > .nav-link[data-v-500d0d4c], .navbar-light .navbar-nav .nav-link.show[data-v-500d0d4c], .navbar-light .navbar-nav .nav-link.active[data-v-500d0d4c] {\n    color: rgba(0, 0, 0, 1);\n}\n.navbar-dark .nav-link.router-link-exact-active.router-link-active[data-v-500d0d4c] {\n    color: #ffffffed;\n}\n.navbar-light .nav-link.router-link-exact-active.router-link-active[data-v-500d0d4c] {\n    color: #f26336;\n}\n@media (max-width: 991.98px) {\n.navbar[data-v-500d0d4c] {\n        background-color: #fff;\n}\n.navbar-dark .navbar-nav .nav-link[data-v-500d0d4c] {\n        color: rgba(0, 0, 0, 0.5);\n}\n.navbar-dark .navbar-nav .show > .nav-link[data-v-500d0d4c], .navbar-dark .navbar-nav .active > .nav-link[data-v-500d0d4c], .navbar-dark .navbar-nav .nav-link.show[data-v-500d0d4c], .navbar-dark .navbar-nav .nav-link.active[data-v-500d0d4c] {\n        color: rgba(0, 0, 0, 0.5);\n}\n\n    /*link menu color negro*/\n.navbar-light .navbar-nav .nav-link[data-v-500d0d4c] {\n        color: rgba(0, 0, 0, 0.5);\n}\n.navbar-light .navbar-nav .show > .nav-link[data-v-500d0d4c], .navbar-light .navbar-nav .active > .nav-link[data-v-500d0d4c], .navbar-light .navbar-nav .nav-link.show[data-v-500d0d4c], .navbar-light .navbar-nav .nav-link.active[data-v-500d0d4c] {\n        color: rgba(0, 0, 0, 1);\n}\n.navbar-dark .nav-link.router-link-exact-active.router-link-active[data-v-500d0d4c] {\n        color: #f26336;\n}\n.navbar-light .nav-link.router-link-exact-active.router-link-active[data-v-500d0d4c] {\n        color: #f26336;\n}\n.navbar-dark .navbar-toggler[data-v-500d0d4c] {\n        color: rgba(0, 0, 0, 0.5);\n        border-color: rgba(0, 0, 0, 0.1);\n}\n.navbar-light .navbar-toggler[data-v-500d0d4c] {\n        color: rgba(0, 0, 0, 0.5);\n        border-color: rgba(0, 0, 0, 0.1);\n}\n}\n@media (max-width: 991.98px) {\n.navbar[data-v-61279d3a][data-v-500d0d4c] {\n        background-color: #fff0;\n}\nbutton.navbar-toggler[data-v-500d0d4c] {\n        color: #fff;\n}\n@media (max-width: 991.98px) {\n}\n.navbar-dark .navbar-toggler[data-v-500d0d4c] {\n        color: rgb(242, 105, 55);\n        border-color: rgb(242, 105, 55);\n}\n}\n", ""]);
+exports.push([module.i, "\n.logo[data-v-500d0d4c] {\n    width: 160px;\n    height: auto;\n}\n.btn[data-v-500d0d4c]{\n    font-size: 0.8rem;\n    white-space: nowrap;\n    overflow: hidden;\n    text-overflow: ellipsis;\n    max-width: 167px;\n}\n.form-control[data-v-500d0d4c]{\n    background-color: transparent;\n    background-position: right center;\n    background-repeat: no-repeat;\n    background-size: 24px;\n    padding: 0.375rem 1.6rem 0.375rem .5rem;\n    outline: none;\n    -webkit-appearance: none;\n    -moz-appearance: none;\n         appearance: none;\n    border: none;\n    border-radius: 0;\n    font-weight: 700;\n    margin-left: 5px;\n}\n.form-control[data-v-500d0d4c]:focus{\n    outline: none;\n    box-shadow: none;\n}\n.form-control.transparent[data-v-500d0d4c]{\n    background-image: url('/images/iconos/internet-white.svg');\n    border-left: 1px solid #fff;\n    color: #fff;\n}\n.form-control.transparent option[data-v-500d0d4c]{\n    color: #f26336;\n}\n.form-control.dark[data-v-500d0d4c]{\n    background-image: url('/images/iconos/internet.svg');\n    border-left: 1px solid #4b4b4b9b;\n    color: #4b4b4b;\n}\n@media (min-width: 992px) {\n.navbar-expand-lg .navbar-nav .nav-link[data-v-500d0d4c] {\n        padding-right: 1rem;\n        padding-left: 1rem;\n        font-size: 1rem;\n}\n}\n@media (min-width: 1200px) {\n.navbar-expand-lg .navbar-nav .nav-link[data-v-500d0d4c] {\n        padding-right: .6rem;\n        padding-left: .6rem;\n}\n}\n.btn[data-v-500d0d4c] {\n    padding: 0.375rem 1.1rem;\n    font-size: 0.9rem;\n    line-height: 1.6;\n    border-radius: 1.25rem;\n    font-weight: bold;\n}\n.navbar-dark .navbar-nav .nav-link[data-v-500d0d4c] {\n    color: rgb(255, 255, 255);\n}\n.navbar-light .navbar-nav .nav-link[data-v-500d0d4c] {\n    color: rgba(0, 0, 0, 0.5);\n}\n.navbar-light .navbar-nav .show > .nav-link[data-v-500d0d4c], .navbar-light .navbar-nav .active > .nav-link[data-v-500d0d4c], .navbar-light .navbar-nav .nav-link.show[data-v-500d0d4c], .navbar-light .navbar-nav .nav-link.active[data-v-500d0d4c] {\n    color: rgba(0, 0, 0, 1);\n}\n.navbar-dark .nav-link.router-link-exact-active.router-link-active[data-v-500d0d4c] {\n    color: #f26336;\n}\n.navbar-light .nav-link.router-link-exact-active.router-link-active[data-v-500d0d4c] {\n    color: #f26336;\n}\n@media (max-width: 991.98px) {\n.navbar[data-v-500d0d4c] {\n        background-color: rgba(255, 255, 255, 0);\n}\n.navbar-dark .navbar-nav .nav-link[data-v-500d0d4c] {\n        color: rgba(0, 0, 0, 0.5);\n}\n.navbar-dark .navbar-nav .show > .nav-link[data-v-500d0d4c], .navbar-dark .navbar-nav .active > .nav-link[data-v-500d0d4c], .navbar-dark .navbar-nav .nav-link.show[data-v-500d0d4c], .navbar-dark .navbar-nav .nav-link.active[data-v-500d0d4c] {\n        color: rgba(0, 0, 0, 0.5);\n}\n\n    /*link menu color negro*/\n.navbar-light .navbar-nav .nav-link[data-v-500d0d4c] {\n        color: rgba(0, 0, 0, 0.5);\n}\n.navbar-light .navbar-nav .show > .nav-link[data-v-500d0d4c], .navbar-light .navbar-nav .active > .nav-link[data-v-500d0d4c], .navbar-light .navbar-nav .nav-link.show[data-v-500d0d4c], .navbar-light .navbar-nav .nav-link.active[data-v-500d0d4c] {\n        color: rgba(0, 0, 0, 1);\n}\n.navbar-dark .nav-link.router-link-exact-active.router-link-active[data-v-500d0d4c] {\n        color: #f26336;\n}\n.navbar-light .nav-link.router-link-exact-active.router-link-active[data-v-500d0d4c] {\n        color: #f26336;\n}\n.navbar-dark .navbar-toggler[data-v-500d0d4c], .navbar-light .navbar-toggler[data-v-500d0d4c] {\n        color: rgb(242, 105, 55);\n        border-color: rgb(242, 105, 55);\n}\n\n    /* selected lang */\n.navbar-dark .form-control[data-v-500d0d4c], .navbar-light .form-control[data-v-500d0d4c]{\n        background-color: transparent;\n        background-position: left center;\n        background-repeat: no-repeat;\n        background-size: 24px;\n        padding: 0.375rem 1.6rem 0.375rem .5rem;\n        outline: none;\n        -webkit-appearance: none;\n        -moz-appearance: none;\n             appearance: none;\n        border: none;\n        border-radius: 0;\n        font-weight: 700;\n        margin-left: 0px;\n        text-align: right;\n}\n.navbar-dark .form-control.transparent[data-v-500d0d4c]{\n        background-image: url('/images/iconos/internet.svg');\n        border: 0px solid #4b4b4b9b;\n        color: #4b4b4b9b;\n        padding-left: 28px;\n}\n.navbar-light .form-control.dark[data-v-500d0d4c]{\n        background-image: url('/images/iconos/internet.svg');\n        border: 0px solid #4b4b4b9b;\n        color: #4b4b4b9b;\n        padding-left: 28px;\n}\n}\n", ""]);
 
 // exports
 
@@ -10615,7 +10640,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\n#section_services[data-v-8258a71c]{\n    background-color: #f8f8f8;\n    padding-top: 2rem;\n    padding-bottom: 4rem;\n}\n.title-border-bottom[data-v-8258a71c]:after {\n    content: ' ';\n    border-bottom: 1px solid #f26336;\n    display: block;\n    width: 160px;\n    margin: 1.3rem auto 1.1rem;\n}\n\n/*Slider swiper*/\n.swiper-inner[data-v-8258a71c] {\n    padding-top: 50px;\n    padding-bottom: 50px;\n}\n.swiper-slide[data-v-8258a71c] {\nbackground-position: center;\nbackground-size: cover;\nmax-width: 100%;\n}\n@media (min-width: 992px) {\n.swiper-slide[data-v-8258a71c]{\n        max-width: 320px;\n}\n}\n.swiper-pagination-fraction[data-v-8258a71c],\n.swiper-pagination-custom[data-v-8258a71c],\n.swiper-container-horizontal > .swiper-pagination-bullets[data-v-8258a71c]{\n    margin-top: 1rem;\n    bottom: 0px;\n    left: 0;\n    width: 100%;\n}\n.swiper-pagination[data-v-8258a71c]{\n    position: relative;\n    text-align: center;\n    transition: 300ms opacity;\n    -webkit-transform: translate3d(0, 0, 0);\n    transform: translate3d(0, 0, 0);\n    z-index: 10;\n}\n\n\n/*Card bootstrap*/\n.card[data-v-8258a71c] {\n    position: relative;\n    display: flex;\n    flex-direction: column;\n    min-width: 0;\n    word-wrap: break-word;\n    background-color: #fff;\n    background-clip: border-box;\n    border: 1px solid rgba(0, 0, 0, 0.125);\n    border-radius: 0.5rem;\n    overflow: hidden;\n}\n.card-img-top[data-v-8258a71c] {\n    width: 100%;\n    border-top-left-radius: calc(0.25rem - 1px);\n    border-top-right-radius: calc(0.25rem - 1px);\n}\n.card-body[data-v-8258a71c] {\n    flex: 1 1 auto;\n    padding: 1.3rem;\n    padding-bottom: 2rem;\n    min-height: 270px;\n    display: flex;\n    flex-direction: column;\n    justify-content: space-between;\n}\np[data-v-8258a71c]{\n    font-size: 1rem;\n    line-height: 1.6rem;\n}\n.btn[data-v-8258a71c] {\n    -webkit-user-select: none;\n    -moz-user-select: none;\n    -ms-user-select: none;\n    font-weight: 700;\n    user-select: none;\n    border: 1px solid transparent;\n    padding: 0.275rem 1.8rem;\n    font-size: .9rem;\n    line-height: 1.6;\n    border-radius: 1.25rem;\n    align-self: center;\n}\nimg.icono-service[data-v-8258a71c] {\n    position: absolute;\n    top: 50%;\n    left: 50%;\n    -webkit-transform: translate(-50%, -50%);\n            transform: translate(-50%, -50%);\n    height: 120px;\n}\n.contenedor-img[data-v-8258a71c]{\n    position: relative;\n}\n", ""]);
+exports.push([module.i, "\n#section_services[data-v-8258a71c]{\n    background-color: #f8f8f8;\n    padding-top: 2rem;\n    padding-bottom: 4rem;\n}\n.title-border-bottom[data-v-8258a71c]:after {\n    content: ' ';\n    border-bottom: 1px solid #f26336;\n    display: block;\n    width: 160px;\n    margin: 1.3rem auto 1.1rem;\n}\n\n/*Slider swiper*/\n.swiper-inner[data-v-8258a71c] {\n    padding-top: 50px;\n    padding-bottom: 50px;\n}\n.swiper-slide[data-v-8258a71c] {\nbackground-position: center;\nbackground-size: cover;\nmax-width: 100%;\n}\n@media (min-width: 992px) {\n.swiper-slide[data-v-8258a71c]{\n        max-width: 320px;\n}\n}\n.swiper-pagination-fraction[data-v-8258a71c],\n.swiper-pagination-custom[data-v-8258a71c],\n.swiper-container-horizontal > .swiper-pagination-bullets[data-v-8258a71c]{\n    margin-top: 1rem;\n    bottom: 0px;\n    left: 0;\n    width: 100%;\n}\n.swiper-pagination[data-v-8258a71c]{\n    position: relative;\n    text-align: center;\n    transition: 300ms opacity;\n    -webkit-transform: translate3d(0, 0, 0);\n    transform: translate3d(0, 0, 0);\n    z-index: 10;\n}\n\n\n/*Card bootstrap*/\n.card[data-v-8258a71c] {\n    position: relative;\n    display: flex;\n    flex-direction: column;\n    min-width: 0;\n    word-wrap: break-word;\n    background-color: #fff;\n    background-clip: border-box;\n    border: 1px solid rgba(0, 0, 0, 0.125);\n    border-radius: 0.5rem;\n    overflow: hidden;\n}\n.card-img-top[data-v-8258a71c] {\n    width: 100%;\n    border-top-left-radius: calc(0.25rem - 1px);\n    border-top-right-radius: calc(0.25rem - 1px);\n}\n.card-body[data-v-8258a71c] {\n    flex: 1 1 auto;\n    padding: 1.3rem;\n    padding-bottom: 2rem;\n    min-height: 270px;\n    display: flex;\n    flex-direction: column;\n    justify-content: space-between;\n}\np[data-v-8258a71c]{\n    font-size: 1rem;\n    line-height: 1.6rem;\n}\n.btn[data-v-8258a71c] {\n    -webkit-user-select: none;\n    -moz-user-select: none;\n    -ms-user-select: none;\n    font-weight: 700;\n    user-select: none;\n    border: 1px solid transparent;\n    padding: 0.275rem 1.8rem;\n    font-size: .9rem;\n    line-height: 1.6;\n    border-radius: 1.25rem;\n    align-self: center;\n}\n.contenedor-img[data-v-8258a71c]{\n    position: relative;\n}\n.contenedor-posicionado[data-v-8258a71c]{\n    position: absolute;\n    top: 50%;\n    left: 50%;\n    -webkit-transform: translate(-50%, -50%);\n            transform: translate(-50%, -50%);\n    text-align: center;\n    width: 80%;\n}\nimg.icono-service[data-v-8258a71c] {\n    height: 80px;\n}\n.title-img[data-v-8258a71c]{\n    color: #fff;\n    margin-top: .6rem;\n    font-size: 1.3rem;\n    font-weight: 300;\n    text-align: center;\n    text-transform: uppercase;\n}\n", ""]);
 
 // exports
 
@@ -64321,7 +64346,7 @@ var render = function() {
                 "a",
                 {
                   staticClass: "btn btn-primary text-uppercase",
-                  attrs: { href: "#" }
+                  attrs: { href: "/contatto" }
                 },
                 [
                   _vm._v(
@@ -64409,7 +64434,7 @@ var render = function() {
                           "a",
                           {
                             staticClass: "btn btn-primary align-self-end",
-                            attrs: { href: service.url }
+                            attrs: { href: "/contatto" }
                           },
                           [
                             _vm._v(
@@ -65355,33 +65380,14 @@ var render = function() {
                     ]
                   ),
                   _vm._v(" "),
-                  _c(
-                    "button",
-                    {
-                      staticClass: "navbar-toggler",
-                      attrs: {
-                        type: "button",
-                        "data-toggle": "collapse",
-                        "data-target": "#navbarTogglerDemo02",
-                        "aria-controls": "navbarTogglerDemo02",
-                        "aria-expanded": "false",
-                        "aria-label": "Toggle navigation"
-                      },
-                      on: {
-                        click: function($event) {
-                          _vm.fondoNav = !_vm.fondoNav
-                        }
-                      }
-                    },
-                    [_c("i", { staticClass: "fas fa-bars" })]
-                  ),
+                  _vm._m(0),
                   _vm._v(" "),
                   _c(
                     "div",
                     {
                       staticClass:
                         "collapse navbar-collapse text-uppercase font-weight-bold",
-                      attrs: { id: "navbarTogglerDemo02" }
+                      attrs: { id: "menuCollapse" }
                     },
                     [
                       _c(
@@ -65392,7 +65398,29 @@ var render = function() {
                             return [
                               _c(
                                 "li",
-                                { staticClass: "nav-item" },
+                                { staticClass: "nav-item d-md-none" },
+                                [
+                                  _c(
+                                    "router-link",
+                                    {
+                                      staticClass: "nav-link",
+                                      attrs: {
+                                        to: item.link,
+                                        "data-toggle": "collapse",
+                                        "data-target": "#menuCollapse",
+                                        "aria-expanded": "false",
+                                        "aria-controls": "menuCollapse"
+                                      }
+                                    },
+                                    [_vm._v(_vm._s(item.name))]
+                                  )
+                                ],
+                                1
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "li",
+                                { staticClass: "nav-item d-none d-md-flex" },
                                 [
                                   _c(
                                     "router-link",
@@ -65555,7 +65583,28 @@ var render = function() {
     1
   )
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "button",
+      {
+        staticClass: "navbar-toggler",
+        attrs: {
+          type: "button",
+          "data-toggle": "collapse",
+          "data-target": "#menuCollapse",
+          "aria-controls": "menuCollapse",
+          "aria-expanded": "false",
+          "aria-label": "Toggle navigation"
+        }
+      },
+      [_c("i", { staticClass: "fas fa-bars" })]
+    )
+  }
+]
 render._withStripped = true
 
 
@@ -66972,13 +67021,19 @@ var render = function() {
                 _c("div", { staticClass: "contenedor-img" }, [
                   _c("img", {
                     staticClass: "card-img-top",
-                    attrs: { src: service.image, alt: service.title }
+                    attrs: { src: service.image, alt: service.titulo }
                   }),
                   _vm._v(" "),
-                  _c("img", {
-                    staticClass: "icono-service",
-                    attrs: { src: service.icono, alt: service.title }
-                  })
+                  _c("div", { staticClass: "contenedor-posicionado" }, [
+                    _c("img", {
+                      staticClass: "icono-service",
+                      attrs: { src: service.icono, alt: service.title }
+                    }),
+                    _vm._v(" "),
+                    _c("h3", { staticClass: "title-img" }, [
+                      _vm._v(_vm._s(service.titulo))
+                    ])
+                  ])
                 ]),
                 _vm._v(" "),
                 _c("div", { staticClass: "card-body text-center" }, [

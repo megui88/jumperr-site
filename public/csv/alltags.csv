@@ -761,3 +761,32 @@ Le damos la bienvenida al 2019. """
 ,Polity,{{ $store.getters.getTags({ tag: 'page_terms_body' }) }},page_terms_body,,.,.,.,.,.
 ,Polity,{{ $store.getters.getTags({ tag: 'page_polity_title' }) }},page_polity_title,,Políticas y Privacidad,Politiche e privacy,Policies and Privacy,Políticas e Privacidade ,Politiques et confidentialité 
 ,Polity,{{ $store.getters.getTags({ tag: 'page_polity_body' }) }},page_polity_body,,.,.,.,.,.
+,homeservice,{{ $store.getters.getTags({ tag: 'home_service_title_jumperr_studio' }) }},home_service_title_jumperr_studio,,Jumperr Studio,Jumperr Studio,Jumperr Studio,Jumperr Studio,Jumperr Studio
+,homeservice,{{ $store.getters.getTags({ tag: 'home_service_title_jumperr_web' }) }},home_service_title_jumperr_web,,Desarrollo Web y Apps,"Sviluppo Web e Apps
+","WEB DEVELOPMENT and APPS
+","DESENVOLVIMENTO DA WEB e APPS
+","DÉVELOPPEMENT WEB et APPS
+"
+,homeservice,{{ $store.getters.getTags({ tag: 'home_service_title_jumperr_start' }) }},home:service_title_jumperr_start,,"Jumperr Start
+","Jumperr Start
+","Jumperr Start
+","Jumperr Start
+","Jumperr Start
+"
+,homeservice,{{ $store.getters.getTags({ tag: 'home_service_title_redes' }) }},home_service_title_redes,,"REDES SOCIALES
+","Social Networks
+","SOCIAL NETWORKS
+","REDES SOCIAIS
+","RÉSEAUX SOCIAUX
+"
+,homeservice,{{ $store.getters.getTags({ tag: 'home_service_title_cms' }) }},home_service_title_cms,,"CMS y CRM
+","CMS e CRM
+","CMS and CRM
+","CMS e CRM
+",CMS et CRM
+,homeservice,{{ $store.getters.getTags({ tag: 'home_service_title_design' }) }},home_service_title_design,,"DISEÑO GRÁFICO
+","DISEGNO GRAFICO
+","GRAPHIC DESIGN
+","DESIGN GRÁFICO
+","CONCEPTION GRAPHIQUE
+"

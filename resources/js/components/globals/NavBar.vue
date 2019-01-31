@@ -10,15 +10,23 @@
                         <router-link class="navbar-brand" to="/">
                             <img src="/images/logo/logojumperr.svg" alt="Jumperr" class="logo">
                         </router-link>
-                        <button class="navbar-toggler" @click="fondoNav=!fondoNav" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menuCollapse" aria-controls="menuCollapse" aria-expanded="false" aria-label="Toggle navigation">
                             <i class="fas fa-bars"></i>
                         </button>
 
-                        <div class="collapse navbar-collapse text-uppercase font-weight-bold" id="navbarTogglerDemo02">
+                        <div class="collapse navbar-collapse text-uppercase font-weight-bold" id="menuCollapse">
                             <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
                              <template v-for="item in routes">
-                                 <li class="nav-item">
-                                     <router-link class="nav-link" :to="item.link">{{ item.name }}</router-link>
+                                 <!-- movil -->
+                                 <li class="nav-item d-md-none">
+                                     <router-link class="nav-link" :to="item.link"
+                                     data-toggle="collapse" data-target="#menuCollapse" aria-expanded="false" aria-controls="menuCollapse"
+                                     >{{ item.name }}</router-link>
+                                 </li>
+                                 <!-- DESKTOP -->
+                                 <li class="nav-item d-none d-md-flex">
+                                     <router-link class="nav-link" :to="item.link"
+                                     >{{ item.name }}</router-link>
                                  </li>
                              </template>
                              <!-- lenguaje -->
@@ -74,6 +82,13 @@
             window.onscroll = function () {
                 that.sticky = !(document.body.scrollTop > 10 || document.documentElement.scrollTop > 10);
             };
+
+            $('#menuCollapse').on('show.bs.collapse', function () {
+                that.fondoNav = true;
+            })
+            $('#menuCollapse').on('hide.bs.collapse', function () {
+                that.fondoNav = false;
+            })
         },
         computed: {
             getFlags() {
@@ -111,10 +126,6 @@
         width: 160px;
         height: auto;
     }
-
-    #container-nav {
-
-    }
     .btn{
         font-size: 0.8rem;
         white-space: nowrap;
@@ -135,7 +146,6 @@
         border-radius: 0;
         font-weight: 700;
         margin-left: 5px;
-
     }
     .form-control:focus{
         outline: none;
@@ -177,17 +187,9 @@
         font-weight: bold;
     }
 
-    /*link menu color blanco*/
-
     .navbar-dark .navbar-nav .nav-link {
-        color: rgba(255, 255, 255, 1);
+        color: rgb(255, 255, 255);
     }
-
-    .navbar-dark .navbar-nav .show > .nav-link, .navbar-dark .navbar-nav .active > .nav-link, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .nav-link.active {
-        color: rgb(206, 206, 206);
-    }
-
-    /*link menu color negro*/
     .navbar-light .navbar-nav .nav-link {
         color: rgba(0, 0, 0, 0.5);
     }
@@ -197,7 +199,7 @@
     }
 
     .navbar-dark .nav-link.router-link-exact-active.router-link-active {
-        color: #ffffffed;
+        color: #f26336;
     }
 
     .navbar-light .nav-link.router-link-exact-active.router-link-active {
@@ -207,7 +209,7 @@
 
     @media (max-width: 991.98px) {
         .navbar {
-            background-color: #fff;
+            background-color: rgba(255, 255, 255, 0);
         }
 
         .navbar-dark .navbar-nav .nav-link {
@@ -235,32 +237,39 @@
             color: #f26336;
         }
 
-        .navbar-dark .navbar-toggler {
-            color: rgba(0, 0, 0, 0.5);
-            border-color: rgba(0, 0, 0, 0.1);
-        }
-
-        .navbar-light .navbar-toggler {
-            color: rgba(0, 0, 0, 0.5);
-            border-color: rgba(0, 0, 0, 0.1);
-        }
-    }
-
-    @media (max-width: 991.98px) {
-        .navbar[data-v-61279d3a] {
-            background-color: #fff0;
-        }
-
-        button.navbar-toggler {
-            color: #fff;
-        }
-
-        @media (max-width: 991.98px) {
-
-        }
-        .navbar-dark .navbar-toggler {
+        .navbar-dark .navbar-toggler, .navbar-light .navbar-toggler {
             color: rgb(242, 105, 55);
             border-color: rgb(242, 105, 55);
         }
+
+        /* selected lang */
+        .navbar-dark .form-control, .navbar-light .form-control{
+            background-color: transparent;
+            background-position: left center;
+            background-repeat: no-repeat;
+            background-size: 24px;
+            padding: 0.375rem 1.6rem 0.375rem .5rem;
+            outline: none;
+            -webkit-appearance: none;
+            appearance: none;
+            border: none;
+            border-radius: 0;
+            font-weight: 700;
+            margin-left: 0px;
+            text-align: right;
+        }
+        .navbar-dark .form-control.transparent{
+            background-image: url('/images/iconos/internet.svg');
+            border: 0px solid #4b4b4b9b;
+            color: #4b4b4b9b;
+            padding-left: 28px; 
+        }
+        .navbar-light .form-control.dark{
+            background-image: url('/images/iconos/internet.svg');
+            border: 0px solid #4b4b4b9b;
+            color: #4b4b4b9b;
+            padding-left: 28px; 
+        }
+        
     }
 </style>

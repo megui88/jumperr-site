@@ -8,7 +8,7 @@
                         <p class="lead text-center text-white">{{ $store.getters.getTags({tag:'careers_text6'}) }}</p>
 
                         <div class="text-center">
-                            <a href="#" class="btn btn-primary text-uppercase">{{ $store.getters.getTags({ tag: 'careers_text4' }) }}</a>
+                            <a href="/contatto" class="btn btn-primary text-uppercase">{{ $store.getters.getTags({ tag: 'careers_text4' }) }}</a>
                         </div>
                     </div>
                 </div>

@@ -23,10 +23,10 @@
             return {
                 email: 'info@jumperr.com',
                 socialMedia: [
-                    { link: 'http://', icon: 'fab fa-facebook-f'},
-                    { link: 'http://', icon: 'fab fa-instagram'},
-                    { link: 'http://', icon: 'fab fa-youtube'},
-                    { link: 'http://', icon: 'fab fa-linkedin-in'}
+                    { link: 'https://www.facebook.com/wearejumperr/', icon: 'fab fa-facebook-f'},
+                    { link: 'https://www.instagram.com/wearejumperr/', icon: 'fab fa-instagram'},
+                    // { link: 'http://', icon: 'fab fa-youtube'},
+                    { link: 'https://www.linkedin.com/company/wearejumperr/', icon: 'fab fa-linkedin-in'}
                 ]
             }
         }

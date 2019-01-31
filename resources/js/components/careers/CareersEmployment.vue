@@ -21,7 +21,7 @@
                                         <br>
                                         <small> {{ service.modality }} </small>
                                     </p>
-                                    <a :href="service.url" class="btn btn-primary align-self-end">{{ $store.getters.getTags({ tag: 'careers_text18' }) }}</a>
+                                    <a href="/contatto" class="btn btn-primary align-self-end">{{ $store.getters.getTags({ tag: 'careers_text18' }) }}</a>
                                 </div>
                             </div>
                         </swiper-slide>
