@@ -2750,6 +2750,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'contact-header',
   data: function data() {
@@ -64889,22 +64891,19 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
-}
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", [
-      _c("header", [
-        _c("h2", { staticClass: "text-white text-center mt-4" }, [
-          _vm._v("Contacto")
-        ])
+  return _c("div", [
+    _c("header", [
+      _c("h2", { staticClass: "text-white text-center mt-4" }, [
+        _vm._v(
+          "\n            " +
+            _vm._s(_vm.$store.getters.getTags({ tag: "contact_title" })) +
+            "\n        "
+        )
       ])
     ])
-  }
-]
+  ])
+}
+var staticRenderFns = []
 render._withStripped = true
 
 

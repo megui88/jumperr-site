@@ -1,7 +1,9 @@
 <template>
     <div>
         <header>
-            <h2 class="text-white text-center mt-4">Contacto</h2>
+            <h2 class="text-white text-center mt-4">
+                {{$store.getters.getTags({tag:'contact_title'})}}
+            </h2>
             <!-- <p class="lead text-center">Rellena el formulario con la duda que tengas</p> -->
         </header>
     </div>
