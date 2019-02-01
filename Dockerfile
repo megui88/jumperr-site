@@ -20,6 +20,7 @@ RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime \
 
 ADD ./Docker/supervisord.conf /etc/supervisord.conf
 ADD ./Docker/nginx.conf /etc/nginx/nginx.conf
+ADD ./Docker/.htpasswd /etc/nginx/.htpasswd
 ADD ./Docker/www.conf /etc/php/7.2/fpm/pool.d/www.conf
 ADD ./Docker/php.ini /etc/php/7.2/fpm/php.ini
 ADD ./Docker/default.conf /etc/nginx/sites-available/default.conf
