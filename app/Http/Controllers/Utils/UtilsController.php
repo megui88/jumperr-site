@@ -175,15 +175,11 @@ class UtilsController extends AppBaseController
         return response()->json('Successful');
     }
 
-    public function saveTag( $tag, $value, $language ) {
-    	if ( TagTranslation::where( 'tag', $tag )->where( 'language_id', $language )->count() == 0 ) {
-	    	$tag = new TagTranslation([
-					'tag' 		  => $tag,
-					'value' 	  => $value,
-					'language_id' => $language
-				]);
-			return $tag->save();
-    	}
+    public function saveTag($tag, $value, $language)
+    {
+        $tag = TagTranslation::firstOrNew(['tag'=>$tag,'language_id'=> $language]);
+        $tag->value = $value;
+        return $tag->save();
     }
 
     public function getAllTags() {
