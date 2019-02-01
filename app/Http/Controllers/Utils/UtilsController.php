@@ -68,8 +68,9 @@ class UtilsController extends AppBaseController
     public function newsLetter(CreateNewsletterUserAPIRequest $request)
     {
         try{
-            $exist = $this->newsletterUserRepository->findByField('email',$request->email)->first();
-            if(!$exist){
+            $model = $this->newsletterUserRepository->findByField('email',$request->email)->first();
+
+            if( $model->isEmpty() ){
                 // dd($request->all());
                 $newsletterUsers = $this->newsletterUserRepository->create($request->all());
                 // dd($newsletterUsers);
