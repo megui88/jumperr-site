@@ -70,15 +70,20 @@ class UtilsController extends AppBaseController
         try{
             $model = $this->newsletterUserRepository->findByField('email',$request->email)->first();
 
-            if( $model === null ){
-                // dd($request->all());
+            if ( $model === null ) {
                 $newsletterUsers = $this->newsletterUserRepository->create($request->all());
-                // dd($newsletterUsers);
-                $send=MailController::sendMail($request->all(),'newsletter');
-                if($send=='OK'){
-                    return $this->sendResponse($newsletterUsers->toArray(), 'Newsletter Utente salvato correttamente');
+
+                $send = MailController::sendMail( $request->all(), 'newsletter' );
+
+                if ( $send == 'OK' ) {
+                    return $this->sendResponse( $newsletterUsers->toArray(), 'Newsletter Utente salvato correttamente' );
+                }
+                else {
+                    return $this->sendResponse( $newsletterUsers->toArray(), 'Newsletter Utente salvato correttamente, email non eviato' );
                 }
             }
+
+
 
             return response()->json(["success"=>true,"message"=>"La tua email è già registrata"],422);
         }catch(Exeption $e){
