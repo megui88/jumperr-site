@@ -70,7 +70,7 @@ class UtilsController extends AppBaseController
         try{
             $model = $this->newsletterUserRepository->findByField('email',$request->email)->first();
 
-            if( $model->isEmpty() ){
+            if( $model === null ){
                 // dd($request->all());
                 $newsletterUsers = $this->newsletterUserRepository->create($request->all());
                 // dd($newsletterUsers);
