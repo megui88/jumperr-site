@@ -22,10 +22,10 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>{{ config('app.name', 'Jumperr') }}</title>
-    <link rel="shortcut icon" type="image/png" href="{{asset('/images/iconos/favicon.png')}}"/>
+    <link rel="shortcut icon" type="image/png" href="{{secure_asset('/images/iconos/favicon.png')}}"/>
 
     <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ secure_asset('css/app.css') }}" rel="stylesheet">
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 
@@ -39,9 +39,9 @@
         </main>
     </div>
     <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}"></script>
+    <script src="{{ secure_asset('js/app.js') }}"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.6.3/js/all.js" integrity="sha384-EIHISlAOj4zgYieurP0SdoiBYfGJKkgWedPHH4jCzpCXLmzVsw1ouK59MuUtP4a1" crossorigin="anonymous"></script>
-    <script src="{{ asset('js/jquery-transit.js') }}"></script>    
+    <script src="{{ secure_asset('js/jquery-transit.js') }}"></script>    
     @stack('scripts')
 <script src="https://snapwidget.com/js/snapwidget.js"></script>
 </body>
